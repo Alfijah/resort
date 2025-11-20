@@ -1,8 +1,8 @@
-import logo from "../assets/logo/logo_white.png"
+import logo from "../assets/logo/logo_sendang_wit.png"
 
 export default function Navbar() {
     return (
-        <nav className="w-full py-4 fixed grid grid-cols-3 items-center text-white text-xs uppercase tracking-widest z-50">
+        <nav className="w-full py-1 fixed grid grid-cols-3 items-center text-white text-xs uppercase tracking-widest z-50">
             <ul className="flex justify-start gap-4 uppercase tracking-widest px-[20%]">
                 <li>
                     <a className="" href="">Home</a>
@@ -19,7 +19,7 @@ export default function Navbar() {
             </ul>
 
             <div className="flex justify-center">
-                <img src={logo} alt="Taman Resort Logo" className="h-15 w-auto" />
+                <img src={logo} alt="Taman Resort Logo" className="h-27 w-auto" />
             </div>
 
             <div className="flex justify-end gap-4 px-[20%]">
@@ -31,12 +31,12 @@ export default function Navbar() {
                         <a className="" href="">Contact</a>
                     </li>
                     <li>
-                        <a className="" href="">Solliciteer</a>
+                        <a className="" href="">Tarieven</a>
                     </li>
                 </ul>
 
 
-                <button className="bg-sky-900 px-[5%] py-[6%] uppercase tracking-widest">Reserveren</button>
+                <button className="bg-sky-900 px-[5%] py-[6%] uppercase tracking-widest cursor-pointer hover:bg-sky-800">Reserveren</button>
             </div>
         </nav>
     )

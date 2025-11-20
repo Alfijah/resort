@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-body {
+body, .react-datepicker__header, .react-datepicker__current-month {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -11,5 +11,18 @@ ul{
 
 a {
   text-decoration: none;
+}
+
+.react-datepicker__header {
+  background-color: #0c4a6e !important;  /* sky-900 */
+  color: white !important;
+  border-bottom: none;
+  text-transform: none;
+}
+
+.react-datepicker__current-month {
+  color: white !important;
+  font-size: 0.84rem !important;; 
+  font-weight: normal !important;;
 }
 
