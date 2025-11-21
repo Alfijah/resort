@@ -21,21 +21,26 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`w-full py-1 fixed z-50 transition-all duration-300 
+            className={`w-full py-2 fixed z-50 transition-colors duration-1000 fade-in-out 
       ${isScrolled ? "bg-white text-black shadow-md" : "text-white"}`}
         >
             {/* MOBILE / TABLET / SMALL LAPTOP (tot <1260px) */}
             <div className="flex items-center justify-between px-6 xl:hidden">
                 {/* Hamburger */}
-                <button onClick={() => { setIsMenuOpen(true); setIsClosing(false); }} className="text-3xl">
-                    ☰
+                <button
+                    onClick={() => { setIsMenuOpen(true); setIsClosing(false); }}
+                    className="flex flex-col justify-start items-center space-y-1 w-6 h-8 gap-1"
+                >
+                    <span className={`w-5 h-[1px] transform rotate-0 origin-left ${isScrolled ? "bg-black" : "bg-white"}`}></span>
+                    <span className={`w-full h-[2px] transform rotate-0 origin-left ${isScrolled ? "bg-black" : "bg-white"}`}></span>
+                    <span className={`w-5 h-[1px] transform rotate-0 origin-left ${isScrolled ? "bg-black" : "bg-white"}`}></span>
                 </button>
 
                 {/* Logo */}
                 <img
                     src={isScrolled ? logoDark : logoWhite}
                     alt="Taman Logo"
-                    className="h-22"
+                    className="h-18"
                 />
 
                 {/* Leeg voor alignment (Reserveren zit in menu) */}
@@ -64,7 +69,7 @@ export default function Navbar() {
                             initial={{ x: "-100%" }}
                             animate={{ x: 0 }}
                             exit={{ x: "-100%" }}
-                            transition={{ duration: 0.35, ease: "easeOut" }}
+                            transition={{ duration: 0.30, ease: "easeOut" }}
                         >
                             <button
                                 className="absolute top-4 right-4 text-black text-xl cursor-pointer"
@@ -82,7 +87,7 @@ export default function Navbar() {
                             <a href="">Contact</a>
                             <a href="">Tarieven</a>
 
-                            <button className="bg-sky-900 text-white px-6 py-2 rounded-sm uppercase hover:bg-sky-800">
+                            <button className="bg-sky-900 text-white px-6 py-2 rounded-sm uppercase hover:bg-red-400">
                                 Reserveren
                             </button>
                         </motion.div>
@@ -105,7 +110,7 @@ export default function Navbar() {
                     <img
                         src={isScrolled ? logoDark : logoWhite}
                         alt="sendang resort logo"
-                        className="h-27 w-auto"
+                        className="h-20 w-auto"
                     />
                 </div>
 
@@ -116,7 +121,7 @@ export default function Navbar() {
                         <li><a href="">Contact</a></li>
                         <li><a href="">Tarieven</a></li>
                     </ul>
-                    <button className="bg-sky-900 px-6 py-4 uppercase tracking-widest hover:bg-sky-800 text-white cursor-pointer">
+                    <button className="bg-sky-900 px-6 py-4 uppercase tracking-widest hover:bg-red-400 text-white cursor-pointer">
                         Reserveren
                     </button>
                 </div>

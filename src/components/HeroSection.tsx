@@ -99,7 +99,7 @@ export default function HeroSection() {
   bg-gradient-to-b from-black/85 to-transparent pointer-events-none">
             </div>
 
-            <div className="absolute bottom-2 w-full flex justify-center">
+            <div className="absolute bottom-2 w-full flex justify-center hidden xl:flex">
                 <div className="w-[75%] h-30 bg-white grid grid-cols-3 px-[15%] items-end justify-center pb-10 gap-6 text-xs uppercase">
                     {/* Datepicker */}
                     <div className="flex flex-col">
@@ -156,7 +156,7 @@ export default function HeroSection() {
                                                     {index === 0 && bookings.length < 3 && (
                                                         <button
                                                             onClick={() => addCabanaAt(index)}
-                                                            className="px-3 border rounded-sm cursor-pointer hover:bg-sky-800"
+                                                            className="px-3 border rounded-sm cursor-pointer hover:bg-red-400"
                                                         >
                                                             +
                                                         </button>
@@ -167,7 +167,7 @@ export default function HeroSection() {
                                                         <>
                                                             <button
                                                                 onClick={() => removeCabana(index)}
-                                                                className="px-3 border rounded-sm cursor-pointer hover:bg-sky-800"
+                                                                className="px-3 border rounded-sm cursor-pointer hover:bg-red-400"
                                                                 aria-label={`Verwijder Cabana ${item.cabana}`}
                                                             >
                                                                 −
@@ -177,7 +177,7 @@ export default function HeroSection() {
                                                             {bookings.length < 3 ? (
                                                                 <button
                                                                     onClick={() => addCabanaAt(index)}
-                                                                    className="px-3 border rounded-sm cursor-pointer hover:bg-sky-800"
+                                                                    className="px-3 border rounded-sm cursor-pointer hover:bg-red-400"
                                                                     aria-label={`Voeg cabana toe na Cabana ${item.cabana}`}
                                                                 >
                                                                     +
@@ -197,7 +197,7 @@ export default function HeroSection() {
                                                 <div className="flex items-center space-x-3">
                                                     <button
                                                         onClick={() => updateGuests(index, -1)}
-                                                        className="px-3 border rounded-sm cursor-pointer hover:bg-gray-50"
+                                                        className="px-3 border rounded-sm cursor-pointer hover:text-red-400"
                                                         aria-label={`Minder gasten Cabana ${item.cabana}`}
                                                     >
                                                         −
@@ -205,7 +205,7 @@ export default function HeroSection() {
                                                     <span>{item.guests}</span>
                                                     <button
                                                         onClick={() => updateGuests(index, +1)}
-                                                        className="px-3 border rounded-sm cursor-pointer hover:bg-gray-50"
+                                                        className="px-3 border rounded-sm cursor-pointer hover:text-red-400"
                                                         aria-label={`Meer gasten Cabana ${item.cabana}`}
                                                     >
                                                         +
@@ -234,9 +234,20 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    <button className="bg-sky-900 py-2 tracking-wide text-white text-sm rounded-sm cursor-pointer hover:bg-sky-800">Reserveren</button>
+                    <button className="bg-sky-900 py-2 tracking-wide text-white text-sm rounded-sm cursor-pointer hover:bg-red-400">Reserveren</button>
                 </div>
             </div>
+
+            {/* 📱 Mobiele onderbalk – zichtbaar onder 1260px */}
+<div className="fixed bottom-0 left-0 w-full bg-white text-white py-6 px-6 grid grid-cols-2 flex justify-around items-center xl:hidden z-50 backdrop-blur-md">
+    <button className="absolute bg-sky-900 w-[50%] h-full uppercase tracking-widest text-xs cursor-pointer hover:bg-red-400">
+        Reserveren
+    </button>
+    <button className="absolute bg-white w-[50%] right-0 h-full py-2 uppercase tracking-widest text-xs text-black cursor-pointer hover:bg-white hover:text-orange-600 transition">
+        Email
+    </button>
+</div>
+
         </div>
 
     )
