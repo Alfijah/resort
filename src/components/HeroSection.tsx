@@ -11,8 +11,8 @@ export default function HeroSection() {
 
     const [showPopup, setShowPopup] = useState(false);
     const [bookings, setBookings] = useState<{ cabana: number; guests: number }[]>([
-    { cabana: 1, guests: 2 },
-  ]);
+        { cabana: 1, guests: 2 },
+    ]);
 
     const togglePopup = () => setShowPopup(!showPopup);
 
@@ -66,7 +66,7 @@ export default function HeroSection() {
                 if (i === index) {
                     const newGuests = item.guests + change;
                     if (newGuests > 5) {
-                        alert("Maximaal 5 gasten per cabana!");
+                        // alert("Maximaal 5 gasten per cabana!");
                         return item;
                     }
                     return { ...item, guests: Math.max(1, newGuests) };
@@ -110,7 +110,7 @@ export default function HeroSection() {
                             placeholderText="Selecteer een datum"
                             minDate={new Date(today.setDate(today.getDate() + 1))} // disable vandaag en vroeger
                             dateFormat="dd MMMM yyyy"
-                            className="w-full border rounded-md px-3 py-2 text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400 cursor-pointer"
+                            className="w-full border rounded-md px-2 py-2 text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400 cursor-pointer"
                             calendarClassName="rounded-lg shadow-lg border-gray-200"
                             dayClassName={(date) =>
                                 date <= new Date()
@@ -130,7 +130,7 @@ export default function HeroSection() {
                             {/* MAIN DISPLAY FIELD */}
                             <div
                                 onClick={togglePopup}
-                                className="flex items-center justify-between border rounded-md px-4 py-2 cursor-pointer hover:bg-gray-50"
+                                className="flex items-center justify-between border rounded-md px-2 py-2 cursor-pointer hover:bg-gray-50"
                             >
                                 <p className="text-gray-800 normal-case">
                                     {bookings.length} Cabana{bookings.length > 1 && "s"},{" "}
@@ -140,9 +140,9 @@ export default function HeroSection() {
 
                             {/* POPUP — verschijnt nu boven het veld (bottom-full) */}
                             {showPopup && (
-                                <div 
-                                ref={popupRef}
-                                className="absolute bottom-full mb-2 left-0 w-full bg-white border-1 border-white rounded-sm shadow-lg z-50">
+                                <div
+                                    ref={popupRef}
+                                    className="absolute bottom-full mb-2 left-0 w-full bg-white border-1 border-white rounded-sm shadow-lg z-50">
 
                                     {bookings.map((item, index) => (
                                         <div key={index} className="mb-1 border-b border-gray-400">
@@ -215,10 +215,17 @@ export default function HeroSection() {
                                         </div>
                                     ))}
 
+                                    {/* 🔴 Bovenste waarschuwing: Max 5 gasten per cabana */}
+                                    {bookings.some((b) => b.guests >= 5) && (
+                                        <p className="text-xs normal-case text-red-600 px-1 mt-2">
+                                            ⚠️Maximaal 5 gasten per cabana toegestaan.
+                                        </p>
+                                    )}
+
                                     {/* Info tekst: toon waarschuwing onderin wanneer max bereikt (optioneel) */}
                                     {bookings.length >= 3 && (
-                                        <p className="text-xs normal-case text-red-600 mb-2">
-                                        ❗Maximaal 3 cabana’s online. Neem contact op voor grotere boekingen.
+                                        <p className="text-xs normal-case text-red-600 px-1 mb-2">
+                                            ⚠️Maximaal 3 cabana’s online. Neem contact op voor grotere boekingen.
                                         </p>
                                     )}
                                 </div>
