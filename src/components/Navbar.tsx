@@ -67,13 +67,16 @@ export default function Navbar() {
         items-start space-y-4 py-6 pl-6 pt-8 text-xs uppercase tracking-widest
         ${isScrolled ? "bg-white text-black" : "bg-white text-black"} z-50`}
                             initial={{ x: "-100%" }}
-                            animate={{ x: 0 }}
+                            animate={{ x: isClosing ? "-100%" : 0 }}
                             exit={{ x: "-100%" }}
                             transition={{ duration: 0.30, ease: "easeOut" }}
                         >
                             <button
                                 className="absolute top-4 right-4 text-black text-xl cursor-pointer"
-                                onClick={() => setIsMenuOpen(false)}
+                                onClick={() => {
+                                    setIsClosing(true);
+                                    setTimeout(() => setIsMenuOpen(false), 300);
+                                }}
                             >
                                 <RxCross1 />
                             </button>
@@ -96,7 +99,7 @@ export default function Navbar() {
             </AnimatePresence>
 
             {/* DESKTOP NAVBAR (≥1260px) */}
-            <div className="hidden xl:grid grid-cols-3 items-center text-xs uppercase tracking-widest">
+            <div className="hidden xl:grid grid-cols-3 items-center text-xs xl:text-sm uppercase tracking-widest">
                 {/* Left links */}
                 <ul className="flex justify-start gap-8 px-[20%]">
                     <li><a href="">Home</a></li>

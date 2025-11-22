@@ -1,4 +1,4 @@
-import heroBg from "../assets/heroSection/forest.mp4";
+import heroBg from "../assets/heroSection/birds.mp4";
 import { useState, useRef, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -100,7 +100,7 @@ export default function HeroSection() {
             </div>
 
             <div className="absolute bottom-2 w-full flex justify-center hidden xl:flex">
-                <div className="w-[75%] h-30 bg-white grid grid-cols-3 px-[15%] items-end justify-center pb-10 gap-6 text-xs uppercase">
+                <div className="w-[75%] h-30 bg-white grid grid-cols-3 px-[15%] items-end justify-center pb-10 gap-6 text-xs xl:text-sm uppercase">
                     {/* Datepicker */}
                     <div className="flex flex-col">
                         <p className="pb-2 text-sky-900 tracking-wide">Check-in</p>
@@ -234,7 +234,7 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    <button className="bg-sky-900 py-2 tracking-wide text-white text-sm rounded-sm cursor-pointer hover:bg-red-400">Reserveren</button>
+                    <button className="bg-sky-900 py-2 tracking-wide text-white text-sm xl:text-base rounded-sm cursor-pointer hover:bg-red-400">Reserveren</button>
                 </div>
             </div>
 

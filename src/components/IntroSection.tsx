@@ -1,69 +1,115 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { RiArrowLeftWideFill } from "react-icons/ri";
 import { RiArrowRightWideLine } from "react-icons/ri";
 import img1 from "../assets/introSection/lodge1.jpg"
-import img2 from "../assets/introSection/lodge1.jpg"
-import img3 from "../assets/introSection/lodge1.jpg"
-import img4 from "../assets/introSection/lodge1.jpg"
+import img2 from "../assets/introSection/lodge2.jpg"
+import img3 from "../assets/introSection/lodge3.jpg"
+import img4 from "../assets/introSection/lodge6.jpg"
 import img5 from "../assets/introSection/img1.png"
 
 export default function IntroSection() {
     const images = [img1, img2, img3, img4, img5];
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const sliderRef = useRef<HTMLDivElement | null>(null);
+    const totalSlides = images.length;
+    const slideIntervalRef = useRef<number | null>(null);
 
-    // Volgende foto (infinite scroll)
+    const goToSlide = (index: number) => {
+        if (!sliderRef.current) return; // voorkomt null errors
+
+        const slideWidth =
+            sliderRef.current.children[0].clientWidth || 0;
+
+        sliderRef.current.style.transform = `translateX(-${index * slideWidth}px)`;
+    };
+
     const nextSlide = () => {
-        setCurrentIndex((prev) => (prev + 1) % images.length);
+        setCurrentSlide((prev) => (prev + 1) % totalSlides);
     };
 
-    // Vorige foto (infinite scroll)
     const prevSlide = () => {
-        setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+        setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
     };
+
+    const resetAutoSlide = () => {
+        if (slideIntervalRef.current) {
+            clearInterval(slideIntervalRef.current);
+        }
+        slideIntervalRef.current = window.setInterval(nextSlide, 3000);
+    };
+
+    // Handle automatic slide
+    useEffect(() => {
+        slideIntervalRef.current = setInterval(nextSlide, 3000);
+        return () => {
+            if (slideIntervalRef.current !== null) {
+                clearInterval(slideIntervalRef.current);
+            }
+        };
+    }, []);
+
+    // Handle slide transform when currentSlide changes
+    useEffect(() => {
+        goToSlide(currentSlide);
+    }, [currentSlide]);
+
+    // Handle resizing
+    useEffect(() => {
+        const handleResize = () => goToSlide(currentSlide);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, [currentSlide]);
+
     return (
-        <div className="w-full relative px-[10%] xl:px-[12%] py-16 text-center tracking-wide">
-            <h1 className="xl:text-lg">Waar stilte, natuur en ziel samenkomen</h1>
-            <p className="text-xs xl:text-sm pt-8">Op slechts 20 minuten van Paramaribo ligt Sendang Redjo: een exclusief eco retreat en nature sanctuary, gelegen rondom een privémeer in het hart van Tamanredjo. <br /><br />Sendang Redjo is gebouwd op historische grond, maar draagt een tijdloze ziel.
+        <div className="w-full relative py-16 text-center tracking-wide">
+            <h1 className="md:text-xl xl:text-2xl px-[10%] xl:px-[12%]">Waar stilte, natuur en ziel samenkomen</h1>
+            <p className="text-xs lg:text-sm xl:text-base pt-8 px-[10%] xl:px-[12%]">Op slechts 20 minuten van Paramaribo ligt Sendang Redjo: een exclusief eco retreat en nature sanctuary, gelegen rondom een privémeer in het hart van Tamanredjo. <br /><br />Sendang Redjo is gebouwd op historische grond, maar draagt een tijdloze ziel.
                 Wat ooit een oude plantage was, is nu een serene retreat, geworteld in eenvoud, stilte en natuurlijke schoonheid.
                 De sfeer ademt Javaanse gastvrijheid: warm, oprecht en ontspannen.</p>
 
-            <div className="relative w-full pt-15 max-w-4xl mx-auto flex justify-center overflow-hidden group">
-
-                {/* Afbeelding */}
-                <img
-                    src={images[currentIndex]}
-                    alt="carousel slide"
-                    className="w-[100%] xl:w-[90%] h-50 xl:h-130 object-cover rounded-md shadow-lg transition-all duration-500"
-                />
-
-                {/* Linker pijl */}
+            {/* images */}
+            <div className="flex items-center justify-center w-full pt-10 xl:pt-16">
+                {/* Prev Button */}
                 <button
-                    onClick={prevSlide}
-                    className="absolute top-1/2 left-4 -translate-y-1/2 p-3 rounded-full bg-black/40 text-white opacity-80 hover:bg-sky-900 hover:opacity-100 transition"
+                    onClick={() => {
+                        prevSlide();
+                        resetAutoSlide();
+                    }}
+                    className="md:p-2 text-3xl text-gray-400 md:mr-6 rounded-full hover:bg-black/10"
                 >
-                    <RiArrowLeftWideFill />
+                    <RiArrowLeftWideFill/>
                 </button>
 
-                {/* Rechter pijl */}
-                <button
-                    onClick={nextSlide}
-                    className="absolute top-1/2 right-4 -translate-y-1/2 p-3 rounded-full bg-black/40 text-white opacity-80 hover:bg-black hover:opacity-100 transition"
-                >
-                    <RiArrowRightWideLine />
-                </button>
-
-                {/* Bolletjes indicator */}
-                <div className="absolute bottom-3 w-full flex justify-center gap-2">
-                    {images.map((_, index) => (
-                        <div
-                            key={index}
-                            className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-white" : "bg-white/40"
-                                }`}
-                        />
-                    ))}
+                {/* Image Slider */}
+                <div className="w-[75%] xl:w-[80%] h-50 md:h-150 xl:h-180 overflow-hidden flex items-center relative">
+                    <div
+                        ref={sliderRef}
+                        className="flex transition-transform duration-500 ease-in-out"
+                    >
+                        {images.map((src, index) => (
+                            <img
+                                key={index}
+                                src={src}
+                                className="w-full flex-shrink-0"
+                                alt={`Slide ${index + 1}`}
+                            />
+                        ))}
+                    </div>
                 </div>
+
+                {/* Next Button */}
+                <button
+                    onClick={() => {
+                        nextSlide();
+                        resetAutoSlide();
+                    }}
+                    className="md:p-2 md:ml-6 text-3xl text-gray-400 rounded-full hover:bg-black/10"
+                >
+                    <RiArrowRightWideLine/>
+                </button>
             </div>
-        </div>
+
+        </div >
     )
 }
