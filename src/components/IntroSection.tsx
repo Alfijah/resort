@@ -6,6 +6,7 @@ import img2 from "../assets/introSection/lodge2.jpg"
 import img3 from "../assets/introSection/lodge3.jpg"
 import img4 from "../assets/introSection/lodge6.jpg"
 import img5 from "../assets/introSection/img1.png"
+import FadeInSection from "./FadeInsection";
 
 export default function IntroSection() {
     const images = [img1, img2, img3, img4, img5];
@@ -32,22 +33,22 @@ export default function IntroSection() {
         setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
     };
 
-    const resetAutoSlide = () => {
-        if (slideIntervalRef.current) {
-            clearInterval(slideIntervalRef.current);
-        }
-        slideIntervalRef.current = window.setInterval(nextSlide, 3000);
-    };
+    // const resetAutoSlide = () => {
+    //     if (slideIntervalRef.current) {
+    //         clearInterval(slideIntervalRef.current);
+    //     }
+    //     slideIntervalRef.current = window.setInterval(nextSlide, 3000);
+    // };
 
-    // Handle automatic slide
-    useEffect(() => {
-        slideIntervalRef.current = setInterval(nextSlide, 3000);
-        return () => {
-            if (slideIntervalRef.current !== null) {
-                clearInterval(slideIntervalRef.current);
-            }
-        };
-    }, []);
+    // // Handle automatic slide
+    // useEffect(() => {
+    //     slideIntervalRef.current = setInterval(nextSlide, 3000);
+    //     return () => {
+    //         if (slideIntervalRef.current !== null) {
+    //             clearInterval(slideIntervalRef.current);
+    //         }
+    //     };
+    // }, []);
 
     // Handle slide transform when currentSlide changes
     useEffect(() => {
@@ -62,6 +63,7 @@ export default function IntroSection() {
     }, [currentSlide]);
 
     return (
+        <FadeInSection>
         <div className="w-full relative py-16 text-center tracking-wide">
             <h1 className="md:text-xl xl:text-2xl px-[10%] xl:px-[12%]">Waar stilte, natuur en ziel samenkomen</h1>
             <p className="text-xs lg:text-sm xl:text-base pt-8 px-[10%] xl:px-[12%]">Op slechts 20 minuten van Paramaribo ligt Sendang Redjo: een exclusief eco retreat en nature sanctuary, gelegen rondom een privémeer in het hart van Tamanredjo. <br /><br />Sendang Redjo is gebouwd op historische grond, maar draagt een tijdloze ziel.
@@ -74,7 +76,7 @@ export default function IntroSection() {
                 <button
                     onClick={() => {
                         prevSlide();
-                        resetAutoSlide();
+                        // resetAutoSlide();
                     }}
                     className="md:p-2 text-3xl text-gray-400 md:mr-6 rounded-full hover:bg-black/10"
                 >
@@ -82,7 +84,7 @@ export default function IntroSection() {
                 </button>
 
                 {/* Image Slider */}
-                <div className="w-[75%] xl:w-[80%] h-50 md:h-150 xl:h-180 overflow-hidden flex items-center relative">
+                <div className="w-[75%] xl:w-[70%] h-50 md:h-130 xl:h-180 overflow-hidden flex items-center relative">
                     <div
                         ref={sliderRef}
                         className="flex transition-transform duration-500 ease-in-out"
@@ -102,7 +104,7 @@ export default function IntroSection() {
                 <button
                     onClick={() => {
                         nextSlide();
-                        resetAutoSlide();
+                        // resetAutoSlide();
                     }}
                     className="md:p-2 md:ml-6 text-3xl text-gray-400 rounded-full hover:bg-black/10"
                 >
@@ -111,5 +113,6 @@ export default function IntroSection() {
             </div>
 
         </div >
+        </FadeInSection>
     )
 }
