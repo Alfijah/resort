@@ -89,10 +89,6 @@ export default function Navbar() {
                             <a href="">Over Ons</a>
                             <a href="">Contact</a>
                             <a href="">Tarieven</a>
-
-                            <button className="bg-sky-900 text-white px-6 py-2 rounded-sm uppercase hover:bg-red-400">
-                                Reserveren
-                            </button>
                         </motion.div>
                     </>
                 )}

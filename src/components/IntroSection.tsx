@@ -64,8 +64,8 @@ export default function IntroSection() {
 
     return (
         <FadeInSection>
-        <div className="w-full relative py-16 text-center tracking-wide">
-            <h1 className="md:text-xl xl:text-2xl px-[10%] xl:px-[12%]">Waar stilte, natuur en ziel samenkomen</h1>
+        <div className="w-full h-150 relative py-16 text-center tracking-wide">
+            <h1 className="text-xl md:text-2xl xl:text-4xl px-[10%] xl:px-[12%]">Waar stilte, natuur en ziel samenkomen</h1>
             <p className="text-xs lg:text-sm xl:text-base pt-8 px-[10%] xl:px-[12%]">Op slechts 20 minuten van Paramaribo ligt Sendang Redjo: een exclusief eco retreat en nature sanctuary, gelegen rondom een privémeer in het hart van Tamanredjo. <br /><br />Sendang Redjo is gebouwd op historische grond, maar draagt een tijdloze ziel.
                 Wat ooit een oude plantage was, is nu een serene retreat, geworteld in eenvoud, stilte en natuurlijke schoonheid.
                 De sfeer ademt Javaanse gastvrijheid: warm, oprecht en ontspannen.</p>

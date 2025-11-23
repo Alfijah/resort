@@ -1,5 +1,6 @@
 import './App.css'
 import CabanaSection from './components/CabanaSection'
+import DiningSection from './components/DiningSection'
 import HeroSection from './components/HeroSection'
 import IntroSection from './components/IntroSection'
 import Navbar from './components/Navbar'
@@ -12,6 +13,7 @@ export default function App() {
       <main className="relative z-10 pt-[100vh]">
         <IntroSection />
         <CabanaSection />
+        <DiningSection />
       </main>
     </>
   )

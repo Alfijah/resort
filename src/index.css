@@ -9,6 +9,11 @@ ul{
   list-style: none;
 }
 
+h1 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
 a {
   text-decoration: none;
 }
@@ -26,3 +31,11 @@ a {
   font-weight: normal !important;;
 }
 
+.slick-slide>div {
+  margin:0 10px;
+}
+
+.slick-arrow button {
+  color: red;
+  background-color: blue;
+}
