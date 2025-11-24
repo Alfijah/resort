@@ -30,12 +30,3 @@ a {
   font-size: 0.84rem !important;; 
   font-weight: normal !important;;
 }
-
-.slick-slide>div {
-  margin:0 10px;
-}
-
-.slick-arrow button {
-  color: red;
-  background-color: blue;
-}
