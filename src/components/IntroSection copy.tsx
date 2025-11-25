@@ -1,9 +1,9 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import { motion } from "framer-motion";
-import { easeOut } from "framer-motion";
-import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
+// import Slider from "react-slick";
+// import { motion } from "framer-motion";
+// import { easeOut } from "framer-motion";
+import { RiArrowLeftWideFill } from "react-icons/ri";
 import { useState, useRef, useEffect } from "react";
 import { RiArrowRightWideLine } from "react-icons/ri";
 import img1 from "../assets/introSection/lodge1.jpg"
@@ -19,7 +19,7 @@ export default function IntroSection() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const sliderRef = useRef<HTMLDivElement | null>(null);
     const totalSlides = images.length;
-    const slideIntervalRef = useRef<number | null>(null);
+    // const slideIntervalRef = useRef<number | null>(null);
 
     const goToSlide = (index: number) => {
         if (!sliderRef.current) return; // voorkomt null errors

@@ -15,7 +15,7 @@ export default function CabanaSection() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const sliderRef = useRef<HTMLDivElement | null>(null);
     const totalSlides = images.length;
-    const slideIntervalRef = useRef<number | null>(null);
+    // const slideIntervalRef = useRef<number | null>(null);
 
     const goToSlide = (index: number) => {
         if (!sliderRef.current) return; // voorkomt null errors
