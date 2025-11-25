@@ -31,13 +31,18 @@ a {
   font-weight: normal !important;;
 }
 
+.custom-slider .slick-slide > div {
+  overflow: visible !important;
+}
+
 .custom-slider .slick-slide {
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0.6;
+  overflow: visible !important;
 }
 
 .custom-slider .slick-center {
-  transform: scale(1.3); /* maak groter */
+  transform: scale(1.5); /* maak groter */
   opacity: 1; /* volledig zichtbaar */
   z-index: 2; /* boven de andere */
 }

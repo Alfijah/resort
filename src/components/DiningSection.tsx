@@ -59,7 +59,7 @@ export default function DiningSection() {
             {
                 breakpoint: 1024, // <= 1024px
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     centerMode: true,
                     centerPadding: "120px",
@@ -69,9 +69,9 @@ export default function DiningSection() {
             {
                 breakpoint: 768, // <= 768px
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
-                    centerMode: false, // geen halve afbeeldingen op mobiel
+                    centerMode: true, // geen halve afbeeldingen op mobiel
                     centerPadding: "0px",
                 },
             },
@@ -124,6 +124,11 @@ export default function DiningSection() {
                     {
                         images.map((item, index) => {
                             return (
+                                // <div key={index} className="px-6 sm:px-4 md:px-6 lg:px-10 xl:px-15">
+                                //     <div className="aspect-4/3 w-full overflow-hidden">
+                                //         <img src={item} className="s:w-[80%] w-[90%] h-full object-cover mx-auto" alt={`Slide ${index}`} />
+                                //     </div>
+                                // </div>
                                 <div key={index} className="px-2 ">
                                     <div>
                                         <img src={item} className="aspect-1/1" alt={`Slide ${index}`} />

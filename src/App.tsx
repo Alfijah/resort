@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Navbar />
       <HeroSection />
-      <main className="relative z-10 pt-[100vh] px-[7%]">
+      <main className="relative z-10 pt-[100vh] px-[10%] md:px-[10%]">
         <IntroSection />
         <CabanaSection />
         <DiningSection />
