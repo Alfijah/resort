@@ -21,9 +21,11 @@ export default function Navbar() {
 
     return (
         <nav
+            role="navigation"
+            aria-label="Main navigation"
 
             className={`w-full fixed top-0 z-50 py-3 transition-colors duration-700
-+   ${isScrolled ? "bg-white/100 text-black shadow-md" : "bg-transparent text-white"}`}
+            ${isScrolled ? "bg-white/100 text-black shadow-md" : "bg-transparent text-white"}`}
         >
             {/* MOBILE / TABLET / SMALL LAPTOP (tot <1260px) */}
             <div className="flex items-center justify-between max-w-screen-xl mx-auto px-4 sm:px-6 xl:hidden">
@@ -100,10 +102,10 @@ export default function Navbar() {
             <div className="hidden xl:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs xl:text-sm uppercase tracking-widest">
                 {/* Left links */}
                 <ul className="flex justify-start gap-10 px-10 xl:px-20">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Cabanas</a></li>
-                    <li><a href="">Dining</a></li>
-                    <li><a href="">Activiteiten</a></li>
+                    <li><a href="" className="nav-link">Home</a></li>
+                    <li><a href="" className="nav-link">Cabanas</a></li>
+                    <li><a href="" className="nav-link">Dining</a></li>
+                    <li><a href="" className="nav-link">Activiteiten</a></li>
                 </ul>
 
                 {/* Logo */}
@@ -118,9 +120,9 @@ export default function Navbar() {
                 {/* Right links */}
                 <div className="flex justify-end gap-8 px-[20%] items-center">
                     <ul className="flex items-center gap-10">
-                        <li><a className="whitespace-nowrap" href="">Over Ons</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Tarieven</a></li>
+                        <li><a className="nav-link whitespace-nowrap" href="">Over Ons</a></li>
+                        <li><a className="nav-link" href="">Contact</a></li>
+                        <li><a className="nav-link" href="">Tarieven</a></li>
                     </ul>
                     <button className="bg-sky-900 px-6 py-3 rounded-sm uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
                         Reserveren

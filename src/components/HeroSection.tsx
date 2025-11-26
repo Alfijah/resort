@@ -79,28 +79,21 @@ export default function HeroSection() {
     const totalGuests = bookings.reduce((sum, b) => sum + b.guests, 0);
 
     return (
-        <div className="">
+        <div className="relative w-full h-screen overflow-hidden">
             <video
                 src={heroBg}
                 autoPlay
                 loop
                 playsInline
                 muted
-                className="absolute max-w-none z-0"
-                style={{
-                    width: "100vw",
-                    height: "100vh",
-                    objectFit: "cover",
-                    objectPosition: "center",
-                }}
+                className="absolute inset-0 w-full h-full object-cover object-center"
             />
 
-            <div className="absolute top-0 left-0 w-full h-36 
-  bg-gradient-to-b from-black/85 to-transparent pointer-events-none">
+            <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black/70 to-transparent pointer-events-none">
             </div>
 
-            <div className="absolute bottom-2 w-full flex justify-center hidden xl:flex">
-                <div className="w-[75%] h-30 bg-white grid grid-cols-3 px-[15%] items-end justify-center pb-10 gap-6 text-xs xl:text-sm uppercase">
+            <div className="absolute bottom-6 w-full flex justify-center hidden xl:flex px-4">
+                <div className="w-full h-30 max-w-5xl bg-white rounded-sm shadow-lg grid grid-cols-3 items-center px-10 py- gap-6 text-xs xl:text-sm uppercase">
                     {/* Datepicker */}
                     <div className="flex flex-col">
                         <p className="pb-2 text-sky-900 tracking-wide">Check-in</p>
@@ -110,7 +103,7 @@ export default function HeroSection() {
                             placeholderText="Selecteer een datum"
                             minDate={new Date(today.setDate(today.getDate() + 1))} // disable vandaag en vroeger
                             dateFormat="dd MMMM yyyy"
-                            className="w-full border rounded-md px-2 py-2 text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400 cursor-pointer"
+                            className="w-full border rounded-sm px-3 py-2 text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-800 cursor-pointer transition"
                             calendarClassName="rounded-lg shadow-lg border-gray-200"
                             dayClassName={(date) =>
                                 date <= new Date()
@@ -156,7 +149,7 @@ export default function HeroSection() {
                                                     {index === 0 && bookings.length < 3 && (
                                                         <button
                                                             onClick={() => addCabanaAt(index)}
-                                                            className="px-3 border rounded-sm cursor-pointer hover:bg-red-400"
+                                                            className="px-3 border rounded-sm cursor-pointer hover:bg-red-500 transition"
                                                         >
                                                             +
                                                         </button>
@@ -234,19 +227,19 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    <button className="bg-sky-900 py-2 tracking-wide text-white text-sm xl:text-base rounded-sm cursor-pointer hover:bg-red-400">Reserveren</button>
+                    <button className="bg-sky-900 py-2 -mb-6 tracking-wide text-white text-sm xl:text-base rounded-sm cursor-pointer hover:bg-red-400">Reserveren</button>
                 </div>
             </div>
 
             {/* 📱 Mobiele onderbalk – zichtbaar onder 1260px */}
-<div className="fixed bottom-0 left-0 w-full bg-white text-white py-6 px-6 grid grid-cols-2 flex justify-around items-center xl:hidden z-50 backdrop-blur-md">
-    <button className="absolute bg-sky-900 w-[50%] h-full uppercase tracking-widest text-xs cursor-pointer hover:bg-red-400">
-        Reserveren
-    </button>
-    <button className="absolute bg-white w-[50%] right-0 h-full py-2 uppercase tracking-widest text-xs text-black cursor-pointer hover:bg-white hover:text-orange-600 transition">
-        Email
-    </button>
-</div>
+            <div className="fixed bottom-0 left-0 w-full bg-white text-white py-6 px-6 grid grid-cols-2 flex justify-around items-center xl:hidden z-50 backdrop-blur-md">
+                <button className="absolute bg-sky-900 w-[50%] h-full uppercase tracking-widest text-xs cursor-pointer hover:bg-red-400">
+                    Reserveren
+                </button>
+                <button className="absolute bg-white w-[50%] right-0 h-full py-2 uppercase tracking-widest text-xs text-black cursor-pointer hover:bg-white hover:text-orange-600 transition">
+                    Email
+                </button>
+            </div>
 
         </div>
 

@@ -1,22 +1,35 @@
 @import "tailwindcss";
 
-/* 
-@layer components {
-  .underline-animation {
-    @apply relative;
+@layer utilities {
+  .nav-link {
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
   }
 }
 
-.underline-animation::after {
-  @apply absolute content
-} */
-
-body, .react-datepicker__header, .react-datepicker__current-month {
+body,
+.react-datepicker__header,
+.react-datepicker__current-month {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 ol,
-ul{
+ul {
   list-style: none;
 }
 
@@ -25,12 +38,14 @@ h1 {
   font-weight: bold;
   font-style: italic;
 }
+
 a {
   text-decoration: none;
 }
 
 .react-datepicker__header {
-  background-color: #0c4a6e !important;  /* sky-900 */
+  background-color: #0c4a6e !important;
+  /* sky-900 */
   color: white !important;
   border-bottom: none;
   text-transform: none;
@@ -38,11 +53,13 @@ a {
 
 .react-datepicker__current-month {
   color: white !important;
-  font-size: 0.84rem !important;; 
-  font-weight: normal !important;;
+  font-size: 0.84rem !important;
+  ;
+  font-weight: normal !important;
+  ;
 }
 
-.custom-slider .slick-slide > div {
+.custom-slider .slick-slide>div {
   overflow: visible !important;
 }
 
@@ -53,7 +70,10 @@ a {
 }
 
 .custom-slider .slick-center {
-  transform: scale(1.5); /* maak groter */
-  opacity: 1; /* volledig zichtbaar */
-  z-index: 2; /* boven de andere */
+  transform: scale(1.5);
+  /* maak groter */
+  opacity: 1;
+  /* volledig zichtbaar */
+  z-index: 2;
+  /* boven de andere */
 }
