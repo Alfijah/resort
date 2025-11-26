@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+/* 
+@layer components {
+  .underline-animation {
+    @apply relative;
+  }
+}
+
+.underline-animation::after {
+  @apply absolute content
+} */
+
 body, .react-datepicker__header, .react-datepicker__current-month {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }

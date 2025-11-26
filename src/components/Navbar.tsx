@@ -21,15 +21,17 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`w-full py-2 fixed z-50 transition-colors duration-1000 fade-in-out 
-      ${isScrolled ? "bg-white text-black shadow-md" : "text-white"}`}
+
+            className={`w-full fixed top-0 z-50 py-3 transition-colors duration-700
++   ${isScrolled ? "bg-white/100 text-black shadow-md" : "bg-transparent text-white"}`}
         >
             {/* MOBILE / TABLET / SMALL LAPTOP (tot <1260px) */}
-            <div className="flex items-center justify-between px-6 xl:hidden">
+            <div className="flex items-center justify-between max-w-screen-xl mx-auto px-4 sm:px-6 xl:hidden">
                 {/* Hamburger */}
                 <button
+                    aria-label="Open Menu"
                     onClick={() => { setIsMenuOpen(true); setIsClosing(false); }}
-                    className="flex flex-col justify-start items-center space-y-1 w-6 h-8 gap-1"
+                    className="flex flex-col justify-start items-center space-y-1  w-8 h-10 gap-1 transition-all"
                 >
                     <span className={`w-5 h-[1px] transform rotate-0 origin-left ${isScrolled ? "bg-black" : "bg-white"}`}></span>
                     <span className={`w-full h-[2px] transform rotate-0 origin-left ${isScrolled ? "bg-black" : "bg-white"}`}></span>
@@ -40,7 +42,7 @@ export default function Navbar() {
                 <img
                     src={isScrolled ? logoDark : logoWhite}
                     alt="Taman Logo"
-                    className="h-18"
+                    className="h-16 sm:h-20 transition-all duration-300"
                 />
 
                 {/* Leeg voor alignment (Reserveren zit in menu) */}
@@ -63,9 +65,9 @@ export default function Navbar() {
 
                         {/* MENU PANEEL */}
                         <motion.div
-                            className={`fixed top-0 left-0 w-60 h-full xl:hidden flex flex-col 
-        items-start space-y-4 py-6 pl-6 pt-8 text-xs uppercase tracking-widest
-        ${isScrolled ? "bg-white text-black" : "bg-white text-black"} z-50`}
+                            className={`fixed top-0 left-0 w-64 h-full xl:hidden flex flex-col 
++ items-start space-y-6 py-8 pl-8 pt-10 text-sm uppercase tracking-wider
++ bg-white text-black shadow-lg z-50 will-change-transform`}
                             initial={{ x: "-100%" }}
                             animate={{ x: isClosing ? "-100%" : 0 }}
                             exit={{ x: "-100%" }}
@@ -95,9 +97,9 @@ export default function Navbar() {
             </AnimatePresence>
 
             {/* DESKTOP NAVBAR (≥1260px) */}
-            <div className="hidden xl:grid grid-cols-3 items-center text-xs xl:text-sm uppercase tracking-widest">
+            <div className="hidden xl:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs xl:text-sm uppercase tracking-widest">
                 {/* Left links */}
-                <ul className="flex justify-start gap-8 px-[20%]">
+                <ul className="flex justify-start gap-10 px-10 xl:px-20">
                     <li><a href="">Home</a></li>
                     <li><a href="">Cabanas</a></li>
                     <li><a href="">Dining</a></li>
@@ -115,12 +117,12 @@ export default function Navbar() {
 
                 {/* Right links */}
                 <div className="flex justify-end gap-8 px-[20%] items-center">
-                    <ul className="flex items-center gap-8">
+                    <ul className="flex items-center gap-10">
                         <li><a className="whitespace-nowrap" href="">Over Ons</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Tarieven</a></li>
                     </ul>
-                    <button className="bg-sky-900 px-6 py-4 uppercase tracking-widest hover:bg-red-400 text-white cursor-pointer">
+                    <button className="bg-sky-900 px-6 py-3 rounded-sm uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
                         Reserveren
                     </button>
                 </div>
