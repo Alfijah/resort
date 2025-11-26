@@ -39,9 +39,9 @@ export default function IntroSection() {
             className="relative w-full items-center lg:items-start overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col items-start justify-center text-center w-full max-w-4xl mx-auto px-6 py-12 md:py-16 lg:py-20">
+                className="flex flex-col items-center justify-center text-center w-full max-w-4xl mx-auto px-2 py-12 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
-                    className="text-2xl md:text-4xl xl:text-5xl text-start leading-snugged font-semibold text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
+                    className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
                     Op slechts 20 minuten van Paramaribo ligt Sendang Redjo: een exclusief eco retreat en nature sanctuary, gelegen rondom een privémeer in het hart van Tamanredjo.
