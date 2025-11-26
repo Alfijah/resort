@@ -67,9 +67,8 @@ export default function Navbar() {
 
                         {/* MENU PANEEL */}
                         <motion.div
-                            className={`fixed top-0 left-0 w-64 h-full xl:hidden flex flex-col 
-+ items-start space-y-6 py-8 pl-8 pt-10 text-sm uppercase tracking-wider
-+ bg-white text-black shadow-lg z-50 will-change-transform`}
+                            className={`fixed top-0 left-0 w-64 h-full xl:hidden flex flex-col items-start space-y-6 py-8 pl-8 pt-10 text-sm uppercase tracking-wider
+bg-white text-black shadow-lg z-50 will-change-transform`}
                             initial={{ x: "-100%" }}
                             animate={{ x: isClosing ? "-100%" : 0 }}
                             exit={{ x: "-100%" }}
