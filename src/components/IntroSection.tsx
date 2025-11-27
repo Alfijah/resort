@@ -12,6 +12,7 @@ const images = [img1, img2, img3, img4, img5];
 
 export default function IntroSection() {
     const [index, setIndex] = useState(0);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     const next = () => setIndex((prev) => (prev + 1) % images.length);
     const prev = () =>
@@ -39,7 +40,7 @@ export default function IntroSection() {
             className="relative w-full items-center lg:items-start overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col items-center justify-center text-center w-full max-w-4xl mx-auto px-2 py-12 md:py-16 lg:py-20">
+                className="flex flex-col items-start sm:items-center justify-center text-start w-full max-w-4xl mx-auto px-6 py-12 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
                     className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
                 <motion.p variants={fadeInUp}
@@ -101,6 +102,9 @@ export default function IntroSection() {
                                         src={img}
                                         alt={`Slide ${i}`}
                                         className="rounded-sm shadow-lg object-cover w-[60vw] max-w-[580px] h-[40vw] max-h-[380px]"
+                                        onClick={() => {
+                                            if (window.innerWidth < 768) setSelectedImage(img); // Alleen mobiel
+                                        }}
                                     />
                                 </motion.div>
                             );
@@ -109,6 +113,26 @@ export default function IntroSection() {
                 </div>
 
             </motion.div>
+
+            {selectedImage && (
+                <div
+                    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <img
+                        src={selectedImage}
+                        className="max-w-[90%] max-h-[90%] rounded-md shadow-lg"
+                        onClick={(e) => e.stopPropagation()} // voorkomt sluiten bij klik op afbeelding
+                    />
+                    <button
+                        className="absolute top-4 right-4 text-white text-3xl"
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        ✕
+                    </button>
+                </div>
+            )}
+
         </motion.div>
     )
 }
