@@ -1,121 +1,169 @@
-import { useState, useRef, useEffect } from "react";
-import { RiArrowLeftWideFill } from "react-icons/ri";
-import { RiArrowRightWideLine } from "react-icons/ri";
-import img1 from "../assets//cabanaSection/cab1.jpg"
-import img2 from "../assets/cabanaSection/cab2.jpg"
-import img3 from "../assets/cabanaSection/cab3.jpg"
-import img4 from "../assets/cabanaSection/cab4.jpg"
-import img5 from "../assets/cabanaSection/cab5.jpg"
-import img6 from "../assets/cabanaSection/cab6.jpg"
-import FadeInSection from "./FadeInsection";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { motion } from "framer-motion";
+import { easeOut } from "framer-motion";
+import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
+import { HiOutlineBellAlert } from "react-icons/hi2";
+import img1 from "../assets/diningSection/dine1.jpg"
+import img2 from "../assets/diningSection/dine2.jpg"
+import img3 from "../assets/diningSection/dine3.jpg"
+import img4 from "../assets/diningSection/dine4.jpg"
+import img5 from "../assets/diningSection/dine5.jpg"
+import img6 from "../assets/diningSection/dine6.jpg"
+
+const images = [
+    img1, img2, img3, img4, img5, img6
+];
+
+type ArrowProps = {
+    onClick?: () => void;
+};
+
+function PrevArrow({ onClick }: ArrowProps) {
+    return (
+        <button
+            className="absolute -left-10 top-1/2 -translate-y-1/2 z-10 text-gray-400 hover:text-red-400 p-3"
+            onClick={onClick}
+        >
+            <RiArrowLeftWideFill size={35} />
+        </button>
+    );
+}
+
+// 🔹 Custom Next Arrow
+function NextArrow({ onClick }: ArrowProps) {
+    return (
+        <button
+            className="absolute -right-10 top-1/2 -translate-y-1/2 z-10 text-gray-400 hover:text-red-400 p-3"
+            onClick={onClick}
+        >
+            <RiArrowRightWideFill size={35} className="" />
+        </button>
+    );
+}
 
 export default function CabanaSection() {
-    const images = [img1, img2, img3, img4, img5, img6];
-
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const sliderRef = useRef<HTMLDivElement | null>(null);
-    const totalSlides = images.length;
-    // const slideIntervalRef = useRef<number | null>(null);
-
-    const goToSlide = (index: number) => {
-        if (!sliderRef.current) return; // voorkomt null errors
-
-        const slideWidth =
-            sliderRef.current.children[0].clientWidth || 0;
-
-        sliderRef.current.style.transform = `translateX(-${index * slideWidth}px)`;
+    const settings = {
+        className: "center",
+        dots: true,
+        infinite: true,
+        centerMode: false,
+        centerPadding: "60px",
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024, // <= 1024px
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: "120px",
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 768, // <= 768px
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: true, // geen halve afbeeldingen op mobiel
+                    centerPadding: "0px",
+                },
+            },
+            {
+                breakpoint: 480, // <= 480px
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                    centerPadding: "0px",
+                },
+            },
+        ],
     };
 
-    const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    const container = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.3, // elementen komen 1-voor-1
+            },
+        },
     };
 
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+    const fadeInUp = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } },
     };
 
-    // const resetAutoSlide = () => {
-    //     if (slideIntervalRef.current) {
-    //         clearInterval(slideIntervalRef.current);
-    //     }
-    //     slideIntervalRef.current = window.setInterval(nextSlide, 3000);
+    const fadeInLeft = {
+        hidden: { opacity: 0, x: 50 },
+        visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: easeOut } },
+    };
+
+    // const scaleFade = {
+    //     hidden: { opacity: 0, scale: 0.95 },
+    //     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     // };
 
-    // // Handle automatic slide
-    // useEffect(() => {
-    //     slideIntervalRef.current = setInterval(nextSlide, 3000);
-    //     return () => {
-    //         if (slideIntervalRef.current !== null) {
-    //             clearInterval(slideIntervalRef.current);
-    //         }
-    //     };
-    // }, []);
-
-    // Handle slide transform when currentSlide changes
-    useEffect(() => {
-        goToSlide(currentSlide);
-    }, [currentSlide]);
-
-    // Handle resizing
-    useEffect(() => {
-        const handleResize = () => goToSlide(currentSlide);
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, [currentSlide]);
 
     return (
-        <FadeInSection>
-            <div className="w-full relative flex flex-row py-2 md:py-4 xl:py-10 text-center tracking-wide">
-                <div className="flex flex-col">
-                    <h1 className="md:text-xl xl:text-2xl px-[10%] xl:px-[12%]">Cabanas</h1>
-                    <p className="text-xs lg:text-sm xl:text-base pt-8 px-[10%] xl:px-[12%]">Onze exclusieve cabanas zijn ontworpen als jouw privéplek in de natuur. <br /><br />Elke cabana ligt direct aan het water en is voorzien van
-                        een luxe outdoor zithoek, een eigen keuken met bar en barkrukken, poolbeds, een hangmat en een moderne douche met warm water en toilet.
-                        Kajaks, hengels en luchtmatrassen staan tot je beschikking – of je nu actief het meer op wil, of liever dobbert in stilte.</p>
-                </div>
+        <motion.div variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="relative w-full flex flex-col lg:flex-row items-center lg:items-start overscroll-x-none">
+            
+            <motion.div variants={container}
+                className="flex flex-col items-start justify-center w-full max-w-4xl mx-auto px-6 py-12 md:py-16 lg:py-20">
+                <motion.h1 variants={fadeInUp}
+                    className="text-2xl md:text-3xl xl:text-5xl text-center xl:text-start">Dining</motion.h1>
+                <motion.p variants={fadeInUp}
+                    className="text-xs lg:text-sm xl:text-sm pt-4 xl:pt-8">
+                    Proef Javaanse traditie, midden in de natuur, langzaam bereid op houtvuur op een houtgestookt fornuis, met authentieke kruiden en geserveerd in je cabana – een culinaire ervaring waar smaak en beleving samenkomen.
+                </motion.p>
 
-                {/* images */}
-                <div className="flex items-center justify-center w-full pt-10 xl:pt-16">
-                    {/* Prev Button */}
-                    <button
-                        onClick={() => {
-                            prevSlide();
-                            // resetAutoSlide();
-                        }}
-                        className="md:p-2 text-3xl text-gray-400 md:mr-6 rounded-full hover:bg-black/10"
-                    >
-                        <RiArrowLeftWideFill />
-                    </button>
+                <motion.div variants={fadeInUp}
+                    className="flex items-center pt-4 text-xs lg:text-sm xl:text-sm">
+                    <HiOutlineBellAlert className="mr-2" />
+                    <b><i>De dining is volledig inbegrepen bij je verblijf.</i></b>
+                </motion.div>
 
-                    {/* Image Slider */}
-                    <div className="w-[75%] xl:w-[70%] h-50 md:h-130 xl:h-180 overflow-hidden flex items-center relative">
-                        <div
-                            ref={sliderRef}
-                            className="flex transition-transform duration-500 ease-in-out"
-                        >
-                            {images.map((src, index) => (
-                                <img
-                                    key={index}
-                                    src={src}
-                                    className="w-full flex-shrink-0"
-                                    alt={`Slide ${index + 1}`}
-                                />
-                            ))}
-                        </div>
-                    </div>
+                <motion.p variants={fadeInUp}
+                    className="text-xs lg:text-sm xl:text-sm pt-4">
+                    Een verblijf bij Sendang Redjo is meer dan een dagje uit:
+                    Terwijl je ontspant aan het water, barbecueer je zelf je lunch en geniet je van een omgeving waarin alles tot rust komt. Alles wat wij serveren is vers, eerlijk en met zorg bereid – de smaken en geuren van Java maken jouw dagverblijf compleet.
+                </motion.p>
 
-                    {/* Next Button */}
-                    <button
-                        onClick={() => {
-                            nextSlide();
-                            // resetAutoSlide();
-                        }}
-                        className="md:p-2 md:ml-6 text-3xl text-gray-400 rounded-full hover:bg-black/10"
-                    >
-                        <RiArrowRightWideLine />
-                    </button>
-                </div>
+            </motion.div>
 
-            </div >
-        </FadeInSection>
+            <motion.div variants={fadeInLeft}
+                className="w-full xl:w-[63%]">
+                <Slider {...settings}>
+                    {
+                        images.map((item, index) => {
+                            return (
+                                // <div key={index} className="px-6 sm:px-4 md:px-6 lg:px-10 xl:px-15">
+                                //     <div className="aspect-4/3 w-full overflow-hidden">
+                                //         <img src={item} className="s:w-[80%] w-[90%] h-full object-cover mx-auto" alt={`Slide ${index}`} />
+                                //     </div>
+                                // </div>
+                                <div key={index} className="px-2 ">
+                                    <div>
+                                        <img src={item} className="aspect-1/1" alt={`Slide ${index}`} />
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </Slider>
+            </motion.div>
+        </motion.div>
     )
+
 }

@@ -22,6 +22,10 @@
   }
 }
 
+html, body {
+  overflow-x: hidden;
+} 
+
 body,
 .react-datepicker__header,
 .react-datepicker__current-month {

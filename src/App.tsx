@@ -11,9 +11,9 @@ export default function App() {
       <Navbar />
       <HeroSection />
       <IntroSection />
+      <CabanaSection />
 
       <main className="relative z-10 px-6 sm:px-[8%] md:px-[10%]">
-        <CabanaSection />
         <DiningSection />
       </main>
     </>
