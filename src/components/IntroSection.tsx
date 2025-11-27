@@ -15,7 +15,10 @@ export default function IntroSection() {
     const [index, setIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [isMobile, setIsMobile] = useState(false);
+    const [itemWidthPx, setItemWidthPx] = useState(0);
+    const [containerWidth, setContainerWidth] = useState(0);
     const carouselRef = useRef<HTMLDivElement>(null);
+    const mobileContainerRef = useRef<HTMLDivElement>(null);
     const itemWidth = useRef(0);
 
     const next = () => setIndex((prev) => (prev + 1) % images.length);
@@ -36,27 +39,16 @@ export default function IntroSection() {
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: easeOut } },
     };
 
-    const handleSwipe = (offsetX: number) => {
-        let swipe = 0;
-        if (offsetX < -50) swipe = 1;
-        else if (offsetX > 50) swipe = -1;
-
-        if (swipe !== 0) {
-            setIndex(prev => {
-                const nextIndex = prev + swipe;
-                // clamp tussen 0 en images.length-1
-                return Math.max(0, Math.min(nextIndex, images.length - 1));
-            });
-        }
-    };
-
-
     useEffect(() => {
         const updateItemWidth = () => {
             setIsMobile(window.innerWidth < 1024);
             if (carouselRef.current) {
                 const firstItem = carouselRef.current.querySelector<HTMLDivElement>('.carousel-item');
-                if (firstItem) itemWidth.current = firstItem.offsetWidth + 16; // gap
+                if (firstItem) {
+                    const measured = firstItem.offsetWidth;
+                    itemWidth.current = measured;
+                    setItemWidthPx(measured);
+                }
             }
         };
 
@@ -64,6 +56,41 @@ export default function IntroSection() {
         window.addEventListener("resize", updateItemWidth);
         return () => window.removeEventListener("resize", updateItemWidth);
     }, []);
+
+    // Ensure we recalc width once the mobile carousel actually exists in the DOM
+    useEffect(() => {
+        if (!isMobile) return;
+
+        const measure = () => {
+            if (mobileContainerRef.current) {
+                const width = mobileContainerRef.current.offsetWidth;
+                setContainerWidth(width);
+            }
+            if (carouselRef.current) {
+                const firstItem = carouselRef.current.querySelector<HTMLDivElement>('.carousel-item');
+                if (firstItem) {
+                const measured = firstItem.offsetWidth;
+                itemWidth.current = measured;
+                setItemWidthPx(measured);
+            } else {
+                const fallback = Math.round(window.innerWidth * 0.85); // fallback to 85vw
+                itemWidth.current = fallback;
+                setItemWidthPx(fallback);
+            }
+        }
+            const fallback = Math.round(window.innerWidth);
+            itemWidth.current = fallback;
+            setItemWidthPx(fallback);
+            setContainerWidth(fallback);
+        };
+
+        measure();
+        window.addEventListener("resize", measure);
+        return () => window.removeEventListener("resize", measure);
+    }, [isMobile]);
+
+    const fallbackWidth = typeof window !== "undefined" ? Math.round(window.innerWidth) : 0;
+    const effectiveWidth = containerWidth || itemWidthPx || fallbackWidth;
 
     return (
         <motion.div variants={container}
@@ -154,26 +181,41 @@ export default function IntroSection() {
                         </motion.div>
                     )}
 
-                    {/* --- MOBILE CAROUSEL --- */}
+                    {/* --- MOBILE CAROUSEL (NO LOOP, CORRECT INDEX, NO WHITE SPACE) --- */}
                     {isMobile && (
-                        <motion.div className="relative flex w-full h-full items-center justify-center overflow-hidden">
+                        <motion.div ref={mobileContainerRef} className="relative flex w-full h-full items-center overflow-hidden">
                             <motion.div
                                 ref={carouselRef}
-                                className="flex gap-4"
+                                className="flex"
                                 drag="x"
-
-                                dragElastic={0.2}
-                                onDragEnd={(_event, info) => handleSwipe(info.offset.x)}
-                                animate={{
-                                    x: itemWidth.current ? -Math.min(index * itemWidth.current, (images.length - 1) * itemWidth.current) : 0
+                                dragElastic={0.05}
+                                dragConstraints={{
+                                    left: -effectiveWidth * (images.length - 1), // blokkeren bij laatste
+                                    right: 0, // blokkeren bij eerste
                                 }}
-                                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                                onDragEnd={(_event, info) => {
+                                    if (!effectiveWidth) return;
+                                    // Snap to the closest slide using distance + a bit of velocity
+                                    const swipe = -(info.offset.x + info.velocity.x * 0.2);
+                                    const target = index + swipe / effectiveWidth;
+                                    const nextIndex = Math.min(
+                                        Math.max(Math.round(target), 0),
+                                        images.length - 1
+                                    );
+                                    setIndex(nextIndex);
+                                }}
+                                animate={{ x: -index * effectiveWidth }}
+                                transition={{ type: "spring", stiffness: 260, damping: 32 }}
+                                style={{ touchAction: "pan-y" }}
                             >
                                 {images.map((img, i) => (
                                     <motion.div
                                         key={i}
-                                        className="carousel-item flex-shrink-0 snap-center rounded-lg shadow-lg cursor-pointer"
-                                        style={{ width: "85vw", height: "52vw" }}
+                                        className="carousel-item flex-shrink-0 rounded-lg shadow-lg cursor-pointer"
+                                        style={{
+                                            width: effectiveWidth ? `${effectiveWidth}px` : "100%",
+                                            height: "52vw"
+                                        }}
                                         whileTap={{ scale: 0.96 }}
                                         onClick={() => setSelectedImage(img)}
                                     >
@@ -183,7 +225,6 @@ export default function IntroSection() {
                             </motion.div>
                         </motion.div>
                     )}
-
 
                 </div>
 
