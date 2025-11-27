@@ -163,7 +163,7 @@ export default function IntroSection() {
                                 drag="x"
 
                                 dragElastic={0.2}
-                                onDragEnd={(event, info) => handleSwipe(info.offset.x)}
+                                onDragEnd={(_, info) => handleSwipe(info.offset.x)}
                                 animate={{
                                     x: itemWidth.current ? -Math.min(index * itemWidth.current, (images.length - 1) * itemWidth.current) : 0
                                 }}
