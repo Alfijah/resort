@@ -118,26 +118,21 @@ export default function CabanaSection() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             className="relative w-full flex flex-col lg:flex-row items-center lg:items-start overscroll-x-none">
-            
+
             <motion.div variants={container}
                 className="flex flex-col items-start justify-center w-full max-w-4xl mx-auto px-6 py-12 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
-                    className="text-2xl md:text-3xl xl:text-5xl text-center xl:text-start">Dining</motion.h1>
+                    className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Cabana</motion.h1>
                 <motion.p variants={fadeInUp}
-                    className="text-xs lg:text-sm xl:text-sm pt-4 xl:pt-8">
-                    Proef Javaanse traditie, midden in de natuur, langzaam bereid op houtvuur op een houtgestookt fornuis, met authentieke kruiden en geserveerd in je cabana – een culinaire ervaring waar smaak en beleving samenkomen.
+                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed8">
+                    Onze exclusieve cabanas zijn ontworpen als jouw privéplek in de natuur.
                 </motion.p>
 
-                <motion.div variants={fadeInUp}
-                    className="flex items-center pt-4 text-xs lg:text-sm xl:text-sm">
-                    <HiOutlineBellAlert className="mr-2" />
-                    <b><i>De dining is volledig inbegrepen bij je verblijf.</i></b>
-                </motion.div>
-
                 <motion.p variants={fadeInUp}
-                    className="text-xs lg:text-sm xl:text-sm pt-4">
-                    Een verblijf bij Sendang Redjo is meer dan een dagje uit:
-                    Terwijl je ontspant aan het water, barbecueer je zelf je lunch en geniet je van een omgeving waarin alles tot rust komt. Alles wat wij serveren is vers, eerlijk en met zorg bereid – de smaken en geuren van Java maken jouw dagverblijf compleet.
+                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
+                    Elke cabana ligt direct aan het water en is voorzien van
+                        een luxe outdoor zithoek, een eigen keuken met bar en barkrukken, poolbeds, een hangmat en een moderne douche met warm water en toilet.
+                        Kajaks, hengels en luchtmatrassen staan tot je beschikking – of je nu actief het meer op wil, of liever dobbert in stilte.
                 </motion.p>
 
             </motion.div>

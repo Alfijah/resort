@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 import { easeOut } from "framer-motion";
-import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import img1 from "../assets/introSection/lodge1.jpg"
 import img2 from "../assets/introSection/lodge2.jpg"
 import img3 from "../assets/introSection/lodge3.jpg"
@@ -100,7 +100,7 @@ export default function IntroSection() {
             className="relative w-full items-center lg:items-start overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col items-start justify-center text-start w-full max-w-4xl mx-auto px-6 py-12 md:py-16 lg:py-20">
+                className="flex flex-col items-start justify-center text-start w-full max-w-5xl mx-auto px-6 py-12 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
                     className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
                 <motion.p variants={fadeInUp}
@@ -113,6 +113,10 @@ export default function IntroSection() {
                     Wat ooit een oude plantage was, is nu een serene retreat, geworteld in eenvoud, stilte en natuurlijke schoonheid.
                     De sfeer ademt Javaanse gastvrijheid: warm, oprecht en ontspannen.
                 </motion.p>
+                <motion.p variants={fadeInUp}
+                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
+                    Lees <i><u>Imagine Your Day</u></i> en laat je meevoeren in de beleving.
+                </motion.p>
             </motion.div>
 
             <motion.div variants={fadeInUp}
@@ -120,8 +124,8 @@ export default function IntroSection() {
                 whileInView="visible"
                 viewport={{ amount: 0.3 }}
                 transition={{ delay: 2.8 }} //
-                className="w-full max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-14">
-                <div className="relative w-full overflow-hidden h-[240px] sm:h-[290px] md:h-[380px] lg:h-[400px] flex items-center justify-center max-w-[1400px] mx-auto">
+                className="w-full max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16">
+                <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
 
                     {!isMobile && (
                         <motion.div
@@ -129,21 +133,21 @@ export default function IntroSection() {
                             whileInView="visible"
                             viewport={{ amount: 0.3 }}
                             transition={{ delay: 2.8 }} //
-                            className="w-full max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-14">
-                            <div className="relative w-full overflow-hidden h-[200px] sm:h-[290px] md:h-[380px] lg:h-[400px] flex items-center justify-center max-w-[1400px] mx-auto">
+                            className="w-full max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16">
+                            <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
                                 {/* Pijlen */}
                                 <button
                                     onClick={prev}
-                                    className="absolute left-5 top-1/2 -translate-y-1/2 z-30 bg-black/30 hover:bg-white text-white p-1 rounded-sm shadow-md"
+                                    className="absolute left-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
                                 >
-                                    <RiArrowLeftWideFill size={35} />
+                                    <FiChevronLeft size={28} strokeWidth={1.5} />
                                 </button>
 
                                 <button
                                     onClick={next}
-                                    className="absolute right-5 top-1/2 -translate-y-1/2 z-30 bg-black/30 hover:bg-white text-white p-1 rounded-sm shadow-md"
+                                    className="absolute right-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
                                 >
-                                    <RiArrowRightWideFill size={35} />
+                                    <FiChevronRight size={28} strokeWidth={1.5} />
                                 </button>
 
                                 <div className="relative w-full h-full flex items-center justify-center">
@@ -184,6 +188,21 @@ export default function IntroSection() {
                     {/* --- MOBILE CAROUSEL (NO LOOP, CORRECT INDEX, NO WHITE SPACE) --- */}
                     {isMobile && (
                         <motion.div ref={mobileContainerRef} className="relative flex w-full h-full items-center overflow-hidden">
+                            {/* Pijlen */}
+                                <button
+                                    onClick={prev}
+                                    className="absolute left-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
+                                >
+                                    <FiChevronLeft size={28} strokeWidth={1.5} />
+                                </button>
+
+                                <button
+                                    onClick={next}
+                                    className="absolute right-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
+                                >
+                                    <FiChevronRight size={28} strokeWidth={1.5} />
+                                </button>
+                            
                             <motion.div
                                 ref={carouselRef}
                                 className="flex"
