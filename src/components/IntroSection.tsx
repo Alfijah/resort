@@ -121,7 +121,7 @@ export default function IntroSection() {
                 viewport={{ amount: 0.3 }}
                 transition={{ delay: 2.8 }} //
                 className="w-full max-w-[1400px] mx-auto px-6 sm:px-8 md:px-10 lg:px-14">
-                <div className="relative w-full overflow-hidden h-[200px] sm:h-[290px] md:h-[380px] lg:h-[400px] flex items-center justify-center max-w-[1400px] mx-auto">
+                <div className="relative w-full overflow-hidden h-[240px] sm:h-[290px] md:h-[380px] lg:h-[400px] flex items-center justify-center max-w-[1400px] mx-auto">
 
                     {!isMobile && (
                         <motion.div
@@ -195,11 +195,10 @@ export default function IntroSection() {
                                 }}
                                 onDragEnd={(_event, info) => {
                                     if (!effectiveWidth) return;
-                                    // Snap to the closest slide using distance + a bit of velocity
-                                    const swipe = -(info.offset.x + info.velocity.x * 0.2);
-                                    const target = index + swipe / effectiveWidth;
+                                    const delta = Math.round(-info.offset.x / effectiveWidth);
+                                    if (delta === 0) return;
                                     const nextIndex = Math.min(
-                                        Math.max(Math.round(target), 0),
+                                        Math.max(index + delta, 0),
                                         images.length - 1
                                     );
                                     setIndex(nextIndex);
@@ -214,12 +213,12 @@ export default function IntroSection() {
                                         className="carousel-item flex-shrink-0 rounded-lg shadow-lg cursor-pointer"
                                         style={{
                                             width: effectiveWidth ? `${effectiveWidth}px` : "100%",
-                                            height: "52vw"
+                                            height: "62vw"
                                         }}
                                         whileTap={{ scale: 0.96 }}
                                         onClick={() => setSelectedImage(img)}
                                     >
-                                        <img src={img} alt={`Slide ${i}`} className="w-full h-full object-cover rounded-md" />
+                                        <img src={img} alt={`Slide ${i}`} className="w-full h-full object-cover" />
                                     </motion.div>
                                 ))}
                             </motion.div>
