@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 import { easeOut } from "framer-motion";
 import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
-import { HiOutlineBellAlert } from "react-icons/hi2";
 import img1 from "../assets/diningSection/dine1.jpg"
 import img2 from "../assets/diningSection/dine2.jpg"
 import img3 from "../assets/diningSection/dine3.jpg"
