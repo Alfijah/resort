@@ -248,12 +248,12 @@ export default function IntroSection() {
 
 
                 {/* --- DOTS NAVIGATIE --- */}
-                <div className="flex justify-center mt-5 mb-3 space-x-2">
+                <div className="flex justify-center mt-2 mb-3 space-x-8">
                     {images.map((_, i) => (
                         <button
                             key={i}
                             onClick={() => setIndex(i)}
-                            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === i ? "bg-black scale-125 shadow-md" : "bg-gray-300"
+                            className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${index === i ? "bg-black scale-125 shadow-md" : "bg-gray-300"
                                 }`}
                         ></button>
 
