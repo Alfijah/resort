@@ -117,7 +117,7 @@ export default function DiningSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            className="relative w-full flex flex-col-reverse xl:flex-row items-center lg:items-start xl:gap-10 xl:py-16 overscroll-x-none">
+            className="relative w-full flex flex-col-reverse xl:flex-row items-center lg:items-start xl:gap-10 xl:py-16 pt-20 overscroll-x-none">
             <motion.div variants={fadeInLeft}
                 className="w-full xl:w-[63%]">
                 <Slider {...settings}>

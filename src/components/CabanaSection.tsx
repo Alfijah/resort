@@ -20,7 +20,7 @@ type ArrowProps = {
 function PrevArrow({ onClick }: ArrowProps) {
     return (
         <button
-            className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-white/90 hover:text-black text-white p-2 rounded-full shadow-md border border-white/40 transition-colors"
+            className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
             onClick={onClick}
         >
             <FiChevronLeft size={26} strokeWidth={1.6} />
@@ -32,7 +32,7 @@ function PrevArrow({ onClick }: ArrowProps) {
 function NextArrow({ onClick }: ArrowProps) {
     return (
         <button
-            className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-white/90 hover:text-black text-white p-2 rounded-full shadow-md border border-white/40 transition-colors"
+            className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
             onClick={onClick}
         >
             <FiChevronRight size={26} strokeWidth={1.6} />
@@ -45,6 +45,7 @@ export default function CabanaSection() {
     const [isDesktop, setIsDesktop] = useState(false);
     const [containerWidth, setContainerWidth] = useState(0);
     const [index, setIndex] = useState(0);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const gapPx = 16; // gap-4
 
     useEffect(() => {
@@ -95,7 +96,7 @@ export default function CabanaSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="relative w-full max-w-screen-2xl mx-auto px-6 sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row items-start overscroll-x-none mt-4 sm:mt-10 lg:mt-24">
 
-        <motion.div variants={container}
+            <motion.div variants={container}
                 className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto py-12 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
                     className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Cabanas</motion.h1>
@@ -107,8 +108,8 @@ export default function CabanaSection() {
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
                     Elke cabana ligt direct aan het water en is voorzien van
-                        een luxe outdoor zithoek, een eigen keuken met bar en barkrukken, poolbeds, een hangmat en een moderne douche met warm water en toilet.
-                        Kajaks, hengels en luchtmatrassen staan tot je beschikking – of je nu actief het meer op wil, of liever dobbert in stilte.
+                    een luxe outdoor zithoek, een eigen keuken met bar en barkrukken, poolbeds, een hangmat en een moderne douche met warm water en toilet.
+                    Kajaks, hengels en luchtmatrassen staan tot je beschikking – of je nu actief het meer op wil, of liever dobbert in stilte.
                 </motion.p>
 
             </motion.div>
@@ -117,12 +118,12 @@ export default function CabanaSection() {
                 className="w-full lg:w-1/2 mx-auto">
                 <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px]">
                     {/* Arrows desktop */}
-                    {isDesktop && (
-                        <>
-                            <PrevArrow onClick={() => setIndex((prev) => Math.max(prev - 1, 0))} />
-                            <NextArrow onClick={() => setIndex((prev) => Math.min(prev + 1, maxIndex))} />
-                        </>
-                    )}
+
+                    <>
+                        <PrevArrow onClick={() => setIndex((prev) => Math.max(prev - 1, 0))} />
+                        <NextArrow onClick={() => setIndex((prev) => Math.min(prev + 1, maxIndex))} />
+                    </>
+
 
                     <motion.div
                         ref={containerRef}
@@ -153,27 +154,49 @@ export default function CabanaSection() {
                                     className="flex-shrink-0 h-full"
                                     style={{ width: slideWidth ? `${slideWidth}px` : slidesPerView === 2 ? "50%" : "100%" }}
                                     whileTap={{ scale: 0.98 }}
+                                    onClick={() => setSelectedImage(item)}
+
                                 >
-                                    <div className="relative w-full h-full overflow-hidden shadow-lg">
+                                    <div className="relative w-full h-full overflow-hidden shadow-lg cursor-pointer">
                                         <img src={item} className="absolute inset-0 w-full h-full object-cover" alt={`Slide ${i}`} />
                                     </div>
                                 </motion.div>
                             ))}
                         </motion.div>
                     </motion.div>
+                </div>
 
-                    {/* Dots */}
-                    <div className="flex justify-center mt-5 space-x-2">
-                        {Array.from({ length: maxIndex + 1 }).map((_, dotIndex) => (
-                            <button
-                                key={dotIndex}
-                                onClick={() => setIndex(dotIndex)}
-                                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === dotIndex ? "bg-black scale-125 shadow-md" : "bg-gray-300"}`}
-                            ></button>
-                        ))}
-                    </div>
+                {/* Dots */}
+                <div className="flex justify-center mt-4 mb-3 space-x-4 md:space-x-8">
+                    {Array.from({ length: maxIndex + 1 }).map((_, dotIndex) => (
+                        <button
+                            key={dotIndex}
+                            onClick={() => setIndex(dotIndex)}
+                            className={`w-1.5 h-1.5 transition-all duration-300 ${index === dotIndex ? "bg-black scale-125 shadow-md" : "bg-gray-300"}`}
+                        ></button>
+                    ))}
                 </div>
             </motion.div>
+
+            {selectedImage && (
+                <div
+                    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <img
+                        src={selectedImage}
+                        className="max-w-[90%] max-h-[90%] shadow-lg"
+                        onClick={(e) => e.stopPropagation()} // voorkomt sluiten bij klik op afbeelding
+                    />
+                    <button
+                        className="absolute top-4 right-4 text-white text-3xl"
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        ✕
+                    </button>
+                </div>
+            )}
+
         </motion.div>
     )
 

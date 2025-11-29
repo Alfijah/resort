@@ -115,7 +115,7 @@ export default function IntroSection() {
                 </motion.p>
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
-                    Lees <i><u>Imagine Your Day</u></i> en laat je meevoeren in de beleving.
+                    Lees <i className="cursor-pointer"><u>Imagine Your Day</u></i> en laat je meevoeren in de beleving.
                 </motion.p>
             </motion.div>
 
@@ -229,7 +229,7 @@ export default function IntroSection() {
                                 {images.map((img, i) => (
                                     <motion.div
                                         key={i}
-                                        className="carousel-item flex-shrink-0 rounded-lg shadow-lg cursor-pointer"
+                                        className="carousel-item flex-shrink-0 shadow-lg cursor-pointer"
                                         style={{
                                             width: effectiveWidth ? `${effectiveWidth}px` : "100%",
                                             height: "62vw"
@@ -253,7 +253,7 @@ export default function IntroSection() {
                         <button
                             key={i}
                             onClick={() => setIndex(i)}
-                            className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${index === i ? "bg-black scale-125 shadow-md" : "bg-gray-300"
+                            className={`w-1.5 h-1.5 transition-all duration-300 ${index === i ? "bg-black scale-125 shadow-md" : "bg-gray-300"
                                 }`}
                         ></button>
 
@@ -269,7 +269,7 @@ export default function IntroSection() {
                 >
                     <img
                         src={selectedImage}
-                        className="max-w-[90%] max-h-[90%] rounded-md shadow-lg"
+                        className="max-w-[90%] max-h-[90%] shadow-lg"
                         onClick={(e) => e.stopPropagation()} // voorkomt sluiten bij klik op afbeelding
                     />
                     <button
