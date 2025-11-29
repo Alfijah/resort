@@ -100,7 +100,7 @@ export default function IntroSection() {
             className="relative w-full items-center lg:items-start overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col items-start justify-center text-start w-full max-w-5xl mx-auto px-6 py-12 md:py-16 lg:py-20">
+                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 py-14 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
                     className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
                 <motion.p variants={fadeInUp}
@@ -248,7 +248,7 @@ export default function IntroSection() {
 
 
                 {/* --- DOTS NAVIGATIE --- */}
-                <div className="flex justify-center mt-2 mb-3 space-x-8">
+                <div className="flex justify-center mt-4 mb-3 space-x-4 md:space-x-8">
                     {images.map((_, i) => (
                         <button
                             key={i}

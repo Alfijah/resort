@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { easeOut } from "framer-motion";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import img1 from "../assets/diningSection/dine1.jpg"
-import img2 from "../assets/diningSection/dine2.jpg"
-import img3 from "../assets/diningSection/dine3.jpg"
-import img4 from "../assets/diningSection/dine4.jpg"
-import img5 from "../assets/diningSection/dine5.jpg"
-import img6 from "../assets/diningSection/dine6.jpg"
+import img1 from "../assets//cabanaSection/cab1.jpg"
+import img2 from "../assets/cabanaSection/cab2.jpg"
+import img3 from "../assets/cabanaSection/cab3.jpg"
+import img4 from "../assets/cabanaSection/cab4.jpg"
+import img5 from "../assets/cabanaSection/cab5.jpg"
+import img6 from "../assets/cabanaSection/cab6.jpg"
 
 const images = [
     img1, img2, img3, img4, img5, img6
@@ -93,12 +93,12 @@ export default function CabanaSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            className="relative w-full max-w-screen-2xl mx-auto px-6 sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row lg:gap-10 items-start overscroll-x-none mt-16 sm:mt-20 lg:mt-24">
+            className="relative w-full max-w-screen-2xl mx-auto px-6 sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row items-start overscroll-x-none mt-4 sm:mt-10 lg:mt-24">
 
         <motion.div variants={container}
-                className="flex flex-col items-start justify-center w-full lg:w-2/5 mx-auto py-12 md:py-16 lg:py-20">
+                className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto py-12 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
-                    className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Cabana</motion.h1>
+                    className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Cabanas</motion.h1>
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed8">
                     Onze exclusieve cabanas zijn ontworpen als jouw privéplek in de natuur.
@@ -114,7 +114,7 @@ export default function CabanaSection() {
             </motion.div>
 
             <motion.div variants={fadeInLeft}
-                className="w-full lg:w-1/2 mx-auto ">
+                className="w-full lg:w-1/2 mx-auto">
                 <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px]">
                     {/* Arrows desktop */}
                     {isDesktop && (
@@ -154,7 +154,7 @@ export default function CabanaSection() {
                                     style={{ width: slideWidth ? `${slideWidth}px` : slidesPerView === 2 ? "50%" : "100%" }}
                                     whileTap={{ scale: 0.98 }}
                                 >
-                                    <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg">
+                                    <div className="relative w-full h-full overflow-hidden shadow-lg">
                                         <img src={item} className="absolute inset-0 w-full h-full object-cover" alt={`Slide ${i}`} />
                                     </div>
                                 </motion.div>
