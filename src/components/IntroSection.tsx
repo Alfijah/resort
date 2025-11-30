@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 import { easeOut } from "framer-motion";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import CarouselArrow from "./ui/CarouselArrow";
+import CarouselDots from "../components/ui/CarouselDots";
+import ImageModal from "../components/ui/ImageModal";
 import img1 from "../assets/introSection/lodge1.jpg"
 import img2 from "../assets/introSection/lodge2.jpg"
 import img3 from "../assets/introSection/lodge3.jpg"
@@ -151,19 +153,9 @@ export default function IntroSection() {
                             className="w-full max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16">
                             <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
                                 {/* Pijlen */}
-                                <button
-                                    onClick={prev}
-                                    className="absolute left-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
-                                >
-                                    <FiChevronLeft size={28} strokeWidth={1.5} />
-                                </button>
+                                <CarouselArrow direction="left" onClick={prev} />
 
-                                <button
-                                    onClick={next}
-                                    className="absolute right-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
-                                >
-                                    <FiChevronRight size={28} strokeWidth={1.5} />
-                                </button>
+                                <CarouselArrow direction="right" onClick={next} />
 
                                 <div className="relative w-full h-full flex items-center justify-center">
                                     {images.map((img, i) => {
@@ -215,19 +207,9 @@ export default function IntroSection() {
                     {isMobile && (
                         <motion.div ref={mobileContainerRef} className="relative flex w-full h-full items-center overflow-hidden">
                             {/* Pijlen */}
-                            <button
-                                onClick={prev}
-                                className="absolute left-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
-                            >
-                                <FiChevronLeft size={28} strokeWidth={1.5} />
-                            </button>
+                            <CarouselArrow direction="left" onClick={prev} />
 
-                            <button
-                                onClick={next}
-                                className="absolute right-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
-                            >
-                                <FiChevronRight size={28} strokeWidth={1.5} />
-                            </button>
+                            <CarouselArrow direction="right" onClick={next} />
 
                             <motion.div
                                 ref={carouselRef}
@@ -285,18 +267,11 @@ export default function IntroSection() {
 
 
                 {/* --- DOTS NAVIGATIE --- */}
-                <div className="flex justify-center mt-4 mb-3 space-x-4 md:space-x-8">
-                    {images.map((_, i) => (
-                        <button
-                            key={i}
-                            onClick={() => setIndex(i)}
-                            className={`w-1.5 h-1.5 transition-all duration-300 ${index === i ? "bg-black scale-125 shadow-md" : "bg-gray-300"
-                                }`}
-                        ></button>
-
-                    ))}
-                </div>
-
+                <CarouselDots
+                    total={images.length}
+                    current={index}
+                    onSelect={(i) => setIndex(i)}
+                />
             </motion.div>
 
             {selectedImage && (
