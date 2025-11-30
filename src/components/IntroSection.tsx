@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { easeOut } from "framer-motion";
 import CarouselArrow from "./ui/CarouselArrow";
 import CarouselDots from "../components/ui/CarouselDots";
-import ImageModal from "../components/ui/ImageModal";
+// import ImageModal from "../components/ui/ImageModal";
 import img1 from "../assets/introSection/lodge1.jpg"
 import img2 from "../assets/introSection/lodge2.jpg"
 import img3 from "../assets/introSection/lodge3.jpg"
