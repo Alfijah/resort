@@ -69,15 +69,15 @@ export default function IntroSection() {
             if (carouselRef.current) {
                 const firstItem = carouselRef.current.querySelector<HTMLDivElement>('.carousel-item');
                 if (firstItem) {
-                const measured = firstItem.offsetWidth;
-                itemWidth.current = measured;
-                setItemWidthPx(measured);
-            } else {
-                const fallback = Math.round(window.innerWidth * 0.85); // fallback to 85vw
-                itemWidth.current = fallback;
-                setItemWidthPx(fallback);
+                    const measured = firstItem.offsetWidth;
+                    itemWidth.current = measured;
+                    setItemWidthPx(measured);
+                } else {
+                    const fallback = Math.round(window.innerWidth * 0.85); // fallback to 85vw
+                    itemWidth.current = fallback;
+                    setItemWidthPx(fallback);
+                }
             }
-        }
             const fallback = Math.round(window.innerWidth);
             itemWidth.current = fallback;
             setItemWidthPx(fallback);
@@ -91,6 +91,21 @@ export default function IntroSection() {
 
     const fallbackWidth = typeof window !== "undefined" ? Math.round(window.innerWidth) : 0;
     const effectiveWidth = containerWidth || itemWidthPx || fallbackWidth;
+
+    const containerRefDesktop = useRef<HTMLDivElement>(null);
+    const [desktopWidth, setDesktopWidth] = useState(0);
+
+    useEffect(() => {
+        const update = () => {
+            if (containerRefDesktop.current) {
+                setDesktopWidth(containerRefDesktop.current.offsetWidth);
+            }
+        };
+        update();
+        window.addEventListener("resize", update);
+        return () => window.removeEventListener("resize", update);
+    }, []);
+
 
     return (
         <motion.div variants={container}
@@ -125,7 +140,7 @@ export default function IntroSection() {
                 viewport={{ amount: 0.3 }}
                 transition={{ delay: 2.8 }} //
                 className="w-full max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16">
-                <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
+                <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
 
                     {!isMobile && (
                         <motion.div
@@ -153,6 +168,10 @@ export default function IntroSection() {
                                 <div className="relative w-full h-full flex items-center justify-center">
                                     {images.map((img, i) => {
                                         const position = (i - index + images.length) % images.length;
+                                        // 🔹 NIEUW – DRIE POSITIES
+                                        const leftX = -(desktopWidth * 0.45);   // ± 1/3 naar links
+                                        const rightX = desktopWidth * 0.45;      // ± 1/3 naar rechts
+
                                         const isCenter = position === 0;
                                         const isLeft = position === images.length - 1;
                                         const isRight = position === 1;
@@ -162,19 +181,26 @@ export default function IntroSection() {
                                                 key={i}
                                                 className={`absolute cursor-pointer transition-all duration-700 ease-out`}
                                                 animate={{
-                                                    x: isCenter ? 0 : isLeft ? "-32vw" : isRight ? "32vw" : "90vw",
-                                                    scale: isCenter ? 1.15 : isLeft || isRight ? 0.9 : 0.7,
-                                                    opacity: isCenter ? 1 : isLeft || isRight ? 0.7 : 0,
-                                                    zIndex: isCenter ? 20 : isLeft || isRight ? 10 : 0,
+                                                    // 🔹 NIEUW – pixel-gebaseerde positionering
+                                                    x: isCenter ? 0 : isLeft ? leftX : isRight ? rightX : desktopWidth * 2,
+
+                                                    // 🔹 NIEUW – 3-level scaling
+                                                    scale: isCenter ? 1.15 : (isLeft || isRight ? 0.9 : 0.6),
+
+                                                    // 🔹 NIEUW – subtle fades
+                                                    opacity: isCenter ? 1 : (isLeft || isRight ? 0.6 : 0),
+
+                                                    // 🔹 NIEUW – center bovenop
+                                                    zIndex: isCenter ? 30 : (isLeft || isRight ? 20 : 0),
                                                 }}
-                                                whileHover={isCenter ? { scale: 1.2 } : { scale: 1.0 }}
+                                                whileHover={isCenter ? { scale: 1.2 } : {}}
                                                 transition={{ duration: 0.6, ease: "easeInOut" }}
                                                 onClick={() => setIndex(i)}
                                             >
                                                 <img
                                                     src={img}
                                                     alt={`Slide ${i}`}
-                                                    className="rounded-sm shadow-lg object-cover w-[60vw] max-w-[580px] h-[40vw] max-h-[380px]"
+                                                    className="shadow-lg object-cover w-[60vw] max-w-[580px] h-[40vw] max-h-[380px]"
                                                 />
                                             </motion.div>
                                         );
@@ -189,20 +215,20 @@ export default function IntroSection() {
                     {isMobile && (
                         <motion.div ref={mobileContainerRef} className="relative flex w-full h-full items-center overflow-hidden">
                             {/* Pijlen */}
-                                <button
-                                    onClick={prev}
-                                    className="absolute left-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
-                                >
-                                    <FiChevronLeft size={28} strokeWidth={1.5} />
-                                </button>
+                            <button
+                                onClick={prev}
+                                className="absolute left-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
+                            >
+                                <FiChevronLeft size={28} strokeWidth={1.5} />
+                            </button>
 
-                                <button
-                                    onClick={next}
-                                    className="absolute right-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
-                                >
-                                    <FiChevronRight size={28} strokeWidth={1.5} />
-                                </button>
-                            
+                            <button
+                                onClick={next}
+                                className="absolute right-5 top-1/2 -translate-y-1/2 z-30 bg-black/25 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
+                            >
+                                <FiChevronRight size={28} strokeWidth={1.5} />
+                            </button>
+
                             <motion.div
                                 ref={carouselRef}
                                 className="flex"
@@ -214,14 +240,25 @@ export default function IntroSection() {
                                 }}
                                 onDragEnd={(_event, info) => {
                                     if (!effectiveWidth) return;
-                                    const delta = Math.round(-info.offset.x / effectiveWidth);
-                                    if (delta === 0) return;
-                                    const nextIndex = Math.min(
-                                        Math.max(index + delta, 0),
+
+                                    // 1️⃣ Swipe power = afstand + snelheid
+                                    const swipe = -(info.offset.x + info.velocity.x * 0.2);
+
+                                    // 2️⃣ Hoeveel slides is dit?
+                                    const movement = swipe / effectiveWidth;
+
+                                    // 3️⃣ Nieuwe slide bepalen
+                                    const target = index + movement;
+
+                                    // 4️⃣ Naar dichtstbijzijnde slide afronden
+                                    const next = Math.min(
+                                        Math.max(Math.round(target), 0),
                                         images.length - 1
                                     );
-                                    setIndex(nextIndex);
+
+                                    setIndex(next);
                                 }}
+
                                 animate={{ x: -index * effectiveWidth }}
                                 transition={{ type: "spring", stiffness: 260, damping: 32 }}
                                 style={{ touchAction: "pan-y" }}
