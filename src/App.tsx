@@ -12,9 +12,9 @@ export default function App() {
       <HeroSection />
       <IntroSection />
       <CabanaSection />
+      <DiningSection />
 
       <main className="relative z-10 px-6 sm:px-[8%] md:px-[10%]">
-        <DiningSection />
       </main>
     </>
   )

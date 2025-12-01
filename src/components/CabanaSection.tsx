@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { easeOut } from "framer-motion";
 import CabanaCarousel from "./carousels/CabanaCarousel";
 
-
 export default function CabanaSection() {
     const container = {
         hidden: {},
@@ -35,7 +34,7 @@ export default function CabanaSection() {
                 <motion.h1 variants={fadeInUp}
                     className="text-2xl md:text-4xl xl:text-4xl leading-snugged text-gray-800">Cabanas</motion.h1>
                 <motion.p variants={fadeInUp}
-                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed8">
+                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
                     Onze cabanas zijn jouw privéplek aan het water — ontworpen voor rust, comfort en volledige ontspanning.
                 </motion.p>
 
