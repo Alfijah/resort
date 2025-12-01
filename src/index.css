@@ -36,7 +36,8 @@ html,
 body {
   overflow-x: clip;
   max-width: 100vw;
-  background-color: #faf8f6;
+  /* background-color: #faf8f6; */
+  background-color: #f3ece0;
 }
 
 body,
@@ -64,7 +65,7 @@ h1 {
   font-family: 'Reforma 1918 Blanca', sans-serif;
   /* font-weight: bold; */
   text-transform: Normal;
-  letter-spacing: 5px;
+  letter-spacing: 4.5px;
   text-transform: uppercase;
   line-height: 1.3;
   /* font-style: italic; */
@@ -79,6 +80,11 @@ button, a {
 
 a {
   text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
 }
 
 .react-datepicker__header {
