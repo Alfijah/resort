@@ -126,8 +126,8 @@ export default function HeroSection() {
                                 className="flex items-center justify-between border rounded-md px-2 py-2 cursor-pointer hover:bg-gray-50"
                             >
                                 <p className="text-gray-800 normal-case">
-                                    {bookings.length} Cabana{bookings.length > 1 && "s"},{" "}
-                                    {totalGuests} Gast{totalGuests > 1 && "en"}
+                                    {bookings.length} cabana{bookings.length > 1 && "s"},{" "}
+                                    {totalGuests} gast{totalGuests > 1 && "en"}
                                 </p>
                             </div>
 
@@ -227,12 +227,12 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    <button className="bg-sky-900 py-2 -mb-6 tracking-wide text-white text-sm xl:text-base rounded-sm cursor-pointer hover:bg-red-400">Reserveren</button>
+                    <button className="bg-sky-900 py-2 -mb-6 tracking-wide text-white text-sm xl:text-base rounded-sm cursor-pointer hover:bg-red-400 uppercase">Reserveren</button>
                 </div>
             </div>
 
             {/* 📱 Mobiele onderbalk – zichtbaar onder 1260px */}
-            <div className="fixed bottom-0 left-0 w-full bg-white text-white py-6 px-6 grid grid-cols-2 flex justify-around items-center xl:hidden z-50 backdrop-blur-md">
+            <div className="fixed bottom-0 left-0 w-full bg-white text-white py-6 px-6 grid grid-cols-2 flex justify-around items-center xl:hidden z-50 backdrop-blur-md uppercase">
                 <button className="absolute bg-sky-900 w-[50%] h-full uppercase tracking-widest text-xs cursor-pointer hover:bg-red-400">
                     Reserveren
                 </button>

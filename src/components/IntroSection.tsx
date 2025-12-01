@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 import { useRef } from "react";
 import { easeOut } from "framer-motion";
 import CarouselArrow from "./ui/CarouselArrow";
-import CarouselDots from "../components/ui/CarouselDots";
-// import ImageModal from "../components/ui/ImageModal";
+import ImageModal from "../components/ui/ImageModal";
 import img1 from "../assets/introSection/lodge1.jpg"
 import img2 from "../assets/introSection/lodge2.jpg"
 import img3 from "../assets/introSection/lodge3.jpg"
@@ -119,7 +118,7 @@ export default function IntroSection() {
             <motion.div variants={container}
                 className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 py-14 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
-                    className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
+                    className="text-xl md:text-4xl xl:text-5xl leading-snugged text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
                     Op slechts 20 minuten van Paramaribo ligt Sendang Redjo: een exclusief eco retreat en nature sanctuary, gelegen rondom een privémeer in het hart van Tamanredjo.
@@ -131,8 +130,8 @@ export default function IntroSection() {
                     De sfeer ademt Javaanse gastvrijheid: warm, oprecht en ontspannen.
                 </motion.p>
                 <motion.p variants={fadeInUp}
-                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
-                    Lees <i className="cursor-pointer"><u>Imagine Your Day</u></i> en laat je meevoeren in de beleving.
+                    className="explore text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed cursor-pointer">
+                    Lees <i><u>Imagine Your Day</u></i> en laat je meevoeren in de beleving.
                 </motion.p>
             </motion.div>
 
@@ -180,7 +179,7 @@ export default function IntroSection() {
                                                     scale: isCenter ? 1.15 : (isLeft || isRight ? 0.9 : 0.6),
 
                                                     // 🔹 NIEUW – subtle fades
-                                                    opacity: isCenter ? 1 : (isLeft || isRight ? 0.6 : 0),
+                                                    opacity: isCenter ? 4 : (isLeft || isRight ? 0.6 : 0),
 
                                                     // 🔹 NIEUW – center bovenop
                                                     zIndex: isCenter ? 30 : (isLeft || isRight ? 20 : 0),
@@ -267,30 +266,15 @@ export default function IntroSection() {
 
 
                 {/* --- DOTS NAVIGATIE --- */}
-                <CarouselDots
+                {/* <CarouselDots
                     total={images.length}
                     current={index}
                     onSelect={(i) => setIndex(i)}
-                />
+                /> */}
             </motion.div>
 
             {selectedImage && (
-                <div
-                    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-                    onClick={() => setSelectedImage(null)}
-                >
-                    <img
-                        src={selectedImage}
-                        className="max-w-[90%] max-h-[90%] shadow-lg"
-                        onClick={(e) => e.stopPropagation()} // voorkomt sluiten bij klik op afbeelding
-                    />
-                    <button
-                        className="absolute top-4 right-4 text-white text-3xl"
-                        onClick={() => setSelectedImage(null)}
-                    >
-                        ✕
-                    </button>
-                </div>
+                <ImageModal src={selectedImage} onClose={() => setSelectedImage(null)} />
             )}
 
         </motion.div>

@@ -1,121 +1,203 @@
-import { useState, useRef, useEffect } from "react";
-import { RiArrowLeftWideFill } from "react-icons/ri";
-import { RiArrowRightWideLine } from "react-icons/ri";
+import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { easeOut } from "framer-motion";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import img1 from "../assets//cabanaSection/cab1.jpg"
 import img2 from "../assets/cabanaSection/cab2.jpg"
 import img3 from "../assets/cabanaSection/cab3.jpg"
 import img4 from "../assets/cabanaSection/cab4.jpg"
 import img5 from "../assets/cabanaSection/cab5.jpg"
 import img6 from "../assets/cabanaSection/cab6.jpg"
-import FadeInSection from "./FadeInsection";
+
+const images = [
+    img1, img2, img3, img4, img5, img6
+];
+
+type ArrowProps = {
+    onClick?: () => void;
+};
+
+function PrevArrow({ onClick }: ArrowProps) {
+    return (
+        <button
+            className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
+            onClick={onClick}
+        >
+            <FiChevronLeft size={26} strokeWidth={1.6} />
+        </button>
+    );
+}
+
+// 🔹 Custom Next Arrow
+function NextArrow({ onClick }: ArrowProps) {
+    return (
+        <button
+            className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-white/90 hover:text-black text-white p-2 shadow-md border border-white/40 transition-colors"
+            onClick={onClick}
+        >
+            <FiChevronRight size={26} strokeWidth={1.6} />
+        </button>
+    );
+}
 
 export default function CabanaSection() {
-    const images = [img1, img2, img3, img4, img5, img6];
+    const containerRef = useRef<HTMLDivElement>(null);
+    const [isDesktop, setIsDesktop] = useState(false);
+    const [containerWidth, setContainerWidth] = useState(0);
+    const [index, setIndex] = useState(0);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+    const gapPx = 16; // gap-4
 
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const sliderRef = useRef<HTMLDivElement | null>(null);
-    const totalSlides = images.length;
-    // const slideIntervalRef = useRef<number | null>(null);
-
-    const goToSlide = (index: number) => {
-        if (!sliderRef.current) return; // voorkomt null errors
-
-        const slideWidth =
-            sliderRef.current.children[0].clientWidth || 0;
-
-        sliderRef.current.style.transform = `translateX(-${index * slideWidth}px)`;
-    };
-
-    const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
-    };
-
-    // const resetAutoSlide = () => {
-    //     if (slideIntervalRef.current) {
-    //         clearInterval(slideIntervalRef.current);
-    //     }
-    //     slideIntervalRef.current = window.setInterval(nextSlide, 3000);
-    // };
-
-    // // Handle automatic slide
-    // useEffect(() => {
-    //     slideIntervalRef.current = setInterval(nextSlide, 3000);
-    //     return () => {
-    //         if (slideIntervalRef.current !== null) {
-    //             clearInterval(slideIntervalRef.current);
-    //         }
-    //     };
-    // }, []);
-
-    // Handle slide transform when currentSlide changes
     useEffect(() => {
-        goToSlide(currentSlide);
-    }, [currentSlide]);
-
-    // Handle resizing
-    useEffect(() => {
-        const handleResize = () => goToSlide(currentSlide);
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 1024);
+            if (containerRef.current) {
+                setContainerWidth(containerRef.current.offsetWidth);
+            }
+        };
+        handleResize();
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
-    }, [currentSlide]);
+    }, []);
+
+    const slidesPerView = isDesktop ? 2 : 1;
+    const slideWidth = containerWidth
+        ? (containerWidth - gapPx * (slidesPerView - 1)) / slidesPerView
+        : 0;
+    const maxIndex = Math.max(0, images.length - slidesPerView);
+
+    useEffect(() => {
+        setIndex((prev) => Math.min(prev, maxIndex));
+    }, [maxIndex]);
+
+    const container = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.3, // elementen komen 1-voor-1
+            },
+        },
+    };
+
+    const fadeInUp = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } },
+    };
+
+    const fadeInLeft = {
+        hidden: { opacity: 0, x: 50 },
+        visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: easeOut } },
+    };
 
     return (
-        <FadeInSection>
-            <div className="w-full relative flex flex-row py-2 md:py-4 xl:py-10 text-center tracking-wide">
-                <div className="flex flex-col">
-                    <h1 className="md:text-xl xl:text-2xl px-[10%] xl:px-[12%]">Cabanas</h1>
-                    <p className="text-xs lg:text-sm xl:text-base pt-8 px-[10%] xl:px-[12%]">Onze exclusieve cabanas zijn ontworpen als jouw privéplek in de natuur. <br /><br />Elke cabana ligt direct aan het water en is voorzien van
-                        een luxe outdoor zithoek, een eigen keuken met bar en barkrukken, poolbeds, een hangmat en een moderne douche met warm water en toilet.
-                        Kajaks, hengels en luchtmatrassen staan tot je beschikking – of je nu actief het meer op wil, of liever dobbert in stilte.</p>
-                </div>
+        <motion.div variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="relative w-full max-w-screen-2xl mx-auto px-6 sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row items-start overscroll-x-none mt-4 sm:mt-10 lg:mt-24">
 
-                {/* images */}
-                <div className="flex items-center justify-center w-full pt-10 xl:pt-16">
-                    {/* Prev Button */}
-                    <button
-                        onClick={() => {
-                            prevSlide();
-                            // resetAutoSlide();
-                        }}
-                        className="md:p-2 text-3xl text-gray-400 md:mr-6 rounded-full hover:bg-black/10"
+            <motion.div variants={container}
+                className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto py-12 md:py-16 lg:py-20">
+                <motion.h1 variants={fadeInUp}
+                    className="text-2xl md:text-4xl xl:text-5xl leading-snugged font-semibold text-gray-800">Cabanas</motion.h1>
+                <motion.p variants={fadeInUp}
+                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed8">
+                    Onze exclusieve cabanas zijn ontworpen als jouw privéplek in de natuur.
+                </motion.p>
+
+                <motion.p variants={fadeInUp}
+                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
+                    Elke cabana ligt direct aan het water en is voorzien van
+                    een luxe outdoor zithoek, een eigen keuken met bar en barkrukken, poolbeds, een hangmat en een moderne douche met warm water en toilet.
+                    Kajaks, hengels en luchtmatrassen staan tot je beschikking – of je nu actief het meer op wil, of liever dobbert in stilte.
+                </motion.p>
+
+            </motion.div>
+
+            <motion.div variants={fadeInLeft}
+                className="w-full lg:w-1/2 mx-auto">
+                <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px]">
+                    {/* Arrows desktop */}
+
+                    <>
+                        <PrevArrow onClick={() => setIndex((prev) => Math.max(prev - 1, 0))} />
+                        <NextArrow onClick={() => setIndex((prev) => Math.min(prev + 1, maxIndex))} />
+                    </>
+
+
+                    <motion.div
+                        ref={containerRef}
+                        className="h-full"
                     >
-                        <RiArrowLeftWideFill />
-                    </button>
-
-                    {/* Image Slider */}
-                    <div className="w-[75%] xl:w-[70%] h-50 md:h-130 xl:h-180 overflow-hidden flex items-center relative">
-                        <div
-                            ref={sliderRef}
-                            className="flex transition-transform duration-500 ease-in-out"
+                        <motion.div
+                            className="flex gap-4 h-full items-center"
+                            drag="x"
+                            dragElastic={0.04}
+                            dragConstraints={{
+                                left: -slideWidth * maxIndex - gapPx * maxIndex,
+                                right: 0,
+                            }}
+                            onDragEnd={(_event, info) => {
+                                if (!slideWidth) return;
+                                const swipe = -(info.offset.x + info.velocity.x * 0.2);
+                                const target = index + swipe / (slideWidth + gapPx);
+                                const next = Math.min(Math.max(Math.round(target), 0), maxIndex);
+                                setIndex(next);
+                            }}
+                            animate={{ x: -(index * (slideWidth + gapPx)) }}
+                            transition={{ type: "spring", stiffness: 260, damping: 32 }}
+                            style={{ touchAction: "pan-y" }}
                         >
-                            {images.map((src, index) => (
-                                <img
-                                    key={index}
-                                    src={src}
-                                    className="w-full flex-shrink-0"
-                                    alt={`Slide ${index + 1}`}
-                                />
-                            ))}
-                        </div>
-                    </div>
+                            {images.map((item, i) => (
+                                <motion.div
+                                    key={i}
+                                    className="flex-shrink-0 h-full"
+                                    style={{ width: slideWidth ? `${slideWidth}px` : slidesPerView === 2 ? "50%" : "100%" }}
+                                    whileTap={{ scale: 0.98 }}
+                                    onClick={() => setSelectedImage(item)}
 
-                    {/* Next Button */}
-                    <button
-                        onClick={() => {
-                            nextSlide();
-                            // resetAutoSlide();
-                        }}
-                        className="md:p-2 md:ml-6 text-3xl text-gray-400 rounded-full hover:bg-black/10"
-                    >
-                        <RiArrowRightWideLine />
-                    </button>
+                                >
+                                    <div className="relative w-full h-full overflow-hidden shadow-lg cursor-pointer">
+                                        <img src={item} className="absolute inset-0 w-full h-full object-cover" alt={`Slide ${i}`} />
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </motion.div>
                 </div>
 
-            </div >
-        </FadeInSection>
+                {/* Dots */}
+                <div className="flex justify-center mt-4 mb-3 space-x-4 md:space-x-8">
+                    {Array.from({ length: maxIndex + 1 }).map((_, dotIndex) => (
+                        <button
+                            key={dotIndex}
+                            onClick={() => setIndex(dotIndex)}
+                            className={`w-1.5 h-1.5 transition-all duration-300 ${index === dotIndex ? "bg-black scale-125 shadow-md" : "bg-gray-300"}`}
+                        ></button>
+                    ))}
+                </div>
+            </motion.div>
+
+            {selectedImage && (
+                <div
+                    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <img
+                        src={selectedImage}
+                        className="max-w-[90%] max-h-[90%] shadow-lg"
+                        onClick={(e) => e.stopPropagation()} // voorkomt sluiten bij klik op afbeelding
+                    />
+                    <button
+                        className="absolute top-4 right-4 text-white text-3xl"
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        ✕
+                    </button>
+                </div>
+            )}
+
+        </motion.div>
     )
+
 }
