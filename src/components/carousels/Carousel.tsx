@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import CarouselArrow from "../ui/CarouselArrow";
 import ImageModal from "../ui/ImageModal";
+import { motion } from "framer-motion";
 
 type CarouselProps = {
   images: string[];
@@ -94,7 +95,11 @@ export default function Carousel({
 
 
   return (
-    <div className="relative w-full overflow-hidden" style={{ height: effectiveHeight }}>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.5 }} className="relative w-full overflow-hidden" style={{ height: effectiveHeight }}>
 
       <CarouselArrow direction="left" onClick={handlePrev} />
       <CarouselArrow direction="right" onClick={handleNext} />
@@ -131,6 +136,6 @@ export default function Carousel({
       {showModal && selectedImage && (
         <ImageModal src={selectedImage} onClose={() => setSelectedImage(null)} />
       )}
-    </div>
+    </motion.div>
   );
 }

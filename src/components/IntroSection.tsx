@@ -30,7 +30,7 @@ export default function IntroSection() {
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.3, // elementen komen 1-voor-1
+                staggerChildren: 0.55, // elementen komen 1-voor-1
             },
         },
     };
@@ -112,42 +112,36 @@ export default function IntroSection() {
         <motion.div variants={container}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="relative w-full items-center lg:items-start overscroll-x-none">
 
             <motion.div variants={container}
                 className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 py-14 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
-                    className="text-xl md:text-4xl xl:text-5xl leading-snugged text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
+                    className="text-xl md:text-4xl xl:text-4xl leading-snugged text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
-                    Op slechts 20 minuten van Paramaribo ligt Sendang Redjo: een exclusief eco retreat en nature sanctuary, gelegen rondom een privémeer in het hart van Tamanredjo.
-                </motion.p>
-                <motion.p variants={fadeInUp}
-                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
-                    Sendang Redjo is gebouwd op historische grond, maar draagt een tijdloze ziel.
-                    Wat ooit een oude plantage was, is nu een serene retreat, geworteld in eenvoud, stilte en natuurlijke schoonheid.
-                    De sfeer ademt Javaanse gastvrijheid: warm, oprecht en ontspannen.
+                    Op slechts 20 minuten van Paramaribo ligt Sendang Redjo — een serene retreat aan een privémeer, gebouwd op historische grond en gedragen door Javaanse gastvrijheid. Hier vertraagt alles, en vindt stilte haar vorm.
                 </motion.p>
                 <motion.p variants={fadeInUp}
                     className="explore text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed cursor-pointer">
-                    Lees <i><u>Imagine Your Day</u></i> en laat je meevoeren in de beleving.
+                    <i>Laat je meevoeren in <u>Imagine Your Day</u>.</i>
                 </motion.p>
             </motion.div>
 
             <motion.div variants={fadeInUp}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ amount: 0.3 }}
+                viewport={{ amount: 0.5 }}
                 transition={{ delay: 2.8 }} //
-                className="w-full max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16">
+                className="w-full max-w-screen-2xl mx-auto sm:px-8 md:px-10 lg:px-16">
                 <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
 
                     {!isMobile && (
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ amount: 0.3 }}
+                            viewport={{ amount: 0.5 }}
                             transition={{ delay: 2.8 }} //
                             className="w-full max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16">
                             <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
@@ -204,7 +198,7 @@ export default function IntroSection() {
 
                     {/* --- MOBILE CAROUSEL (NO LOOP, CORRECT INDEX, NO WHITE SPACE) --- */}
                     {isMobile && (
-                        <motion.div ref={mobileContainerRef} className="relative flex w-full h-full items-center overflow-hidden">
+                        <motion.div ref={mobileContainerRef} className="relative flex w-screen h-full items-center overflow-hidden">
                             {/* Pijlen */}
                             <CarouselArrow direction="left" onClick={prev} />
 
@@ -216,7 +210,7 @@ export default function IntroSection() {
                                 drag="x"
                                 dragElastic={0.05}
                                 dragConstraints={{
-                                    left: -effectiveWidth * (images.length - 1), // blokkeren bij laatste
+                                    left: -(window.innerWidth * (images.length - 1)), // blokkeren bij laatste
                                     right: 0, // blokkeren bij eerste
                                 }}
                                 onDragEnd={(_event, info) => {
@@ -240,7 +234,7 @@ export default function IntroSection() {
                                     setIndex(next);
                                 }}
 
-                                animate={{ x: -index * effectiveWidth }}
+                                animate={{ x: -index * window.innerWidth }}
                                 transition={{ type: "spring", stiffness: 260, damping: 32 }}
                                 style={{ touchAction: "pan-y" }}
                             >
@@ -249,7 +243,7 @@ export default function IntroSection() {
                                         key={i}
                                         className="carousel-item flex-shrink-0 shadow-lg cursor-pointer"
                                         style={{
-                                            width: effectiveWidth ? `${effectiveWidth}px` : "100%",
+                                            width: "100vw",
                                             height: "62vw"
                                         }}
                                         whileTap={{ scale: 0.96 }}
