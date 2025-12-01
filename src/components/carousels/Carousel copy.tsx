@@ -19,7 +19,6 @@ export default function Carousel({
   slidesPerViewMobile = 1,
   gap = 16,
   showModal = true,
-  height = "480px",
 }: CarouselProps) {
 
   const containerRef = useRef<HTMLDivElement>(null);
