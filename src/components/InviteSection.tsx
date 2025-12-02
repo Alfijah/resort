@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
 import invite from "../assets/inviteSection/leaf.jpg"
+import icon from "../assets/icons/arrowRoundWhiteDown.png"
 
 export default function InviteSection() {
     return (
         <div
-            className="invite-section relative w-full h-[700px] md:h-[640px] mt-18 sm:mt-20 md:mt-22 pb-8 lg:pb-0 flex items-center justify-center overflow-hidden"
+            className="invite-section relative w-full h-[760px] md:h-[640px] mt-18 sm:mt-20 md:mt-22 pb-8 lg:pb-0 flex items-center justify-center overflow-hidden"
             style={{
                 backgroundImage: `url(${invite})`,
                 backgroundSize: "cover",
@@ -23,21 +24,38 @@ export default function InviteSection() {
                 </motion.h1>
 
                 <motion.p variants={fadeInUp} className="body-text">
-                    Bij Sendang Redjo ervaar je een unieke mix van rust, natuur en warme Javaanse gastvrijheid. 
+                    Bij Sendang Redjo ervaar je een unieke mix van rust, natuur en warme Javaanse gastvrijheid.
                     Alles is ontworpen om je volledig onder te dompelen in ontspanning en beleving.<br /><br />
 
-                    <span className="font-semibold">Stijlvolle cabana’s</span><br />
+                    <span className="italic">Stijlvolle cabanas</span><br />
                     Ontworpen met Javaanse elegantie—warme details, zachte luxe en een panoramisch zicht op het meer.<br /><br />
 
-                    <span className="font-semibold">Rust & privacy</span><br />
+                    <span className="italic">Rust & privacy</span><br />
                     Geen haast, geen drukte—alleen natuur, stilte en het gevoel dat tijd hier trager stroomt.<br /><br />
 
-                    <span className="font-semibold">Avontuurlijke beleving</span><br />
+                    <span className="italic">Avontuurlijke beleving</span><br />
                     Glijd in stilte over het water, vang je eigen vis of dobber weg in totale ontspanning.<br /><br />
 
-                    <span className="font-semibold">Authentieke Javaanse keuken</span><br />
+                    <span className="italic">Authentieke Javaanse keuken</span><br />
                     Langzaam bereid op houtvuur—pure smaken, warme geuren en traditie in zijn mooiste vorm.
                 </motion.p>
+
+                <motion.div
+                    variants={fadeInUp}
+                    className="flex items-center justify-center gap-3 mt-8 cursor-pointer group"
+                >
+                    {/* ICON */}
+                    <img
+                        src={icon}
+                        alt="Imagine icon"
+                        className="w-8 h-8 object-contain font-bold group-hover:opacity-100 transition"
+                    />
+
+                    {/* TEXT */}
+                    <span className="body-text font-semibold group-hover:underline group-hover:text-white transition">
+                        Imagine Your Day
+                    </span>
+                </motion.div>
             </SectionWrapper>
         </div>
     )
