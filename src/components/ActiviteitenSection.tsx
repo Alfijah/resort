@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { container, fadeInUp } from "../animations/Variants";
+import { container, fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
 import ActiviteitenCarousel from "./carousels/ActiviteitenCarousel";
 
@@ -14,12 +14,12 @@ export default function ActiviteitenSection() {
                     className="text-2xl md:text-4xl xl:text-4xl leading-snugged text-gray-800">Activiteiten</motion.h1>
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
-                    Onze cabanas zijn jouw privéplek aan het water — alleen per boot bereikbaar, waardoor je vanaf het eerste moment in volledige rust aankomt.
+                    Ontdek het meer in alle rust: kajak in je eigen tempo, vis op stille plekken of dobber zorgeloos in het water. Ontspan in je cabana — in je hangmat, omringd door niets dan wind en vogels.
                 </motion.p>
 
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
-                    Elke cabana beschikt over een luxe outdoor zithoek, een eigen keuken met bar, poolbeds, een hangmat en een moderne douche met warm water en toilet. Kajaks, hengels en luchtmatrassen staan voor je klaar, of je nu het meer op wil of in stilte wil dobberen.
+                    En voor natuurliefhebbers: van ijsvogels tot reigers, elke dag is anders.
                 </motion.p>
             </motion.div>
 

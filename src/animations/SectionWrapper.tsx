@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { container } from "./Variants";
+import { container } from "./Varianten";
 
 type SectionWrapperProps = {
   children: React.ReactNode;
