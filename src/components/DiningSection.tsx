@@ -6,7 +6,7 @@ import DiningCarousel from "./carousels/DiningCarousel";
 export default function DiningSection() {
     return (
         <SectionWrapper
-            className="relative w-full flex flex-col-reverse lg:flex-row items-center lg:items-center xl:gap-10 sm:px-10 md:px-12 lg:px-20 xl:py-16 pt-2 sm:mt-10 lg:mt-14 overscroll-x-none">
+            className="relative w-full flex flex-col-reverse lg:flex-row items-center lg:items-center xl:gap-10 sm:px-10 md:px-12 lg:px-20 xl:py-16 pt-2 lg:mt-4 overscroll-x-none">
 
             <motion.div variants={container}
                 className="w-full lg:w-1/2 mx-auto">

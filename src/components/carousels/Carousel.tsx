@@ -91,15 +91,12 @@ export default function Carousel({
     }
   }, [index, realCount, step]);
 
-  const effectiveHeight = isDesktop ? "480px" : height;
-
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.5 }} className="relative w-full overflow-hidden" style={{ height: effectiveHeight }}>
+      viewport={{ once: true, amount: 0.5 }} className="relative w-full h-full overflow-hidden">
 
       <CarouselArrow direction="left" onClick={handlePrev} />
       <CarouselArrow direction="right" onClick={handleNext} />
@@ -121,6 +118,7 @@ export default function Carousel({
               className="flex-shrink-0 h-full cursor-pointer"
               style={{
                 width: effectiveSlideWidth ? `${effectiveSlideWidth}px` : "100%",
+                height: "100%",
               }}
               onClick={() => showModal && setSelectedImage(src)}
             >

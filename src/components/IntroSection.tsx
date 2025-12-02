@@ -100,16 +100,12 @@ export default function IntroSection() {
             className="relative w-full items-center lg:items-start overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 py-14 md:py-16 lg:py-20">
+                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-12 py-14 md:py-14 lg:py-16">
                 <motion.h1 variants={fadeInUp}
-                    className="text-xl md:text-4xl xl:text-4xl leading-snugged text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
+                    className="text-xl md:text-3xl xl:text-4xl leading-snugged text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
                 <motion.p variants={fadeInUp}
                     className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
                     Op slechts 20 minuten van Paramaribo ligt Sendang Redjo — een serene retreat aan een privémeer, gebouwd op historische grond en gedragen door Javaanse gastvrijheid. Hier vertraagt alles, en vindt stilte haar vorm.
-                </motion.p>
-                <motion.p variants={fadeInUp}
-                    className="explore text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed cursor-pointer">
-                    <i>Laat je meevoeren in <u>Imagine Your Day</u>.</i>
                 </motion.p>
             </motion.div>
 
@@ -119,7 +115,7 @@ export default function IntroSection() {
                 viewport={{ amount: 0.5 }}
                 transition={{ delay: 2.8 }} //
                 className="w-full max-w-screen-2xl mx-auto sm:px-8 md:px-10 lg:px-16">
-                <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[320px] sm:h-[348px] md:h-[520px] flex items-center justify-center max-w-screen-2xl mx-auto">
+                <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[320px] sm:h-[348px] md:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
 
                     {!isMobile && (
                         <motion.div
@@ -128,7 +124,7 @@ export default function IntroSection() {
                             viewport={{ amount: 0.5 }}
                             transition={{ delay: 2.8 }} //
                             className="w-full max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16">
-                            <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
+                            <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
                                 {/* Pijlen */}
                                 <CarouselArrow direction="left" onClick={prev} />
 
@@ -182,7 +178,7 @@ export default function IntroSection() {
 
                     {/* --- MOBILE CAROUSEL (NO LOOP, CORRECT INDEX, NO WHITE SPACE) --- */}
                     {isMobile && (
-                        <motion.div ref={mobileContainerRef} className="relative flex w-screen h-full items-center overflow-hidden">
+                        <motion.div ref={mobileContainerRef} className="relative flex w-screen h-full items-center md:items-start overflow-hidden">
                             {/* Pijlen */}
                             <CarouselArrow direction="left" onClick={prev} />
 
@@ -225,7 +221,7 @@ export default function IntroSection() {
                                 {images.map((img, i) => (
                                     <motion.div
                                         key={i}
-                                        className="carousel-item flex-shrink-0 shadow-lg cursor-pointer"
+                                        className="carousel-item flex-shrink-0 cursor-pointer"
                                         style={{
                                             width: "100vw",
                                             height: "320px"
@@ -233,7 +229,7 @@ export default function IntroSection() {
                                         whileTap={{ scale: 0.96 }}
                                         onClick={() => setSelectedImage(img)}
                                     >
-                                        <img src={img} alt={`Slide ${i}`} className="w-full h-full object-cover" />
+                                        <img src={img} alt={`Slide ${i}`} className="w-full h-[320px] md:h-[480px] lg:h-[480px] object-cover" />
                                     </motion.div>
                                 ))}
                             </motion.div>
