@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
-import { container, fadeInUp } from "../animations/variants";
+import { container, fadeInUp } from "../animations/Variants";
 import SectionWrapper from "../animations/SectionWrapper";
 import CarouselArrow from "./ui/CarouselArrow";
 import ImageModal from "../components/ui/ImageModal";

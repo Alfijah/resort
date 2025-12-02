@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { container, fadeInUp } from "../animations/variants";
+import { container, fadeInUp } from "../animations/Variants";
 import SectionWrapper from "../animations/SectionWrapper";
 import CabanaCarousel from "./carousels/CabanaCarousel";
 
