@@ -1,10 +1,11 @@
 import './App.css'
-import ActiviteitenSection from './components/ActiviteitenSection'
-import CabanaSection from './components/CabanaSection'
-import DiningSection from './components/DiningSection'
+import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import IntroSection from './components/IntroSection'
-import Navbar from './components/Navbar'
+import CabanaSection from './components/CabanaSection'
+import DiningSection from './components/DiningSection'
+import ActiviteitenSection from './components/ActiviteitenSection'
+import InviteSection from './components/CabanaSection'
 
 export default function App() {
   return (
@@ -15,9 +16,7 @@ export default function App() {
       <CabanaSection />
       <DiningSection />
       <ActiviteitenSection />
-
-      <main className="relative z-10 px-6 sm:px-[8%] md:px-[10%]">
-      </main>
+      <InviteSection />
     </>
   )
 }

@@ -11,15 +11,15 @@ export default function CabanaSection() {
             <motion.div variants={container}
                 className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto px-6 py-12 md:py-12 lg:py-20">
                 <motion.h1 variants={fadeInUp}
-                    className="text-2xl md:text-4xl xl:text-4xl leading-snugged text-gray-800">Cabanas</motion.h1>
+                    className="heading-primary">Cabanas</motion.h1>
                 <motion.p variants={fadeInUp}
-                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
+                    className="body-text">
                     Onze cabanas zijn jouw privéplek aan het water — alleen per boot bereikbaar, waardoor je vanaf het eerste moment in volledige rust aankomt.
                 </motion.p>
 
                 <motion.p variants={fadeInUp}
-                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
-                    Elke cabana beschikt over een luxe outdoor zithoek, een eigen keuken met bar, poolbeds, een hangmat en een moderne douche met warm water en toilet. Kajaks, hengels en luchtmatrassen staan voor je klaar, of je nu het meer op wil of in stilte wil dobberen.
+                    className="body-text">
+                    <br></br>Elke cabana beschikt over een luxe outdoor zithoek, een eigen keuken met bar, poolbeds, een hangmat en een moderne douche met warm water en toilet. Kajaks, hengels en luchtmatrassen staan voor je klaar, of je nu het meer op wil of in stilte wil dobberen.
                 </motion.p>
             </motion.div>
 

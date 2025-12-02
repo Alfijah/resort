@@ -102,27 +102,19 @@ export default function IntroSection() {
             <motion.div variants={container}
                 className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-12 py-14 md:py-14 lg:py-16">
                 <motion.h1 variants={fadeInUp}
-                    className="text-xl md:text-3xl xl:text-4xl leading-snugged text-gray-800">Waar stilte, natuur en ziel samenkomen</motion.h1>
+                    className="heading-primary">Waar stilte, natuur en ziel samenkomen</motion.h1>
                 <motion.p variants={fadeInUp}
-                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
+                    className="body-text">
                     Op slechts 20 minuten van Paramaribo ligt Sendang Redjo — een serene retreat aan een privémeer, gebouwd op historische grond en gedragen door Javaanse gastvrijheid. Hier vertraagt alles, en vindt stilte haar vorm.
                 </motion.p>
             </motion.div>
 
             <motion.div variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ amount: 0.5 }}
-                transition={{ delay: 2.8 }} //
                 className="w-full max-w-screen-2xl mx-auto sm:px-8 md:px-10 lg:px-16">
                 <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[320px] sm:h-[348px] md:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
 
                     {!isMobile && (
-                        <motion.div
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ amount: 0.5 }}
-                            transition={{ delay: 2.8 }} //
+                        <motion.div variants={fadeInUp}
                             className="w-full max-w-screen-2xl mx-auto px-6 sm:px-8 md:px-10 lg:px-16">
                             <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
                                 {/* Pijlen */}

@@ -11,15 +11,15 @@ export default function ActiviteitenSection() {
             <motion.div variants={container}
                 className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto px-6 py-12 md:py-16 lg:py-20">
                 <motion.h1 variants={fadeInUp}
-                    className="text-2xl md:text-4xl xl:text-4xl leading-snugged text-gray-800">Activiteiten</motion.h1>
+                    className="heading-primary">Activiteiten</motion.h1>
                 <motion.p variants={fadeInUp}
-                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
+                    className="body-text">
                     Ontdek het meer in alle rust: kajak in je eigen tempo, vis op stille plekken of dobber zorgeloos in het water. Ontspan in je cabana — in je hangmat, omringd door niets dan wind en vogels.
                 </motion.p>
 
                 <motion.p variants={fadeInUp}
-                    className="text-sm md:text-base lg:text-base xl:text-base pt-4 md:pt-6 xl:pt-8 text-gray-600 leading-relaxed">
-                    En voor natuurliefhebbers: van ijsvogels tot reigers, elke dag is anders.
+                    className="body-text">
+                    <br></br>En voor natuurliefhebbers: van ijsvogels tot reigers, elke dag is anders.
                 </motion.p>
             </motion.div>
 
