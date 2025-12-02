@@ -1,38 +1,11 @@
 import { motion } from "framer-motion";
-import { easeOut } from "framer-motion";
+import { container, fadeInUp } from "../animations/variants";
+import SectionWrapper from "../animations/SectionWrapper";
 import DiningCarousel from "./carousels/DiningCarousel";
 
 export default function DiningSection() {
-    const container = {
-        hidden: {},
-        visible: {
-            transition: {
-                staggerChildren: 0.55,
-            },
-        },
-    };
-
-    const fadeInUp = {
-        hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } },
-    };
-
-    // const fadeInLeft = {
-    //     hidden: { opacity: 0, x: 50 },
-    //     visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: easeOut } },
-    // };
-
-    // const scaleFade = {
-    //     hidden: { opacity: 0, scale: 0.95 },
-    //     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-    // };
-
-
     return (
-        <motion.div variants={container}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+        <SectionWrapper
             className="relative w-full flex flex-col-reverse lg:flex-row items-center lg:items-center xl:gap-10 sm:px-10 md:px-12 lg:px-20 xl:py-16 pt-2 sm:mt-10 lg:mt-14 overscroll-x-none">
 
             <motion.div variants={container}
@@ -58,7 +31,7 @@ export default function DiningSection() {
                 </motion.p>
 
             </motion.div>
-        </motion.div>
+        </SectionWrapper>
     )
 
 }

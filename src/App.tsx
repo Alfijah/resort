@@ -1,4 +1,5 @@
 import './App.css'
+import ActiviteitenSection from './components/ActiviteitenSection'
 import CabanaSection from './components/CabanaSection'
 import DiningSection from './components/DiningSection'
 import HeroSection from './components/HeroSection'
@@ -13,6 +14,7 @@ export default function App() {
       <IntroSection />
       <CabanaSection />
       <DiningSection />
+      <ActiviteitenSection />
 
       <main className="relative z-10 px-6 sm:px-[8%] md:px-[10%]">
       </main>

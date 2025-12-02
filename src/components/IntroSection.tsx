@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
-import { easeOut } from "framer-motion";
+import { container, fadeInUp } from "../animations/variants";
+import SectionWrapper from "../animations/SectionWrapper";
 import CarouselArrow from "./ui/CarouselArrow";
 import ImageModal from "../components/ui/ImageModal";
 import img1 from "../assets/introSection/lodge1.jpg"
@@ -25,20 +26,6 @@ export default function IntroSection() {
     const next = () => setIndex((prev) => (prev + 1) % images.length);
     const prev = () =>
         setIndex((prev) => (prev - 1 + images.length) % images.length);
-
-    const container = {
-        hidden: {},
-        visible: {
-            transition: {
-                staggerChildren: 0.55, // elementen komen 1-voor-1
-            },
-        },
-    };
-
-    const fadeInUp = {
-        hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: easeOut } },
-    };
 
     useEffect(() => {
         const updateItemWidth = () => {
@@ -109,10 +96,7 @@ export default function IntroSection() {
 
 
     return (
-        <motion.div variants={container}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+        <SectionWrapper
             className="relative w-full items-center lg:items-start overscroll-x-none">
 
             <motion.div variants={container}
@@ -271,6 +255,6 @@ export default function IntroSection() {
                 <ImageModal src={selectedImage} onClose={() => setSelectedImage(null)} />
             )}
 
-        </motion.div>
+        </SectionWrapper>
     )
 }
