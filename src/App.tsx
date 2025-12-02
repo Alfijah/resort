@@ -5,7 +5,7 @@ import IntroSection from './components/IntroSection'
 import CabanaSection from './components/CabanaSection'
 import DiningSection from './components/DiningSection'
 import ActiviteitenSection from './components/ActiviteitenSection'
-import InviteSection from './components/CabanaSection'
+import InviteSection from './components/InviteSection'
 
 export default function App() {
   return (

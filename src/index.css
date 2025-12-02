@@ -87,6 +87,16 @@ p {
     hyphens: auto;
 }
 
+.invite-section .heading-primary {
+  color: #ffffff;        /* force wit */
+  text-align: center;    /* voor de zekerheid */
+}
+
+.invite-section .body-text {
+  color: #f9fafb;        /* bijna wit (#F9FAFB bijv.) */
+  text-align: center;
+}
+
 .body-text {
   font-size: 0.875rem;     /* text-sm */
   color: #4B5563;          /* text-gray-600 */

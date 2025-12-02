@@ -1,42 +1,42 @@
 import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
-import invite from "../assets/inviteSection/invite.jpg"
+import invite from "../assets/inviteSection/leaf.jpg"
 
 export default function InviteSection() {
     return (
         <div
-            className="relative w-full items-center lg:items-start overscroll-x-none">
-            <video
-                src={invite}
-                autoPlay
-                loop
-                playsInline
-                muted
-                className="absolute inset-0 w-full h-full object-cover object-center"
-            />
+            className="invite-section relative w-full h-[700px] md:h-[640px] mt-18 sm:mt-20 md:mt-22 pb-8 lg:pb-0 flex items-center justify-center overflow-hidden"
+            style={{
+                backgroundImage: `url(${invite})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+            }}>
 
-            <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black/70 to-transparent pointer-events-none">
+            <div className="absolute inset-0 bg-black/70">
             </div>
 
             <SectionWrapper
-                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-12 py-14 md:py-14 lg:py-16">
-                <motion.h1 variants={fadeInUp}
-                    className="heading-primary">De verborgen luxe van Sendang Redjo</motion.h1>
-                <motion.p variants={fadeInUp}
-                    className="body-text">
-                    Bij Sendang Redjo ervaar je een unieke mix van rust, natuur en warme Javaanse gastvrijheid. Alles is ontworpen om je volledig onder te dompelen in ontspanning en beleving.<br></br>
-                    Stijlvolle cabanas<br></br>
-                    Elke cabana is met Javaanse elegantie ontworpen: warme details, zachte luxe en een panoramisch zicht over het stille meer dat je elke ochtend opnieuw verwelkomt.<br></br>
+                className="relative z-20 flex flex-col text-start md:text-center w-full md:w-[90%] lg:max-w-4xl px-6 sm:px-12">
+                <motion.h1 variants={fadeInUp} className="heading-primary">
+                    De verborgen luxe van Sendang Redjo
+                </motion.h1>
 
-                    Rust & privacy<br></br>
-                    Dit is een plek die je omarmt. Geen drukte, geen haast — alleen de rust van het water, het ruisen van de bomen en het gevoel dat de tijd hier nét een beetje langzamer loopt.<br></br>
+                <motion.p variants={fadeInUp} className="body-text">
+                    Bij Sendang Redjo ervaar je een unieke mix van rust, natuur en warme Javaanse gastvrijheid. 
+                    Alles is ontworpen om je volledig onder te dompelen in ontspanning en beleving.<br /><br />
 
-                    Avontuurlijke beleving<br></br>
-                    Laat de dag ontstaan zoals jij dat wil: glijd in stilte over het meer, vang je eigen vis of geef je over aan het gewichtloze dobberen. Alles op jouw tempo, alles in jouw verhaal.<br></br>
+                    <span className="font-semibold">Stijlvolle cabana’s</span><br />
+                    Ontworpen met Javaanse elegantie—warme details, zachte luxe en een panoramisch zicht op het meer.<br /><br />
 
-                    Authentieke Javaanse keuken<br></br>
-                    Onze gerechten worden langzaam bereid op houtvuur, precies zoals de traditie het bedoelt. Pure smaken, warme geuren — luxe in zijn meest oprechte vorm.<br></br>
+                    <span className="font-semibold">Rust & privacy</span><br />
+                    Geen haast, geen drukte—alleen natuur, stilte en het gevoel dat tijd hier trager stroomt.<br /><br />
+
+                    <span className="font-semibold">Avontuurlijke beleving</span><br />
+                    Glijd in stilte over het water, vang je eigen vis of dobber weg in totale ontspanning.<br /><br />
+
+                    <span className="font-semibold">Authentieke Javaanse keuken</span><br />
+                    Langzaam bereid op houtvuur—pure smaken, warme geuren en traditie in zijn mooiste vorm.
                 </motion.p>
             </SectionWrapper>
         </div>
