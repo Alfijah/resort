@@ -27,7 +27,7 @@ export default function CabanaSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            className="relative w-full max-w-screen-2xl mx-auto  sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row items-start overscroll-x-none mt-4 sm:mt-10 lg:mt-24">
+            className="relative w-full max-w-screen-2xl mx-auto sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row items-start lg:items-center overscroll-x-none mt-2 sm:mt-10 lg:mt-24">
 
             <motion.div variants={container}
                 className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto px-6 py-12 md:py-16 lg:py-20">
@@ -46,7 +46,7 @@ export default function CabanaSection() {
 
             <motion.div variants={container}
                 className="w-full lg:w-1/2 mx-auto">
-                <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px]">
+                <div className="relative w-full overflow-hidden h-[320px] sm:h-[360px] md:h-[480px]">
                     <CabanaCarousel />
 
                 </div>

@@ -16,7 +16,7 @@ export default function CabanaCarousel() {
       slidesPerViewMobile={1}
       gap={16}
       showModal={true}
-      height="240px"
+      height="320px"
     />
   );
 }

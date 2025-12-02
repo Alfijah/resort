@@ -135,7 +135,7 @@ export default function IntroSection() {
                 viewport={{ amount: 0.5 }}
                 transition={{ delay: 2.8 }} //
                 className="w-full max-w-screen-2xl mx-auto sm:px-8 md:px-10 lg:px-16">
-                <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[456px] lg:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
+                <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[320px] sm:h-[348px] md:h-[520px] flex items-center justify-center max-w-screen-2xl mx-auto">
 
                     {!isMobile && (
                         <motion.div
@@ -185,7 +185,7 @@ export default function IntroSection() {
                                                 <img
                                                     src={img}
                                                     alt={`Slide ${i}`}
-                                                    className="shadow-lg object-cover w-[60vw] max-w-[580px] h-[40vw] max-h-[380px]"
+                                                    className="shadow-lg object-cover w-[60vw] max-w-[580px] h-[40vw] max-h-[540px]"
                                                 />
                                             </motion.div>
                                         );
@@ -244,7 +244,7 @@ export default function IntroSection() {
                                         className="carousel-item flex-shrink-0 shadow-lg cursor-pointer"
                                         style={{
                                             width: "100vw",
-                                            height: "62vw"
+                                            height: "320px"
                                         }}
                                         whileTap={{ scale: 0.96 }}
                                         onClick={() => setSelectedImage(img)}
