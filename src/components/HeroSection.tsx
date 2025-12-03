@@ -2,6 +2,10 @@ import heroBg from "../assets/heroSection/birds.mp4";
 import { useState, useRef, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import SectionWrapper from "../animations/SectionWrapper";
+import { motion } from "framer-motion";
+import { fadeInUp } from "../animations/Varianten";
+import icon from "../assets/icons/arrowCircleW.png"
 
 export default function HeroSection() {
     // const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
@@ -91,6 +95,34 @@ export default function HeroSection() {
 
             <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black/70 to-transparent pointer-events-none">
             </div>
+
+            <SectionWrapper
+                className="relative z-20 flex flex-col h-full justify-start sm:justify-center items-start text-start w-full lg:max-w-4xl px-6 sm:px-0 pt-100 md:pt-98 lg:pt-56">
+                <motion.h1 variants={fadeInUp} className="text-2xl md:text-4xl pb-2 md:pb-6 xl:pb-8 text-white leading-snugged text-shadow-lg/30">
+                    De verborgen luxe
+                </motion.h1>
+                <motion.p variants={fadeInUp} className="text-sm md:text-base text-white leading-relaxed text-shadow-lg/30 mt-4 md:mt-6">
+                    Een toevluchtsoord van rust en warmte, ver weg van alles en dichtbij jezelf.
+                </motion.p>
+
+                <motion.div
+                    variants={fadeInUp}
+                    className="flex items-center justify-center gap-3 mt-6 cursor-pointer group"
+                >
+                    {/* ICON */}
+                    <img
+                        src={icon}
+                        alt="Imagine icon"
+                        className="w-8 h-8 object-contain font-bold group-hover:opacity-100 transition"
+                    />
+
+                    {/* TEXT */}
+                    <span className="icon text-sm md:text-base text-white leading-relaxed text-shadow-lg group-hover:underline group-hover:text-white transition">
+                        Imagine Your Day
+                    </span>
+                </motion.div>
+                
+            </SectionWrapper>
 
             <div className="absolute bottom-6 w-full flex justify-center hidden xl:flex px-4">
                 <div className="w-full h-30 max-w-5xl bg-white rounded-sm shadow-lg grid grid-cols-3 items-center px-10 py- gap-6 text-xs xl:text-sm uppercase">

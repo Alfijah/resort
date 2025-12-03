@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
 import invite from "../assets/inviteSection/leaf.jpg"
-import icon from "../assets/icons/arrowRoundWhiteDown.png"
+import icon from "../assets/icons/arrowCircleW.png"
 
 export default function InviteSection() {
     return (
@@ -39,23 +39,6 @@ export default function InviteSection() {
                     <span className="italic">Authentieke Javaanse keuken</span><br />
                     Langzaam bereid op houtvuur—pure smaken, warme geuren en traditie in zijn mooiste vorm.
                 </motion.p>
-
-                <motion.div
-                    variants={fadeInUp}
-                    className="flex items-center justify-center gap-3 mt-8 cursor-pointer group"
-                >
-                    {/* ICON */}
-                    <img
-                        src={icon}
-                        alt="Imagine icon"
-                        className="w-8 h-8 object-contain font-bold group-hover:opacity-100 transition"
-                    />
-
-                    {/* TEXT */}
-                    <span className="body-text font-semibold group-hover:underline group-hover:text-white transition"><u>
-                        Imagine Your Day</u>
-                    </span>
-                </motion.div>
             </SectionWrapper>
         </div>
     )
