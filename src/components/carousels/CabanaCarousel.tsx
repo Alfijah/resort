@@ -1,5 +1,5 @@
 import Carousel from "../carousels/Carousel";
-import cab1 from "../../assets/cabanaSection/cab1.jpg";
+import cab1 from "../../assets/cabanaSection/cab1.jpeg";
 import cab2 from "../../assets/cabanaSection/cab2.jpg";
 import cab3 from "../../assets/cabanaSection/cab3.jpg";
 import cab4 from "../../assets/cabanaSection/cab4.jpg";

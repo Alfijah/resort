@@ -52,8 +52,8 @@ export default function InviteSection() {
                     />
 
                     {/* TEXT */}
-                    <span className="body-text font-semibold group-hover:underline group-hover:text-white transition">
-                        Imagine Your Day
+                    <span className="body-text font-semibold group-hover:underline group-hover:text-white transition"><u>
+                        Imagine Your Day</u>
                     </span>
                 </motion.div>
             </SectionWrapper>

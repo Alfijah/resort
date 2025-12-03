@@ -5,13 +5,16 @@ import { container, fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
 import CarouselArrow from "./ui/CarouselArrow";
 import ImageModal from "../components/ui/ImageModal";
-import img1 from "../assets/introSection/lodge1.jpg"
-import img2 from "../assets/introSection/lodge2.jpg"
+import img1 from "../assets/introSection/lodge1.jpeg"
+import img2 from "../assets/introSection/lodge2.jpeg"
 import img3 from "../assets/introSection/lodge3.jpg"
-import img4 from "../assets/introSection/lodge6.jpg"
-import img5 from "../assets/introSection/img1.png"
+import img4 from "../assets/introSection/lodge4.jpeg"
+import img5 from "../assets/introSection/lodge5.jpeg"
+import img6 from "../assets/introSection/lodge6.jpg"
+import img7 from "../assets/introSection/lodge7.jpeg"
 
-const images = [img1, img2, img3, img4, img5];
+
+const images = [img1, img2, img3, img4, img5, img6, img7];
 
 export default function IntroSection() {
     const [index, setIndex] = useState(0);
