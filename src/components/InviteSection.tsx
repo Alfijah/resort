@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
 import invite from "../assets/inviteSection/leaf.jpg"
-import icon from "../assets/icons/arrowCircleW.png"
 
 export default function InviteSection() {
     return (
