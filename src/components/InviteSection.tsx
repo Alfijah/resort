@@ -25,16 +25,24 @@ export default function InviteSection() {
                 <motion.p variants={fadeInUp} className="body-text">
                     Bij Sendang Redjo ervaar je een unieke mix van rust, natuur en warme Javaanse gastvrijheid.
                     Alles is ontworpen om je volledig onder te dompelen in ontspanning en beleving.<br /><br />
+                </motion.p>
 
+                <motion.p variants={fadeInUp} className="body-text">
                     <span className="italic">Stijlvolle cabanas</span><br />
                     Ontworpen met Javaanse elegantie—warme details, zachte luxe en een panoramisch zicht op het meer.<br /><br />
+                </motion.p>
 
+                <motion.p variants={fadeInUp} className="body-text">
                     <span className="italic">Rust & privacy</span><br />
                     Geen haast, geen drukte—alleen natuur, stilte en het gevoel dat tijd hier trager stroomt.<br /><br />
+                </motion.p>
 
+                <motion.p variants={fadeInUp} className="body-text">
                     <span className="italic">Avontuurlijke beleving</span><br />
                     Glijd in stilte over het water, vang je eigen vis of dobber weg in totale ontspanning.<br /><br />
+                </motion.p>
 
+                <motion.p variants={fadeInUp} className="body-text">
                     <span className="italic">Authentieke Javaanse keuken</span><br />
                     Langzaam bereid op houtvuur—pure smaken, warme geuren en traditie in zijn mooiste vorm.
                 </motion.p>

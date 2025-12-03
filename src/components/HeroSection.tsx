@@ -97,7 +97,7 @@ export default function HeroSection() {
             </div>
 
             <SectionWrapper
-                className="relative z-20 flex flex-col h-full justify-start sm:justify-center items-start text-start w-full lg:max-w-4xl px-6 sm:px-0 pt-88 md:pt-98 lg:pt-56">
+                className="relative z-20 flex flex-col h-full justify-start items-start text-start md:items-center w-full px-6 sm:px-12 md:px-14 pt-88 md:pt-95 lg:pt-95 xl:pt-105">
                 <motion.h1 variants={fadeInUp} className="text-2xl md:text-4xl pb-2 md:pb-6 xl:pb-8 text-white leading-snugged text-shadow-lg/30">
                     De verborgen luxe
                 </motion.h1>
