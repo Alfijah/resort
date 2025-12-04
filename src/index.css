@@ -60,7 +60,7 @@ ul {
   list-style: none;
 }
 
-h1, .icon {
+h1, .icon, .explore-button {
   /* font-family: 'Cormorant Garamond', sans-serif; */
   font-family: 'Reforma 1918 Blanca', sans-serif;
   /* font-weight: bold; */
@@ -91,6 +91,11 @@ a {
 p {
     text-align: justify;
     hyphens: auto;
+}
+
+.explore-button {
+  border-color: #c3b091;
+  border-style: solid;
 }
 
 .invite-section .heading-primary {

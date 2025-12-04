@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { container, fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
 import ActiviteitenCarousel from "./carousels/ActiviteitenCarousel";
+import ExploreButton from "./ExploreButton";
 
 export default function ActiviteitenSection() {
     return (
@@ -21,6 +22,10 @@ export default function ActiviteitenSection() {
                     className="body-text">
                     <br></br>En voor natuurliefhebbers: van ijsvogels tot reigers, elke dag is anders.
                 </motion.p>
+
+                <motion.div variants={fadeInUp} className="w-full">
+                                <ExploreButton />
+                                </motion.div>
             </motion.div>
 
             <motion.div variants={container}

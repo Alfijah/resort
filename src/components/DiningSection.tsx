@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { container, fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
 import DiningCarousel from "./carousels/DiningCarousel";
+import ExploreButton from "./ExploreButton";
 
 export default function DiningSection() {
     return (
@@ -27,8 +28,12 @@ export default function DiningSection() {
                 <motion.p variants={fadeInUp}
                     className="body-text">
                     <br></br>De dining is volledig inbegrepen bij je verblijf.
-                    Terwijl je ontspant aan het water, grill je zelf je lunch en geniet je van een omgeving die tijd laat stilstaan. Alles wat we serveren is vers, eerlijk en met zorg bereid — de smaken en geuren van Java maken jouw dagverblijf compleet.
+                    Terwijl je ontspant aan het water, barbecue je zelf je lunch en geniet je van een omgeving die tijd laat stilstaan. Alles wat we serveren is vers, eerlijk en met zorg bereid — de smaken en geuren van Java maken jouw dagverblijf compleet.
                 </motion.p>
+
+                <motion.div variants={fadeInUp} className="w-full">
+                                <ExploreButton />
+                                </motion.div>
 
             </motion.div>
         </SectionWrapper>

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { container, fadeInUp } from "../animations/Varianten";
 import SectionWrapper from "../animations/SectionWrapper";
 import CabanaCarousel from "./carousels/CabanaCarousel";
+import ExploreButton from "./ExploreButton";
 
 export default function CabanaSection() {
     return (
@@ -19,8 +20,12 @@ export default function CabanaSection() {
 
                 <motion.p variants={fadeInUp}
                     className="body-text">
-                    <br></br>Elke cabana beschikt over een luxe outdoor zithoek, een eigen keuken met bar, poolbeds, een hangmat en een moderne douche met warm water en toilet. Kajaks, hengels en luchtmatrassen staan voor je klaar, of je nu het meer op wil of in stilte wil dobberen.
+                    <br></br>Elke cabana beschikt over een luxe outdoor zithoek, een eigen keuken met bar, poolbeds, een hangmat en een moderne douche met warm water en toilet. Kajaks, hengels en luchtbedden staan voor je klaar, of je nu het meer op wil of in stilte wil dobberen.
                 </motion.p>
+
+                <motion.div variants={fadeInUp} className="w-full">
+                <ExploreButton />
+                </motion.div>
             </motion.div>
 
             <motion.div variants={container}
