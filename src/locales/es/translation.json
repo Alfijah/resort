@@ -1,0 +1,29 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "cabanas": "Cabañas",
+        "dining": "Gastronomía",
+        "activities": "Actividades",
+        "about": "Sobre nosotros",
+        "contact": "Contacto",
+        "tarifs": "Tarifas",
+        "book": "Reservar"
+    },
+    "hero": {
+        "title": "El lujo escondido",
+        "subtitle": "Un refugio de paz y calidez, lejos de todo y cerca de ti mismo.",
+        "explore": "Imagina tu día",
+        "checkIn": "Check-In",
+        "selectDate": "Selecciona una fecha",
+        "cabana": "Cabaña",
+        "cabanas": "Cabañas",
+        "guestOptions": "Huésped(es)",
+        "gasten": "huéspedes",
+        "guests_one": "{{count}} huésped",
+        "guests_other": "{{count}} huéspedes",
+        "cabanaLimit": "Máximo de 3 cabañas disponibles en línea. Contáctanos para reservas más grandes.",
+        "guestLimit": "Se permite un máximo de 5 huéspedes por cabaña.",
+        "book": "Reservar",
+        "email": "Correo electrónico"
+    }
+}

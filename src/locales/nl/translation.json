@@ -1,0 +1,30 @@
+{
+    "nav": {
+        "home": "Home",
+        "cabanas": "Cabanas",
+        "dining": "Dining",
+        "activities": "Activiteiten",
+        "about": "Over ons",
+        "contact": "Contact",
+        "tarifs": "Tarieven",
+        "book": "Reserveren"
+    },
+    "hero": {
+        "title": "De verborgen luxe",
+        "subtitle": "Een toevluchtsoord van rust en warmte, ver weg van alles en dichtbij jezelf.",
+        "explore": "Imagine Your Day",
+        "checkIn": "Check-In",
+        "selectDate": "Selecteer een datum",
+        "cabana": "Cabana",
+        "cabanas": "Cabanas",
+        "guestOptions": "Gast(en)",
+        "gast": "gast",
+        "gasten": "gasten",
+        "guests_one": "{{count}} gast",
+        "guests_other": "{{count}} gasten",
+        "cabanaLimit": "Maximaal 3 cabanas online. Neem contact op voor grotere boekingen.",
+        "guestLimit": "Maximaal 5 gasten per cabana toegestaan.",
+        "book": "Reserveren",
+        "email": "Email"
+    }
+}

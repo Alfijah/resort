@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 import { RxCross1 } from "react-icons/rx";
 import logoWhite from "../assets/logo/logo_sendang_wit.png";
 import logoDark from "../assets/logo/logo_sendang_donker.png";
 
 export default function Navbar() {
+    const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
@@ -24,7 +26,7 @@ export default function Navbar() {
             role="navigation"
             aria-label="Main navigation"
 
-            className={`w-full fixed top-0 z-50 py-3 transition-colors duration-700
+            className={`w-full fixed top-0 z-50 py-3 transition-colors duration-700 whitespace-nowrap
             ${isScrolled ? "bg-white/100 text-black shadow-md" : "bg-transparent text-white"}`}
         >
             {/* MOBILE / TABLET / SMALL LAPTOP (tot <1260px) */}
@@ -47,8 +49,10 @@ export default function Navbar() {
                     className="h-16 sm:h-20 transition-all duration-300"
                 />
 
+                <LanguageSwitcher isScrolled={isScrolled}  />
+
                 {/* Leeg voor alignment (Reserveren zit in menu) */}
-                <div className="w-8" />
+                {/* <div className="w-8" /> */}
             </div>
 
             {/* MOBILE MENU DROPDOWN */}
@@ -67,8 +71,7 @@ export default function Navbar() {
 
                         {/* MENU PANEEL */}
                         <motion.div
-                            className={`fixed top-0 left-0 w-64 h-full xl:hidden flex flex-col items-start space-y-6 py-8 pl-8 pt-10 text-sm uppercase tracking-wider
-bg-white text-black shadow-lg z-50 will-change-transform`}
+                            className={`fixed top-0 left-0 w-64 h-full xl:hidden flex flex-col items-start space-y-6 py-8 pl-8 pt-10 text-sm uppercase tracking-wider bg-white text-black shadow-lg z-50 will-change-transform`}
                             initial={{ x: "-100%" }}
                             animate={{ x: isClosing ? "-100%" : 0 }}
                             exit={{ x: "-100%" }}
@@ -85,26 +88,25 @@ bg-white text-black shadow-lg z-50 will-change-transform`}
                             </button>
 
                             {/* Existing menu links — exact jouw code */}
-                            <a href="">Home</a>
-                            <a href="">Cabanas</a>
-                            <a href="">Dining</a>
-                            <a href="">Activiteiten</a>
-                            <a href="">Over Ons</a>
-                            <a href="">Contact</a>
-                            <a href="">Tarieven</a>
+                            <a href="">{t("nav.home")}</a>
+                            <a href="">{t("nav.cabanas")}</a>
+                            <a href="">{t("nav.dining")}</a>
+                            <a href="">{t("nav.activities")}</a>
+                            <a href="">{t("nav.about")}</a>
+                            <a href="">{t("nav.contact")}</a>
                         </motion.div>
                     </>
                 )}
             </AnimatePresence>
 
             {/* DESKTOP NAVBAR (≥1260px) */}
-            <div className="hidden xl:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs xl:text-sm uppercase tracking-widest">
+            <div className="hidden xl:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs xl:text-xs uppercase tracking-widest">
                 {/* Left links */}
                 <ul className="flex justify-start gap-10 px-10 xl:px-20">
-                    <li><a href="" className="nav-link">Home</a></li>
-                    <li><a href="" className="nav-link">Cabanas</a></li>
-                    <li><a href="" className="nav-link">Dining</a></li>
-                    <li><a href="" className="nav-link">Activiteiten</a></li>
+                    <li><a href="" className="nav-link">{t("nav.home")}</a></li>
+                    <li><a href="" className="nav-link">{t("nav.cabanas")}</a></li>
+                    <li><a href="" className="nav-link">{t("nav.dining")}</a></li>
+                    <li><a href="" className="nav-link">{t("nav.activities")}</a></li>
                 </ul>
 
                 {/* Logo */}
@@ -119,13 +121,13 @@ bg-white text-black shadow-lg z-50 will-change-transform`}
                 {/* Right links */}
                 <div className="flex justify-end gap-8 px-[20%] items-center">
                     <ul className="flex items-center gap-10">
-                        <li><a className="nav-link whitespace-nowrap" href="">Over Ons</a></li>
-                        <li><a className="nav-link" href="">Contact</a></li>
-                        <li><a className="nav-link" href="">Tarieven</a></li>
+                        <li><a className="nav-link " href="">{t("nav.about")}</a></li>
+                        <li><a className="nav-link" href="">{t("nav.contact")}</a></li>
                     </ul>
                     <button className="bg-sky-900 px-6 py-3 rounded-sm uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
-                        Reserveren
+                        {t("nav.book")}
                     </button>
+                    <LanguageSwitcher isScrolled={isScrolled}  />
                 </div>
             </div>
         </nav>

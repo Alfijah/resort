@@ -2,6 +2,7 @@ import heroBg from "../assets/heroSection/birds.mp4";
 import { useState, useRef, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
@@ -9,6 +10,7 @@ import icon from "../assets/icons/arrowCircleW.png"
 
 export default function HeroSection() {
     // const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+    const { t } = useTranslation();
 
     const [startDate, setStartDate] = useState<Date | null>(null);
     const today = new Date();
@@ -99,40 +101,40 @@ export default function HeroSection() {
             <SectionWrapper
                 className="relative z-20 flex flex-col h-full justify-start items-start text-start md:items-center w-full px-6 sm:px-12 md:px-14 pt-88 md:pt-95 lg:pt-95 xl:pt-105">
                 <motion.h1 variants={fadeInUp} className="text-2xl md:text-4xl pb-2 md:pb-6 xl:pb-8 text-white leading-snugged text-shadow-lg/30">
-                    De verborgen luxe
+                    {t("hero.title")}
                 </motion.h1>
                 <motion.p variants={fadeInUp} className="text-sm md:text-base text-white leading-relaxed text-shadow-lg/30 mt-4 md:mt-6">
-                    Een toevluchtsoord van rust en warmte, ver weg van alles en dichtbij jezelf.
+                    {t("hero.subtitle")}
                 </motion.p>
 
                 <motion.div
                     variants={fadeInUp}
                     className="flex items-center justify-center gap-3 mt-6 cursor-pointer group"
                 >
-                    {/* ICON */}
+              
                     <img
                         src={icon}
                         alt="Imagine icon"
                         className="w-8 h-8 object-contain font-bold group-hover:opacity-100 transition"
                     />
 
-                    {/* TEXT */}
+                    
                     <span className="icon text-sm md:text-base text-white leading-relaxed text-shadow-lg group-hover:underline group-hover:text-white transition">
-                        Imagine Your Day
+                        {t("hero.explore")}
                     </span>
                 </motion.div>
                 
             </SectionWrapper>
 
-            <div className="absolute bottom-6 w-full flex justify-center hidden xl:flex px-4">
+            <div className="absolute z-21 bottom-6 w-full flex justify-center hidden xl:flex px-4">
                 <div className="w-full h-30 max-w-5xl bg-white rounded-sm shadow-lg grid grid-cols-3 items-center px-10 py- gap-6 text-xs xl:text-sm uppercase">
                     {/* Datepicker */}
                     <div className="flex flex-col">
-                        <p className="pb-2 text-sky-900 tracking-wide">Check-in</p>
+                        <p className="pb-2 text-sky-900 tracking-wide">{t("hero.checkIn")}</p>
                         <DatePicker
                             selected={startDate}
                             onChange={(date) => setStartDate(date)}
-                            placeholderText="Selecteer een datum"
+                            placeholderText={t("hero.selectDate")}
                             minDate={new Date(today.setDate(today.getDate() + 1))} // disable vandaag en vroeger
                             dateFormat="dd MMMM yyyy"
                             className="w-full border rounded-sm px-3 py-2 text-gray-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-800 cursor-pointer transition"
@@ -148,7 +150,7 @@ export default function HeroSection() {
 
                     {/* Cabana & Guests */}
                     <div>
-                        <p className="pb-2 text-sky-900 tracking-wide">Cabana</p>
+                        <p className="pb-2 text-sky-900 tracking-wide">{t("hero.cabana")}</p>
 
                         <div className="relative w-full">
 
@@ -158,8 +160,9 @@ export default function HeroSection() {
                                 className="flex items-center justify-between border rounded-md px-2 py-2 cursor-pointer hover:bg-gray-50"
                             >
                                 <p className="text-gray-800 normal-case">
-                                    {bookings.length} cabana{bookings.length > 1 && "s"},{" "}
-                                    {totalGuests} gast{totalGuests > 1 && "en"}
+                                    {bookings.length} {t("hero.cabana")}{bookings.length > 1 && "s"},{" "}
+                                    {t("hero.guests", { count: totalGuests })}
+                                    {/*!!!! LET HIER OP !!!!! */}
                                 </p>
                             </div>
 
@@ -174,7 +177,7 @@ export default function HeroSection() {
 
                                             {/* CABANA HEADER: achtergrond sky-900 */}
                                             <div className="flex items-center justify-between bg-sky-900 text-white normal-case px-2 py-2 rounded-t-sm">
-                                                <p>Cabana &nbsp; {item.cabana}</p>
+                                                <p>{t("hero.cabana")} &nbsp; {item.cabana}</p>
                                                 <div className="flex space-x-2">
 
                                                     {/* Eerste Cabana -> + alleen zichtbaar als er nog geen 3 zijn */}
@@ -218,7 +221,7 @@ export default function HeroSection() {
 
                                             {/* GUEST CONTROL */}
                                             <div className="flex items-center justify-between mt-1 mb-1 px-2 py-2">
-                                                <p className="font-medium normal-case">Gast(en)</p>
+                                                <p className="font-medium normal-case">{t("hero.guestOptions")}</p>
                                                 <div className="flex items-center space-x-3">
                                                     <button
                                                         onClick={() => updateGuests(index, -1)}
@@ -243,14 +246,14 @@ export default function HeroSection() {
                                     {/* 🔴 Bovenste waarschuwing: Max 5 gasten per cabana */}
                                     {bookings.some((b) => b.guests >= 5) && (
                                         <p className="text-xs normal-case text-red-600 px-1 mt-2">
-                                            ⚠️Maximaal 5 gasten per cabana toegestaan.
+                                            ⚠️{t("hero.guestLimit")}
                                         </p>
                                     )}
 
                                     {/* Info tekst: toon waarschuwing onderin wanneer max bereikt (optioneel) */}
                                     {bookings.length >= 3 && (
                                         <p className="text-xs normal-case text-red-600 px-1 mb-2">
-                                            ⚠️Maximaal 3 cabana’s online. Neem contact op voor grotere boekingen.
+                                            ⚠️{t("hero.cabanaLimit")}
                                         </p>
                                     )}
                                 </div>
@@ -259,17 +262,17 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    <button className="bg-sky-900 py-2 -mb-6 tracking-wide text-white text-sm xl:text-base rounded-sm cursor-pointer hover:bg-red-400 uppercase">Reserveren</button>
+                    <button className="bg-sky-900 py-2 -mb-6 tracking-wide text-white text-sm rounded-sm cursor-pointer hover:bg-red-400 uppercase">{t("hero.book")}</button>
                 </div>
             </div>
 
             {/* 📱 Mobiele onderbalk – zichtbaar onder 1260px */}
             <div className="fixed bottom-0 left-0 w-full bg-white text-white py-6 px-6 grid grid-cols-2 flex justify-around items-center xl:hidden z-50 backdrop-blur-md uppercase">
                 <button className="absolute bg-sky-900 w-[50%] h-full uppercase tracking-widest text-xs cursor-pointer hover:bg-red-400">
-                    Reserveren
+                    {t("hero.book")}
                 </button>
                 <button className="absolute bg-white w-[50%] right-0 h-full py-2 uppercase tracking-widest text-xs text-black cursor-pointer hover:bg-white hover:text-orange-600 transition">
-                    Email
+                    {t("hero.email")}
                 </button>
             </div>
 

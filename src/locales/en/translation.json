@@ -1,0 +1,29 @@
+{
+    "nav": {
+        "home": "Home",
+        "cabanas": "Cabanas",
+        "dining": "Dining",
+        "activities": "Activities",
+        "about": "About us",
+        "contact": "Contact",
+        "tarifs": "Rates",
+        "book": "Book Now"
+    },
+    "hero": {
+        "title": "The Hidden Luxury",
+        "subtitle": "A sanctuary of peace and warmth, far from everything yet close to yourself.",
+        "explore": "Imagine Your Day",
+        "checkIn": "Check-In",
+        "selectDate": "Select a date",
+        "cabana": "Cabana",
+        "cabanas": "Cabanas",
+        "guestOptions": "Guest(s)",
+        "gasten": "guests",
+        "guests_one": "{{count}} guest",
+        "guests_other": "{{count}} guests",
+        "cabanaLimit": "Maximum of 3 cabanas available online. Contact us for larger bookings.",
+        "guestLimit": "A maximum of 5 guests per cabana is allowed.",
+        "book": "Book Now",
+        "email": "Email"
+    }
+}

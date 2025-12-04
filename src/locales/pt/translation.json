@@ -1,0 +1,29 @@
+{
+    "nav": {
+        "home": "Início",
+        "cabanas": "Cabanas",
+        "dining": "Gastronomia",
+        "activities": "Atividades",
+        "about": "Sobre nós",
+        "contact": "Contato",
+        "tarifs": "Tarifas",
+        "book": "Reservar"
+    },
+    "hero": {
+        "title": "O luxo escondido",
+        "subtitle": "Um refúgio de paz e aconchego, longe de tudo e perto de você.",
+        "explore": "Imagine o seu dia",
+        "checkIn": "Check-In",
+        "selectDate": "Selecione uma data",
+        "cabana": "Cabana",
+        "cabanas": "Cabanas",
+        "guestOptions": "Hóspede(s)",
+        "gasten": "hóspedes",
+        "guests_one": "{{count}} hóspede",
+        "guests_other": "{{count}} hóspedes",
+        "cabanaLimit": "Máximo de 3 cabanas disponíveis online. Entre em contato para reservas maiores.",
+        "guestLimit": "É permitido no máximo 5 hóspedes por cabana.",
+        "book": "Reservar",
+        "email": "E-mail"
+    }
+}

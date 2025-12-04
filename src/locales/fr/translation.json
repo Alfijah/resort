@@ -1,0 +1,29 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "cabanas": "Cabanas",
+        "dining": "Restauration",
+        "activities": "Activités",
+        "about": "À propos",
+        "contact": "Contact",
+        "tarifs": "Tarifs",
+        "book": "Réserver"
+    },
+    "hero": {
+        "title": "Le luxe caché",
+        "subtitle": "Un refuge de calme et de chaleur, loin de tout mais proche de vous-même.",
+        "explore": "Imaginez votre journée",
+        "checkIn": "Check-In",
+        "selectDate": "Sélectionnez une date",
+        "cabana": "Cabana",
+        "cabanas": "Cabanas",
+        "guestOptions": "Invité(s)",
+        "gasten": "invités",
+        "guests_one": "{{count}} invité",
+        "guests_other": "{{count}} invités",
+        "cabanaLimit": "Maximum de 3 cabanas réservables en ligne. Contactez-nous pour les groupes plus importants.",
+        "guestLimit": "Un maximum de 5 invités par cabana est autorisé.",
+        "book": "Réserver",
+        "email": "E-mail"
+    }
+}
