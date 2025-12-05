@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { container, fadeInUp } from "../animations/Varianten";
+import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
 import CabanaCarousel from "./carousels/CabanaCarousel";
 import ExploreButton from "./ExploreButton";
 
 export default function CabanaSection() {
+    const { t } = useTranslation();
+
     return (
         <SectionWrapper
             className="relative w-full max-w-screen-2xl mx-auto sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row items-start lg:items-center overscroll-x-none mt-2 sm:mt-4 lg:mt-20">
@@ -12,15 +15,15 @@ export default function CabanaSection() {
             <motion.div variants={container}
                 className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto px-6 py-12 md:py-12 lg:py-20">
                 <motion.h1 variants={fadeInUp}
-                    className="heading-primary">Cabanas</motion.h1>
+                    className="heading-primary">{t("cabanas.title")}</motion.h1>
                 <motion.p variants={fadeInUp}
                     className="body-text">
-                    Onze cabanas zijn jouw privéplek aan het water — alleen per boot bereikbaar, waardoor je vanaf het eerste moment in volledige rust aankomt.
+                    {t("cabanas.subtitle1")}
                 </motion.p>
 
                 <motion.p variants={fadeInUp}
                     className="body-text">
-                    <br></br>Elke cabana beschikt over een luxe outdoor zithoek, een eigen keuken met bar, poolbeds, een hangmat en een moderne douche met warm water en toilet. Kajaks, hengels en luchtbedden staan voor je klaar, of je nu het meer op wil of in stilte wil dobberen.
+                    <br></br>{t("cabanas.subtitle2")}
                 </motion.p>
 
                 <motion.div variants={fadeInUp} className="w-full">

@@ -1,29 +1,63 @@
 {
-    "nav": {
-        "home": "Home",
-        "cabanas": "Cabanas",
-        "dining": "Dining",
-        "activities": "Activities",
-        "about": "About us",
-        "contact": "Contact",
-        "tarifs": "Rates",
-        "book": "Book Now"
-    },
-    "hero": {
-        "title": "The Hidden Luxury",
-        "subtitle": "A sanctuary of peace and warmth, far from everything yet close to yourself.",
-        "explore": "Imagine Your Day",
-        "checkIn": "Check-In",
-        "selectDate": "Select a date",
-        "cabana": "Cabana",
-        "cabanas": "Cabanas",
-        "guestOptions": "Guest(s)",
-        "gasten": "guests",
-        "guests_one": "{{count}} guest",
-        "guests_other": "{{count}} guests",
-        "cabanaLimit": "Maximum of 3 cabanas available online. Contact us for larger bookings.",
-        "guestLimit": "A maximum of 5 guests per cabana is allowed.",
-        "book": "Book Now",
-        "email": "Email"
-    }
+  "nav": {
+    "home": "Home",
+    "cabanas": "Cabanas",
+    "dining": "Dining",
+    "activities": "Activities",
+    "about": "About us",
+    "contact": "Contact",
+    "tarifs": "Rates",
+    "book": "Book Now"
+  },
+  "hero": {
+    "title": "The Hidden Luxury",
+    "subtitle": "A sanctuary of peace and warmth, far from everything yet close to yourself.",
+    "explore": "Imagine Your Day",
+    "checkIn": "Check-In",
+    "selectDate": "Select a date",
+    "cabana": "Cabana",
+    "cabanas": "Cabanas",
+    "guestOptions": "Guest(s)",
+    "gasten": "guests",
+    "guests_one": "{{count}} guest",
+    "guests_other": "{{count}} guests",
+    "cabanaLimit": "Maximum of 3 cabanas available online. Contact us for larger bookings.",
+    "guestLimit": "A maximum of 5 guests per cabana is allowed.",
+    "book": "Book Now",
+    "email": "Email"
+  },
+  "intro": {
+    "title": "Where silence, nature and soul come together",
+    "subtitle": "Just 20 minutes from Paramaribo lies Sendang Redjo — a serene lakeside retreat built on historic grounds and shaped by Javanese hospitality. Here, everything slows down, and silence finds its form."
+  },
+  "cabanas": {
+    "title": "Cabanas",
+    "subtitle1": "Our cabanas are your private sanctuary on the water — accessible only by boat, so from the moment you arrive, peace surrounds you.",
+    "subtitle2": "Each cabana features a luxurious outdoor lounge, a private kitchen with bar, poolbeds, a hammock, and a modern shower with hot water and toilet. Kayaks, fishing gear and floaties are yours to enjoy — whether you want to explore the lake or drift away in silence."
+  },
+  "dining": {
+    "title": "Dining",
+    "subtitle1": "Experience Javanese cuisine in the heart of nature: slow-cooked over woodfire, seasoned with authentic spices, and served in your private cabana — a culinary journey where flavor and serenity meet.",
+    "subtitle2": "Dining is fully included with your stay. Relax by the water as you grill your own lunch and enjoy an environment where time seems to stand still. Everything we serve is fresh, honest and prepared with care — the tastes and aromas of Java complete your day of retreat."
+  },
+  "activiteiten": {
+    "title": "Activities",
+    "subtitle1": "Discover the lake at your own pace: kayak peacefully, fish in quiet corners, or float effortlessly in the water. Unwind in your cabana — in your hammock, surrounded only by wind and birds.",
+    "subtitle2": "And for nature lovers: from kingfishers to herons, no two days look the same."
+  },
+  "invite": {
+    "title": "The hidden luxury of Sendang Redjo",
+    "subtitle": "At Sendang Redjo, you experience a unique blend of tranquility, nature and warm Javanese hospitality — everything designed to immerse you in deep relaxation and sensory richness.",
+    "subtitle1": "Elegant cabanas",
+    "subtitle1text": "Designed with Javanese elegance — warm details, soft luxury and panoramic views of the lake.",
+    "subtitle2": "Peace & privacy",
+    "subtitle2text": "No rush, no noise — only nature, silence, and the feeling that time flows slower here.",
+    "subtitle3": "Adventurous experiences",
+    "subtitle3text": "Glide quietly across the water, catch your own fish or drift into complete relaxation.",
+    "subtitle4": "Authentic Javanese cuisine",
+    "subtitle4text": "Slow-cooked over woodfire — pure flavors, warm aromas and tradition at its finest."
+  },
+  "button": {
+    "explore": "Discover more"
+  }
 }

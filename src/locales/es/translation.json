@@ -1,29 +1,63 @@
 {
-    "nav": {
-        "home": "Inicio",
-        "cabanas": "Cabañas",
-        "dining": "Gastronomía",
-        "activities": "Actividades",
-        "about": "Sobre nosotros",
-        "contact": "Contacto",
-        "tarifs": "Tarifas",
-        "book": "Reservar"
-    },
-    "hero": {
-        "title": "El lujo escondido",
-        "subtitle": "Un refugio de paz y calidez, lejos de todo y cerca de ti mismo.",
-        "explore": "Imagina tu día",
-        "checkIn": "Check-In",
-        "selectDate": "Selecciona una fecha",
-        "cabana": "Cabaña",
-        "cabanas": "Cabañas",
-        "guestOptions": "Huésped(es)",
-        "gasten": "huéspedes",
-        "guests_one": "{{count}} huésped",
-        "guests_other": "{{count}} huéspedes",
-        "cabanaLimit": "Máximo de 3 cabañas disponibles en línea. Contáctanos para reservas más grandes.",
-        "guestLimit": "Se permite un máximo de 5 huéspedes por cabaña.",
-        "book": "Reservar",
-        "email": "Correo electrónico"
-    }
+  "nav": {
+    "home": "Inicio",
+    "cabanas": "Cabañas",
+    "dining": "Gastronomía",
+    "activities": "Actividades",
+    "about": "Sobre nosotros",
+    "contact": "Contacto",
+    "tarifs": "Tarifas",
+    "book": "Reservar"
+  },
+  "hero": {
+    "title": "El lujo escondido",
+    "subtitle": "Un refugio de paz y calidez, lejos de todo y cerca de ti mismo.",
+    "explore": "Imagina tu día",
+    "checkIn": "Check-In",
+    "selectDate": "Selecciona una fecha",
+    "cabana": "Cabaña",
+    "cabanas": "Cabañas",
+    "guestOptions": "Huésped(es)",
+    "gasten": "huéspedes",
+    "guests_one": "{{count}} huésped",
+    "guests_other": "{{count}} huéspedes",
+    "cabanaLimit": "Máximo de 3 cabañas disponibles en línea. Contáctanos para reservas más grandes.",
+    "guestLimit": "Se permite un máximo de 5 huéspedes por cabaña.",
+    "book": "Reservar",
+    "email": "Correo electrónico"
+  },
+  "intro": {
+    "title": "Donde el silencio, la naturaleza y el alma se encuentran",
+    "subtitle": "A solo 20 minutos de Paramaribo se encuentra Sendang Redjo — un retiro sereno junto a un lago privado, construido sobre tierras históricas y guiado por la hospitalidad javanesa. Aquí, todo se desacelera y el silencio toma forma."
+  },
+  "cabanas": {
+    "title": "Cabañas",
+    "subtitle1": "Nuestras cabañas son tu refugio privado sobre el agua — accesibles solo en bote, para que desde el primer momento llegues envuelto en tranquilidad.",
+    "subtitle2": "Cada cabaña cuenta con una lujosa sala al aire libre, cocina privada con bar, camas de piscina, hamaca y una ducha moderna con agua caliente y baño. Kayaks, cañas de pescar y colchones inflables están a tu disposición — ya sea para explorar el lago o dejarte llevar en silencio."
+  },
+  "dining": {
+    "title": "Gastronomía",
+    "subtitle1": "Prueba la cocina javanesa en plena naturaleza: cocinada lentamente al fuego de leña, con especias auténticas y servida en tu propia cabaña — una experiencia culinaria donde el sabor y la calma se unen.",
+    "subtitle2": "La gastronomía está completamente incluida en tu estancia. Mientras te relajas junto al agua, asas tu propio almuerzo y disfrutas de un entorno donde el tiempo parece detenerse. Todo lo que servimos es fresco, honesto y preparado con esmero — los sabores y aromas de Java completan tu día de retiro."
+  },
+  "activiteiten": {
+    "title": "Actividades",
+    "subtitle1": "Descubre el lago con tranquilidad: rema en kayak a tu propio ritmo, pesca en rincones silenciosos o flota despreocupadamente en el agua. Relájate en tu cabaña — en tu hamaca, rodeado solo de viento y aves.",
+    "subtitle2": "Y para los amantes de la naturaleza: desde martines pescadores hasta garzas, cada día es diferente."
+  },
+  "invite": {
+    "title": "El lujo escondido de Sendang Redjo",
+    "subtitle": "En Sendang Redjo experimentas una mezcla única de tranquilidad, naturaleza y cálida hospitalidad javanesa — todo diseñado para envolverte en relajación profunda y experiencias sensoriales.",
+    "subtitle1": "Cabañas elegantes",
+    "subtitle1text": "Diseñadas con elegancia javanesa — detalles cálidos, lujo suave y una vista panorámica del lago.",
+    "subtitle2": "Paz y privacidad",
+    "subtitle2text": "Sin prisa, sin ruido — solo naturaleza, silencio y la sensación de que el tiempo fluye más lento aquí.",
+    "subtitle3": "Experiencias aventureras",
+    "subtitle3text": "Deslízate en silencio sobre el agua, pesca tu propio alimento o flota en completa relajación.",
+    "subtitle4": "Cocina javanesa auténtica",
+    "subtitle4text": "Cocinada lentamente al fuego de leña — sabores puros, aromas cálidos y tradición en su forma más hermosa."
+  },
+  "button": {
+    "explore": "Descubrir más"
+  }
 }

@@ -25,5 +25,39 @@
         "guestLimit": "É permitido no máximo 5 hóspedes por cabana.",
         "book": "Reservar",
         "email": "E-mail"
+    },
+    "intro": {
+        "title": "Onde silêncio, natureza e alma se encontram",
+        "subtitle": "A apenas 20 minutos de Paramaribo está Sendang Redjo — um refúgio sereno à beira de um lago privado, construído em terras históricas e guiado pela hospitalidade javanesa. Aqui, tudo desacelera e o silêncio ganha forma."
+    },
+    "cabanas": {
+        "title": "Cabanas",
+        "subtitle1": "Nossas cabanas são seu refúgio particular sobre a água — acessíveis apenas de barco, garantindo tranquilidade desde o primeiro momento.",
+        "subtitle2": "Cada cabana oferece um lounge externo luxuoso, cozinha privativa com bar, espreguiçadeiras, rede e um chuveiro moderno com água quente e toalete. Caiaques, varas de pesca e boias estão à sua disposição — seja para explorar o lago ou flutuar em silêncio."
+    },
+    "dining": {
+        "title": "Gastronomia",
+        "subtitle1": "Saboreie a culinária javanesa em meio à natureza: preparada lentamente no fogo de lenha, com especiarias autênticas e servida em sua cabana — uma jornada gastronômica onde sabor e serenidade se encontram.",
+        "subtitle2": "A gastronomia está totalmente incluída na sua estadia. Relaxe à beira da água enquanto grelha seu próprio almoço e aproveita um ambiente onde o tempo parece parar. Tudo o que servimos é fresco, sincero e preparado com cuidado — os sabores e aromas de Java completam seu dia de retiro."
+    },
+    "activiteiten": {
+        "title": "Atividades",
+        "subtitle1": "Explore o lago no seu ritmo: pratique caiaque com tranquilidade, pesque em cantos silenciosos ou apenas flutue na água. Relaxe em sua cabana — em sua rede, cercado apenas por vento e pássaros.",
+        "subtitle2": "E para os amantes da natureza: de martins-pescadores a garças, cada dia é único."
+    },
+    "invite": {
+        "title": "O luxo escondido de Sendang Redjo",
+        "subtitle": "Em Sendang Redjo, você vivencia uma combinação única de tranquilidade, natureza e calorosa hospitalidade javanesa — tudo projetado para mergulhá-lo em relaxamento profundo e experiências sensoriais.",
+        "subtitle1": "Cabanas elegantes",
+        "subtitle1text": "Criadas com elegância javanesa — detalhes acolhedores, luxo suave e vista panorâmica do lago.",
+        "subtitle2": "Tranquilidade & privacidade",
+        "subtitle2text": "Sem pressa, sem ruído — apenas natureza, silêncio e a sensação de que o tempo passa mais devagar aqui.",
+        "subtitle3": "Experiências aventureiras",
+        "subtitle3text": "Deslize silenciosamente pela água, pesque seu próprio peixe ou flutue em completa serenidade.",
+        "subtitle4": "Culinária javanesa autêntica",
+        "subtitle4text": "Preparada lentamente no fogo de lenha — sabores puros, aromas quentes e tradição em sua melhor forma."
+    },
+    "button": {
+        "explore": "Saiba mais"
     }
 }

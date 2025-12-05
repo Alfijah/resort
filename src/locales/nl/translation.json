@@ -26,5 +26,39 @@
         "guestLimit": "Maximaal 5 gasten per cabana toegestaan.",
         "book": "Reserveren",
         "email": "Email"
+    },
+    "intro": {
+        "title": "Waar stilte, natuur en ziel samenkomen",
+        "subtitle": "Op slechts 20 minuten van Paramaribo ligt Sendang Redjo — een serene retreat aan een privémeer, gebouwd op historische grond en gedragen door Javaanse gastvrijheid. Hier vertraagt alles, en vindt stilte haar vorm."
+    },
+    "cabanas": {
+        "title": "Cabanas",
+        "subtitle1": "Onze cabanas zijn jouw privéplek aan het water — alleen per boot bereikbaar, waardoor je vanaf het eerste moment in volledige rust aankomt.",
+        "subtitle2": "Elke cabana beschikt over een luxe outdoor zithoek, een eigen keuken met bar, poolbeds, een hangmat en een moderne douche met warm water en toilet. Kajaks, hengels en luchtbedden staan voor je klaar, of je nu het meer op wil of in stilte wil dobberen."
+    },
+    "dining": {
+        "title": "Dining",
+        "subtitle1": "Proef de Javaanse keuken midden in de natuur: langzaam bereid op houtvuur, met authentieke kruiden en geserveerd in je eigen cabana — een culinaire ervaring waar smaak en rust samenkomen.",
+        "subtitle2": "De dining is volledig inbegrepen bij je verblijf. Terwijl je ontspant aan het water, barbecue je zelf je lunch en geniet je van een omgeving die tijd laat stilstaan. Alles wat we serveren is vers, eerlijk en met zorg bereid — de smaken en geuren van Java maken jouw dagverblijf compleet."
+    },
+    "activiteiten": {
+        "title": "Activiteiten",
+        "subtitle1": "Ontdek het meer in alle rust: kajak in je eigen tempo, vis op stille plekken of dobber zorgeloos in het water. Ontspan in je cabana — in je hangmat, omringd door niets dan wind en vogels.",
+        "subtitle2": "En voor natuurliefhebbers: van ijsvogels tot reigers, elke dag is anders."
+    },
+    "invite": {
+        "title": "De verborgen luxe van Sendang Redjo",
+        "subtitle": "Bij Sendang Redjo ervaar je een unieke mix van rust, natuur en warme Javaanse gastvrijheid. Alles is ontworpen om je volledig onder te dompelen in ontspanning en beleving.",
+        "subtitle1": "Stijlvolle cabanas",
+        "subtitle1text": "Ontworpen met Javaanse elegantie—warme details, zachte luxe en een panoramisch zicht op het meer.",
+        "subtitle2": "Rust & privacy",
+        "subtitle2text": "Geen haast, geen drukte—alleen natuur, stilte en het gevoel dat tijd hier trager stroomt.",
+        "subtitle3": "Avontuurlijke beleving",
+        "subtitle3text": "Glijd in stilte over het water, vang je eigen vis of dobber weg in totale ontspanning.",
+        "subtitle4": "Authentieke Javaanse keuken",
+        "subtitle4text": "Langzaam bereid op houtvuur—pure smaken, warme geuren en traditie in zijn mooiste vorm."
+    },
+    "button":{
+        "explore": "Ontdek meer"
     }
 }
