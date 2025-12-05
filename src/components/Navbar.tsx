@@ -124,7 +124,7 @@ export default function Navbar() {
                         <li><a className="nav-link " href="">{t("nav.about")}</a></li>
                         <li><a className="nav-link" href="">{t("nav.contact")}</a></li>
                     </ul>
-                    <button className="bg-sky-900 px-6 py-3 rounded-sm uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
+                    <button className="bg-sky-900 px-6 py-3 uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
                         {t("nav.book")}
                     </button>
                     <LanguageSwitcher isScrolled={isScrolled}  />

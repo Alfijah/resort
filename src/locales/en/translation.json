@@ -59,5 +59,36 @@
   },
   "button": {
     "explore": "Discover more"
+  },
+  "reviews": {
+    "kicker": "Experiences",
+    "title": "What guests take with them from Sendang Redjo",
+    "subtitle": "A day by the lake feels longer here than it does at home. These are the moments that stay with our guests long after their visit.",
+    "items": {
+      "1": {
+        "name": "Auke Klene",
+        "tag": "Day retreat at the lake",
+        "text": "On November 14th, we visited your resort with a group of six. It was truly beautiful. We were welcomed with fresh coconut water and a warm introduction, followed by a lovely boat ride to our cabana. The cabana had everything we needed and we had such a great time together. The BBQ was fantastic! And the boat ride back at dusk… breathtaking, especially with the birds we saw along the way. I wish you a wonderful future with many happy guests. Warm regards,"
+      },
+      "2": {
+        "name": "Edme Smith",
+        "tag": "Solo escape",
+        "text": "What a magical place! Whenever we go out, especially so close to Paramaribo, there’s always the risk of loud music and overly enthusiastic crowds. Not at Sendang Redjo: it feels as if you’re completely alone in the world, and you return recharged instead of overstimulated. A true hidden gem of serene beauty! The cabana had everything we needed, the food was delicious, the service was excellent, and we all enjoyed swimming, kayaking and real quality time. Thank you again — we will definitely be back!"
+      },
+      "3": {
+        "name": "Sara Pawironadi",
+        "tag": "Family day with children",
+        "text": "We had a fantastic experience at Sendang Redjo — truly something unique. Surrounded by nature, we saw a rainbow across the sky and birds gliding peacefully overhead. The entire retreat felt deeply serene, romantic and full of adventure. It’s the kind of place that touches your soul and makes you feel one with nature. We absolutely recommend it to anyone seeking peace, serenity and a private escape in the heart of nature."
+      }
+    }
+  },
+  "cta": {
+    "kicker": "Reservations",
+    "title": "Ready for your day at the lake?",
+    "subtitle": "Whether you’re here to escape, or simply breathe — your cabana is waiting for you. We welcome you with open arms, a set table, and a peaceful lake.",
+    "primary": "Reserve your cabana",
+    "secondary": "Ask a question",
+    "highlightKicker": "Closer than you think",
+    "highlightText": "Just 20 minutes from Paramaribo, you step into a world of silence, water and Javanese hospitality. A hidden luxury for those who choose peace with intention."
   }
 }

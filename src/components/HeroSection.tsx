@@ -126,8 +126,8 @@ export default function HeroSection() {
                 
             </SectionWrapper>
 
-            <div className="absolute z-21 bottom-6 w-full flex justify-center hidden xl:flex px-4">
-                <div className="w-full h-30 max-w-5xl bg-white rounded-sm shadow-lg grid grid-cols-3 items-center px-10 py- gap-6 text-xs xl:text-sm uppercase">
+            <div className="absolute z-21 bottom-0 w-full flex justify-center hidden xl:flex ">
+                <div className="w-full h-22  bg-white shadow-lg grid grid-cols-3 items-center px-10 xl:px-70 gap-6 text-xs xl:text-sm uppercase">
                     {/* Datepicker */}
                     <div className="flex flex-col">
                         <p className="pb-2 text-sky-900 tracking-wide">{t("hero.checkIn")}</p>
@@ -262,7 +262,7 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    <button className="bg-sky-900 py-2 -mb-6 tracking-wide text-white text-sm rounded-sm cursor-pointer hover:bg-red-400 uppercase">{t("hero.book")}</button>
+                    <button className="bg-sky-900 h-full py-2 tracking-wide text-white text-sm cursor-pointer hover:bg-red-400 uppercase">{t("hero.book")}</button>
                 </div>
             </div>
 

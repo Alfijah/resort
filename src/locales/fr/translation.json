@@ -59,5 +59,36 @@
     },
     "button": {
         "explore": "Découvrir"
+    },
+    "reviews": {
+        "kicker": "Expériences",
+        "title": "Ce que les visiteurs emportent de Sendang Redjo",
+        "subtitle": "Une journée au bord du lac semble ici plus longue qu’à la maison. Voici les souvenirs qui marquent le plus nos invités.",
+        "items": {
+            "1": {
+                "name": "Auke Klene",
+                "tag": "Journée au bord du lac",
+                "text": "Le 14 novembre, nous avons visité votre resort avec un groupe de six personnes. C’était magnifique. Accueil avec de l’eau de coco et une chaleureuse explication, suivi d’une agréable promenade en bateau jusqu'à notre cabana. La cabana était parfaitement équipée et nous avons beaucoup ri ensemble. Le barbecue était fantastique ! Et le retour au crépuscule… absolument sublime, surtout avec les oiseaux aperçus en chemin. Je vous souhaite un bel avenir rempli de nombreux visiteurs heureux. Amitiés."
+            },
+            "2": {
+                "name": "Edme Smith",
+                "tag": "Escapade en solo",
+                "text": "Quel endroit magique ! Lorsque nous sortons, surtout près de Paramaribo, il y a toujours le risque de musique forte ou de foules bruyantes. Pas à Sendang Redjo : on a l’impression d’être seuls au monde, et on repart apaisés plutôt que surstimulés. Un véritable trésor caché de sérénité ! La cabana avait tout ce dont nous avions besoin, la nourriture était délicieuse, le service impeccable, et tout le monde a profité de la baignade, du kayak et de vrais moments de qualité. Merci encore — nous reviendrons sans hésiter !"
+            },
+            "3": {
+                "name": "Sara Pawironadi",
+                "tag": "Journée familiale avec enfants",
+                "text": "Nous avons vécu une expérience fantastique à Sendang Redjo — vraiment unique. Entourés par la nature, nous avons vu un arc-en-ciel dans le ciel et des oiseaux glissant paisiblement au-dessus de nous. Le lieu tout entier était profondément serein, romantique et plein d’aventure. C’est le genre d’endroit qui touche l’âme et vous relie à la nature. Nous le recommandons vivement à tous ceux qui recherchent calme, sérénité et une escapade privée au cœur de la nature."
+            }
+        }
+    },
+    "cta": {
+        "kicker": "Réservations",
+        "title": "Prêt pour votre journée au bord du lac ?",
+        "subtitle": "Que vous veniez pour vous évader ou simplement respirer — votre cabana vous attend. Nous vous accueillons à bras ouverts, avec une table dressée et un lac paisible.",
+        "primary": "Réservez votre cabana",
+        "secondary": "Poser une question",
+        "highlightKicker": "Plus proche que vous ne le pensez",
+        "highlightText": "À seulement 20 minutes de Paramaribo, vous entrez dans un monde de silence, d’eau et d’hospitalité javanaise. Un luxe caché pour ceux qui choisissent consciemment la tranquillité."
     }
 }

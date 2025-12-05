@@ -10,7 +10,7 @@ export default function ActiviteitenSection() {
 
     return (
         <SectionWrapper
-            className="relative w-full max-w-screen-2xl mx-auto sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row items-start lg:items-center overscroll-x-none mt-2 lg:mt-4">
+            className="relative w-full max-w-screen-2xl mx-auto sm:px-10 md:px-12 lg:px-20 flex flex-col lg:flex-row items-start lg:items-center overscroll-x-none mt-2 sm:mt-4 lg:mt-12">
 
             <motion.div variants={container}
                 className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto px-6 py-12 md:py-16 lg:py-20">

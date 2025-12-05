@@ -4,7 +4,7 @@ export default function ExploreButton(){
     const { t } = useTranslation();
 
     return(
-        <button className="explore-button w-full h-10 border mt-8 md:mt-10 cursor-pointer">
+        <button className="explore-button w-full h-10 border mt-8 md:mt-10 transition-colors cursor-pointer">
             {t("button.explore")}
         </button>
     )

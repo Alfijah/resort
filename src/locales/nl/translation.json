@@ -58,7 +58,49 @@
         "subtitle4": "Authentieke Javaanse keuken",
         "subtitle4text": "Langzaam bereid op houtvuur—pure smaken, warme geuren en traditie in zijn mooiste vorm."
     },
-    "button":{
+    "button": {
         "explore": "Ontdek meer"
+    },
+    "reviews": {
+        "kicker": "Ervaringen",
+        "title": "Wat gasten meenemen uit Sendang Redjo",
+        "subtitle": "Een dag aan het meer voelt hier langer dan thuis. Dit is wat gasten het meest bijblijft na hun verblijf.",
+        "items": {
+            "1": {
+                "name": "Auke Klene",
+                "tag": "Dagverblijf aan het meer",
+                "text": "Op 14nov jl hebben we met een groep van 6 pers jullie resort bezocht. Wat was het er mooi. Ontvangst met kokosnootwater en een uitleg met daarna een fijn boottochtje naar onze cabana. De cabana was van alle gemakken voorzien en we hebben veel lol gehad. De bbq was fantastisch! En de terug vaart in de schemer was adembenemend met de vogels die we onderweg zagen. Ik wens jullie een hele mooie toekomst met veel gasten. Lieve groet,"
+            },
+            "2": {
+                "name": "Edme Smith",
+                "tag": "Solo escape",
+                "text": "Wat een magische plek! Als we normaal gesproken naar buiten gaan, vooral zo dicht bij Paramaribo, is er altijd het risico op veel luide muziek en overenthousiaste, luidruchtige mensen. Niet in Sendang Redjo: het voelt alsof je helemaal alleen op de wereld bent en je komt helemaal opgeladen terug in plaats van overprikkeld. Een waar verborgen pareltje van serene schoonheid! De cabana had alles wat we nodig hadden, het eten was heerlijk, de service was top en iedereen heeft zich prima vermaakt met zwemmen, kajakken en echte quality time. Nogmaals bedankt, Sendang Redjo komt zeker nog eens terug!"
+            },
+            "3": {
+                "name": "Sara Pawironadi",
+                "tag": "Familiedag met kinderen",
+                "text": "We hadden een fantastische ervaring in Sendang Redjo – echt een unieke ervaring. Omringd door de natuur zagen we een regenboog aan de hemel en vogels vredig boven ons zweven. Het hele resort voelde diep sereen, romantisch en vol avontuur. Het is het soort omgeving dat je ziel raakt en je één laat voelen met de natuur. We raden dit absoluut aan iedereen aan die op zoek is naar rust, sereniteit en een privé-ontsnapping midden in de natuur."
+            }
+        },
+        "cta": "Laat je meeslepen door nog meer ervaringen.",
+        "button": "Ontdek meer"
+    },
+    "cta": {
+        "kicker": "Reserveren",
+        "title": "Klaar voor jouw dag aan het meer?",
+        "subtitle": "Of je nu komt om te ontsnappen of gewoon te ademen—je cabana staat voor je klaar. We ontvangen je met open armen, een gedekte tafel en een rustig meer.",
+        "primary": "Reserveer je cabana",
+        "secondary": "Stel een vraag",
+        "highlightKicker": "Dichterbij dan je denkt",
+        "highlightText": "Op slechts 20 minuten van Paramaribo stap je in een wereld van stilte, water en Javaanse gastvrijheid. Een verborgen luxe, voor wie bewust kiest voor rust."
+    },
+    "footer": {
+        "locationTitle": "Locatie",
+        "locationText": "Rijsdijk, Suriname – op slechts 20 minuten van Paramaribo.",
+        "contactTitle": "Contact",
+        "email": "E-mail",
+        "phone": "Telefoon",
+        "whatsappOnly": "Dit nummer is uitsluitend bereikbaar via WhatsApp.",
+        "builtBy": "Website ontworpen & gebouwd door Alfijah Sarban."
     }
 }

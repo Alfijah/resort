@@ -59,5 +59,36 @@
     },
     "button": {
         "explore": "Saiba mais"
+    },
+    "reviews": {
+        "kicker": "Experiências",
+        "title": "O que os hóspedes levam de Sendang Redjo",
+        "subtitle": "Um dia à beira do lago parece mais longo aqui do que em casa. Estes são os momentos que mais ficam na memória dos nossos visitantes.",
+        "items": {
+            "1": {
+                "name": "Auke Klene",
+                "tag": "Dia de descanso no lago",
+                "text": "No dia 14 de novembro visitamos o resort com um grupo de seis pessoas. Que lugar maravilhoso. Fomos recebidos com água de coco e uma explicação acolhedora, seguida por um agradável passeio de barco até nossa cabana. A cabana tinha tudo o que precisávamos e nos divertimos muito. O churrasco foi fantástico! E o retorno ao entardecer… simplesmente deslumbrante, especialmente com as aves que vimos pelo caminho. Desejo a vocês um futuro lindo com muitos hóspedes felizes. Com carinho."
+            },
+            "2": {
+                "name": "Edme Smith",
+                "tag": "Escapada solo",
+                "text": "Que lugar mágico! Quando saímos, especialmente tão perto de Paramaribo, sempre há o risco de música alta e pessoas barulhentas. Não em Sendang Redjo: parece que você está completamente sozinho no mundo — e volta renovado em vez de sobrecarregado. Um verdadeiro tesouro escondido de serenidade! A cabana tinha tudo o que precisávamos, a comida estava deliciosa, o serviço impecável, e todos aproveitaram para nadar, andar de caiaque e passar tempo de qualidade. Muito obrigada novamente — com certeza voltaremos!"
+            },
+            "3": {
+                "name": "Sara Pawironadi",
+                "tag": "Dia em família com crianças",
+                "text": "Tivemos uma experiência fantástica em Sendang Redjo — realmente única. Cercados pela natureza, vimos um arco-íris no céu e aves deslizando pacificamente sobre nós. Todo o resort transmitia serenidade profunda, romance e aventura. É o tipo de lugar que toca a alma e faz você se sentir parte da natureza. Recomendamos totalmente a todos que buscam paz, serenidade e uma escapada privada em meio à natureza."
+            }
+        }
+    },
+    "cta": {
+        "kicker": "Reservas",
+        "title": "Pronto para o seu dia à beira do lago?",
+        "subtitle": "Seja para descansar ou simplesmente respirar — sua cabana está à sua espera. Recebemos você de braços abertos, com a mesa posta e um lago em perfeita tranquilidade.",
+        "primary": "Reserve sua cabana",
+        "secondary": "Enviar uma pergunta",
+        "highlightKicker": "Mais perto do que você imagina",
+        "highlightText": "A apenas 20 minutos de Paramaribo, você entra em um mundo de silêncio, água e hospitalidade javanesa. Um luxo escondido para quem escolhe a paz de forma consciente."
     }
 }

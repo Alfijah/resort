@@ -55,6 +55,10 @@ body,
   background-color: #2596be;
 }
 
+.beigeBg {
+  background-color: #c3b09125;
+}
+
 ol,
 ul {
   list-style: none;
@@ -98,9 +102,24 @@ p {
   border-style: solid;
 }
 
+.explore-button:hover {
+  background-color: #c3b091;
+  color: white;
+}
+
 .invite-section .heading-primary {
   color: #ffffff;        /* force wit */
   text-align: center;    /* voor de zekerheid */
+}
+
+.ctaSection .body-text {
+  color: #ffffff;        /* bijna wit (#F9FAFB bijv.) */
+  text-align: left;
+}
+
+.ctaSection .heading-primary {
+  color: #ffffff;        /* force wit */
+  text-align: left;    /* voor de zekerheid */
 }
 
 .invite-section .body-text {
