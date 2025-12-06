@@ -9,7 +9,7 @@ type SectionWrapperProps = {
 
 export default function SectionWrapper({
   children,
-  amount = 0.4,
+  amount = 0.25,
   className = "",
 }: SectionWrapperProps) {
   return (

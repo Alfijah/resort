@@ -88,12 +88,12 @@ export default function Navbar() {
                             </button>
 
                             {/* Existing menu links — exact jouw code */}
-                            <a href="">{t("nav.home")}</a>
-                            <a href="">{t("nav.cabanas")}</a>
-                            <a href="">{t("nav.dining")}</a>
-                            <a href="">{t("nav.activities")}</a>
-                            <a href="">{t("nav.about")}</a>
-                            <a href="">{t("nav.contact")}</a>
+                            <a href="" className="nav-link">{t("nav.home")}</a>
+                            <a href="" className="nav-link">{t("nav.cabanas")}</a>
+                            <a href="" className="nav-link">{t("nav.dining")}</a>
+                            <a href="" className="nav-link">{t("nav.activities")}</a>
+                            <a href="" className="nav-link">{t("nav.about")}</a>
+                            <a href="" className="nav-link">{t("nav.contact")}</a>
                         </motion.div>
                     </>
                 )}

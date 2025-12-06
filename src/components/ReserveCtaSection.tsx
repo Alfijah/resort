@@ -15,7 +15,7 @@ export default function ReserveCtaSection() {
     };
 
     return (
-        <section className="relative w-full h-[75vh] md:h-[50vh] pb-10 md:pb-0 flex items-center justify-center">
+        <section className="relative w-full h-[92vh] sm:h-[75vh] md:h-[60vh] pb-10 md:pb-10 flex items-center justify-center">
 
             {/* Background image */}
             <div
@@ -68,14 +68,14 @@ export default function ReserveCtaSection() {
                             <motion.div variants={fadeInUp} className="flex flex-col w-full gap-4">
                                 <button
                                     onClick={scrollToBooking}
-                                    className="bg-sky-900 w-full hover:bg-red-400 transition-colors px-7 py-3 uppercase tracking-[0.18em] text-xs md:text-sm text-white cursor-pointer"
+                                    className="bg-sky-900 w-full hover:bg-red-400 transition-colors px-7 py-3 exlore-button uppercase text-white cursor-pointer"
                                 >
                                     {t("cta.primary")}
                                 </button>
 
                                 <a
                                     href="#contact"
-                                    className="border w-full border-white hover:bg-white text-white hover:text-red-400 transition-colors text-center px-7 py-3 uppercase tracking-[0.18em] text-xs md:text-sm"
+                                    className="border w-full border-white hover:bg-white text-white hover:text-red-400 transition-colors text-center px-7 py-3 exlore-button uppercase"
                                 >
                                     {t("cta.secondary")}
                                 </a>

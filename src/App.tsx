@@ -8,7 +8,7 @@ import ActiviteitenSection from './components/ActiviteitenSection'
 import InviteSection from './components/InviteSection'
 import ReviewsSection from './components/ReviewSection'
 import ReserveCtaSection from './components/ReserveCtaSection'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -22,7 +22,7 @@ export default function App() {
       <InviteSection />
       <ReviewsSection />
       <ReserveCtaSection />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

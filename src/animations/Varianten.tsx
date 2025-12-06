@@ -4,7 +4,7 @@ export const container = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.40,
+      staggerChildren: 0.25,
     },
   },
 };

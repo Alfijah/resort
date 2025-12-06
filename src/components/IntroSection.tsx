@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 import { container, fadeInUp } from "../animations/Varianten";
+import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
 import CarouselArrow from "./ui/CarouselArrow";
 import ImageModal from "../components/ui/ImageModal";
@@ -17,6 +18,7 @@ import img7 from "../assets/introSection/lodge7.jpeg"
 const images = [img1, img2, img3, img4, img5, img6, img7];
 
 export default function IntroSection() {
+    const { t } = useTranslation();
     const [index, setIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [isMobile, setIsMobile] = useState(false);
@@ -105,10 +107,10 @@ export default function IntroSection() {
             <motion.div variants={container}
                 className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-12 py-14 md:py-14 lg:py-16">
                 <motion.h1 variants={fadeInUp}
-                    className="heading-primary">Waar stilte, natuur en ziel samenkomen</motion.h1>
+                    className="heading-primary">{t("intro.title")}</motion.h1>
                 <motion.p variants={fadeInUp}
                     className="body-text">
-                    Op slechts 20 minuten van Paramaribo ligt Sendang Redjo — een serene retreat aan een privémeer, gebouwd op historische grond en gedragen door Javaanse gastvrijheid. Hier vertraagt alles, en vindt stilte haar vorm.
+                    {t("intro.subtitle")}
                 </motion.p>
             </motion.div>
 

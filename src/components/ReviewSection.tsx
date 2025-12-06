@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import SectionWrapper from "../animations/SectionWrapper";
-import { fadeInUp } from "../animations/Varianten";
+import { container, fadeInUp } from "../animations/Varianten";
 import icon from "../assets/icons/arrowCircle.png"
 
 export default function ReviewsSection() {
@@ -26,8 +26,10 @@ export default function ReviewsSection() {
     ];
 
     return (
-        <section className="w-full text-grey py-16 md:py-24">
-            <SectionWrapper className="max-w-screen-xl mx-auto px-6 sm:px-8 md:px-10">
+        <SectionWrapper amount={0.15} 
+        className="w-full text-grey py-16 md:py-24">
+            <div
+            className="max-w-screen-xl mx-auto px-6 sm:px-8 md:px-10">
                 <motion.p
                     variants={fadeInUp}
                     className="body-text tracking-[0.15em] uppercase mb-3"
@@ -49,14 +51,14 @@ export default function ReviewsSection() {
                     {t("reviews.subtitle")}
                 </motion.p>
 
-                <div className="grid gap-6 md:gap-8 md:grid-cols-3">
+                <motion.div variants={fadeInUp}
+                className="grid gap-6 md:gap-8 md:grid-cols-3">
                     {reviews.map((review, index) => (
-                        <motion.article
+                        <article
                             key={index}
-                            variants={fadeInUp}
                             className="flex flex-col justify-between h-full border border-white/10 bg-white backdrop-blur-sm px-5 py-6 md:px-6 md:py-7 shadow-sm"
                         >
-                            <p className="body-text mb-6">
+                            <p className="body-text mb-6 italic">
                                 “{review.text}”
                             </p>
                             <div className="mt-auto">
@@ -64,10 +66,10 @@ export default function ReviewsSection() {
                                     {review.name}
                                 </p>
                             </div>
-                        </motion.article>
+                        </article>
                     ))}
-                </div>
-            </SectionWrapper>
+                </motion.div>
+            </div>
 
             <motion.p
                 variants={fadeInUp}
@@ -93,6 +95,6 @@ export default function ReviewsSection() {
                 </motion.a>
             </div>
 
-        </section>
+        </SectionWrapper>
     );
 }

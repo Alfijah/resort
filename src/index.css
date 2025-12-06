@@ -56,7 +56,7 @@ body,
 }
 
 .beigeBg {
-  background-color: #c3b09125;
+  background-color: #c3b091;
 }
 
 ol,
@@ -81,7 +81,7 @@ h1, .icon, .explore-button {
   font-weight: bold;
 }
 
-button, a {
+button, .location-heading {
   font-family: 'Reforma 1918 Blanca', sans-serif;
   /* font-weight: bold; */
   text-transform: Normal;

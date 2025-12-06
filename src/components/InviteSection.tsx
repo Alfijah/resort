@@ -14,6 +14,7 @@ export default function InviteSection() {
                 backgroundImage: `url(${invite})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                backgroundAttachment: "fixed"
             }}>
 
             <div className="absolute inset-0 bg-black/70">
@@ -30,22 +31,22 @@ export default function InviteSection() {
                 </motion.p>
 
                 <motion.p variants={fadeInUp} className="body-text">
-                    <span className="italic">{t("invite.subtitle1")}</span><br />
+                    <span className="italic font-bold">{t("invite.subtitle1")}</span><br />
                     {t("invite.subtitle1text")}<br /><br />
                 </motion.p>
 
                 <motion.p variants={fadeInUp} className="body-text">
-                    <span className="italic">{t("invite.subtitle2")}</span><br />
+                    <span className="italic font-bold">{t("invite.subtitle2")}</span><br />
                     {t("invite.subtitle2text")}<br /><br />
                 </motion.p>
 
                 <motion.p variants={fadeInUp} className="body-text">
-                    <span className="italic">{t("invite.subtitle3")}</span><br />
+                    <span className="italic font-bold">{t("invite.subtitle3")}</span><br />
                     {t("invite.subtitle3text")}<br /><br />
                 </motion.p>
 
                 <motion.p variants={fadeInUp} className="body-text">
-                    <span className="italic">{t("invite.subtitle4")}</span><br />
+                    <span className="italic font-bold">{t("invite.subtitle4")}</span><br />
                     {t("invite.subtitle4text")}
                 </motion.p>
             </SectionWrapper>
