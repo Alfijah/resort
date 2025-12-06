@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import SectionWrapper from "../animations/SectionWrapper";
-import { container, fadeInUp } from "../animations/Varianten";
+import { fadeInUp } from "../animations/Varianten";
 import icon from "../assets/icons/arrowCircle.png"
 
 export default function ReviewsSection() {

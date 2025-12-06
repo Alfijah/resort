@@ -1,5 +1,4 @@
 import heroBg from "../assets/heroSection/birds.mp4";
-import { useState, useRef, useEffect } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
