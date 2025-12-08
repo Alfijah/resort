@@ -24,7 +24,7 @@
         "cabanaLimit": "Maximum de 3 cabanas réservables en ligne. Contactez-nous pour les groupes plus importants.",
         "guestLimit": "Un maximum de 5 invités par cabana est autorisé.",
         "book": "Réserver",
-        "email": "Poser question"
+        "email": "Posez votre question"
     },
     "intro": {
         "title": "Là où le silence, la nature et l’âme se rencontrent",
@@ -89,7 +89,7 @@
         "title": "Prêt pour votre journée au bord du lac ?",
         "subtitle": "Que vous veniez pour vous évader ou simplement respirer — votre cabana vous attend. Nous vous accueillons à bras ouverts, avec une table dressée et un lac paisible.",
         "primary": "Réservez votre cabana",
-        "secondary": "Poser une question",
+        "secondary": "Poser votre question",
         "highlightKicker": "Plus proche que vous ne le pensez",
         "highlightText": "À seulement 20 minutes de Paramaribo, vous entrez dans un monde de silence, d’eau et d’hospitalité javanaise. Un luxe caché pour ceux qui choisissent consciemment la tranquillité."
     },
@@ -99,7 +99,7 @@
         "contactTitle": "Contact",
         "email": "E-mail",
         "phone": "WhatsApp",
-        "whatsappOnly": "Ce numéro est disponible exclusivement via WhatsApp.",
+        "whatsappOnly": "Ce numéro est disponible exclusivement pour WhatsApp.",
         "builtBy": "Site conçu et développé par "
     }
 }

@@ -5,6 +5,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { RxCross1 } from "react-icons/rx";
 import logoWhite from "../assets/logo/logo_sendang_wit.png";
 import logoDark from "../assets/logo/logo_sendang_donker.png";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
     const { t } = useTranslation();
@@ -49,7 +50,7 @@ export default function Navbar() {
                     className="h-16 sm:h-20 transition-all duration-300"
                 />
 
-                <LanguageSwitcher isScrolled={isScrolled}  />
+                <LanguageSwitcher isScrolled={isScrolled} />
 
                 {/* Leeg voor alignment (Reserveren zit in menu) */}
                 {/* <div className="w-8" /> */}
@@ -94,6 +95,37 @@ export default function Navbar() {
                             <a href="" className="nav-link">{t("nav.activities")}</a>
                             <a href="" className="nav-link">{t("nav.about")}</a>
                             <a href="" className="nav-link">{t("nav.contact")}</a>
+
+                            {/* SOCIAL ICONS ONDERAAN */}
+                            <div className="mt-auto flex items-center gap-6 pl-1 pb-10 pt-4">
+                                <a
+                                    href="https://www.facebook.com/p/Sendang-Redjo-61578290586578/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-black hover:text-red-400 transition"
+                                >
+                                    <FaFacebookF size={20} />
+                                </a>
+
+                                <a
+                                    href="https://www.instagram.com/sendangredjo/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-black hover:text-red-400 transition"
+                                >
+                                    <FaInstagram size={22} />
+                                </a>
+
+                                <a
+                                    href="https://wa.me/5978592337"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-black hover:text-red-400 transition"
+                                >
+                                    <FaWhatsapp size={22} />
+                                </a>
+                            </div>
+
                         </motion.div>
                     </>
                 )}
@@ -127,7 +159,7 @@ export default function Navbar() {
                     <button className="bg-sky-900 px-6 py-3 uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
                         {t("nav.book")}
                     </button>
-                    <LanguageSwitcher isScrolled={isScrolled}  />
+                    <LanguageSwitcher isScrolled={isScrolled} />
                 </div>
             </div>
         </nav>

@@ -24,7 +24,7 @@
         "cabanaLimit": "Máximo de 3 cabanas disponíveis online. Entre em contato para reservas maiores.",
         "guestLimit": "É permitido no máximo 5 hóspedes por cabana.",
         "book": "Reservar",
-        "email": "Fazer pergunta"
+        "email": "Faça sua pergunta"
     },
     "intro": {
         "title": "Onde silêncio, natureza e alma se encontram",
@@ -89,7 +89,7 @@
         "title": "Pronto para o seu dia à beira do lago?",
         "subtitle": "Seja para descansar ou simplesmente respirar — sua cabana está à sua espera. Recebemos você de braços abertos, com a mesa posta e um lago em perfeita tranquilidade.",
         "primary": "Reserve sua cabana",
-        "secondary": "Enviar uma pergunta",
+        "secondary": "Faça sua pergunta",
         "highlightKicker": "Mais perto do que você imagina",
         "highlightText": "A apenas 20 minutos de Paramaribo, você entra em um mundo de silêncio, água e hospitalidade javanesa. Um luxo escondido para quem escolhe a paz de forma consciente."
     },
@@ -99,7 +99,7 @@
         "contactTitle": "Contato",
         "email": "E-mail",
         "phone": "WhatsApp",
-        "whatsappOnly": "Este número está disponível exclusivamente via WhatsApp.",
+        "whatsappOnly": "Este número está disponível somente para WhatsApp.",
         "builtBy": "Website criado e desenvolvido por "
     }
 }
