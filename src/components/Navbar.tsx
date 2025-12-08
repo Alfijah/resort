@@ -90,12 +90,12 @@ export default function Navbar() {
                             </button>
 
                             {/* Existing menu links — exact jouw code */}
-                            <a href="" className="nav-link">{t("nav.home")}</a>
+                            <Link to="" className="nav-link">{t("nav.home")}</Link>
                             <Link to="cabanas" className="nav-link">{t("nav.cabanas")}</Link>
-                            <a href="" className="nav-link">{t("nav.dining")}</a>
-                            <a href="" className="nav-link">{t("nav.activities")}</a>
-                            <Link to="/about" className="nav-link">{t("nav.about")}</Link>
-                            <a href="" className="nav-link">{t("nav.contact")}</a>
+                            <Link to="dining" className="nav-link">{t("nav.dining")}</Link>
+                            <Link to="activiteiten" className="nav-link">{t("nav.activities")}</Link>
+                            <Link to="about" className="nav-link">{t("nav.about")}</Link>
+                            <Link className="nav-link" to="contact">{t("nav.contact")}</Link>
 
                             {/* SOCIAL ICONS ONDERAAN */}
                             <div className="mt-auto flex items-center gap-6 pl-1 pb-10 pt-4">
@@ -136,10 +136,10 @@ export default function Navbar() {
             <div className="hidden xl:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs xl:text-xs uppercase tracking-widest">
                 {/* Left links */}
                 <ul className="flex justify-start gap-10 px-10 xl:px-20">
-                    <li><a href="" className="nav-link">{t("nav.home")}</a></li>
-                    <li><a href="" className="nav-link">{t("nav.cabanas")}</a></li>
-                    <li><a href="" className="nav-link">{t("nav.dining")}</a></li>
-                    <li><a href="" className="nav-link">{t("nav.activities")}</a></li>
+                    <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
+                    <li><Link to="cabanas" className="nav-link">{t("nav.cabanas")}</Link></li>
+                    <li><Link to="dining" className="nav-link">{t("nav.dining")}</Link></li>
+                    <li><Link to="activiteiten" className="nav-link">{t("nav.activities")}</Link></li>
                 </ul>
 
                 {/* Logo */}
@@ -154,11 +154,11 @@ export default function Navbar() {
                 {/* Right links */}
                 <div className="flex justify-end gap-8 px-[20%] items-center">
                     <ul className="flex items-center gap-10">
-                        <li><a className="nav-link " href="">{t("nav.about")}</a></li>
-                        <li><a className="nav-link" href="">{t("nav.contact")}</a></li>
+                        <li><Link className="nav-link " to="about">{t("nav.about")}</Link></li>
+                        <li><Link className="nav-link" to="contact">{t("nav.contact")}</Link></li>
                     </ul>
                     <button className="bg-sky-900 px-6 py-3 uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
-                        {t("nav.book")}
+                        <Link className="nav-link " to="reserveren">{t("nav.book")}</Link>
                     </button>
                     <LanguageSwitcher isScrolled={isScrolled} />
                 </div>

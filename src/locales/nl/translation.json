@@ -102,5 +102,8 @@
         "phone": "WhatsApp",
         "whatsappOnly": "Dit nummer is uitsluitend bereikbaar voor WhatsApp.",
         "builtBy": "Website ontworpen & gebouwd door "
+    },
+    "cabanasPage": {
+        "hero": "cabanas"
     }
 }

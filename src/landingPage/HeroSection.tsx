@@ -1,4 +1,5 @@
 import heroBg from "../assets/heroSection/birds.mp4";
+import { Link } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
@@ -26,7 +27,7 @@ export default function HeroSection() {
 
             <SectionWrapper
                 className="relative z-20 flex flex-col h-full justify-start items-start text-start md:items-center w-full px-6 sm:px-12 md:px-14 pt-88 md:pt-95 lg:pt-95 xl:pt-105">
-                <motion.h1 variants={fadeInUp} className="text-2xl md:text-4xl pb-2 md:pb-6 xl:pb-8 text-white leading-snugged text-shadow-lg/30">
+                <motion.h1 variants={fadeInUp} className="hero text-3xl md:text-5xl pb-2 md:pb-6 xl:pb-8 text-white font-extrabold leading-snugged text-shadow-lg/30">
                     {t("hero.title")}
                 </motion.h1>
                 <motion.p variants={fadeInUp} className="text-sm md:text-base text-white leading-relaxed text-shadow-lg/30 mt-4 md:mt-6">
@@ -56,10 +57,10 @@ export default function HeroSection() {
             {/* 📱 Mobiele onderbalk – zichtbaar onder 1260px */}
             <div className="fixed bottom-0 left-0 w-full bg-white text-white py-6 px-6 grid grid-cols-2 flex justify-around items-center xl:hidden z-50 backdrop-blur-md uppercase">
                 <button className="absolute bg-sky-900 w-[50%] h-full uppercase tracking-widest text-xs cursor-pointer hover:bg-red-400">
-                    {t("hero.book")}
+                    <Link to="reserveren">{t("nav.book")}</Link>
                 </button>
                 <button className="absolute bg-white w-[50%] right-0 h-full py-2 uppercase tracking-widest text-xs text-black cursor-pointer hover:bg-white hover:text-orange-600 transition">
-                    {t("hero.email")}
+                    <Link to="contact">{t("nav.contact")}</Link>
                 </button>
             </div>
 

@@ -75,6 +75,10 @@ h1, .icon, .explore-button {
   /* font-style: italic; */
 }
 
+.hero {
+  letter-spacing: 5.5px;
+}
+
 .icon {
   text-transform: capitalize;
   letter-spacing: 1px;

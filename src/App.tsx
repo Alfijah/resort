@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 import Layout from "./Layout";
 import LandingPage from "./landingPage/LandingPage";
@@ -14,13 +14,13 @@ export default function App() {
   <Router>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/resort" element={<LandingPage />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/cabanas" element={<CabanasPage />} />
-          <Route path="/cabanas" element={<DiningPage />} />
-          <Route path="/cabanas" element={<ActiviteitenPage />} />
+          <Route path="/dining" element={<DiningPage />} />
+          <Route path="/activiteiten" element={<ActiviteitenPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/cabanas" element={<ContactPage />} />
-          <Route path="/contact" element={<ReserverenPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/reserveren" element={<ReserverenPage />} />
         </Route>
       </Routes>
     </Router>
