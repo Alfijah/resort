@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { container, fadeInUp } from "../animations/Varianten";
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
-import CarouselArrow from "./ui/CarouselArrow";
+import CarouselArrow from "../components/ui/CarouselArrow";
 import ImageModal from "../components/ui/ImageModal";
 import img1 from "../assets/introSection/lodge1.jpeg"
 import img2 from "../assets/introSection/lodge2.jpeg"

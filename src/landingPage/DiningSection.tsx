@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { container, fadeInUp } from "../animations/Varianten";
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
-import DiningCarousel from "./carousels/DiningCarousel";
-import ExploreButton from "./ExploreButton";
+import DiningCarousel from "../components/carousels/DiningCarousel";
+import ExploreButton from "../components/tools/ExploreButton";
 
 export default function DiningSection() {
     const { t } = useTranslation();

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
+import LanguageSwitcher from "./tools/LanguageSwitcher";
 import { RxCross1 } from "react-icons/rx";
 import logoWhite from "../assets/logo/logo_sendang_wit.png";
 import logoDark from "../assets/logo/logo_sendang_donker.png";
@@ -90,10 +91,10 @@ export default function Navbar() {
 
                             {/* Existing menu links — exact jouw code */}
                             <a href="" className="nav-link">{t("nav.home")}</a>
-                            <a href="" className="nav-link">{t("nav.cabanas")}</a>
+                            <Link to="cabanas" className="nav-link">{t("nav.cabanas")}</Link>
                             <a href="" className="nav-link">{t("nav.dining")}</a>
                             <a href="" className="nav-link">{t("nav.activities")}</a>
-                            <a href="" className="nav-link">{t("nav.about")}</a>
+                            <Link to="/about" className="nav-link">{t("nav.about")}</Link>
                             <a href="" className="nav-link">{t("nav.contact")}</a>
 
                             {/* SOCIAL ICONS ONDERAAN */}

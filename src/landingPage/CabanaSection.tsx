@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { container, fadeInUp } from "../animations/Varianten";
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
-import CabanaCarousel from "./carousels/CabanaCarousel";
-import ExploreButton from "./ExploreButton";
+import CabanaCarousel from "../components/carousels/CabanaCarousel";
+import ExploreButton from "../components/tools/ExploreButton";
 
 export default function CabanaSection() {
     const { t } = useTranslation();

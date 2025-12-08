@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { container, fadeInUp } from "../animations/Varianten";
+import { container, fadeInUp } from "/Users/alfij/resort/src/animations/Varianten";
 import { useTranslation } from "react-i18next";
-import SectionWrapper from "../animations/SectionWrapper";
-import ActiviteitenCarousel from "./carousels/ActiviteitenCarousel";
-import ExploreButton from "./ExploreButton";
+import SectionWrapper from "/Users/alfij/resort/src/animations/SectionWrapper";
+import ActiviteitenCarousel from "../components/carousels/ActiviteitenCarousel";
+import ExploreButton from "../components/tools/ExploreButton";
 
 export default function ActiviteitenSection() {
     const { t } = useTranslation();
