@@ -58,8 +58,8 @@ export default function ReviewsSection() {
                             key={index}
                             className="flex flex-col justify-between h-full border border-white/10 bg-white backdrop-blur-sm px-5 py-6 md:px-6 md:py-7 shadow-sm"
                         >
-                            <p className="body-text mb-6 italic">
-                                “{review.text}”
+                            <p className="body-text mb-2 italic">
+                                <span className="font-bold text-4xl">“</span>{review.text}<br></br><span className="font-bold text-4xl">”</span>
                             </p>
                             <div className="mt-auto">
                                 <p className="body-text">

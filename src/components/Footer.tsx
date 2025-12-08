@@ -43,13 +43,12 @@ export default function Footer() {
           </h3>
 
           {/* Email */}
-          <p className="text-sm opacity-90">
+          <p className="">
             <span className="body-text">{t("footer.email")}:</span>{" "}
             <a
-              href="mailto:info@sendangredjo.sr"
               className="body-text"
             >
-              info@sendangredjo.sr
+              info@tukunari-experience.com
             </a>
           </p>
 
@@ -57,12 +56,12 @@ export default function Footer() {
           <p className="body-text mt-2">
             <span className="">{t("footer.phone")}:</span>{" "}
             <a
-              href="https://wa.me/597000000"
+              href="https://wa.me/5978592337"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-red-400 transition"
+              className=""
             >
-              +597 000000
+              +597 8592337
             </a>
           </p>
 
@@ -74,7 +73,7 @@ export default function Footer() {
           {/* SOCIAL ICONS */}
           <div className="flex items-center gap-6 mt-6">
             <a
-              href="#"
+              href="https://www.facebook.com/p/Sendang-Redjo-61578290586578/"
               target="_blank"
               className="hover:text-red-400 transition"
             >
@@ -82,7 +81,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/sendangredjo/"
               target="_blank"
               className="hover:text-red-400 transition"
             >
@@ -96,8 +95,9 @@ export default function Footer() {
       <div className="w-full h-px bg-white/50 my-4"></div>
 
       {/* BOTTOM CREDITS */}
-      <div className="text-center text-white text-sm tracking-wide leading-relaxed">
-        &copy; {new Date().getFullYear()} Sendang Redjo — {t("footer.builtBy")}
+      <div className="text-center text-white text-sm xl:-mb-8 tracking-wide leading-relaxed">
+        &copy; {new Date().getFullYear()} Sendang Redjo — {t("footer.builtBy")} 
+        <span><a href="https://nl.linkedin.com/in/alfijah-sarban" className="hover:text-underline">alfijah.sarban.</a></span>
       </div>
     </footer>
   );

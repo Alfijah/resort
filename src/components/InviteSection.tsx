@@ -31,7 +31,7 @@ export default function InviteSection() {
                 </motion.p>
 
                 <motion.p variants={fadeInUp} className="body-text">
-                    <span className="italic font-bold">{t("invite.subtitle1")}</span><br />
+                    <span className="italic font-bold pb-4">{t("invite.subtitle1")}</span><br />
                     {t("invite.subtitle1text")}<br /><br />
                 </motion.p>
 

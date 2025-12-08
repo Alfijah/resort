@@ -24,7 +24,7 @@
     "cabanaLimit": "Maximum of 3 cabanas available online. Contact us for larger bookings.",
     "guestLimit": "A maximum of 5 guests per cabana is allowed.",
     "book": "Book Now",
-    "email": "Email"
+    "email": "Ask now"
   },
   "intro": {
     "title": "Where silence, nature and soul come together",
@@ -92,5 +92,14 @@
     "secondary": "Ask a question",
     "highlightKicker": "Closer than you think",
     "highlightText": "Just 20 minutes from Paramaribo, you step into a world of silence, water and Javanese hospitality. A hidden luxury for those who choose peace with intention."
+  },
+  "footer": {
+    "locationTitle": "Location",
+    "locationText": "H.I. Bechanweg, Tamanredjo, Suriname",
+    "contactTitle": "Contact",
+    "email": "Email",
+    "phone": "WhatsApp",
+    "whatsappOnly": "This number is available exclusively via WhatsApp.",
+    "builtBy": "Website designed & developed by "
   }
 }

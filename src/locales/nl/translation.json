@@ -25,7 +25,7 @@
         "cabanaLimit": "Maximaal 3 cabanas online. Neem contact op voor grotere boekingen.",
         "guestLimit": "Maximaal 5 gasten per cabana toegestaan.",
         "book": "Reserveren",
-        "email": "Email"
+        "email": "Stel vraag"
     },
     "intro": {
         "title": "Waar stilte, natuur en ziel samenkomen",
@@ -101,6 +101,6 @@
         "email": "E-mail",
         "phone": "WhatsApp",
         "whatsappOnly": "Dit nummer is uitsluitend bereikbaar via WhatsApp.",
-        "builtBy": "Website ontworpen & gebouwd door Alfijah Sarban."
+        "builtBy": "Website ontworpen & gebouwd door "
     }
 }
