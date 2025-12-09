@@ -101,5 +101,53 @@
     "phone": "WhatsApp",
     "whatsappOnly": "This number is available exclusively via WhatsApp.",
     "builtBy": "Website designed & developed by "
+  },
+  "cabanasPage": {
+    "hero": "cabanas",
+    "title1": "Your retreat by the water",
+    "text1": "Experience the perfect balance of tranquility, comfort, and nature in our exclusive cabanas. Designed to blend seamlessly into the landscape — with full privacy, views over the lake, and the luxury of simply being.",
+    "title2": "Everything for a complete day",
+    "text2": "Our cabanas are your private sanctuary by the water: a refined daytime retreat where you can unwind, swim, enjoy, and spend quality time together. Each cabana sits directly on the lake and includes everything you need for a carefree day.",
+    "features": {
+      "lounge": "Luxury outdoor lounge area",
+      "kitchen": "Kitchen with bar and bar stools",
+      "poolbeds": "Pool beds",
+      "hammock": "Hammock",
+      "shower": "Modern shower with hot water and toilet",
+      "kayak": "Kayak",
+      "fishing": "Fishing rods",
+      "floaties": "Various floaties"
+    },
+    "title3": "Lounge & Seating Area",
+    "text3": "Each cabana offers:",
+    "text3Subs": {
+      "sub1": "A comfortable outdoor lounge set with soft cushions",
+      "sub2": "A serene view over the water",
+      "sub3": "A sturdy wooden bar with bar stools",
+      "sub4": "Space to dine, relax, or simply enjoy the silence"
+    },
+    "text3End": "The atmosphere is warm, spacious, and fully in harmony with nature — your place to truly unwind.",
+    "title4": "Dining, drinks & amenities",
+    "text4": "At Sendang Redjo, every meal is an experience:",
+    "text4Subs": {
+      "sub1": "Authentic Javanese cooking, slowly prepared over wood fire",
+      "sub2": {
+        "title": "Included in your day stay:",
+        "point1": "Welcome drink",
+        "point2": "Water, tea, coffee",
+        "point3": "Soft drinks and juices in your refrigerator",
+        "point4": "Javanese barbecue lunch with a marinated whole chicken and assorted satés you prepare yourself in your cabana"
+      }
+    },
+    "title5": "Extras (by reservation)",
+    "text5": "For guests who wish to elevate their experience:",
+    "text5Subs": {
+      "sub1": "Custom-made dinner",
+      "sub2": "Additional drinks: soft drinks, juices, beer, wine & spirits",
+      "sub3": "Catch & Cook – Tukunari experience: catch a fresh tukunari and prepare it in your cabana"
+    },
+    "text5End": "These extras are available by reservation only.",
+    "title6": "Reserve your cabana",
+    "text6": "Would you like to experience a day full of peace, comfort, and nature at Sendang Redjo? Contact us easily via WhatsApp or email to reserve your cabana. We respond quickly and are happy to help you plan your visit — including kayaking, fishing, and relaxing by the water."
   }
 }

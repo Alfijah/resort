@@ -15,11 +15,11 @@ export default function Footer() {
       <div className="ctaSection max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
 
         {/* LEFT COLUMN — Logo + Location */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start lg:pl-8">
           <img
             src={logoWhite}
             alt="Sendang Redjo logo"
-            className="h-16 sm:h-20 w-auto mb-4"
+            className="h-16 w-auto mb-4"
           />
 
           <p className="location-heading uppercase text-white">
@@ -95,7 +95,7 @@ export default function Footer() {
       <div className="w-full h-px bg-white/50 my-4"></div>
 
       {/* BOTTOM CREDITS */}
-      <div className="text-center text-white text-sm xl:-mb-8 tracking-wide leading-relaxed">
+      <div className="text-center text-white text-xs lg:-mb-10 tracking-wide leading-relaxed">
         &copy; {new Date().getFullYear()} Sendang Redjo — {t("footer.builtBy")} 
         <span><a href="https://nl.linkedin.com/in/alfijah-sarban" className="hover:text-underline">alfijah.sarban.</a></span>
       </div>

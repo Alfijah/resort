@@ -101,5 +101,53 @@
         "phone": "WhatsApp",
         "whatsappOnly": "Ce numéro est disponible exclusivement pour WhatsApp.",
         "builtBy": "Site conçu et développé par "
+    },
+    "cabanasPage": {
+        "hero": "cabanas",
+        "title1": "Votre refuge au bord de l’eau",
+        "text1": "Découvrez l’équilibre parfait entre calme, confort et nature dans nos cabanas exclusives. Conçues pour se fondre dans le paysage — avec une intimité totale, une vue sur le lac et le luxe de ne rien devoir faire.",
+        "title2": "Tout pour une journée complète",
+        "text2": "Nos cabanas sont votre espace privé au bord de l’eau : un lieu élégant pour la journée où vous pouvez vous détendre, nager, profiter et partager du temps ensemble. Chaque cabana se trouve directement au bord du lac et comprend tout ce dont vous avez besoin pour une journée sereine.",
+        "features": {
+            "lounge": "Coin salon extérieur de luxe",
+            "kitchen": "Cuisine avec bar et tabourets",
+            "poolbeds": "Lits de piscine",
+            "hammock": "Hamac",
+            "shower": "Douche moderne avec eau chaude et toilettes",
+            "kayak": "Kayak",
+            "fishing": "Cannes à pêche",
+            "floaties": "Divers flotteurs"
+        },
+        "title3": "Espace lounge & détente",
+        "text3": "Chaque cabana offre :",
+        "text3Subs": {
+            "sub1": "Un salon extérieur confortable avec coussins doux",
+            "sub2": "Une vue paisible sur l’eau",
+            "sub3": "Un bar en bois robuste avec tabourets",
+            "sub4": "Un espace pour manger, vous détendre ou simplement savourer le silence"
+        },
+        "text3End": "L’atmosphère est chaleureuse, spacieuse et en parfaite harmonie avec la nature — votre lieu pour vraiment déconnecter.",
+        "title4": "Repas, boissons & services",
+        "text4": "À Sendang Redjo, chaque repas est une expérience :",
+        "text4Subs": {
+            "sub1": "Cuisine javanaise authentique, lentement préparée au feu de bois",
+            "sub2": {
+                "title": "Inclus dans votre journée :",
+                "point1": "Boisson de bienvenue",
+                "point2": "Eau, thé, café",
+                "point3": "Boissons fraîches et jus dans votre réfrigérateur",
+                "point4": "Déjeuner barbecue javanais avec un poulet entier mariné et diverses brochettes que vous préparez vous-même dans votre cabana"
+            }
+        },
+        "title5": "Extras (sur réservation)",
+        "text5": "Pour ceux qui souhaitent enrichir leur expérience :",
+        "text5Subs": {
+            "sub1": "Dîner sur mesure",
+            "sub2": "Boissons supplémentaires : sodas, jus, bière, vin & spiritueux",
+            "sub3": "Catch & Cook – expérience Tukunari : attrapez un tukunari frais et préparez-le dans votre cabana"
+        },
+        "text5End": "Ces extras sont disponibles uniquement sur réservation.",
+        "title6": "Réservez votre cabana",
+        "text6": "Vous souhaitez passer une journée de calme, de confort et de nature à Sendang Redjo ? Contactez-nous facilement par WhatsApp ou e-mail pour réserver votre cabana. Nous répondons rapidement et serons ravis de vous aider à planifier votre visite — incluant kayak, pêche et détente au bord de l’eau."
     }
 }

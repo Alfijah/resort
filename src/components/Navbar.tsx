@@ -32,7 +32,7 @@ export default function Navbar() {
             ${isScrolled ? "bg-white/100 text-black shadow-md" : "bg-transparent text-white"}`}
         >
             {/* MOBILE / TABLET / SMALL LAPTOP (tot <1260px) */}
-            <div className="flex items-center justify-between max-w-screen-xl mx-auto px-4 sm:px-6 xl:hidden">
+            <div className="flex items-center justify-between max-w-screen-xl mx-auto px-4 sm:px-6 lg:hidden">
                 {/* Hamburger */}
                 <button
                     aria-label="Open Menu"
@@ -48,7 +48,7 @@ export default function Navbar() {
                 <img
                     src={isScrolled ? logoDark : logoWhite}
                     alt="Taman Logo"
-                    className="h-16 sm:h-20 transition-all duration-300"
+                    className="h-16 transition-all duration-300"
                 />
 
                 <LanguageSwitcher isScrolled={isScrolled} />
@@ -133,7 +133,7 @@ export default function Navbar() {
             </AnimatePresence>
 
             {/* DESKTOP NAVBAR (≥1260px) */}
-            <div className="hidden xl:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs xl:text-xs uppercase tracking-widest">
+            <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs xl:text-xs uppercase tracking-widest">
                 {/* Left links */}
                 <ul className="flex justify-start gap-10 px-10 xl:px-20">
                     <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
@@ -147,7 +147,7 @@ export default function Navbar() {
                     <img
                         src={isScrolled ? logoDark : logoWhite}
                         alt="sendang resort logo"
-                        className="h-20 w-auto"
+                        className="h-16 w-auto"
                     />
                 </div>
 

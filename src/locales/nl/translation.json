@@ -104,6 +104,57 @@
         "builtBy": "Website ontworpen & gebouwd door "
     },
     "cabanasPage": {
-        "hero": "cabanas"
+        "hero": "cabanas",
+        "title1": "Jouw toevlucht aan het water",
+        "text1": "Ervaar de perfecte balans tussen rust, comfort en natuur in onze exclusieve cabanas. Ontworpen om op te gaan in de omgeving — met volledige privacy, uitzicht op het meer en de luxe van niets hoeven.",
+        "title2": "Alles voor een complete dag",
+        "text2": "Onze cabanas zijn jouw privéplek aan het water: een stijlvol dagverblijf waar je ongestoord kunt ontspannen, zwemmen, genieten en samen tijd doorbrengt. Elke cabana ligt direct aan het meer en is voorzien van alles wat je nodig hebt voor een zorgeloze dag.",
+        "features": {
+            "lounge": "Luxe outdoor zithoek",
+            "kitchen": "Keuken met bar en barkrukken",
+            "poolbeds": "Poolbeds",
+            "hammock": "Hangmat",
+            "shower": "Moderne douche met warm water en toilet",
+            "kayak": "Kajak",
+            "fishing": "Hengels",
+            "floaties": "Diverse floaties"
+        },
+        "title3": "Lounge & Zitruimte",
+        "text3": "De sfeer is warm, ruim en volledig in harmonie met de natuur — jouw plek om echt te ontkoppelen. Elke cabana beschikt over:",
+        "text3Subs": {
+            "sub1": "Een comfortabele outdoor loungeset met zachte kussens",
+            "sub2": "Uitzicht over het water",
+            "sub3": "Een robuuste houten bar met barkrukken",
+            "sub4": "Ruimte om te eten, te ontspannen of gewoon te genieten van de stilte"
+        },
+        "title4": "Eten, drinken & voorzieningen",
+        "text4": "Bij Sendang Redjo is elke maaltijd een stukje beleving: Authentiek Javaans, langzaam bereid op houtvuur. Inclusief in je dagverblijf:",
+        "text4Subs": {
+            "point1": "Welkomstdrankje",
+            "point2": "Water, thee, koffie",
+            "point3": "Frisdrank en sap in de koelkast",
+            "point4": "Javaanse barbecue-lunch met een gemarineerde hele kip en diverse satés die je zelf bereidt in je cabana"
+        },
+        "title5": "Wateractiviteiten & ontspanning",
+        "text5a": "Stap vanuit je cabana direct het meer in — het water ligt letterlijk aan je voeten. Kajaks, hengels en diverse floaties staan klaar, zodat je zelf kiest of je actief het meer op gaat of juist in stilte wilt drijven. Op het dek vind je comfortabele poolbeds, perfect om te zonnen, te ontspannen of even weg te dromen met alleen natuur om je heen.",
+        "title6": "Rust, privacy & comfort",
+        "text6": "Elke cabana is ontworpen als jouw privé-toevlucht: stil, ruim en volledig omringd door natuur. Hier bepaalt niemand jouw ritme — behalve jij. Je beschikt over:",
+        "text6Subs": {
+            "sub1": "Een eigen hangmat",
+            "sub2": "Een luxe badkamer met douche en toilet",
+            "sub3": "Zachte baddoeken",
+            "sub4": "Alle ruimte en privacy om de dag in volledige rust te beleven"
+
+        },
+        "title7": "Extra’s (op reservering)",
+        "text7": "Voor wie meer luxe of beleving wil toevoegen:",
+        "text7Subs": {
+            "sub1": "Diner op maat",
+            "sub2": "Extra drankjes: frisdrank, sappen, bier, wijn & sterke dranken",
+            "sub3": "Catch & Cook – Tukunari ervaring: vang een verse tukunari en bereid deze in je cabana"
+        },
+        "text7End": "Deze extra’s zijn uitsluitend beschikbaar op reservering.",
+        "title8": "Reserveer jouw cabana",
+        "text8": "Wilt je een dag vol rust, comfort en natuur beleven bij Sendang Redjo? Neem eenvoudig contact met ons op via WhatsApp of e-mail om jouw cabana te reserveren. Wij reageren snel en helpen jou graag met het plannen van uw bezoek — inclusief kajakken, vissen en ontspannen aan het water."
     }
 }

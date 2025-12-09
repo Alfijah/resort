@@ -29,7 +29,7 @@ export default function ReviewsSection() {
         <SectionWrapper amount={0.15} 
         className="w-full text-grey py-16 md:py-24">
             <div
-            className="max-w-screen-xl mx-auto px-6 sm:px-8 md:px-10">
+            className="w-full max-w-screen-lg mx-auto px-6 sm:px-8 md:px-8">
                 <motion.p
                     variants={fadeInUp}
                     className="body-text tracking-[0.15em] uppercase mb-3"
@@ -73,12 +73,12 @@ export default function ReviewsSection() {
 
             <motion.p
                 variants={fadeInUp}
-                className="body-text max-w-screen-xl mx-auto mt-12 px-6 sm:px-8 md:px-10">
+                className="body-text max-w-screen-lg mx-auto mt-12 px-6 sm:px-8">
                 {t("reviews.cta")}
             </motion.p>
 
             <div 
-                className="max-w-screen-xl mx-auto mt-2 px-6 sm:px-8 md:px-10">
+                className="max-w-screen-lg mx-auto mt-2 px-6 sm:px-8">
                 <motion.a variants={fadeInUp}
                 href="https://www.google.com/search?sca_esv=711d87e2c6f6d006&hl=fy-NL&sxsrf=AE3TifOg7i7blSqI4mzzevSWj-TudRwkeg:1764951431496&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_-7JAQ-M6S-hUJEkOLZ-jgFCBu9GuQrrvrwzgyoIxBLDSdNE_ffQ1B_IydxvBwfLL4XvSuv3NqNKacmiK2O7K0jHIfa&q=Sendang+Redjo+Reviews&sa=X&ved=2ahUKEwidyfq47KaRAxUAhP0HHYkyFrsQ0bkNegQIHxAE&biw=1536&bih=826&dpr=1.25"
                     target="_blank"

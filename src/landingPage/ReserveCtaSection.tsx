@@ -15,7 +15,7 @@ export default function ReserveCtaSection() {
     };
 
     return (
-        <section className="relative w-full h-[92vh] sm:h-[75vh] md:h-[60vh] pb-10 md:pb-10 flex items-center justify-center">
+        <section className="relative w-full h-[92vh] sm:h-[75vh] md:h-[60vh] pb-10 md:pb-0 flex items-center justify-center">
 
             {/* Background image */}
             <div
@@ -29,7 +29,7 @@ export default function ReserveCtaSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-amber-900/20 to-black/80"></div>
 
 
-            <SectionWrapper className="ctaSection relative z-25 max-w-screen-xl mx-auto px-6 sm:px-8 md:px-10 flex flex-col md:flex-row items-center justify-center gap-0 sm:gap-8">
+            <SectionWrapper className="ctaSection relative z-25 max-w-screen-lg mx-auto px-6 sm:px-8 flex flex-col md:flex-row items-center justify-center gap-0 sm:gap-8">
                 {/* Tekstblok */}
                 <div className="w-full md:w-1/2 text-white">
 
@@ -68,14 +68,14 @@ export default function ReserveCtaSection() {
                             <motion.div variants={fadeInUp} className="flex flex-col w-full gap-4">
                                 <button
                                     onClick={scrollToBooking}
-                                    className="bg-sky-900 w-full hover:bg-red-400 transition-colors px-7 py-3 exlore-button uppercase text-white cursor-pointer"
+                                    className="bg-sky-900 w-full hover:bg-red-400 transition-colors px-7 py-3 explore-button uppercase text-white cursor-pointer"
                                 >
                                     {t("cta.primary")}
                                 </button>
 
                                 <a
                                     href="#contact"
-                                    className="border w-full border-white hover:bg-white text-white hover:text-red-400 transition-colors text-center px-7 py-3 exlore-button uppercase"
+                                    className="border w-full border-white hover:bg-white text-white hover:text-red-400 transition-colors text-center px-7 py-3 explore-button location-heading uppercase"
                                 >
                                     {t("cta.secondary")}
                                 </a>
