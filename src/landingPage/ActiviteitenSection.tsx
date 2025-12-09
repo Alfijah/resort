@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { container, fadeInUp } from "/Users/alfij/resort/src/animations/Varianten";
+import { container, fadeInUp } from "../animations/Varianten";
 import { useTranslation } from "react-i18next";
-import SectionWrapper from "/Users/alfij/resort/src/animations/SectionWrapper";
+import SectionWrapper from "../animations/SectionWrapper";
 import ActiviteitenCarousel from "../components/carousels/ActiviteitenCarousel";
 import ExploreButton from "../components/tools/ExploreButton";
 
