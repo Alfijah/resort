@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
-import icon from "/Users/alfij/resort/src/assets/icons/arrowWhite.png"
-import icon2 from "/Users/alfij/resort/src/assets/icons/arrowBlack.png"
+import icon from "../../assets/icons/arrowWhite.png"
+import icon2 from "../../assets/icons/arrowBlack.png"
 
 interface LanguageDropdownProps {
   isScrolled: boolean;
