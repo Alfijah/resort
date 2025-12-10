@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import logoWhite from "../assets/logo/logo_sendang_wit.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -16,11 +17,11 @@ export default function Footer() {
 
         {/* LEFT COLUMN — Logo + Location */}
         <div className="flex flex-col items-start lg:pl-8">
-          <img
+          <Link to=""><img
             src={logoWhite}
             alt="Sendang Redjo logo"
             className="h-16 w-auto mb-4 -ml-4"
-          />
+          /></Link>
 
           <p className="location-heading uppercase text-white">
             {t("footer.locationTitle")}

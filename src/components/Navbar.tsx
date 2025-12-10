@@ -45,11 +45,11 @@ export default function Navbar() {
                 </button>
 
                 {/* Logo */}
-                <img
-                    src={isScrolled ? logoDark : logoWhite}
-                    alt="Taman Logo"
-                    className="h-16 transition-all duration-300"
-                />
+                <Link to="">
+                    <img
+                        src={isScrolled ? logoDark : logoWhite}
+                        alt="Taman Logo"
+                        className="h-16 transition-all duration-300" /></Link>
 
                 <LanguageSwitcher isScrolled={isScrolled} />
 
@@ -90,12 +90,12 @@ export default function Navbar() {
                             </button>
 
                             {/* Existing menu links — exact jouw code */}
-                            <Link to="" className="nav-link">{t("nav.home")}</Link>
-                            <Link to="cabanas" className="nav-link">{t("nav.cabanas")}</Link>
-                            <Link to="dining" className="nav-link">{t("nav.dining")}</Link>
-                            <Link to="activiteiten" className="nav-link">{t("nav.activities")}</Link>
-                            <Link to="about" className="nav-link">{t("nav.about")}</Link>
-                            <Link className="nav-link" to="contact">{t("nav.contact")}</Link>
+                            <Link to="" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.home")}</Link>
+                            <Link to="cabanas" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.cabanas")}</Link>
+                            <Link to="dining" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.dining")}</Link>
+                            <Link to="activiteiten" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.activities")}</Link>
+                            <Link to="about" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.about")}</Link>
+                            <Link className="nav-link" to="contact" onClick={() => setIsMenuOpen(false)}>{t("nav.contact")}</Link>
 
                             {/* SOCIAL ICONS ONDERAAN */}
                             <div className="mt-auto flex items-center gap-6 pl-1 pb-10 pt-4">
@@ -144,11 +144,11 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <div className="flex justify-center">
-                    <img
+                    <Link to=""><img
                         src={isScrolled ? logoDark : logoWhite}
                         alt="sendang resort logo"
                         className="h-16 w-auto"
-                    />
+                    /></Link>
                 </div>
 
                 {/* Right links */}

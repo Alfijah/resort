@@ -2,12 +2,12 @@ import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
+import ReserverenContactBar from "../components/tools/ReserverenContactBar";
 import img from "../assets/cabanaSection/cab1.jpeg"
 import img1 from "../assets/cabanasPage/image00034.jpeg"
 import img2 from "../assets/cabanasPage/image00032.jpeg"
 import img3 from "../assets/cabanasPage/image00060.jpeg"
 import img4 from "../assets/cabanaSection/cab5.jpg"
-
 import hammock from "../assets/icons/hammock2.png"
 import icon from "../assets/icons/arrowBlackRight.png"
 import { FiCoffee } from "react-icons/fi";
@@ -83,7 +83,7 @@ export default function CabanasPage() {
             {/* First section */}
             <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
                 <SectionWrapper
-                    className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-14">
+                    className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
                     <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
                         {t("cabanasPage.title1")}
                     </motion.h1>
@@ -92,23 +92,32 @@ export default function CabanasPage() {
                         {t("cabanasPage.text1")}
                     </motion.p>
 
-                    <motion.img variants={fadeInUp} src={img1} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-12 lg:px-20 object-cover object-bottom mt-8" />
+                    <motion.img variants={fadeInUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }} src={img1} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-bottom mt-8" />
                 </SectionWrapper>
             </div>
 
             <div className="relative bg-white w-full py-14 sm:py-18 md:py-20">
                 <SectionWrapper
                     className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-14">
-                    <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+                    <motion.h1 variants={fadeInUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
                         {t("cabanasPage.title2")}
                     </motion.h1>
 
-                    <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center px-6 pb-2 md:pb-6 xl:pb-8 leading-snugged">
+                    <motion.p variants={fadeInUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="max-w-5xl mx-auto body-text text-center px-6 pb-2 md:pb-6 xl:pb-8 leading-snugged">
                         {t("cabanasPage.text2")}
                     </motion.p>
 
-                    <motion.div
-                        variants={fadeInUp}
+                    <div
                         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-12 mb-8 max-w-6xl mx-auto"
                     >
                         {[
@@ -121,7 +130,12 @@ export default function CabanasPage() {
                             { key: "fishing", icon: <TbFishHook size={28} /> },
                             { key: "floaties", icon: <TbLifebuoy size={28} /> },
                         ].map((item, index) => (
-                            <div key={index} className="flex flex-col items-center text-center">
+                            <motion.div key={index}
+                                variants={fadeInUp}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                className="flex flex-col items-center text-center">
 
                                 {/* ICON WRAPPER */}
                                 <div
@@ -134,50 +148,71 @@ export default function CabanasPage() {
                                 <p className="body-text text-center max-w-[150px]">
                                     {t(`cabanasPage.features.${item.key}`)}
                                 </p>
-                            </div>
+                            </motion.div>
                         ))}
-                    </motion.div>
+                    </div>
 
                     {/* <motion.img variants={fadeInUp} src={img2} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[680px] object-cover object-center mt-8" /> */}
 
                 </SectionWrapper>
             </div>
 
-
             <div className="relative w-full py-14 sm:py-18 md:py-20">
                 <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-8">
 
-                    <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
+                    <motion.h1 variants={fadeInUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
                         Ervaar onze luxe cabanas aan het water
                     </motion.h1>
 
                     {/* GRID STRUCTUUR */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
 
                         {items.map((item, i) => (
-                            <motion.div
+                            <div
                                 key={i}
-                                variants={fadeInUp}
-                                className="overflow-hidden flex flex-col"
+                                className="overflow-hidden flex flex-col md:px-10 lg:px-0"
                             >
                                 {/* IMAGE */}
-                                <img
+                                <motion.img
                                     src={item.img}
                                     alt={item.title}
+                                    variants={fadeInUp}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.3 }}
                                     className="w-full h-75 object-cover"
                                 />
 
                                 {/* TEXT */}
-                                <div className="p-6 flex flex-col flex-grow">
-                                    <h2 className="heading-secondary text-left pb-4">
+                                <div className="p-2 mt-4 flex flex-col flex-grow">
+                                    <motion.h2
+                                        variants={fadeInUp}
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true, amount: 0.3 }}
+                                        className="heading-secondary text-left pb-4">
                                         {item.title}
-                                    </h2>
+                                    </motion.h2>
 
-                                    <p className="body-text containerBorder mb-4 text-left">
+                                    <motion.p
+                                        variants={fadeInUp}
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true, amount: 0.3 }}
+                                        className="body-text containerBorder mb-2 text-left">
                                         {item.text}
-                                    </p>
+                                    </motion.p>
 
-                                    <ul className="body-text space-y-2 text-left">
+                                    <motion.ul
+                                        variants={fadeInUp}
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true, amount: 0.3 }}
+                                        className="body-text space-y-1 text-left">
                                         {item.bullets.map((bullet, idx) => (
                                             <li key={idx} className="flex items-start gap-2">
                                                 <img
@@ -188,15 +223,15 @@ export default function CabanasPage() {
                                                 <span>{bullet}</span>
                                             </li>
                                         ))}
-                                    </ul>
+                                    </motion.ul>
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
-
                     </div>
                 </SectionWrapper>
             </div>
 
+            <ReserverenContactBar />
         </>
     );
 }

@@ -103,51 +103,46 @@
     "builtBy": "Sitio web diseñado y desarrollado por "
   },
   "cabanasPage": {
-    "hero": "cabañas",
+    "hero": "Cabañas",
     "title1": "Tu refugio junto al agua",
-    "text1": "Experimenta el equilibrio perfecto entre tranquilidad, confort y naturaleza en nuestras exclusivas cabañas. Diseñadas para integrarse con el entorno — con total privacidad, vistas al lago y el lujo de no tener que hacer nada.",
+    "text1": "Vive el equilibrio perfecto entre tranquilidad, confort y naturaleza en nuestras exclusivas cabañas. Diseñadas para integrarse con el entorno — con total privacidad, vista al lago y el lujo de no tener que preocuparte por nada.",
     "title2": "Todo para un día completo",
-    "text2": "Nuestras cabañas son tu espacio privado junto al agua: un refugio elegante para pasar el día, donde puedes relajarte, nadar, disfrutar y compartir momentos únicos. Cada cabaña está situada directamente al lago y cuenta con todo lo necesario para un día sin preocupaciones.",
+    "text2": "Nuestras cabañas son tu espacio privado junto al agua: un refugio elegante donde puedes relajarte, nadar, disfrutar y compartir tiempo juntos. Cada cabaña está situada directamente al borde del lago y equipada con todo lo necesario para un día sin preocupaciones.",
     "features": {
-      "lounge": "Zona lounge exterior de lujo",
+      "lounge": "Sala de estar exterior de lujo",
       "kitchen": "Cocina con barra y taburetes",
       "poolbeds": "Camastros",
       "hammock": "Hamaca",
       "shower": "Ducha moderna con agua caliente y baño",
       "kayak": "Kayak",
       "fishing": "Cañas de pescar",
-      "floaties": "Varios flotadores"
+      "floaties": "Flotadores variados"
     },
     "title3": "Sala lounge & zona de descanso",
-    "text3": "Cada cabaña ofrece:",
+    "text3": "El ambiente es cálido, amplio y en total armonía con la naturaleza — tu lugar para desconectar de verdad. Cada cabaña incluye:",
     "text3Subs": {
-      "sub1": "Un cómodo conjunto lounge exterior con cojines suaves",
-      "sub2": "Vista serena al agua",
-      "sub3": "Una robusta barra de madera con taburetes",
-      "sub4": "Espacio para comer, relajarte o simplemente disfrutar del silencio"
+      "sub1": "Un juego de muebles lounge con cojines suaves",
+      "sub2": "Vista al agua",
+      "sub3": "Barra de madera con taburetes",
+      "sub4": "Espacio para comer, descansar o simplemente disfrutar del silencio"
     },
-    "text3End": "El ambiente es cálido, amplio y en completa armonía con la naturaleza — tu lugar para desconectar de verdad.",
-    "title4": "Comida, bebidas & servicios",
-    "text4": "En Sendang Redjo, cada comida es una experiencia:",
+    "title4": "Comida, bebida & servicios",
+    "text4": "En Sendang Redjo, cada comida es una experiencia: cocina javanesa auténtica, lentamente preparada al fuego de leña. Incluido en tu día:",
     "text4Subs": {
-      "sub1": "Cocina javanesa auténtica, preparada lentamente al fuego de leña",
-      "sub2": {
-        "title": "Incluido en tu día de estancia:",
-        "point1": "Bebida de bienvenida",
-        "point2": "Agua, té y café",
-        "point3": "Refrescos y jugos en el refrigerador",
-        "point4": "Almuerzo barbacoa javanés con un pollo entero marinado y varias brochetas que preparas tú mismo en tu cabaña"
-      }
+      "point1": "Bebida de bienvenida",
+      "point2": "Agua, té y café",
+      "point3": "Refrescos y jugos en el refrigerador",
+      "point4": "Almuerzo barbecue javanés con pollo entero marinado y varios satays que preparas tú mismo en tu cabaña"
     },
-    "title5": "Extras (con reserva)",
-    "text5": "Para quienes desean añadir más lujo o experiencias:",
-    "text5Subs": {
-      "sub1": "Cena personalizada",
-      "sub2": "Bebidas adicionales: refrescos, jugos, cerveza, vino y licores",
-      "sub3": "Catch & Cook – experiencia Tukunari: pesca un tukunari fresco y prepáralo en tu cabaña"
-    },
-    "text5End": "Estos extras están disponibles únicamente con reserva.",
-    "title6": "Reserva tu cabaña",
-    "text6": "¿Quieres disfrutar un día lleno de paz, confort y naturaleza en Sendang Redjo? Contáctanos fácilmente por WhatsApp o correo electrónico para reservar tu cabaña. Respondemos rápido y estaremos encantados de ayudarte a planificar tu visita — incluyendo kayak, pesca y descanso junto al agua."
+    "title5": "Actividades acuáticas & relajación",
+    "text5a": "Desde tu cabaña puedes entrar directamente al lago — el agua está literalmente a tus pies. Kayaks, cañas y flotadores te esperan, ya sea para una actividad o para flotar en silencio. En la terraza encontrarás cómodos camastros para tomar el sol, relajarte o desconectar rodeado de naturaleza.",
+    "title6": "Paz, privacidad & confort",
+    "text6": "Cada cabaña está diseñada como tu refugio privado: tranquila, espaciosa y rodeada de naturaleza. Aquí tú marcas el ritmo. Cuentas con:",
+    "text6Subs": {
+      "sub1": "Tu propia hamaca",
+      "sub2": "Baño moderno con ducha y sanitario",
+      "sub3": "Toallas suaves",
+      "sub4": "Todo el espacio e intimidad para disfrutar tu día en total tranquilidad"
+    }
   }
 }

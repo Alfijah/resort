@@ -103,15 +103,15 @@
     "builtBy": "Website designed & developed by "
   },
   "cabanasPage": {
-    "hero": "cabanas",
+    "hero": "Cabanas",
     "title1": "Your retreat by the water",
-    "text1": "Experience the perfect balance of tranquility, comfort, and nature in our exclusive cabanas. Designed to blend seamlessly into the landscape — with full privacy, views over the lake, and the luxury of simply being.",
+    "text1": "Experience the perfect balance of peace, comfort and nature in our exclusive cabanas. Designed to blend into the environment — with complete privacy, lake views, and the luxury of having nothing to worry about.",
     "title2": "Everything for a complete day",
-    "text2": "Our cabanas are your private sanctuary by the water: a refined daytime retreat where you can unwind, swim, enjoy, and spend quality time together. Each cabana sits directly on the lake and includes everything you need for a carefree day.",
+    "text2": "Our cabanas are your private space by the water: a stylish day retreat where you can relax, swim, enjoy and spend quality time together. Each cabana sits directly at the lake and includes everything you need for a carefree day.",
     "features": {
       "lounge": "Luxury outdoor lounge area",
-      "kitchen": "Kitchen with bar and bar stools",
-      "poolbeds": "Pool beds",
+      "kitchen": "Kitchen with bar and barstools",
+      "poolbeds": "Poolbeds",
       "hammock": "Hammock",
       "shower": "Modern shower with hot water and toilet",
       "kayak": "Kayak",
@@ -119,35 +119,30 @@
       "floaties": "Various floaties"
     },
     "title3": "Lounge & Seating Area",
-    "text3": "Each cabana offers:",
+    "text3": "The atmosphere is warm, spacious and fully in harmony with nature — your place to truly unwind. Each cabana includes:",
     "text3Subs": {
       "sub1": "A comfortable outdoor lounge set with soft cushions",
-      "sub2": "A serene view over the water",
-      "sub3": "A sturdy wooden bar with bar stools",
-      "sub4": "Space to dine, relax, or simply enjoy the silence"
+      "sub2": "Views over the water",
+      "sub3": "A sturdy wooden bar with barstools",
+      "sub4": "Space to eat, relax or simply enjoy the silence"
     },
-    "text3End": "The atmosphere is warm, spacious, and fully in harmony with nature — your place to truly unwind.",
-    "title4": "Dining, drinks & amenities",
-    "text4": "At Sendang Redjo, every meal is an experience:",
+    "title4": "Food, drinks & amenities",
+    "text4": "At Sendang Redjo, every meal is an experience: Authentic Javanese cuisine, slowly prepared over woodfire. Included in your day stay:",
     "text4Subs": {
-      "sub1": "Authentic Javanese cooking, slowly prepared over wood fire",
-      "sub2": {
-        "title": "Included in your day stay:",
-        "point1": "Welcome drink",
-        "point2": "Water, tea, coffee",
-        "point3": "Soft drinks and juices in your refrigerator",
-        "point4": "Javanese barbecue lunch with a marinated whole chicken and assorted satés you prepare yourself in your cabana"
-      }
+      "point1": "Welcome drink",
+      "point2": "Water, tea, coffee",
+      "point3": "Soft drinks and juice in the refrigerator",
+      "point4": "Javanese barbecue lunch with a marinated whole chicken and assorted satays you prepare yourself in your cabana"
     },
-    "title5": "Extras (by reservation)",
-    "text5": "For guests who wish to elevate their experience:",
-    "text5Subs": {
-      "sub1": "Custom-made dinner",
-      "sub2": "Additional drinks: soft drinks, juices, beer, wine & spirits",
-      "sub3": "Catch & Cook – Tukunari experience: catch a fresh tukunari and prepare it in your cabana"
-    },
-    "text5End": "These extras are available by reservation only.",
-    "title6": "Reserve your cabana",
-    "text6": "Would you like to experience a day full of peace, comfort, and nature at Sendang Redjo? Contact us easily via WhatsApp or email to reserve your cabana. We respond quickly and are happy to help you plan your visit — including kayaking, fishing, and relaxing by the water."
+    "title5": "Water activities & relaxation",
+    "text5a": "Step straight from your cabana into the lake — the water is truly at your feet. Kayaks, fishing rods and floaties are ready for you, whether you prefer activity or peaceful drifting. On the deck, you’ll find comfortable poolbeds, perfect for sunbathing, relaxing or drifting off with nothing but nature around you.",
+    "title6": "Peace, privacy & comfort",
+    "text6": "Each cabana is designed as your private retreat: quiet, spacious and fully surrounded by nature. Here, you set the pace — no one else. You have access to:",
+    "text6Subs": {
+      "sub1": "Your own hammock",
+      "sub2": "A luxury bathroom with shower and toilet",
+      "sub3": "Soft towels",
+      "sub4": "All the space and privacy to enjoy your day in total peace"
+    }
   }
 }
