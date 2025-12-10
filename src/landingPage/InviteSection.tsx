@@ -9,7 +9,7 @@ export default function InviteSection() {
 
     return (
         <div
-            className="invite-section relative w-full h-[760px] md:h-[640px] mt-18 sm:mt-20 md:mt-22 pb-8 lg:pb-0 flex items-center justify-center overflow-hidden"
+            className="invite-section relative w-full h-[660px] sm:h-[580px] md:h-[600px] mt-20 sm:mt-20 md:mt-22 sm:pb-8 lg:pb-0 flex items-center justify-center overflow-hidden"
             style={{
                 backgroundImage: `url(${invite})`,
                 backgroundSize: "cover",

@@ -99,6 +99,20 @@ export default function IntroSection() {
         return () => window.removeEventListener("resize", update);
     }, []);
 
+    function getOffset() {
+        const width = window.innerWidth;
+
+        if (width >= 1280) {
+            return 0.45; // xl
+        }
+        if (width >= 1024) {
+            return 0.56; // xl
+        }
+        if (width >= 768) {
+            return 0.48; // md
+        }
+        return 0.48; 
+    }
 
     return (
         <SectionWrapper
@@ -129,10 +143,11 @@ export default function IntroSection() {
 
                                 <div className="relative w-full h-full flex items-center justify-center">
                                     {images.map((img, i) => {
+                                        const offset = getOffset();
                                         const position = (i - index + images.length) % images.length;
                                         // 🔹 NIEUW – DRIE POSITIES
-                                        const leftX = -(desktopWidth * 0.45);   // ± 1/3 naar links
-                                        const rightX = desktopWidth * 0.45;      // ± 1/3 naar rechts
+                                        const leftX = -(desktopWidth * offset);   // ± 1/3 naar links
+                                        const rightX = desktopWidth * offset;      // ± 1/3 naar rechts
 
                                         const isCenter = position === 0;
                                         const isLeft = position === images.length - 1;

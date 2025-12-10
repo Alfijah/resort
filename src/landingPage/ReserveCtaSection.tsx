@@ -15,7 +15,7 @@ export default function ReserveCtaSection() {
     };
 
     return (
-        <section className="relative w-full h-[92vh] sm:h-[75vh] md:h-[60vh] pb-10 md:pb-0 flex items-center justify-center">
+        <section className="relative w-full h-[80vh] sm:h-[75vh] md:h-[58vh] lg:h-[62vh] flex items-center justify-center">
 
             {/* Background image */}
             <div
