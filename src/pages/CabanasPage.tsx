@@ -158,7 +158,7 @@ export default function CabanasPage() {
             </div>
 
             <div className="relative w-full py-14 sm:py-18 md:py-20">
-                <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-8">
+                <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
 
                     <motion.h1 variants={fadeInUp}
                         initial="hidden"
