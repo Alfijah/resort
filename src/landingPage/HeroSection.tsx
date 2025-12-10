@@ -6,7 +6,6 @@ import SectionWrapper from "../animations/SectionWrapper";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
 import icon from "../assets/icons/arrowCircleW.png"
-import ReserverenContactBar from "../components/tools/ReserverenContactBar";
 
 export default function HeroSection() {
     // const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
