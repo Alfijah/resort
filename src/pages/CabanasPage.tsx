@@ -165,7 +165,7 @@ export default function CabanasPage() {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.3 }}
                         className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
-                        Ervaar onze luxe cabanas aan het water
+                        {t("cabanasPage.headTitle4")}
                     </motion.h1>
 
                     {/* GRID STRUCTUUR */}

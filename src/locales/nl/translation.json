@@ -127,6 +127,7 @@
             "sub3": "Een robuuste houten bar met barkrukken",
             "sub4": "Ruimte om te eten, te ontspannen of gewoon te genieten van de stilte"
         },
+        "headTitle4": "Ervaar onze luxe cabanas aan het water",
         "title4": "Eten, drinken & voorzieningen",
         "text4": "Bij Sendang Redjo is elke maaltijd een stukje beleving: Authentiek Javaans, langzaam bereid op houtvuur. Inclusief in je dagverblijf:",
         "text4Subs": {
@@ -148,6 +149,38 @@
         }
     },
     "diningPage": {
+        "hero": "Dining",
+        "title1": "Proef Javaanse traditie",
+        "text1": "Vers, smaakvol en met aandacht bereid... een ontspannen culinaire beleving in de stilte van de natuur.",
+        "title2": "Alles voor een complete dag",
+        "text2": "Onze cabanas zijn jouw privéplek aan het water: een stijlvol dagverblijf waar je ongestoord kunt ontspannen, zwemmen, genieten en samen tijd doorbrengt. Elke cabana ligt direct aan het meer en is voorzien van alles wat je nodig hebt voor een zorgeloze dag.",
+        "features": {
+            "lounge": "Luxe outdoor zithoek",
+            "kitchen": "Keuken met bar en barkrukken",
+            "poolbeds": "Poolbeds",
+            "hammock": "Hangmat",
+            "shower": "Moderne douche met warm water en toilet",
+            "kayak": "Kajak",
+            "fishing": "Hengels",
+            "floaties": "Diverse floaties"
+        },
+        "title3": "Lounge & Zitruimte",
+        "text3": "De sfeer is warm, ruim en volledig in harmonie met de natuur — jouw plek om echt te ontkoppelen. Elke cabana beschikt over:",
+        "text3Subs": {
+            "sub1": "Een comfortabele outdoor loungeset met zachte kussens",
+            "sub2": "Uitzicht over het water",
+            "sub3": "Een robuuste houten bar met barkrukken",
+            "sub4": "Ruimte om te eten, te ontspannen of gewoon te genieten van de stilte"
+        },
+        "headTitle4": "Ervaar onze luxe cabanas aan het water",
+        "title4": "Eten, drinken & voorzieningen",
+        "text4": "Bij Sendang Redjo is elke maaltijd een stukje beleving: Authentiek Javaans, langzaam bereid op houtvuur. Inclusief in je dagverblijf:",
+        "text4Subs": {
+            "point1": "Welkomstdrankje",
+            "point2": "Water, thee, koffie",
+            "point3": "Frisdrank en sap in de koelkast",
+            "point4": "Javaanse barbecue-lunch met een gemarineerde hele kip en diverse satés die je zelf bereidt in je cabana"
+        },
         "title7": "Extra’s (op reservering)",
         "text7": "Voor wie meer luxe of beleving wil toevoegen:",
         "text7Subs": {

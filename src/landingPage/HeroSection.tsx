@@ -49,7 +49,6 @@ export default function HeroSection() {
                         {t("hero.explore")}
                     </span>
                 </motion.div>
-                <ReserverenContactBar />
             </SectionWrapper>
         </div>
     )

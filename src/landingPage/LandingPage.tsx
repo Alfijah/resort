@@ -6,6 +6,7 @@ import ActiviteitenSection from "./ActiviteitenSection";
 import InviteSection from "./InviteSection";
 import ReviewsSection from "./ReviewSection";
 import ReserveCtaSection from "./ReserveCtaSection";
+import ReserverenContactBar from "../components/tools/ReserverenContactBar";
 
 export default function LandingPage() {
   return (
@@ -18,6 +19,8 @@ export default function LandingPage() {
       <InviteSection />
       <ReviewsSection />
       <ReserveCtaSection />
+      <ReserverenContactBar />
+
     </>
   );
 }
