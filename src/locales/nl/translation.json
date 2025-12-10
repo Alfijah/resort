@@ -145,51 +145,70 @@
             "sub2": "Een luxe badkamer met douche en toilet",
             "sub3": "Zachte baddoeken",
             "sub4": "Alle ruimte en privacy om de dag in volledige rust te beleven"
-
         }
     },
     "diningPage": {
         "hero": "Dining",
         "title1": "Proef Javaanse traditie",
-        "text1": "Vers, smaakvol en met aandacht bereid... een ontspannen culinaire beleving in de stilte van de natuur.",
-        "title2": "Alles voor een complete dag",
-        "text2": "Onze cabanas zijn jouw privéplek aan het water: een stijlvol dagverblijf waar je ongestoord kunt ontspannen, zwemmen, genieten en samen tijd doorbrengt. Elke cabana ligt direct aan het meer en is voorzien van alles wat je nodig hebt voor een zorgeloze dag.",
+        "text1": "Vers, smaakvol en met aandacht bereid… een culinaire beleving die tot rust komt in de stilte van de natuur.",
+        "title2": "Dining bij Sendang Redjo",
+        "text2": "Eten bij Sendang Redjo is geen losse activiteit—het is een onderdeel van de beleving. Onze keuken is huiselijk, Javaans geïnspireerd en volledig vers bereid. We koken zoals thuis: met aandacht, tijd en eerlijke ingrediënten. Alles wat je proeft draagt bij aan het gevoel van aankomen op een plek waar de tijd even stilstaat.",
+        "subtitle2a": "Altijd inbegrepen",
+        "subtext2a": "Elke reservering is volledig verzorgd. Je hoeft niets bij te bestellen om de dag door te komen (mag natuurlijk wel). Bij aankomst staat voor je klaar:",
         "features": {
-            "lounge": "Luxe outdoor zithoek",
-            "kitchen": "Keuken met bar en barkrukken",
-            "poolbeds": "Poolbeds",
-            "hammock": "Hangmat",
-            "shower": "Moderne douche met warm water en toilet",
-            "kayak": "Kajak",
-            "fishing": "Hengels",
-            "floaties": "Diverse floaties"
+            "coconut": "IJsgekoelde kokosnoot",
+            "snack": "Vers gebakken loempia’s",
+            "coffee": "Koffie & thee",
+            "freshDrinks": "Frisdrank, sap, water & ijs in je koelkast"
         },
-        "title3": "Lounge & Zitruimte",
-        "text3": "De sfeer is warm, ruim en volledig in harmonie met de natuur — jouw plek om echt te ontkoppelen. Elke cabana beschikt over:",
+        "subtitle2b": "Twee culinaire momenten",
+        "features2": {
+            "lunch": "Een huisgemaakte Javaanse lunch",
+            "dinner": "Een lichte dinerervaring / late afternoon BBQ"
+        },
+        "title3": "Huisgemaakte Javaanse lunch (inbegrepen)",
+        "text3": "Rond het middaguur bezorgen wij een warme, volledig verzorgde lunch bij je cabana. Je kiest uit twee traditionele gerechten:",
         "text3Subs": {
-            "sub1": "Een comfortabele outdoor loungeset met zachte kussens",
-            "sub2": "Uitzicht over het water",
-            "sub3": "Een robuuste houten bar met barkrukken",
-            "sub4": "Ruimte om te eten, te ontspannen of gewoon te genieten van de stilte"
+            "sub1title": "Santen Iwak Pitik",
+            "sub1text": "Kip gestoofd in kokosmelk—zacht, romig en rijk aan aromatische Javaanse kruiden.",
+            "sub2title": "Iwak Laut Gorèng",
+            "sub2text": "Gestoofde, gemarineerde zeevis met authentieke kruiden en een volle, hartige smaak.",
+            "sub3title": "Geserveerd met:",
+            "sub3text": "Seghoh Ghoerih—ons Javaanse rijstgerecht, vergezeld door verse groenten en bijgerechten.",
+            "sub4": "Daarnaast krijg je een portie huisgemaakte chips, ideaal als snack tijdens het zwemmen of relaxen."
         },
-        "headTitle4": "Ervaar onze luxe cabanas aan het water",
-        "title4": "Eten, drinken & voorzieningen",
-        "text4": "Bij Sendang Redjo is elke maaltijd een stukje beleving: Authentiek Javaans, langzaam bereid op houtvuur. Inclusief in je dagverblijf:",
-        "text4Subs": {
-            "point1": "Welkomstdrankje",
-            "point2": "Water, thee, koffie",
-            "point3": "Frisdrank en sap in de koelkast",
-            "point4": "Javaanse barbecue-lunch met een gemarineerde hele kip en diverse satés die je zelf bereidt in je cabana"
+        "title4": "Late Afternoon BBQ (inbegrepen)",
+        "text4": "Later in de middag ontvang je een zorgvuldig samengesteld BBQ-pakket, klaar om zelf te grillen aan het water—een moment waar veel gasten naar uitkijken.",
+        "subtitle4a": "Wat je altijd krijgt",
+        "subtitle4aSubs": {
+            "sub1title": "Sateh Iwak Pitik",
+            "sub1text": "Kipsaté van mals dijvlees, Javaans gemarineerd."
         },
-        "title7": "Extra’s (op reservering)",
-        "text7": "Voor wie meer luxe of beleving wil toevoegen:",
-        "text7Subs": {
-            "sub1": "Diner op maat",
-            "sub2": "Extra drankjes: frisdrank, sappen, bier, wijn & sterke dranken",
-            "sub3": "Catch & Cook – Tukunari ervaring: vang een verse tukunari en bereid deze in je cabana"
+        "subtitle4b": "Je keuze voor erbij",
+        "subtitle4bSubs": {
+            "sub1title": "Sateh Sapi",
+            "sub1text": "Rundsaté van malse biefstuk.",
+            "or": "of",
+            "sub2title": "Gemarineerde zeevis",
+            "sub2text": "Gekruid en verpakt in folie, langzaam gegaard boven de grill."
         },
-        "text7End": "Deze extra’s zijn uitsluitend beschikbaar op reservering.",
-        "title8": "Reserveer jouw cabana",
-        "text8": "Wilt je een dag vol rust, comfort en natuur beleven bij Sendang Redjo? Neem eenvoudig contact met ons op via WhatsApp of e-mail om jouw cabana te reserveren. Wij reageren snel en helpen jou graag met het plannen van uw bezoek — inclusief kajakken, vissen en ontspannen aan het water."
+        "text4End": "Het grillen, het uitzicht en de rust maken deze BBQ tot een prachtig, verstillend dagmoment.",
+        "title5": "Catch & Cook — Tukunari Experience",
+        "text5": "Voor wie graag vist, bieden we een unieke extra beleving:",
+        "text5sub": "Vang een tukunari (Surinaamse pauwoogbaars) uit het privémeer. Wij maken de vis schoon, kruiden hem en bereiden hem warm voor je. Een pure, zeldzame natuurervaring midden in Tamanredjo.",
+        "title6": "Extra gerechten op aanvraag",
+        "text6": "Het arrangement is ruim voldoende voor de hele dag, maar als je zin hebt in iets extra’s kunnen wij op verzoek warme traditionele gerechten bereiden.",
+        "text6Eg": "Voorbeelden:",
+        "text6Subs": {
+            "sub1title": "Saoto soep met ei",
+            "sub1text": "Javaans-Surinaamse klassieker: geurige kippenbouillon met taugé, gebakken uitjes, selderij en een gekookt ei.",
+            "sub2title": "Djangan Bening",
+            "sub2text": "Lichte Javaanse groentesoep met bladgroenten en heldere bouillon. Altijd geserveerd met trie (kleine krokant gebakken vis) of drooggebakken botervis."
+        },
+        "text6End": "Andere Javaanse gerechten kunnen we in overleg aanbieden.",
+        "title7": "Extra drankjes",
+        "text7": "Niet inbegrepen, maar beschikbaar op aanvraag: bier, wijn en sterke dranken.",
+        "title8": "Dieetwensen",
+        "text8": "Vegetarisch, pescotarisch of specifieke voorkeuren? Laat het ons vooraf weten. Wij passen jouw dining-experience graag aan, zodat alles perfect aansluit bij jullie wensen."
     }
 }

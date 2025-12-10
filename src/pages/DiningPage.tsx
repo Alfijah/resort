@@ -5,58 +5,20 @@ import { fadeInUp } from "../animations/Varianten";
 import ReserverenContactBar from "../components/tools/ReserverenContactBar";
 import img from "../assets/diningPage/satay.jpg"
 import img1 from "../assets/diningPage/java.jpeg"
-import img2 from "../assets/cabanasPage/image00032.jpeg"
-import img3 from "../assets/cabanasPage/image00060.jpeg"
-import img4 from "../assets/cabanaSection/cab5.jpg"
-import hammock from "../assets/icons/hammock2.png"
+import loempia from "../assets/icons/loempia.png"
+import drinks from "../assets/icons//drink.png"
 import icon from "../assets/icons/arrowBlackRight.png"
-import { FiCoffee } from "react-icons/fi";
-import { TbToolsKitchen, TbBeach, TbKayak, TbFishHook, TbLifebuoy } from "react-icons/tb";
-import { PiShowerBold } from "react-icons/pi";
+import { GiCoconuts } from "react-icons/gi";
+import { PiCoffeeLight } from "react-icons/pi";
 
 export default function DiningPage() {
   const { t } = useTranslation();
 
   const items = [
     {
-      img: img,
-      title: t("cabanasPage.title3"),
-      text: t("cabanasPage.text3"),
       bullets: [
-        t("cabanasPage.text3Subs.sub1"),
-        t("cabanasPage.text3Subs.sub2"),
-        t("cabanasPage.text3Subs.sub3"),
-        t("cabanasPage.text3Subs.sub1")
-      ]
-    },
-    {
-      img: img3,
-      title: t("cabanasPage.title4"),
-      text: t("cabanasPage.text4"),
-      bullets: [
-        t("cabanasPage.text4Subs.point1"),
-        t("cabanasPage.text4Subs.point2"),
-        t("cabanasPage.text4Subs.point3"),
-        t("cabanasPage.text4Subs.point4"),
-      ]
-    },
-    {
-      img: img4,
-      title: t("cabanasPage.title5"),
-      text: t("cabanasPage.text5a"),
-      bullets: [
-
-      ]
-    },
-    {
-      img: img2,
-      title: t("cabanasPage.title6"),
-      text: t("cabanasPage.text6"),
-      bullets: [
-        t("cabanasPage.text6Subs.sub1"),
-        t("cabanasPage.text6Subs.sub2"),
-        t("cabanasPage.text6Subs.sub3"),
-        t("cabanasPage.text6Subs.sub4")
+        t("diningPage.features2.lunch"),
+        t("diningPage.features2.dinner"),
       ]
     },
   ];
@@ -106,29 +68,41 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
-            {t("cabanasPage.title2")}
+            {t("diningPage.title2")}
           </motion.h1>
 
           <motion.p variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
+            className="max-w-5xl mx-auto body-text text-center px-6 pb-10 md:pb-6 xl:pb-8 leading-snugged">
+            {t("diningPage.text2")} {/* pb hierboven is aangepast */}
+          </motion.p>
+
+          <motion.h2 variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+            {t("diningPage.subtitle2a")}
+          </motion.h2>
+
+          <motion.p variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
             className="max-w-5xl mx-auto body-text text-center px-6 pb-2 md:pb-6 xl:pb-8 leading-snugged">
-            {t("cabanasPage.text2")}
+            {t("diningPage.subtext2a")}
           </motion.p>
 
           <div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-12 mb-8 max-w-6xl mx-auto"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-8 mb-12 max-w-6xl mx-auto"
           >
             {[
-              { key: "lounge", icon: <FiCoffee size={26} /> },
-              { key: "kitchen", icon: <TbToolsKitchen size={28} /> },
-              { key: "poolbeds", icon: <TbBeach size={28} /> },
-              { key: "hammock", icon: <img src={hammock} alt="hammock icon" className="w-10 h-10 object-contain" /> },
-              { key: "shower", icon: <PiShowerBold size={28} /> },
-              { key: "kayak", icon: <TbKayak size={28} /> },
-              { key: "fishing", icon: <TbFishHook size={28} /> },
-              { key: "floaties", icon: <TbLifebuoy size={28} /> },
+              { key: "coconut", icon: <GiCoconuts size={26} /> },
+              { key: "snack", icon: <img src={loempia} alt="snack icon" className="w-10 h-10 object-contain" /> },
+              { key: "coffee", icon: <PiCoffeeLight size={26} /> },
+              { key: "freshDrinks", icon: <img src={drinks} alt="freshDrink icon" className="w-10 h-10 object-contain" /> },
+
             ].map((item, index) => (
               <motion.div key={index}
                 variants={fadeInUp}
@@ -139,34 +113,25 @@ export default function DiningPage() {
 
                 {/* ICON WRAPPER */}
                 <div
-                  className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-900/10 text-sky-900 shadow-[0_0_15px_rgba(26,64,105,0.15)] mb-3"
+                  className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-900/10 text-sky-900 shadow-[0_0_15px_rgba(26,64,105,0.15)] mb-1"
                 >
                   {item.icon}
                 </div>
 
                 {/* LABEL */}
                 <p className="body-text text-center max-w-[150px]">
-                  {t(`cabanasPage.features.${item.key}`)}
+                  {t(`diningPage.features.${item.key}`)}
                 </p>
               </motion.div>
             ))}
           </div>
 
-          {/* <motion.img variants={fadeInUp} src={img2} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[680px] object-cover object-center mt-8" /> */}
-
-        </SectionWrapper>
-      </div>
-
-      <div className="relative w-full py-14 sm:py-18 md:py-20">
-        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
-
-          <motion.h1 variants={fadeInUp}
+          <motion.h2 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
-            Ervaar onze luxe cabanas aan het water
-          </motion.h1>
+            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+            {t("diningPage.subtitle2b")}
+          </motion.h2>
 
           {/* GRID STRUCTUUR */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
@@ -174,45 +139,15 @@ export default function DiningPage() {
             {items.map((item, i) => (
               <div
                 key={i}
-                className="overflow-hidden flex flex-col md:px-10 lg:px-0"
-              >
-                {/* IMAGE */}
-                <motion.img
-                  src={item.img}
-                  alt={item.title}
-                  variants={fadeInUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 object-cover"
-                />
-
+                className="overflow-hidden flex flex-col md:px-10 lg:px-0">
                 {/* TEXT */}
-                <div className="p-2 mt-4 flex flex-col flex-grow">
-                  <motion.h2
-                    variants={fadeInUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="heading-secondary text-left pb-4">
-                    {item.title}
-                  </motion.h2>
-
-                  <motion.p
-                    variants={fadeInUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="body-text containerBorder mb-2 text-left">
-                    {item.text}
-                  </motion.p>
-
+                <div className="p-2 -mt-2 flex flex-col flex-grow">
                   <motion.ul
                     variants={fadeInUp}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="body-text space-y-1 text-left">
+                    className="body-text space-y-1 text-center">
                     {item.bullets.map((bullet, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <img
@@ -228,6 +163,20 @@ export default function DiningPage() {
               </div>
             ))}
           </div>
+        </SectionWrapper>
+      </div>
+
+      <div className="relative w-full py-14 sm:py-18 md:py-20">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+
+          <motion.h1 variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
+            Ervaar onze luxe cabanas aan het water
+          </motion.h1>
+
         </SectionWrapper>
       </div>
 

@@ -170,19 +170,20 @@ p {
   /* pb-4 */
   color: #1F2937;
   /* text-gray-800 */
-  line-height: 1.15;
+  line-height: 1.625;
   /* leading-snugged (vervang indien nodig) */
 }
 
 .heading-secondary {
-  font-size: 0.98rem;
+  font-size: 0.88rem;
   /* text-2xl */
   padding-bottom: 1rem;
   /* pb-4 */
   /* color: #1F2937;      text-gray-800 */
-  line-height: 1.15;
+  line-height: 1.35;
   /* leading-snugged (vervang indien nodig) */
-  font-weight: bold;
+  /* font-weight: bold; */
+  text-transform: capitalize;
 }
 
 /* md: vanaf 768px */

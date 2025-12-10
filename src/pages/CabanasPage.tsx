@@ -118,7 +118,7 @@ export default function CabanasPage() {
                     </motion.p>
 
                     <div
-                        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-12 mb-8 max-w-6xl mx-auto"
+                        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-8 mb-8 max-w-6xl mx-auto"
                     >
                         {[
                             { key: "lounge", icon: <FiCoffee size={26} /> },
@@ -139,7 +139,7 @@ export default function CabanasPage() {
 
                                 {/* ICON WRAPPER */}
                                 <div
-                                    className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-900/10 text-sky-900 shadow-[0_0_15px_rgba(26,64,105,0.15)] mb-3"
+                                    className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-900/10 text-sky-900 shadow-[0_0_15px_rgba(26,64,105,0.15)] mb-1"
                                 >
                                     {item.icon}
                                 </div>

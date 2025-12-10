@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
 import DiningCarousel from "../components/carousels/DiningCarousel";
 import ExploreButton from "../components/tools/ExploreButton";
+import { Link } from "react-router-dom";
 
 export default function DiningSection() {
     const { t } = useTranslation();
@@ -34,8 +35,8 @@ export default function DiningSection() {
                 </motion.p>
 
                 <motion.div variants={fadeInUp} className="w-full">
-                                <ExploreButton />
-                                </motion.div>
+                    <Link to="dining"><ExploreButton /></Link>
+                </motion.div>
 
             </motion.div>
         </SectionWrapper>
