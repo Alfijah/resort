@@ -3,23 +3,50 @@ import SectionWrapper from "../animations/SectionWrapper";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
 import ReserverenContactBar from "../components/tools/ReserverenContactBar";
+import BeforeAfterSlider from "../components/tools/BeforeAfterSlider";
 import img from "../assets/diningPage/satay.jpg"
 import img1 from "../assets/diningPage/java.jpeg"
 import loempia from "../assets/icons/loempia.png"
 import drinks from "../assets/icons//drink.png"
-import icon from "../assets/icons/arrowBlackRight.png"
-import { GiCoconuts } from "react-icons/gi";
-import { PiCoffeeLight } from "react-icons/pi";
+import cocunut from "../assets/icons/coconut.png"
+import lunch from "../assets/icons/lunch.png"
+import santen from "../assets/diningSection/dine1.jpg"
+import fish from "../assets/diningPage/fish.jpg"
+import satePitik from "../assets/diningPage/dine4.jpg"
+import sateSapi from "../assets/diningSection/dine3.jpg"
+import cookFish from "../assets/activiteitenSection/act2.jpeg"
+import catchFish from "../assets/diningSection/dine5.jpg"
+import { GiCoffeeCup } from "react-icons/gi";
+import { GiBarbecue } from "react-icons/gi";
+
+
 
 export default function DiningPage() {
   const { t } = useTranslation();
 
   const items = [
     {
-      bullets: [
-        t("diningPage.features2.lunch"),
-        t("diningPage.features2.dinner"),
-      ]
+      img: santen,
+      title: t("diningPage.text3Subs.sub1title"),
+      text: t("diningPage.text3Subs.sub1text")
+    },
+    {
+      img: fish,
+      title: t("diningPage.text3Subs.sub2title"),
+      text: t("diningPage.text3Subs.sub2text")
+    },
+  ];
+
+  const dinnerItems = [
+    {
+      img: satePitik,
+      title: t("diningPage.subtitle4aSubs.sub1title"),
+      text: t("diningPage.subtitle4aSubs.sub1text")
+    },
+    {
+      img: sateSapi,
+      title: t("diningPage.subtitle4bSubs.sub1title"),
+      text: t("diningPage.subtitle4bSubs.sub1text")
     },
   ];
 
@@ -82,7 +109,7 @@ export default function DiningPage() {
           <motion.h2 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 mt-4 md:pb-6 xl:pb-8 px-6 leading-snugged">
             {t("diningPage.subtitle2a")}
           </motion.h2>
 
@@ -95,12 +122,13 @@ export default function DiningPage() {
           </motion.p>
 
           <div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-8 mb-12 max-w-6xl mx-auto"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-4 mb-12 max-w-6xl mx-auto"
           >
             {[
-              { key: "coconut", icon: <GiCoconuts size={26} /> },
+              // { key: "coconut", icon: <cocunut size={26} /> },
+              { key: "coconut", icon: <img src={cocunut} alt="snack icon" className="w-9 h-19 object-contain" /> },
               { key: "snack", icon: <img src={loempia} alt="snack icon" className="w-10 h-10 object-contain" /> },
-              { key: "coffee", icon: <PiCoffeeLight size={26} /> },
+              { key: "coffee", icon: <GiCoffeeCup size={26} /> },
               { key: "freshDrinks", icon: <img src={drinks} alt="freshDrink icon" className="w-10 h-10 object-contain" /> },
 
             ].map((item, index) => (
@@ -129,38 +157,37 @@ export default function DiningPage() {
           <motion.h2 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 mt-4 md:pb-6 xl:pb-8 px-6 leading-snugged">
             {t("diningPage.subtitle2b")}
           </motion.h2>
 
-          {/* GRID STRUCTUUR */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
 
-            {items.map((item, i) => (
-              <div
-                key={i}
-                className="overflow-hidden flex flex-col md:px-10 lg:px-0">
-                {/* TEXT */}
-                <div className="p-2 -mt-2 flex flex-col flex-grow">
-                  <motion.ul
-                    variants={fadeInUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="body-text space-y-1 text-center">
-                    {item.bullets.map((bullet, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <img
-                          src={icon}
-                          alt=""
-                          className="w-4 h-4 object-contain mt-1"
-                        />
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </motion.ul>
+          <div
+            className="grid grid-cols-2 gap-8 md:gap-12 mt-4 mb-8 max-w-6xl mx-auto">
+            {[
+              // { key: "coconut", icon: <cocunut size={26} /> },
+              { key: "lunch", icon: <img src={lunch} alt="snack icon" className="w-10 h-10 object-contain" /> },
+              { key: "dinner", icon: <GiBarbecue size={26} /> },
+
+            ].map((item, index) => (
+              <motion.div key={index}
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                className="flex flex-col items-center text-center">
+
+                {/* ICON WRAPPER */}
+                <div
+                  className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-900/10 text-sky-900 shadow-[0_0_15px_rgba(26,64,105,0.15)] mb-1">
+                  {item.icon}
                 </div>
-              </div>
+
+                {/* LABEL */}
+                <p className="body-text text-center max-w-[150px]">
+                  {t(`diningPage.features2.${item.key}`)}
+                </p>
+              </motion.div>
             ))}
           </div>
         </SectionWrapper>
@@ -173,10 +200,214 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
-            Ervaar onze luxe cabanas aan het water
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 px-6 leading-snugged">
+            {t("diningPage.title3")}
           </motion.h1>
 
+          <motion.p variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="max-w-5xl mx-auto body-text text-center px-6 mb-10 leading-snugged">
+            {t("diningPage.text3")}
+          </motion.p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
+            {items.map((item, i) => (
+              <div
+                key={i}
+                className="overflow-hidden flex flex-col md:px-10 lg:px-0"
+              >
+                {/* IMAGE */}
+                <motion.img
+                  src={item.img}
+                  alt={item.title}
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="w-full h-75 object-cover"
+                />
+
+                {/* TEXT */}
+                <div className="p-2 mt-4 flex flex-col flex-grow">
+                  <motion.h2
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="heading-secondary text-left pb-4">
+                    {item.title}
+                  </motion.h2>
+
+                  <motion.p
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="body-text containerBorder mb-2 text-left">
+                    {item.text}
+                  </motion.p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <motion.h2
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-secondary text-left mt-6 ml-2 sm:px-8 md:px-16 lg:px-10">
+            {t("diningPage.text3Subs.sub3title")}
+          </motion.h2>
+
+          <motion.p variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="max-w-5xl mx-auto body-text px-2 mb-8 sm:px-10 md:px-18 lg:px-12 xl:-ml-0 leading-snugged">
+            {t("diningPage.text3Subs.sub3text")}
+          </motion.p>
+
+          <motion.h2
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-secondary text-left mt-10 ml-2 sm:px-8 md:px-16 lg:px-10">
+            {t("diningPage.text3Subs.sub4title")}
+          </motion.h2>
+
+          <motion.p variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="max-w-5xl mx-auto body-text px-2 mb-6 md:mb-2 sm:px-10 md:px-18 lg:px-12 xl:-ml-0 leading-snugged">
+            {t("diningPage.text3Subs.sub4text")}
+          </motion.p>
+        </SectionWrapper>
+      </div>
+
+      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+
+          <motion.h1 variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 px-6 leading-snugged">
+            {t("diningPage.title4")}
+          </motion.h1>
+
+          <motion.p variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="max-w-5xl mx-auto body-text text-center px-6 mb-10 leading-snugged">
+            {t("diningPage.text4")}
+          </motion.p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
+            {dinnerItems.map((item, i) => (
+              <div
+                key={i}
+                className="overflow-hidden flex flex-col md:px-10 lg:px-0"
+              >
+                {/* IMAGE */}
+                <motion.img
+                  src={item.img}
+                  alt={item.title}
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="w-full h-75 object-cover"
+                />
+
+                {/* TEXT */}
+                <div className="p-2 mt-4 flex flex-col flex-grow">
+                  <motion.h2
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="heading-secondary text-left pb-4">
+                    {item.title}
+                  </motion.h2>
+
+                  <motion.p
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="body-text containerBorder mb-2 text-left">
+                    {item.text}
+                  </motion.p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <motion.h2
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-secondary text-left mt-6 ml-2 sm:px-8 md:px-16 lg:px-10">
+            {t("diningPage.subtitle4bSubs.sub2title")}
+          </motion.h2>
+
+          <motion.p variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="max-w-5xl mx-auto body-text px-2 mb-6 md:mb-2 sm:px-10 md:px-18 lg:px-12 xl:-ml-0 leading-snugged">
+            {t("diningPage.subtitle4bSubs.sub2text")}
+          </motion.p>
+        </SectionWrapper>
+      </div>
+
+      <div className="relative w-full py-14 sm:py-18 md:py-20">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+          <motion.h1 variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-4 px-6 leading-snugged">
+            {t("diningPage.title5")}
+          </motion.h1>
+
+          <div className="gap-10 sm:px-10">
+            <div
+              className="overflow-hidden flex flex-col md:px-10 lg:px-0">
+              <BeforeAfterSlider
+                before={catchFish}
+                after={cookFish}
+                className="relative w-full h-[320px] md:h-[480px] object-cover" />
+
+              {/* TEXT */}
+              <div className="p-2 mt-4 flex flex-col flex-grow">
+                <motion.h2
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="heading-secondary text-left pb-4">
+                  {t("diningPage.text5")}
+                </motion.h2>
+
+                <motion.p
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="body-text containerBorder mb-2 text-left">
+                  {t("diningPage.text5sub")}
+                </motion.p>
+              </div>
+            </div>
+          </div>
         </SectionWrapper>
       </div>
 

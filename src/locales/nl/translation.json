@@ -152,7 +152,7 @@
         "title1": "Proef Javaanse traditie",
         "text1": "Vers, smaakvol en met aandacht bereid… een culinaire beleving die tot rust komt in de stilte van de natuur.",
         "title2": "Dining bij Sendang Redjo",
-        "text2": "Eten bij Sendang Redjo is geen losse activiteit—het is een onderdeel van de beleving. Onze keuken is huiselijk, Javaans geïnspireerd en volledig vers bereid. We koken zoals thuis: met aandacht, tijd en eerlijke ingrediënten. Alles wat je proeft draagt bij aan het gevoel van aankomen op een plek waar de tijd even stilstaat.",
+        "text2": "Eten bij Sendang Redjo is geen losse activiteit—het is een onderdeel van de beleving. Onze keuken is huiselijk, Javaans geïnspireerd en volledig vers bereid.",
         "subtitle2a": "Altijd inbegrepen",
         "subtext2a": "Elke reservering is volledig verzorgd. Je hoeft niets bij te bestellen om de dag door te komen (mag natuurlijk wel). Bij aankomst staat voor je klaar:",
         "features": {
@@ -175,7 +175,8 @@
             "sub2text": "Gestoofde, gemarineerde zeevis met authentieke kruiden en een volle, hartige smaak.",
             "sub3title": "Geserveerd met:",
             "sub3text": "Seghoh Ghoerih—ons Javaanse rijstgerecht, vergezeld door verse groenten en bijgerechten.",
-            "sub4": "Daarnaast krijg je een portie huisgemaakte chips, ideaal als snack tijdens het zwemmen of relaxen."
+            "sub4title": "Snacks",
+            "sub4text": "Daarnaast krijg je een portie huisgemaakte chips, ideaal als snack tijdens het zwemmen of relaxen."
         },
         "title4": "Late Afternoon BBQ (inbegrepen)",
         "text4": "Later in de middag ontvang je een zorgvuldig samengesteld BBQ-pakket, klaar om zelf te grillen aan het water—een moment waar veel gasten naar uitkijken.",
@@ -189,7 +190,7 @@
             "sub1title": "Sateh Sapi",
             "sub1text": "Rundsaté van malse biefstuk.",
             "or": "of",
-            "sub2title": "Gemarineerde zeevis",
+            "sub2title": "OF — Gemarineerde zeevis in plaats van Sate Sapi",
             "sub2text": "Gekruid en verpakt in folie, langzaam gegaard boven de grill."
         },
         "text4End": "Het grillen, het uitzicht en de rust maken deze BBQ tot een prachtig, verstillend dagmoment.",
