@@ -211,5 +211,26 @@
         "text7": "Niet inbegrepen, maar beschikbaar op aanvraag: bier, wijn en sterke dranken.",
         "title8": "Dieetwensen",
         "text8": "Vegetarisch, pescotarisch of specifieke voorkeuren? Laat het ons vooraf weten. Wij passen jouw dining-experience graag aan, zodat alles perfect aansluit bij jullie wensen."
+    },
+    "activiteitenPage": {
+        "hero": "Activiteiten",
+        "title1": "Voel je één met de natuur",
+        "text1": "Ontdek rust, avontuur en verbinding met de natuur: kajakken, vissen, dobberen en vogels spotten in de serene omgeving van Sendang Redjo.",
+        "title2": "Activiteiten op jouw ritme",
+        "text2": "Kies hoe jij de dag beleeft — actief op het water of ontspannen in je cabana. Alles draait om rust, natuur en jouw eigen tempo.",
+        "features": {
+            "kajak": "Privé kajakken",
+            "vissen": "Vissen in stilte",
+            "zwemmen": "Zwemmen & dobberen",
+            "vogels": "Vogels spotten"
+        },
+        "title3": "Kajakken over het privémeer",
+        "text3": "Glijd in alle stilte over het water, zonder andere gasten om je heen. Het meer is van jou — perfect voor momenten van rust, natuur en vrijheid.",
+        "title4": "Vissen in een idyllische omgeving",
+        "text4": "Met een eenvoudige hengel en alle tijd van de wereld geniet je van complete stilte. Of je nu iets vangt of niet, het uitzicht en de rust maken elk moment bijzonder.",
+        "title5": "Zwemmen & dobberen",
+        "text5": "Laat je dragen door het warme water en kom volledig tot rust. Dobberen, zwemmen of gewoon drijven — een gewichtloze beleving die je nergens anders vindt.",
+        "title6": "Javaanse gastvrijheid",
+        "text6": "Ervaar de warme, oprechte gastvrijheid die kenmerkend is voor de Javaanse cultuur. Hier worden rust, aandacht en verbondenheid onderdeel van jouw dag."
     }
 }

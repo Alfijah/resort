@@ -8,6 +8,7 @@ import img1 from "../assets/cabanasPage/image00034.jpeg"
 import img2 from "../assets/cabanasPage/image00032.jpeg"
 import img3 from "../assets/cabanasPage/image00060.jpeg"
 import img4 from "../assets/cabanaSection/cab5.jpg"
+import img5 from "../assets/cabanasPage/lounge.jpg"
 import hammock from "../assets/icons/hammock2.png"
 import icon from "../assets/icons/arrowBlackRight.png"
 import { FiCoffee } from "react-icons/fi";
@@ -19,7 +20,7 @@ export default function CabanasPage() {
 
     const items = [
         {
-            img: img,
+            img: img5,
             title: t("cabanasPage.title3"),
             text: t("cabanasPage.text3"),
             bullets: [
@@ -41,7 +42,7 @@ export default function CabanasPage() {
             ]
         },
         {
-            img: img4,
+            img: img2,
             title: t("cabanasPage.title5"),
             text: t("cabanasPage.text5a"),
             bullets: [
@@ -49,7 +50,7 @@ export default function CabanasPage() {
             ]
         },
         {
-            img: img2,
+            img: img4,
             title: t("cabanasPage.title6"),
             text: t("cabanasPage.text6"),
             bullets: [

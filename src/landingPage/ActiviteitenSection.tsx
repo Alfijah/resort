@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { container, fadeInUp } from "../animations/Varianten";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import SectionWrapper from "../animations/SectionWrapper";
 import ActiviteitenCarousel from "../components/carousels/ActiviteitenCarousel";
 import ExploreButton from "../components/tools/ExploreButton";
@@ -27,8 +28,8 @@ export default function ActiviteitenSection() {
                 </motion.p>
 
                 <motion.div variants={fadeInUp} className="w-full">
-                                <ExploreButton />
-                                </motion.div>
+                    <Link to="activiteiten"><ExploreButton /></Link>
+                </motion.div>
             </motion.div>
 
             <motion.div variants={container}
