@@ -197,20 +197,22 @@
         "title5": "Catch & Cook — Tukunari Experience",
         "text5": "Voor wie graag vist, bieden we een unieke extra beleving:",
         "text5sub": "Vang een tukunari (Surinaamse pauwoogbaars) uit het privémeer. Wij maken de vis schoon, kruiden hem en bereiden hem warm voor je. Een pure, zeldzame natuurervaring midden in Tamanredjo.",
-        "title6": "Extra gerechten op aanvraag",
-        "text6": "Het arrangement is ruim voldoende voor de hele dag, maar als je zin hebt in iets extra’s kunnen wij op verzoek warme traditionele gerechten bereiden.",
-        "text6Eg": "Voorbeelden:",
-        "text6Subs": {
-            "sub1title": "Saoto soep met ei",
-            "sub1text": "Javaans-Surinaamse klassieker: geurige kippenbouillon met taugé, gebakken uitjes, selderij en een gekookt ei.",
-            "sub2title": "Djangan Bening",
-            "sub2text": "Lichte Javaanse groentesoep met bladgroenten en heldere bouillon. Altijd geserveerd met trie (kleine krokant gebakken vis) of drooggebakken botervis."
-        },
-        "text6End": "Andere Javaanse gerechten kunnen we in overleg aanbieden.",
-        "title7": "Extra drankjes",
-        "text7": "Niet inbegrepen, maar beschikbaar op aanvraag: bier, wijn en sterke dranken.",
-        "title8": "Dieetwensen",
-        "text8": "Vegetarisch, pescotarisch of specifieke voorkeuren? Laat het ons vooraf weten. Wij passen jouw dining-experience graag aan, zodat alles perfect aansluit bij jullie wensen."
+        "extras": {
+            "sectionTitle": "Aanvullende opties op aanvraag",
+            "sectionSubtitle": "Voor gasten die hun dining-experience willen verrijken met extra gerechten, drankjes of persoonlijke wensen.",
+            "titleMeals": "Extra gerechten",
+            "textMeals": "Het dagarrangement is royaal, maar voor wie zin heeft in iets extra’s bereiden wij graag warme traditionele gerechten op verzoek.",
+            "examplesTitle": "Voorbeelden",
+            "meals": {
+                "meal1Title": "Saoto soep met ei — Javaans-Surinaamse klassieker: geurige kippenbouillon met taugé, gebakken uitjes, selderij en een gekookt ei.",
+                "meal2Title": "Djangan Bening — Lichte Javaanse groentesoep met bladgroenten in heldere bouillon. Geserveerd met trie (kleine krokant gebakken vis) of drooggebakken botervis."
+            },
+            "mealsEnd": "Andere Javaanse gerechten kunnen we in overleg aanbieden.",
+            "titleDrinks": "Extra drankjes",
+            "textDrinks": "Niet inbegrepen, maar beschikbaar op aanvraag: frisdranken, sappen, bier, wijn en sterke dranken.",
+            "titleDiets": "Dieetwensen & voorkeuren",
+            "textDiets": "Vegetarisch, pescotarisch of specifieke voorkeuren? Laat het ons vooraf weten. We passen jouw dining-experience graag aan, zodat alles perfect aansluit bij jullie wensen."
+        }
     },
     "activiteitenPage": {
         "hero": "Activiteiten",
@@ -224,6 +226,7 @@
             "zwemmen": "Zwemmen & dobberen",
             "vogels": "Vogels spotten"
         },
+        "headAct": "Beleef de natuur op jouw manier",
         "title3": "Kajakken over het privémeer",
         "text3": "Glijd in alle stilte over het water, zonder andere gasten om je heen. Het meer is van jou — perfect voor momenten van rust, natuur en vrijheid.",
         "title4": "Vissen in een idyllische omgeving",

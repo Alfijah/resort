@@ -138,7 +138,7 @@ export default function ActiviteitenPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
-            {t("cabanasPage.headTitle4")}
+            {t("activiteitenPage.headAct")}
           </motion.h1>
 
           {/* GRID STRUCTUUR */}

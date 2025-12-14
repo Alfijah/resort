@@ -15,11 +15,11 @@ import fish from "../assets/diningPage/fish.jpg"
 import satePitik from "../assets/diningPage/dine4.jpg"
 import sateSapi from "../assets/diningSection/dine3.jpg"
 import cookFish from "../assets/activiteitenSection/act2.jpeg"
-import catchFish from "../assets/diningSection/dine5.jpg"
+import catchFish from "../assets/diningPage/fish2.png"
+import extraImg from "../assets/diningPage/extras.jpg"
 import { GiCoffeeCup } from "react-icons/gi";
 import { GiBarbecue } from "react-icons/gi";
-
-
+import icon from "../assets/icons/arrowBlackRight.png"
 
 export default function DiningPage() {
   const { t } = useTranslation();
@@ -48,6 +48,27 @@ export default function DiningPage() {
       title: t("diningPage.subtitle4bSubs.sub1title"),
       text: t("diningPage.subtitle4bSubs.sub1text")
     },
+  ];
+
+  const extras = [
+    {
+      title: t("diningPage.extras.titleMeals"),
+      text: t("diningPage.extras.textMeals"),
+      bullets: [
+        t("diningPage.extras.meals.meal1Title"),
+        t("diningPage.extras.meals.meal2Title")
+      ]
+    },
+    {
+      title: t("diningPage.extras.titleDrinks"),
+      text: t("diningPage.extras.textDrinks"),
+      bullets: []
+    },
+    {
+      title: t("diningPage.extras.titleDiets"),
+      text: t("diningPage.extras.textDiets"),
+      bullets: []
+    }
   ];
 
   return (
@@ -407,6 +428,79 @@ export default function DiningPage() {
                 </motion.p>
               </div>
             </div>
+          </div>
+        </SectionWrapper>
+      </div>
+
+      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+
+          <motion.h1 variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 px-6 leading-snugged">
+            {t("diningPage.extras.sectionTitle")}
+          </motion.h1>
+
+          <motion.p variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="max-w-5xl mx-auto body-text text-center px-6 mb-10 leading-snugged">
+            {t("diningPage.extras.sectionSubtitle")}
+          </motion.p>
+
+          <motion.img variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }} src={extraImg} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+
+          <div className="grid grid-cols-1 gap-3 sm:px-10">
+            {extras.map((item, i) => (
+              <div
+                key={i}
+                className="overflow-hidden flex flex-col md:px-10 lg:px-0">
+                {/* TEXT */}
+                <div className="p-2 mt-4 flex flex-col flex-grow">
+                  <motion.h2
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="heading-secondary text-left pb-4">
+                    {item.title}
+                  </motion.h2>
+
+                  <motion.p
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="body-text containerBorder mb-2 text-left">
+                    {item.text}
+                  </motion.p>
+
+                  <motion.ul
+                    variants={fadeInUp}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="body-text space-y-1 text-left">
+                    {item.bullets.map((bullet, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <img
+                          src={icon}
+                          alt=""
+                          className="w-4 h-4 object-contain mt-1"
+                        />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </motion.ul>
+                </div>
+              </div>
+            ))}
           </div>
         </SectionWrapper>
       </div>

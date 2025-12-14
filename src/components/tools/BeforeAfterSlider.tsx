@@ -14,7 +14,7 @@ export default function BeforeAfterSlider({
 }: BeforeAfterSliderProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const isDraggingRef = useRef(false);
-  const [position, setPosition] = useState(50);
+  const [position, setPosition] = useState(80);
 
   const updatePosition = (clientX: number) => {
     const rect = containerRef.current?.getBoundingClientRect();
@@ -66,7 +66,7 @@ export default function BeforeAfterSlider({
       <img
         src={before}
         alt="before"
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover object-left pointer-events-none"
         style={{ zIndex: 1 }}  // onderlaag
       />
 
@@ -94,10 +94,8 @@ export default function BeforeAfterSlider({
         <div className="absolute top-0 bottom-0 w-[2px] bg-white/90" />
 
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                     bg-white shadow-lg rounded-full h-10 w-10 flex items-center justify-center 
-                     cursor-pointer border border-white/60"
-        >
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-full h-10 w-10 flex 
+          items-center justify-center cursor-pointer border border-white/60">
           <BsGripVertical className="text-sky-900 text-xl" />
         </div>
       </div>
