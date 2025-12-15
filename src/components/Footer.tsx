@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import logoWhite from "../assets/logo/logo_sendang_wit.png";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import WhatsApp from "./tools/Whatsapp";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -54,17 +55,7 @@ export default function Footer() {
           </p>
 
           {/* Phone */}
-          <p className="body-text mt-2">
-            <span className="">{t("footer.phone")}:</span>{" "}
-            <a
-              href="https://wa.me/5978592337"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=""
-            >
-              +597 8592337
-            </a>
-          </p>
+          <WhatsApp />
 
           {/* WhatsApp note */}
           <p className="body-text italic mt-1">

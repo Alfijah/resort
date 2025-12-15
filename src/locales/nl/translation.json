@@ -209,7 +209,7 @@
             },
             "mealsEnd": "Andere Javaanse gerechten kunnen we in overleg aanbieden.",
             "titleDrinks": "Extra drankjes",
-            "textDrinks": "Niet inbegrepen, maar beschikbaar op aanvraag: frisdranken, sappen, bier, wijn en sterke dranken.",
+            "textDrinks": "Niet inbegrepen, maar beschikbaar op aanvraag: bier, wijn en sterke dranken.",
             "titleDiets": "Dieetwensen & voorkeuren",
             "textDiets": "Vegetarisch, pescotarisch of specifieke voorkeuren? Laat het ons vooraf weten. We passen jouw dining-experience graag aan, zodat alles perfect aansluit bij jullie wensen."
         }
@@ -258,6 +258,36 @@
     "contact": {
         "hero": "Contact",
         "title1": "Neem contact met ons op",
-        "text1": "Heb je een vraag, wil je reserveren of gewoon iets met ons delen? Vul het formulier hieronder in, we nemen snel contact met je op."
+        "subtitle": "Liever via het formulier?",
+        "text1": " Vul je gegevens hieronder in, dan nemen wij zo snel mogelijk contact met je op.",
+        "formMeta": {
+            "firstName": "Voornaam *",
+            "lastName": "Achternaam *",
+            "email": "E-mail *",
+            "subject": "Onderwerp (optioneel)",
+            "message": "Bericht *"
+        },
+        "formError": {
+            "firstName": "Voornaam is verplicht.",
+            "lastName": "Achternaam is verplicht.",
+            "email": "E-mail is verplicht.",
+            "emailError": "Voer een geldig e-mailadres in.",
+            "messageError": "Bericht is verplicht."
+        },
+        "submitMessage": "Bericht succesvol verzonden!",
+        "sendButton": "Verzenden",
+        "enroute": {
+            "title": "Bereikbaarheid en route",
+            "entranceTitle": "Afslag vanaf Paramaribo (Oost-Westverbinding)",
+            "entranceText": "Neem na het bord ‘Tamanredjo’ direct de eerste afslag links. Dit is dezelfde afslag als op de foto. De ingang van Sendang Redjo ligt slechts 400 meter verder.",
+            "mapTitle": "Routebeschrijving",
+            "mapText": "Volg de Oost-Westverbinding richting Tamanredjo. De kaart hieronder leidt je zonder omwegen naar onze locatie.",
+            "qrCodeTitle": "Navigatiehulp",
+            "qrCodeText": "Scan de QR-code of gebruik de locatie onderaan de pagina om direct onze Google Maps locatie te openen."
+        },
+        "whatsapp": {
+            "title": "WhatsApp",
+            "subtitle": "Heb je een vraag, wil je reserveren of meer informatie ontvangen? Stuur ons direct een bericht via WhatsApp — we reageren snel."
+        }
     }
 }
