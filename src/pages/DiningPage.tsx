@@ -148,9 +148,9 @@ export default function DiningPage() {
             {[
               // { key: "coconut", icon: <cocunut size={26} /> },
               { key: "coconut", icon: <img src={cocunut} alt="snack icon" className="w-9 h-19 object-contain" /> },
-              { key: "snack", icon: <img src={loempia} alt="snack icon" className="w-10 h-10 object-contain" /> },
-              { key: "coffee", icon: <GiCoffeeCup size={26} /> },
-              { key: "freshDrinks", icon: <img src={drinks} alt="freshDrink icon" className="w-10 h-10 object-contain" /> },
+              { key: "snack", icon: <img src={loempia} alt="snack icon" className="w-9 h-9 object-contain" /> },
+              { key: "coffee", icon: <GiCoffeeCup size={30} /> },
+              { key: "freshDrinks", icon: <img src={drinks} alt="freshDrink icon" className="w-9 h-9 object-contain" /> },
 
             ].map((item, index) => (
               <motion.div key={index}
@@ -188,7 +188,7 @@ export default function DiningPage() {
             {[
               // { key: "coconut", icon: <cocunut size={26} /> },
               { key: "lunch", icon: <img src={lunch} alt="snack icon" className="w-10 h-10 object-contain" /> },
-              { key: "dinner", icon: <GiBarbecue size={26} /> },
+              { key: "dinner", icon: <GiBarbecue size={28} /> },
 
             ].map((item, index) => (
               <motion.div key={index}

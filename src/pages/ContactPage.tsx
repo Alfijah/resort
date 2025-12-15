@@ -60,7 +60,7 @@ export default function ContactPage() {
             {t("contact.whatsapp.subtitle")}
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="w-full px-10">
+          <motion.div variants={fadeInUp} className="w-full px-10 md:px-54">
             <button className="explore-button w-full h-10 border mt-2 md:mt-6 transition-colors cursor-pointer">
               <a
                 href="https://wa.me/5978592337"
@@ -102,7 +102,7 @@ export default function ContactPage() {
           </motion.h1>
 
           {/* GRID STRUCTUUR */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 lg:gap-10 sm:px-10">
 
             {items.map((item, i) => (
               <div
@@ -117,7 +117,7 @@ export default function ContactPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 object-cover"
+                  className="w-full h-75 sm:h-95 object-cover"
                 />
 
                 {/* TEXT */}

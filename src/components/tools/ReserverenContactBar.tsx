@@ -10,7 +10,7 @@ export default function ReserverenContactBar() {
                 <Link to="reserveren">{t("nav.book")}</Link>
             </button>
             <button className="absolute bg-white w-[50%] right-0 h-full py-2 uppercase tracking-widest text-xs text-black cursor-pointer hover:bg-white hover:text-orange-600 transition">
-                <Link to="contact">{t("nav.contact")}</Link>
+                <Link to="contact">{t("hero.email")}</Link>
             </button>
         </div>
     )

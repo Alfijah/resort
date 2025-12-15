@@ -36,7 +36,7 @@ export default function AboutPage() {
       <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 md:px-9 leading-snugged">
             {t("about.title1")}
           </motion.h1>
 

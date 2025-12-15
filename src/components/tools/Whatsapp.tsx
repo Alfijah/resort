@@ -18,7 +18,7 @@ export default function WhatsApp({ label }: WhatsAppProps) {
               rel="noopener noreferrer"
               className=""
             >
-              +597 8592337
+              <u>+597 8592337</u>
             </a>
           </p>
     )

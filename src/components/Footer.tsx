@@ -34,7 +34,7 @@ export default function Footer() {
             className="body-text flex items-center gap-2"
           >
             <HiOutlineLocationMarker size={18} className="text-white" />
-            <span>{t("footer.locationText")}</span>
+            <u><span>{t("footer.locationText")}</span></u>
           </a>
         </div>
 

@@ -25,7 +25,7 @@
         "cabanaLimit": "Maximaal 3 cabanas online. Neem contact op voor grotere boekingen.",
         "guestLimit": "Maximaal 5 gasten per cabana toegestaan.",
         "book": "Reserveren",
-        "email": "Stel je vraag"
+        "email": "Contact Opnemen"
     },
     "intro": {
         "title": "Waar stilte, natuur en ziel samenkomen",
@@ -90,7 +90,7 @@
         "title": "Klaar voor jouw dag aan het meer?",
         "subtitle": "Of je nu komt om te ontsnappen of gewoon te ademen—je cabana staat voor je klaar. We ontvangen je met open armen, een gedekte tafel en een rustig meer.",
         "primary": "Reserveer je cabana",
-        "secondary": "Stel je vraag",
+        "secondary": "Neem contact op",
         "highlightKicker": "Dichterbij dan je denkt",
         "highlightText": "Op slechts 20 minuten van Paramaribo stap je in een wereld van stilte, water en Javaanse gastvrijheid. Een verborgen luxe, voor wie bewust kiest voor rust."
     },
@@ -170,7 +170,7 @@
         "text3": "Rond het middaguur bezorgen wij een warme, volledig verzorgde lunch bij je cabana. Je kiest uit twee traditionele gerechten:",
         "text3Subs": {
             "sub1title": "Santen Iwak Pitik",
-            "sub1text": "Kip gestoofd in kokosmelk—zacht, romig en rijk aan aromatische Javaanse kruiden.",
+            "sub1text": "Kip (halal) gestoofd in kokosmelk—zacht, romig en rijk aan aromatische Javaanse kruiden.",
             "sub2title": "Iwak Laut Gorèng",
             "sub2text": "Gestoofde, gemarineerde zeevis met authentieke kruiden en een volle, hartige smaak.",
             "sub3title": "Geserveerd met:",
@@ -183,12 +183,12 @@
         "subtitle4a": "Wat je altijd krijgt",
         "subtitle4aSubs": {
             "sub1title": "Sateh Iwak Pitik",
-            "sub1text": "Kipsaté van mals dijvlees, Javaans gemarineerd."
+            "sub1text": "Kipsaté van mals dijvlees (halal), Javaans gemarineerd."
         },
         "subtitle4b": "Je keuze voor erbij",
         "subtitle4bSubs": {
             "sub1title": "Sateh Sapi",
-            "sub1text": "Rundsaté van malse biefstuk.",
+            "sub1text": "Rundsaté van malse biefstuk (halal).",
             "or": "of",
             "sub2title": "OF — Gemarineerde zeevis in plaats van Sate Sapi",
             "sub2text": "Gekruid en verpakt in folie, langzaam gegaard boven de grill."
@@ -289,5 +289,80 @@
             "title": "WhatsApp",
             "subtitle": "Heb je een vraag, wil je reserveren of meer informatie ontvangen? Stuur ons direct een bericht via WhatsApp — we reageren snel."
         }
+    },
+    "reserverenPage": {
+        "hero": "Reserveren",
+        "introTitle": "Jouw dag bij Sendang Redjo begint hier",
+        "introText": "Sendang Redjo is een exclusieve eco retreat waar rust, natuur en aandacht centraal staan. We ontvangen dagelijks slechts een beperkt aantal gasten, zodat jouw ervaring persoonlijk en ongestoord blijft. Daarom is vooraf reserveren noodzakelijk.",
+        "contactTitle": "Reserveren",
+        "contactSubtitle": "Reserveren kan uitsluitend via WhatsApp of e-mail. Wij reageren snel en helpen je graag verder.",
+        "whatsappLabel": "WhatsApp",
+        "emailLabel": "E-mail",
+        "tarievenTitle": "Tarieven",
+        "tarievenSub": "Dagverblijf van 09:00 – 21:00 uur",
+        "tarieven": [
+            {
+                "personen": "7 personen",
+                "prijs": "USD 85*"
+            },
+            {
+                "personen": "6 personen",
+                "prijs": "USD 90*"
+            },
+            {
+                "personen": "5 personen",
+                "prijs": "USD 95"
+            },
+            {
+                "personen": "4 personen",
+                "prijs": "USD 110"
+            },
+            {
+                "personen": "3 personen",
+                "prijs": "USD 135"
+            },
+            {
+                "personen": "2 personen",
+                "prijs": "USD 175"
+            },
+            {
+                "personen": "1 persoon",
+                "prijs": "USD 295"
+            }
+        ],
+        "tariefRemark": "Tarieven geldig vanaf 1 januari 2026.",
+        "inclusiefTitle": "Wat is inbegrepen",
+        "inclusief": [
+            "Persoonlijke ontvangst en boottransfer naar je privé-cabana",
+            "Vers gebakken loempia’s en een koude kokosnoot bij aankomst",
+            "Privé-cabana met lounge, bar, terras aan het water, poolbeds en eigen badkamer",
+            "Vers klaargezette baddoeken",
+            "Authentieke Javaanse lunch",
+            "Late-afternoon BBQ (door gasten zelf te bereiden)",
+            "Koffie en thee in de cabana",
+            "Frisdrank, water en sap in de koelkast",
+            "Vrij gebruik van kajaks, zwemvesten, floaties en hengels",
+            "Toegang tot het meer en de kreken van de sanctuary",
+            "Persoonlijke begeleiding bij aankomst en vertrek"
+        ],
+        "nietInbegrepenTitle": "Niet inbegrepen (op aanvraag)",
+        "nietInbegrepen": [
+            "Bier, wijn en sterke dranken",
+            "Extra Javaanse gerechten op aanvraag",
+            "Catch & Cook van eigen gevangen vis"
+        ],
+        "huisregelsTitle": "Huisregels & vrijwaring",
+        "huisregelsText": "Voor vertrek naar je cabana vragen we alle gasten om het document door te lezen en te ondertekenen.",
+        "huisregelsButton": "Download Huisregels & Vrijwaring",
+        "belangrijkTitle": "Belangrijke informatie",
+        "belangrijk": [
+            "Maximaal 7 personen per cabana",
+            "Aankomsttijd altijd vooraf reserveren",
+            "Dagverblijf: 09:00 – 21:00 uur",
+            "We zijn niet telefonisch bereikbaar",
+            "Gebruik altijd de route-instructies uit je bevestiging"
+        ],
+        "ctaText": "Klaar om te reserveren?",
+        "ctaButton": "Reserveer via WhatsApp"
     }
 }

@@ -90,12 +90,12 @@ export default function Navbar() {
                             </button>
 
                             {/* Existing menu links — exact jouw code */}
-                            <Link to="" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.home")}</Link>
-                            <Link to="cabanas" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.cabanas")}</Link>
-                            <Link to="dining" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.dining")}</Link>
-                            <Link to="activiteiten" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.activities")}</Link>
-                            <Link to="about" className="nav-link" onClick={() => setIsMenuOpen(false)}>{t("nav.about")}</Link>
-                            <Link className="nav-link" to="contact" onClick={() => setIsMenuOpen(false)}>{t("nav.contact")}</Link>
+                            <Link to="" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.home")}</Link>
+                            <Link to="cabanas" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.cabanas")}</Link>
+                            <Link to="dining" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.dining")}</Link>
+                            <Link to="activiteiten" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.activities")}</Link>
+                            <Link to="about" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.about")}</Link>
+                            <Link className="nav-link menu" to="contact" onClick={() => setIsMenuOpen(false)}>{t("nav.contact")}</Link>
 
                             {/* SOCIAL ICONS ONDERAAN */}
                             <div className="mt-auto flex items-center gap-6 pl-1 pb-10 pt-4">

@@ -8,6 +8,10 @@
     font-size: 0.65rem;
   }
 
+  .nav-link.menu {
+    font-size: 0.75rem;
+  }
+
   @font-face {
     font-family: "Reforma 1918 Blanca";
     src: url("./assets/fonts/reforma.ttf") format("truetype");
@@ -106,7 +110,7 @@ a {
 
 p {
   text-align: justify;
-  hyphens: auto;
+  hyphens: none;
 }
 
 .explore-button,
@@ -193,7 +197,7 @@ p {
   }
 
   .heading-primary {
-    font-size: 2.25rem;
+    font-size: 1.65rem;
     /* text-4xl */
     padding-bottom: 1.5rem;
     /* pb-6 */
