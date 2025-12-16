@@ -9,6 +9,7 @@ import ActiviteitenPage from "./pages/ActiviteitenPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ReserverenPage from "./pages/ReserverenPage";
+import ImaginePage from "./pages/ImaginePage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/imagine" element={<ImaginePage />} />
           <Route path="/cabanas" element={<CabanasPage />} />
           <Route path="/dining" element={<DiningPage />} />
           <Route path="/activiteiten" element={<ActiviteitenPage />} />

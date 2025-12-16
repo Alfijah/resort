@@ -1,5 +1,5 @@
 import heroBg from "../assets/heroSection/birds.mp4";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
@@ -45,7 +45,7 @@ export default function HeroSection() {
                     />
 
                     <span className="icon text-sm md:text-base text-white leading-relaxed text-shadow-lg group-hover:underline group-hover:text-white transition">
-                        {t("hero.explore")}
+                        <Link to="/imagine">{t("imagine.title")}</Link>
                     </span>
                 </motion.div>
             </SectionWrapper>
