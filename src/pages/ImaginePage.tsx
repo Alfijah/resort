@@ -92,7 +92,7 @@ export default function ImaginePage() {
 
                     <motion.p variants={fadeInUp} className="text-sm md:text-base text-white leading-relaxed text-shadow-lg/30">
                         <ul>
-                            {section3List.map((item, i) => (
+                            {section4List.map((item, i) => (
                                 <li key={i}>{item}</li>
                             ))}
                         </ul>
