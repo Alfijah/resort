@@ -147,7 +147,7 @@ export default function ImaginePage() {
                 bg-[radial-gradient(circle_at_center,transparent_40%,rgba(0,0,0,0.55)_100%)]" />
 
 
-            <div className="absolute bottom-0 left-0 w-full h-20 
+            <div className="absolute bottom-0 left-0 w-full h-40 
                 bg-gradient-to-t from-black via-black/60 to-transparent 
                 pointer-events-none z-20" />
 
