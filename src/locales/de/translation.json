@@ -1,0 +1,368 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "cabanas": "Cabanas",
+        "dining": "Dining",
+        "activities": "Aktivitäten",
+        "about": "Über uns",
+        "contact": "Kontakt",
+        "tarifs": "Preise",
+        "book": "Reservieren"
+    },
+    "hero": {
+        "title": "Der verborgene Luxus",
+        "subtitle": "Ein Zufluchtsort voller Ruhe und Wärme – fern von allem und ganz nah bei dir selbst.",
+        "explore": "Imagine Your Day",
+        "checkIn": "Check-In",
+        "selectDate": "Datum auswählen",
+        "cabana": "Cabana",
+        "cabanas": "Cabanas",
+        "guestOptions": "Gast/Gäste",
+        "gast": "Gast",
+        "gasten": "Gäste",
+        "guests_one": "{{count}} Gast",
+        "guests_other": "{{count}} Gäste",
+        "cabanaLimit": "Maximal 3 Cabanas online verfügbar. Für größere Gruppen kontaktiere uns bitte direkt.",
+        "guestLimit": "Maximal 5 Gäste pro Cabana.",
+        "book": "Reservieren",
+        "email": "Kontakt aufnehmen"
+    },
+    "intro": {
+        "title": "Wo Stille, Natur und Seele zusammenkommen",
+        "subtitle": "Nur 20 Minuten von Paramaribo entfernt liegt Sendang Redjo – ein ruhiges Refugium an einem Privatsee, erbaut auf historischem Land und getragen von javanischer Gastfreundschaft. Hier verlangsamt sich alles, und die Stille bekommt eine neue Bedeutung."
+    },
+    "cabanas": {
+        "title": "Cabanas",
+        "subtitle1": "Unsere Cabanas sind dein privater Rückzugsort am Wasser – nur per Boot erreichbar, sodass du bereits bei der Ankunft völlige Ruhe spürst.",
+        "subtitle2": "Jede Cabana verfügt über eine luxuriöse Outdoor-Lounge, eine eigene Küche mit Bar, Poolbeds, eine Hängematte sowie ein modernes Badezimmer mit Warmwasser und Toilette. Kajaks, Angelruten und Floaties stehen bereit – egal, ob du das Wasser erkunden oder still dahin treiben möchtest."
+    },
+    "dining": {
+        "title": "Dining",
+        "subtitle1": "Erlebe die javanische Küche mitten in der Natur: langsam über Holzfeuer zubereitet, mit authentischen Gewürzen verfeinert und in deiner eigenen Cabana serviert – ein kulinarisches Erlebnis, bei dem Geschmack und Ruhe verschmelzen.",
+        "subtitle2": "Dining ist vollständig im Aufenthalt enthalten. Während du am Wasser entspannst, grillst du dein Mittagessen selbst und genießt eine Atmosphäre, in der die Zeit stillzustehen scheint. Alles wird frisch, ehrlich und mit viel Sorgfalt zubereitet – die Aromen und Düfte Javas vollenden deinen Tag."
+    },
+    "activiteiten": {
+        "title": "Aktivitäten",
+        "subtitle1": "Entdecke den See in völliger Ruhe: Paddle in deinem eigenen Tempo, angel an stillen Orten oder schwebe entspannt auf dem Wasser. Erhole dich in deiner Cabana – in der Hängematte, umgeben von nichts als Wind und Vogelklängen.",
+        "subtitle2": "Und für Naturliebhaber: Von Eisvögeln bis Reihern – jeder Tag zeigt ein neues Bild."
+    },
+    "invite": {
+        "title": "Der verborgene Luxus von Sendang Redjo",
+        "subtitle": "In Sendang Redjo erlebst du eine einzigartige Mischung aus Ruhe, Natur und warmer javanischer Gastfreundschaft. Alles ist darauf ausgelegt, dich vollständig in Entspannung und Genuss einzuhüllen.",
+        "subtitle1": "Stilvolle Cabanas",
+        "subtitle1text": "Mit javanischer Eleganz gestaltet – warme Details, sanfter Komfort und ein Panorama-Blick auf den See.",
+        "subtitle2": "Ruhe & Privatsphäre",
+        "subtitle2text": "Keine Hektik, keine Menschenmengen – nur Natur, Stille und ein Gefühl von Zeitlosigkeit.",
+        "subtitle3": "Abenteuerliche Erlebnisse",
+        "subtitle3text": "Gleite lautlos über das Wasser, fang deinen eigenen Fisch oder entspanne schwerelos auf dem See.",
+        "subtitle4": "Authentische javanische Küche",
+        "subtitle4text": "Langsam über Holzfeuer zubereitet – reine Aromen, warme Düfte und Tradition in ihrer schönsten Form."
+    },
+    "button": {
+        "explore": "Mehr entdecken"
+    },
+    "reviews": {
+        "kicker": "Erfahrungen",
+        "title": "Was Gäste aus Sendang Redjo mitnehmen",
+        "subtitle": "Ein Tag am See fühlt sich hier länger an als anderswo. Das bleibt Gästen am meisten in Erinnerung.",
+        "items": {
+            "1": {
+                "name": "Auke Klene",
+                "tag": "Tagesaufenthalt am See",
+                "text": "Am 14. November haben wir euer Resort mit einer Gruppe von sechs Personen besucht. Es war wunderschön. Wir wurden mit Kokoswasser begrüßt und erhielten eine Einführung, gefolgt von einer angenehmen Bootsfahrt zu unserer Cabana. Die Cabana war mit allem ausgestattet, was wir brauchten, und wir hatten viel Spaß. Das BBQ war fantastisch! Und die Rückfahrt in der Dämmerung war atemberaubend – mit all den Vögeln, die wir unterwegs gesehen haben. Wir wünschen euch eine wunderbare Zukunft mit vielen Gästen. Liebe Grüße,"
+            },
+            "2": {
+                "name": "Edme Smith",
+                "tag": "Solo-Auszeit",
+                "text": "Was für ein magischer Ort! Normalerweise besteht rund um Paramaribo immer das Risiko von lauter Musik und viel Trubel. Nicht in Sendang Redjo: Es fühlt sich an, als wäre man allein auf der Welt – und man kommt erholt statt überreizt zurück. Ein wahres verstecktes Juwel von stiller Schönheit! Die Cabana war perfekt ausgestattet, das Essen köstlich, der Service hervorragend und wir hatten viel Freude beim Schwimmen, Kajaken und echter Quality Time. Vielen Dank – wir kommen sicher wieder!"
+            },
+            "3": {
+                "name": "Sara Pawironadi",
+                "tag": "Familientag mit Kindern",
+                "text": "Wir hatten eine fantastische Erfahrung in Sendang Redjo – wirklich einzigartig. Umgeben von Natur sahen wir einen Regenbogen am Himmel und friedlich gleitende Vögel über uns. Das gesamte Resort fühlte sich tief ruhig, romantisch und voller Abenteuer an. Es ist ein Ort, der die Seele berührt und dich eins werden lässt mit der Natur. Absolut empfehlenswert für alle, die Ruhe, Gelassenheit und eine private Flucht in die Natur suchen."
+            }
+        },
+        "cta": "Lass dich von weiteren Erfahrungen inspirieren.",
+        "button": "Mehr entdecken"
+    },
+    "cta": {
+        "kicker": "Reservierungen",
+        "title": "Bereit für deinen Tag am See?",
+        "subtitle": "Ob du entfliehen oder einfach tief durchatmen möchtest – deine Cabana wartet auf dich. Wir empfangen dich mit offenen Armen, einem gedeckten Tisch und einem stillen See.",
+        "primary": "Cabana reservieren",
+        "secondary": "Kontakt aufnehmen",
+        "highlightKicker": "Näher als du denkst",
+        "highlightText": "Nur 20 Minuten von Paramaribo entfernt trittst du ein in eine Welt aus Stille, Wasser und javanischer Gastfreundschaft. Ein verborgener Luxus – für alle, die bewusst Ruhe wählen."
+    },
+    "footer": {
+        "locationTitle": "Standort",
+        "locationText": "H.I. Bechanweg, Tamanredjo, Suriname",
+        "contactTitle": "Kontakt",
+        "email": "E-Mail",
+        "phone": "WhatsApp",
+        "whatsappOnly": "Diese Nummer ist ausschließlich per WhatsApp erreichbar.",
+        "builtBy": "Website entworfen & entwickelt von "
+    },
+    "cabanasPage": {
+        "hero": "cabanas",
+        "title1": "Dein Rückzugsort am Wasser",
+        "text1": "Erlebe die perfekte Balance aus Ruhe, Komfort und Natur in unseren exklusiven Cabanas. Entworfen, um sich harmonisch in die Umgebung einzufügen – mit vollständiger Privatsphäre, Seeblick und dem Luxus, nichts tun zu müssen.",
+        "title2": "Alles für einen vollkommenen Tag",
+        "text2": "Unsere Cabanas sind dein privater Ort am Wasser: ein stilvoller Tagesaufenthalt, an dem du ungestört entspannen, schwimmen, genießen und Zeit miteinander verbringen kannst. Jede Cabana liegt direkt am See und bietet alles, was du für einen sorgenfreien Tag brauchst.",
+        "features": {
+            "lounge": "Luxuriöse Outdoor-Lounge",
+            "kitchen": "Küche mit Bar und Hockern",
+            "poolbeds": "Poolbeds",
+            "hammock": "Hängematte",
+            "shower": "Modernes Badezimmer mit Warmwasserdusche & Toilette",
+            "kayak": "Kajak",
+            "fishing": "Angelruten",
+            "floaties": "Floaties"
+        },
+        "title3": "Lounge & Sitzbereich",
+        "text3": "Die Atmosphäre ist warm, großzügig und im Einklang mit der Natur – dein Ort, um wirklich abzuschalten. Jede Cabana umfasst:",
+        "text3Subs": {
+            "sub1": "Ein komfortables Outdoor-Loungeset mit weichen Kissen",
+            "sub2": "Aussicht auf den See",
+            "sub3": "Eine robuste Holzbar mit Hockern",
+            "sub4": "Platz zum Essen, Entspannen oder einfach Genießen der Stille"
+        },
+        "headTitle4": "Erlebe unsere luxuriösen Cabanas am Wasser",
+        "title4": "Essen & Ausstattung",
+        "text4": "In Sendang Redjo ist jede Mahlzeit ein Erlebnis: authentisch javanisch, langsam über Holzfeuer zubereitet. Inklusive in deinem Tagesaufenthalt:",
+        "text4Subs": {
+            "point1": "Begrüßungsgetränk",
+            "point2": "Wasser, Tee, Kaffee",
+            "point3": "Softdrinks und Saft im Kühlschrank",
+            "point4": "Javanisches BBQ-Mittagessen mit einer marinierten ganzen Hähnchenkeule und verschiedenen Satays, die du selbst grillst"
+        },
+        "title5": "Wasseraktivitäten & Entspannung",
+        "text5a": "Tritt direkt von deiner Cabana in den See – das Wasser liegt buchstäblich zu deinen Füßen. Kajaks, Angelruten und Floaties stehen bereit, sodass du selbst wählen kannst: aktiv sein oder in stiller Ruhe treiben. Auf dem Deck findest du bequeme Poolbeds – ideal zum Sonnen oder Träumen.",
+        "title6": "Ruhe, Privatsphäre & Komfort",
+        "text6": "Jede Cabana ist als dein persönlicher Zufluchtsort gestaltet: ruhig, geräumig und vollständig in die Natur eingebettet. Hier bestimmst du allein das Tempo. Du hast Zugang zu:",
+        "text6Subs": {
+            "sub1": "Deiner eigenen Hängematte",
+            "sub2": "Einem luxuriösen Badezimmer mit Dusche und Toilette",
+            "sub3": "Weichen Handtüchern",
+            "sub4": "Viel Raum und Privatsphäre, um den Tag in völliger Ruhe zu erleben"
+        }
+    },
+    "diningPage": {
+        "hero": "Dining",
+        "title1": "Koste javanische Tradition",
+        "text1": "Frisch, geschmackvoll und mit Sorgfalt zubereitet… ein kulinarisches Erlebnis, das in der Stille der Natur zur Ruhe kommt.",
+        "title2": "Dining bei Sendang Redjo",
+        "text2": "Essen ist bei Sendang Redjo keine separate Aktivität – es ist Teil des Erlebnisses. Unsere Küche ist hausgemacht, javanisch inspiriert und vollständig frisch zubereitet.",
+        "subtitle2a": "Immer inklusive",
+        "subtext2a": "Jede Reservierung ist umfassend versorgt. Du musst nichts extra bestellen (kannst es aber). Bei Ankunft erhältst du:",
+        "features": {
+            "coconut": "Gekühlte Kokosnuss",
+            "snack": "Frisch gebratene Frühlingsrollen",
+            "coffee": "Kaffee & Tee",
+            "freshDrinks": "Softdrinks, Saft, Wasser & Eis im Kühlschrank"
+        },
+        "subtitle2b": "Zwei kulinarische Momente",
+        "features2": {
+            "lunch": "Hausgemachtes javanisches Mittagessen",
+            "dinner": "Leichtes Abendessen / Late-Afternoon-BBQ"
+        },
+        "title3": "Hausgemachtes javanisches Mittagessen (inklusive)",
+        "text3": "Gegen Mittag bringen wir dir ein warmes, vollständig zubereitetes Essen in deine Cabana. Wähle zwischen zwei traditionellen Gerichten:",
+        "text3Subs": {
+            "sub1title": "Santen Iwak Pitik",
+            "sub1text": "Hähnchen (halal) in Kokosmilch geschmort – weich, cremig und reich an javanischen Gewürzen.",
+            "sub2title": "Iwak Laut Gorèng",
+            "sub2text": "Marinierter Meeresfisch, mit authentischen Kräutern und herzhaftem Aroma zubereitet.",
+            "sub3title": "Serviert mit:",
+            "sub3text": "Seghoh Ghoerih – unser javanisches Reisgericht, begleitet von frischem Gemüse und Beilagen.",
+            "sub4title": "Snacks",
+            "sub4text": "Zusätzlich erhältst du eine Portion hausgemachter Chips – perfekt zum Genießen während des Schwimmens oder Entspannens."
+        },
+        "title4": "Late Afternoon BBQ (inklusive)",
+        "text4": "Später am Nachmittag erhältst du ein sorgfältig zusammengestelltes BBQ-Paket, bereit zum Grillen am Wasser – ein Moment, auf den sich viele Gäste freuen.",
+        "subtitle4a": "Immer inklusive",
+        "subtitle4aSubs": {
+            "sub1title": "Sateh Iwak Pitik",
+            "sub1text": "Hähnchensatay aus zartem Oberschenkel (halal), javanisch mariniert."
+        },
+        "subtitle4b": "Deine Wahl",
+        "subtitle4bSubs": {
+            "sub1title": "Sateh Sapi",
+            "sub1text": "Rindersatay aus zartem Steak.",
+            "or": "oder",
+            "sub2title": "ODER – Marinierter Fisch anstelle von Sateh Sapi",
+            "sub2text": "Gewürzt, in Folie verpackt und langsam über dem Grill gegart."
+        },
+        "text4End": "Das Grillen, der Ausblick und die Ruhe machen dieses BBQ zu einem stillen, wunderschönen Moment des Tages.",
+        "title5": "Catch & Cook — Tukunari Experience",
+        "text5": "Für alle, die gerne angeln, bieten wir ein einzigartiges Erlebnis:",
+        "text5sub": "Fange einen Tukunari (surinamischer Pfauenbarsch) aus dem Privatsee. Wir reinigen, würzen und bereiten ihn warm für dich zu. Ein reines Naturerlebnis mitten in Tamanredjo.",
+        "extras": {
+            "sectionTitle": "Zusätzliche Optionen auf Anfrage",
+            "sectionSubtitle": "Für Gäste, die ihr kulinarisches Erlebnis mit zusätzlichen Gerichten, Getränken oder persönlichen Wünschen bereichern möchten.",
+            "titleMeals": "Zusätzliche Gerichte",
+            "textMeals": "Das Tagesarrangement ist großzügig, aber auf Wunsch bereiten wir gern weitere warme Gerichte zu.",
+            "examplesTitle": "Beispiele",
+            "meals": {
+                "meal1Title": "Saoto-Suppe mit Ei — javanisch-surinamische Spezialität mit aromatischer Hühnerbrühe, Bohnensprossen, Röstzwiebeln, Sellerie und einem gekochten Ei.",
+                "meal2Title": "Djangan Bening — leichte javanische Gemüsesuppe in klarer Brühe. Serviert mit Trie (kleine knusprig gebratene Fische) oder gebratener Knochenfisch."
+            },
+            "mealsEnd": "Weitere javanische Gerichte können auf Anfrage zubereitet werden.",
+            "titleDrinks": "Zusätzliche Getränke",
+            "textDrinks": "Nicht inklusive, aber auf Anfrage erhältlich: Bier, Wein und Spirituosen.",
+            "titleDiets": "Diätwünsche & Präferenzen",
+            "textDiets": "Vegetarisch, pescetarisch oder besondere Wünsche? Gib uns einfach Bescheid. Wir passen das kulinarische Erlebnis gerne an."
+        }
+    },
+    "activiteitenPage": {
+        "hero": "Aktivitäten",
+        "title1": "Fühle dich eins mit der Natur",
+        "text1": "Erlebe Ruhe, Abenteuer und Verbindung zur Natur: Kajaken, Angeln, Treibenlassen und Vogelbeobachtung in der friedlichen Umgebung von Sendang Redjo.",
+        "title2": "Aktivitäten in deinem Tempo",
+        "text2": "Du entscheidest, wie du deinen Tag gestaltest – aktiv auf dem Wasser oder entspannt in deiner Cabana. Alles dreht sich um Ruhe, Natur und deinen eigenen Rhythmus.",
+        "features": {
+            "kajak": "Privates Kajakfahren",
+            "vissen": "Still angeln",
+            "zwemmen": "Schwimmen & Treibenlassen",
+            "vogels": "Vogelbeobachtung"
+        },
+        "headAct": "Erlebe die Natur auf deine Weise",
+        "title3": "Kajakfahren auf dem Privatsee",
+        "text3": "Gleite lautlos über das Wasser, ohne andere Gäste um dich herum. Der See gehört dir – perfekt für Momente der Ruhe und Freiheit.",
+        "title4": "Angeln in idyllischer Umgebung",
+        "text4": "Mit einer einfachen Angel und viel Zeit genießt du absolute Stille. Ob du nun etwas fängst oder nicht – Landschaft und Ruhe machen jeden Moment wertvoll.",
+        "title5": "Schwimmen & Treibenlassen",
+        "text5": "Lass dich vom warmen Wasser tragen und komme vollkommen zur Ruhe. Schweben, schwimmen oder einfach dahintreiben – ein schwereloses Erlebnis wie kein anderes.",
+        "title6": "Javanische Gastfreundschaft",
+        "text6": "Erlebe die warme, aufrichtige Gastfreundschaft der javanischen Kultur. Hier werden Ruhe, Achtsamkeit und Verbundenheit Teil deines Tages."
+    },
+    "about": {
+        "hero": "Über uns",
+        "title1": "Aus einem Traum geboren. Von der Natur getragen.",
+        "text1": "Sendang Redjo ist kein Hotel. Es ist ein Sanctuary – ein Ort, an dem Einfachheit, Natur und Seele zusammenfließen.",
+        "title2": "Von der Plantage zum Eco Retreat",
+        "text2a": "Sendang Redjo liegt auf historischem Grund in Tamanredjo (Commewijne), wo einst die Plantage La Paix stand. In diesem ruhigen, grünen Tal entsteht ein neues Ökosystem: junge Wälder, Creeks, Palmen und Seen bilden eine lebendige Landschaft, die täglich reicher wird.",
+        "text2b": "Hier hörst du das Zwitschern dutzender Vogelarten, siehst kleine Affen durch die Bäume springen, Otter spielerisch durchs Wasser gleiten und Tukunari unter der Oberfläche blitzen. Das ist keine Kulisse – das ist Natur, wie sie gedacht ist.",
+        "title3": "Cabanas, die mit der Landschaft verschmelzen",
+        "text3a": "Unsere Holzcabanas sind vollständig offen gestaltet. Du atmest die Natur, du hörst sie, du fühlst sie – die Grenze zwischen innen und außen verschwimmt.",
+        "text3b": "Keine Wände, die dich abkapseln. Keine künstlichen Ablenkungen. Nur Raum zum Entschleunigen und Sein.",
+        "title4": "Die Bedeutung des Namens",
+        "text4a": "Sendang Redjo – „Quelle des Wohlstands“. Ein Name mit Bedeutung. Nicht als Marke gewählt, sondern als Bestimmung.",
+        "text4b": "Sendang Redjo stammt aus dem Altjavanischen und trägt mehrere Bedeutungsschichten – spirituell, kulturell und geografisch.",
+        "text4c": "Im alten Java bezeichnete sendang eine natürliche Quelle: stille Orte, an denen Menschen badeten, meditierten und Schutz suchten. Diese Quellen waren heilig, verbunden mit Ritualen, alten Königreichen wie Majapahit und Legenden über penunggu – Schutzgeister des Landes.",
+        "text4d": "Redjo bedeutet Wohlstand, Harmonie und Gleichgewicht. Zugleich verweist der Name liebevoll auf Tamanredjo – das javanisch-surinamische Dorf, in dem dieses Eco Retreat entstanden ist.",
+        "title5": "Warum bei Sendang Redjo bleiben?",
+        "text5a": "Weil Sendang Redjo mehr ist als ein schöner Ort. Es ist ein bewusst gestaltetes Sanctuary, in dem Natur, Einfachheit und Gastfreundschaft zusammenkommen.",
+        "text5b": "Hier gibt es keine Hektik, keine Programme, keinen Massentourismus – nur Raum zum Aufladen, Verlangsamen und Wiederverbinden mit dem, was wirklich zählt."
+    },
+    "contact": {
+        "hero": "Kontakt",
+        "title1": "Nimm Kontakt zu uns auf",
+        "subtitle": "Lieber über das Formular?",
+        "text1": "Fülle unten deine Daten aus und wir melden uns so schnell wie möglich bei dir.",
+        "formMeta": {
+            "firstName": "Vorname *",
+            "lastName": "Nachname *",
+            "email": "E-Mail *",
+            "subject": "Betreff (optional)",
+            "message": "Nachricht *"
+        },
+        "formError": {
+            "firstName": "Vorname ist erforderlich.",
+            "lastName": "Nachname ist erforderlich.",
+            "email": "E-Mail ist erforderlich.",
+            "emailError": "Bitte gib eine gültige E-Mail-Adresse ein.",
+            "messageError": "Nachricht ist erforderlich."
+        },
+        "submitMessage": "Nachricht erfolgreich gesendet!",
+        "sendButton": "Senden",
+        "enroute": {
+            "title": "Anfahrt & Wegbeschreibung",
+            "entranceTitle": "Abzweigung von Paramaribo (Ost-West-Verbindung)",
+            "entranceText": "Nach dem Schild ‚Tamanredjo‘ sofort die erste links nehmen. Dies ist dieselbe Abzweigung wie auf dem Foto. Der Eingang zu Sendang Redjo liegt nur 400 Meter weiter.",
+            "mapTitle": "Wegbeschreibung",
+            "mapText": "Folge der Ost-West-Verbindung Richtung Tamanredjo. Die Karte unten führt dich direkt zu unserem Standort.",
+            "qrCodeTitle": "Navigation",
+            "qrCodeText": "Scanne den QR-Code oder nutze den Link unten, um unsere Google-Maps-Position sofort zu öffnen."
+        },
+        "whatsapp": {
+            "title": "WhatsApp",
+            "subtitle": "Hast du eine Frage oder möchtest reservieren? Schicke uns eine WhatsApp-Nachricht – wir antworten schnell."
+        }
+    },
+    "reserverenPage": {
+        "hero": "Reservieren",
+        "introTitle": "Dein Tag bei Sendang Redjo beginnt hier",
+        "introText": "Sendang Redjo ist ein exklusives Eco Retreat, in dem Ruhe, Natur und persönliche Aufmerksamkeit im Mittelpunkt stehen. Wir empfangen täglich nur eine begrenzte Zahl an Gästen – so bleibt deine Erfahrung persönlich und ungestört. Eine Reservierung ist daher notwendig.",
+        "contactTitle": "Reservierung",
+        "contactSubtitle": "Reservieren kannst du ausschließlich via WhatsApp oder E-Mail. Wir antworten schnell und helfen dir gern weiter.",
+        "whatsappLabel": "WhatsApp",
+        "emailLabel": "E-Mail",
+        "tarievenTitle": "Preise",
+        "tarievenSub": "Tagesaufenthalt von 09:00 – 21:00 Uhr",
+        "tarieven": [
+            {
+                "personen": "7 Personen",
+                "prijs": "USD 85*"
+            },
+            {
+                "personen": "6 Personen",
+                "prijs": "USD 90*"
+            },
+            {
+                "personen": "5 Personen",
+                "prijs": "USD 95"
+            },
+            {
+                "personen": "4 Personen",
+                "prijs": "USD 110"
+            },
+            {
+                "personen": "3 Personen",
+                "prijs": "USD 135"
+            },
+            {
+                "personen": "2 Personen",
+                "prijs": "USD 175"
+            },
+            {
+                "personen": "1 Person",
+                "prijs": "USD 295"
+            }
+        ],
+        "tariefRemark": "Preise gültig ab 1. Januar 2026.",
+        "inclusiefTitle": "Inklusive",
+        "inclusief": [
+            "Persönlicher Empfang und Bootstransfer zur privaten Cabana",
+            "Frisch gebratene Frühlingsrollen und gekühlte Kokosnuss bei der Ankunft",
+            "Private Cabana mit Lounge, Bar, Terrasse am Wasser, Poolbeds und eigenem Badezimmer",
+            "Frisch bereitgelegte Handtücher",
+            "Authentisches javanisches Mittagessen",
+            "Late-Afternoon-BBQ (selbst zu grillen)",
+            "Kaffee und Tee in der Cabana",
+            "Softdrinks, Wasser und Saft im Kühlschrank",
+            "Freie Nutzung von Kajaks, Schwimmwesten, Floaties und Angelruten",
+            "Zugang zum See und den Creeks des Sanctuary",
+            "Persönliche Begleitung bei Ankunft und Abreise"
+        ],
+        "nietInbegrepenTitle": "Nicht inklusive (auf Anfrage)",
+        "nietInbegrepen": [
+            "Bier, Wein und Spirituosen",
+            "Zusätzliche javanische Gerichte auf Anfrage",
+            "Catch & Cook mit selbst gefangenem Fisch"
+        ],
+        "huisregelsTitle": "Hausregeln & Haftungsausschluss",
+        "huisregelsText": "Vor der Abfahrt zur Cabana bitten wir alle Gäste, das Dokument zu lesen und zu unterschreiben.",
+        "huisregelsButton": "Hausregeln & Haftungsausschluss herunterladen",
+        "belangrijkTitle": "Wichtige Informationen",
+        "belangrijk": [
+            "Maximal 7 Personen pro Cabana",
+            "Ankunftszeit immer im Voraus reservieren",
+            "Tagesaufenthalt: 09:00 – 21:00 Uhr",
+            "Nicht telefonisch erreichbar",
+            "Bitte immer die Wegbeschreibung in der Bestätigung verwenden"
+        ],
+        "ctaText": "Bereit zu reservieren?",
+        "ctaButton": "Über WhatsApp reservieren"
+    }
+}

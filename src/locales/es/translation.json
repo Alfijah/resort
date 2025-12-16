@@ -145,5 +145,223 @@
       "sub3": "Toallas suaves",
       "sub4": "Todo el espacio e intimidad para disfrutar tu día en total tranquilidad"
     }
+  },
+  "diningPage": {
+    "hero": "Dining",
+    "title1": "Prueba la tradición javanesa",
+    "text1": "Fresco, sabroso y preparado con dedicación… una experiencia culinaria que encuentra calma en el silencio de la naturaleza.",
+    "title2": "Dining en Sendang Redjo",
+    "text2": "Comer en Sendang Redjo no es una actividad aparte — es parte esencial de la experiencia. Nuestra cocina es hogareña, inspirada en Java y preparada siempre con ingredientes frescos.",
+    "subtitle2a": "Siempre incluido",
+    "subtext2a": "Cada reserva está completamente cubierta. No necesitas pedir nada adicional para disfrutar el día (aunque puedes hacerlo). Al llegar, te espera:",
+    "features": {
+      "coconut": "Coco frío",
+      "snack": "Lumpia recién fritos",
+      "coffee": "Café y té",
+      "freshDrinks": "Refrescos, jugo, agua y hielo en tu nevera"
+    },
+    "subtitle2b": "Dos momentos culinarios",
+    "features2": {
+      "lunch": "Almuerzo javanés casero",
+      "dinner": "Cena ligera / BBQ al atardecer"
+    },
+    "title3": "Almuerzo javanés casero (incluido)",
+    "text3": "Al mediodía entregamos un almuerzo caliente y completo directamente en tu cabana. Puedes elegir entre dos platos tradicionales:",
+    "text3Subs": {
+      "sub1title": "Santen Iwak Pitik",
+      "sub1text": "Pollo (halal) guisado en leche de coco — suave, cremoso y lleno de aromas javaneses.",
+      "sub2title": "Iwak Laut Gorèng",
+      "sub2text": "Pescado marino marinado y cocido con especias auténticas, con un sabor rico y profundo.",
+      "sub3title": "Servido con:",
+      "sub3text": "Seghoh Ghoerih — nuestro arroz javanés acompañado de vegetales frescos y guarniciones.",
+      "sub4title": "Snacks",
+      "sub4text": "Además recibirás chips caseros, perfectos para picar mientras nadas o descansas."
+    },
+    "title4": "BBQ al atardecer (incluido)",
+    "text4": "Más tarde en la tarde recibirás un paquete de BBQ cuidadosamente preparado, listo para asar junto al agua — un momento que muchos invitados esperan con ilusión.",
+    "subtitle4a": "Siempre incluido",
+    "subtitle4aSubs": {
+      "sub1title": "Sateh Iwak Pitik",
+      "sub1text": "Brochetas de pollo (halal) marinadas al estilo javanés."
+    },
+    "subtitle4b": "Tu elección adicional",
+    "subtitle4bSubs": {
+      "sub1title": "Sateh Sapi",
+      "sub1text": "Brochetas de ternera tierna (halal).",
+      "or": "o",
+      "sub2title": "O — Pescado marinado en lugar de Sateh Sapi",
+      "sub2text": "Sazonado, envuelto en papel aluminio y cocinado lentamente sobre la parrilla."
+    },
+    "text4End": "El grill, la vista y la tranquilidad convierten este momento en una experiencia serena y hermosa.",
+    "title5": "Catch & Cook — Experiencia Tukunari",
+    "text5": "Para quienes disfrutan pescar, ofrecemos una experiencia única:",
+    "text5sub": "Atrapa un tukunari (pavo real surinamés) en el lago privado. Nosotros limpiamos, condimentamos y preparamos el pescado para ti. Una experiencia natural rara en pleno Tamanredjo.",
+    "extras": {
+      "sectionTitle": "Opciones adicionales bajo solicitud",
+      "sectionSubtitle": "Para quienes quieran complementar su experiencia culinaria con platos extra, bebidas o preferencias personales.",
+      "titleMeals": "Platos adicionales",
+      "textMeals": "El paquete del día es generoso, pero si deseas algo más, con gusto preparamos platos tradicionales calientes a solicitud.",
+      "examplesTitle": "Ejemplos",
+      "meals": {
+        "meal1Title": "Sopa Saoto con huevo — clásico javanés-surinamés: caldo de pollo aromático con brotes de soja, cebolla frita, apio y un huevo cocido.",
+        "meal2Title": "Djangan Bening — sopa javanesa ligera de verduras con caldo claro. Servida con trie (pescado crocante) o pescado seco frito."
+      },
+      "mealsEnd": "Otros platos javaneses pueden prepararse previo acuerdo.",
+      "titleDrinks": "Bebidas adicionales",
+      "textDrinks": "No incluidas, pero disponibles bajo solicitud: cerveza, vino y licores.",
+      "titleDiets": "Preferencias & dietas",
+      "textDiets": "¿Vegetariano, pescetariano u otras preferencias? Avísanos con antelación y adaptamos tu experiencia gastronómica para que encaje perfectamente contigo."
+    }
+  },
+  "activiteitenPage": {
+    "hero": "Actividades",
+    "title1": "Siéntete uno con la naturaleza",
+    "text1": "Descubre calma, aventura y conexión con la naturaleza: kayak, pesca, flotar y avistar aves en el entorno sereno de Sendang Redjo.",
+    "title2": "Actividades a tu ritmo",
+    "text2": "Elige cómo quieres vivir tu día — activo en el agua o relajado en tu cabana. Todo gira en torno a la tranquilidad, la naturaleza y tu propio ritmo.",
+    "features": {
+      "kajak": "Kayak privado",
+      "vissen": "Pesca en silencio",
+      "zwemmen": "Nadar & flotar",
+      "vogels": "Avistamiento de aves"
+    },
+    "headAct": "Vive la naturaleza a tu manera",
+    "title3": "Kayak en el lago privado",
+    "text3": "Deslízate en silencio sobre el agua, sin otros huéspedes alrededor. El lago es tuyo — perfecto para momentos de paz, naturaleza y libertad.",
+    "title4": "Pescar en un entorno idílico",
+    "text4": "Con una caña sencilla y todo el tiempo del mundo, disfruta de un silencio absoluto. Atrapes o no, la vista y la calma hacen que cada momento sea especial.",
+    "title5": "Nadar & flotar",
+    "text5": "Déjate llevar por el agua tibia y relájate por completo. Flotar, nadar o simplemente dejarte llevar — una experiencia de ligereza única.",
+    "title6": "Hospitalidad javanesa",
+    "text6": "Experimenta la cálida y auténtica hospitalidad característica de la cultura javanesa. Aquí, la calma, la atención y la conexión forman parte de tu día."
+  },
+  "about": {
+    "hero": "Sobre nosotros",
+    "title1": "Nacido de un sueño. Sostenido por la naturaleza.",
+    "text1": "Sendang Redjo no es un hotel. Es un santuario — un lugar donde la sencillez, la naturaleza y el alma se unen.",
+    "title2": "De plantación a eco-retreat",
+    "text2a": "Sendang Redjo se encuentra en un terreno histórico, en el corazón de Tamanredjo (Commewijne), donde antes estaba la plantación La Paix. En este valle verde y tranquilo surge un nuevo ecosistema: bosques jóvenes, arroyos, palmeras y lagos que forman un paisaje vivo que crece cada día.",
+    "text2b": "Aquí escuchas el canto de docenas de aves, ves monos saltando entre los árboles, nutrias deslizándose por el agua y tukunari nadando bajo la superficie. No es un decorado — es la naturaleza tal como debe ser.",
+    "title3": "Cabanas integradas en el paisaje",
+    "text3a": "Nuestras cabanas de madera están diseñadas completamente abiertas. Respiras la naturaleza, la oyes, la sientes — la frontera entre dentro y fuera desaparece.",
+    "text3b": "Sin muros que te separen. Sin artificios. Solo espacio para desacelerar y estar realmente presente.",
+    "title4": "El significado del nombre",
+    "text4a": "Sendang Redjo — “Fuente de prosperidad”. Un nombre elegido con cuidado. No como marca, sino como destino.",
+    "text4b": "Sendang Redjo proviene del antiguo javanés y tiene varias capas de significado — espiritual, cultural y geográfico.",
+    "text4c": "En la antigua Java, sendang se refería a manantiales naturales: lugares silenciosos donde la gente se purificaba, rezaba o meditaba. Estos manantiales eran sagrados, vinculados a rituales, antiguos reinos como Majapahit y leyendas de penunggu, espíritus protectores.",
+    "text4d": "Redjo significa prosperidad, armonía y equilibrio. También hace referencia al pueblo javanés-surinamés Tamanredjo, donde nació nuestra eco-retreat.",
+    "title5": "¿Por qué alojarse en Sendang Redjo?",
+    "text5a": "Porque Sendang Redjo es más que un lugar bonito. Es un santuario diseñado con intención, donde naturaleza, sencillez y hospitalidad se unen.",
+    "text5b": "No hay multitudes, no hay programa, no hay turismo masivo — solo espacio para recargar, desacelerar y reconectar con lo que realmente importa."
+  },
+  "contact": {
+    "hero": "Contacto",
+    "title1": "Ponte en contacto con nosotros",
+    "subtitle": "¿Prefieres el formulario?",
+    "text1": " Completa tus datos abajo y te responderemos lo antes posible.",
+    "formMeta": {
+      "firstName": "Nombre *",
+      "lastName": "Apellido *",
+      "email": "Correo electrónico *",
+      "subject": "Asunto (opcional)",
+      "message": "Mensaje *"
+    },
+    "formError": {
+      "firstName": "El nombre es obligatorio.",
+      "lastName": "El apellido es obligatorio.",
+      "email": "El correo electrónico es obligatorio.",
+      "emailError": "Ingresa un correo electrónico válido.",
+      "messageError": "El mensaje es obligatorio."
+    },
+    "submitMessage": "¡Mensaje enviado correctamente!",
+    "sendButton": "Enviar",
+    "enroute": {
+      "title": "Acceso y ruta",
+      "entranceTitle": "Salida desde Paramaribo (Carretera Este-Oeste)",
+      "entranceText": "Después del letrero ‘Tamanredjo’, toma inmediatamente la primera salida a la izquierda. Es la misma salida que ves en la foto. La entrada a Sendang Redjo está 400 metros más adelante.",
+      "mapTitle": "Cómo llegar",
+      "mapText": "Sigue la carretera Este-Oeste hacia Tamanredjo. El mapa a continuación te llevará directamente a nuestra ubicación.",
+      "qrCodeTitle": "Ayuda de navegación",
+      "qrCodeText": "Escanea el código QR o usa la ubicación al final de la página para abrir nuestra localización en Google Maps."
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "subtitle": "¿Tienes una pregunta, quieres reservar o necesitas más información? Envíanos un mensaje por WhatsApp — respondemos rápido."
+    }
+  },
+  "reserverenPage": {
+    "hero": "Reservar",
+    "introTitle": "Tu día en Sendang Redjo comienza aquí",
+    "introText": "Sendang Redjo es un eco-retreat exclusivo donde la calma, la naturaleza y la atención son esenciales. Recibimos solo un número limitado de huéspedes por día para garantizar una experiencia personal y tranquila. Por eso es necesario reservar con antelación.",
+    "contactTitle": "Reservar",
+    "contactSubtitle": "Las reservas se realizan exclusivamente por WhatsApp o correo electrónico. Respondemos rápido y estamos encantados de ayudarte.",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Correo electrónico",
+    "tarievenTitle": "Tarifas",
+    "tarievenSub": "Estadía diaria de 09:00 a 21:00",
+    "tarieven": [
+      {
+        "personen": "7 personas",
+        "prijs": "USD 85*"
+      },
+      {
+        "personen": "6 personas",
+        "prijs": "USD 90*"
+      },
+      {
+        "personen": "5 personas",
+        "prijs": "USD 95"
+      },
+      {
+        "personen": "4 personas",
+        "prijs": "USD 110"
+      },
+      {
+        "personen": "3 personas",
+        "prijs": "USD 135"
+      },
+      {
+        "personen": "2 personas",
+        "prijs": "USD 175"
+      },
+      {
+        "personen": "1 persona",
+        "prijs": "USD 295"
+      }
+    ],
+    "tariefRemark": "Tarifas válidas a partir del 1 de enero de 2026.",
+    "inclusiefTitle": "Incluido",
+    "inclusief": [
+      "Recepción personalizada y traslado en bote a tu cabana privada",
+      "Lumpias recién fritas y coco frío a la llegada",
+      "Cabana privada con lounge, bar, terraza al borde del agua, poolbeds y baño privado",
+      "Toallas frescas preparadas para ti",
+      "Almuerzo javanés auténtico",
+      "BBQ al atardecer (preparado por los propios huéspedes)",
+      "Café y té en la cabana",
+      "Refrescos, agua y jugo en la nevera",
+      "Uso libre de kayaks, chalecos salvavidas, flotadores y cañas de pescar",
+      "Acceso al lago y a los canales del sanctuary",
+      "Acompañamiento personalizado a la llegada y salida"
+    ],
+    "nietInbegrepenTitle": "No incluido (bajo solicitud)",
+    "nietInbegrepen": [
+      "Cerveza, vino y licores fuertes",
+      "Platos javaneses adicionales bajo solicitud",
+      "Catch & Cook con tu propio pescado"
+    ],
+    "huisregelsTitle": "Normas & exención",
+    "huisregelsText": "Antes de partir hacia tu cabana, pedimos a todos los huéspedes leer y firmar el documento.",
+    "huisregelsButton": "Descargar Normas & Exención",
+    "belangrijkTitle": "Información importante",
+    "belangrijk": [
+      "Máximo 7 personas por cabana",
+      "La hora de llegada debe reservarse siempre con anticipación",
+      "Estancia diaria: 09:00 – 21:00",
+      "No estamos disponibles por teléfono",
+      "Usa siempre las instrucciones de ruta enviadas en tu confirmación"
+    ],
+    "ctaText": "¿Listo para reservar?",
+    "ctaButton": "Reservar por WhatsApp"
   }
 }

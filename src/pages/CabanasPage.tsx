@@ -89,7 +89,7 @@ export default function CabanasPage() {
                         {t("cabanasPage.title1")}
                     </motion.h1>
 
-                    <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+                    <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-28 leading-snugged">
                         {t("cabanasPage.text1")}
                     </motion.p>
 
@@ -114,7 +114,7 @@ export default function CabanasPage() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.3 }}
-                        className="max-w-5xl mx-auto body-text text-center px-6 pb-2 md:pb-6 xl:pb-8 leading-snugged">
+                        className="max-w-5xl mx-auto body-text text-center px-6 lg:px-28 pb-2 md:pb-6 xl:pb-8 leading-snugged">
                         {t("cabanasPage.text2")}
                     </motion.p>
 

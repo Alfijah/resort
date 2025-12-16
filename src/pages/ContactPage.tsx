@@ -56,7 +56,7 @@ export default function ContactPage() {
             {t("contact.title1")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 md:px-14 lg:px-28 leading-snugged">
             {t("contact.whatsapp.subtitle")}
           </motion.p>
 

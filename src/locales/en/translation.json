@@ -7,143 +7,362 @@
     "about": "About us",
     "contact": "Contact",
     "tarifs": "Rates",
-    "book": "Book Now"
+    "book": "Book"
   },
   "hero": {
-    "title": "The Hidden Luxury",
-    "subtitle": "A sanctuary of peace and warmth, far from everything yet close to yourself.",
+    "title": "The hidden luxury",
+    "subtitle": "A sanctuary of peace and warmth, far from everything and close to yourself.",
     "explore": "Imagine Your Day",
     "checkIn": "Check-In",
     "selectDate": "Select a date",
     "cabana": "Cabana",
     "cabanas": "Cabanas",
     "guestOptions": "Guest(s)",
+    "gast": "guest",
     "gasten": "guests",
     "guests_one": "{{count}} guest",
     "guests_other": "{{count}} guests",
-    "cabanaLimit": "Maximum of 3 cabanas available online. Contact us for larger bookings.",
-    "guestLimit": "A maximum of 5 guests per cabana is allowed.",
-    "book": "Book Now",
-    "email": "Ask your question"
+    "cabanaLimit": "Max. 3 cabanas available online. Contact us for larger groups.",
+    "guestLimit": "Maximum 5 guests per cabana.",
+    "book": "Book",
+    "email": "Contact Us"
   },
   "intro": {
     "title": "Where silence, nature and soul come together",
-    "subtitle": "Just 20 minutes from Paramaribo lies Sendang Redjo — a serene lakeside retreat built on historic grounds and shaped by Javanese hospitality. Here, everything slows down, and silence finds its form."
+    "subtitle": "Just 20 minutes from Paramaribo lies Sendang Redjo — a serene retreat at a private lake, built on historic ground and guided by Javanese hospitality. Here, everything slows down, and silence finds its shape."
   },
   "cabanas": {
     "title": "Cabanas",
-    "subtitle1": "Our cabanas are your private sanctuary on the water — accessible only by boat, so from the moment you arrive, peace surrounds you.",
-    "subtitle2": "Each cabana features a luxurious outdoor lounge, a private kitchen with bar, poolbeds, a hammock, and a modern shower with hot water and toilet. Kayaks, fishing gear and floaties are yours to enjoy — whether you want to explore the lake or drift away in silence."
+    "subtitle1": "Our cabanas are your private space by the water — accessible only by boat, so you arrive in complete tranquility from the very first moment.",
+    "subtitle2": "Each cabana features a luxury outdoor lounge, a private kitchen with bar, poolbeds, a hammock, and a modern bathroom with hot shower and toilet. Kayaks, fishing rods and floaties are ready for you — whether you want to explore the lake or simply drift in silence."
   },
   "dining": {
     "title": "Dining",
-    "subtitle1": "Experience Javanese cuisine in the heart of nature: slow-cooked over woodfire, seasoned with authentic spices, and served in your private cabana — a culinary journey where flavor and serenity meet.",
-    "subtitle2": "Dining is fully included with your stay. Relax by the water as you grill your own lunch and enjoy an environment where time seems to stand still. Everything we serve is fresh, honest and prepared with care — the tastes and aromas of Java complete your day of retreat."
+    "subtitle1": "Taste the Javanese kitchen in the heart of nature: slow-cooked over woodfire, seasoned with authentic spices and served in your own cabana — a culinary experience where flavor and peace come together.",
+    "subtitle2": "Dining is fully included with your stay. While you relax by the water, you prepare your own lunch on the grill and enjoy an atmosphere where time seems to stand still. Everything we serve is fresh, honest and prepared with care — the flavors and scents of Java complete your day retreat."
   },
   "activiteiten": {
     "title": "Activities",
-    "subtitle1": "Discover the lake at your own pace: kayak peacefully, fish in quiet corners, or float effortlessly in the water. Unwind in your cabana — in your hammock, surrounded only by wind and birds.",
-    "subtitle2": "And for nature lovers: from kingfishers to herons, no two days look the same."
+    "subtitle1": "Explore the lake in complete peace: kayak at your own pace, fish in quiet spots or float effortlessly in the water. Relax in your cabana — in your hammock, surrounded by nothing but wind and birds.",
+    "subtitle2": "And for nature lovers: from kingfishers to herons, every day is different."
   },
   "invite": {
     "title": "The hidden luxury of Sendang Redjo",
-    "subtitle": "At Sendang Redjo, you experience a unique blend of tranquility, nature and warm Javanese hospitality — everything designed to immerse you in deep relaxation and sensory richness.",
+    "subtitle": "At Sendang Redjo you experience a unique blend of peace, nature and warm Javanese hospitality. Everything is designed to immerse you completely in relaxation and sensory experience.",
     "subtitle1": "Elegant cabanas",
-    "subtitle1text": "Designed with Javanese elegance — warm details, soft luxury and panoramic views of the lake.",
+    "subtitle1text": "Designed with Javanese elegance—warm details, soft comforts and a panoramic view of the lake.",
     "subtitle2": "Peace & privacy",
-    "subtitle2text": "No rush, no noise — only nature, silence, and the feeling that time flows slower here.",
-    "subtitle3": "Adventurous experiences",
-    "subtitle3text": "Glide quietly across the water, catch your own fish or drift into complete relaxation.",
+    "subtitle2text": "No rush, no crowds—just nature, silence and the feeling that time flows differently here.",
+    "subtitle3": "Adventurous experience",
+    "subtitle3text": "Glide silently over the water, catch your own fish or drift away in total relaxation.",
     "subtitle4": "Authentic Javanese cuisine",
-    "subtitle4text": "Slow-cooked over woodfire — pure flavors, warm aromas and tradition at its finest."
+    "subtitle4text": "Slow-cooked over woodfire—pure flavors, warm aromas and tradition in its most beautiful form."
   },
   "button": {
-    "explore": "Discover more"
+    "explore": "Explore more"
   },
   "reviews": {
     "kicker": "Experiences",
-    "title": "What guests take with them from Sendang Redjo",
-    "subtitle": "A day by the lake feels longer here than it does at home. These are the moments that stay with our guests long after their visit.",
+    "title": "What guests take home from Sendang Redjo",
+    "subtitle": "A day at the lake feels longer here than anywhere else. This is what guests remember most after their stay.",
     "items": {
       "1": {
         "name": "Auke Klene",
-        "tag": "Day retreat at the lake",
-        "text": "On November 14th, we visited your resort with a group of six. It was truly beautiful. We were welcomed with fresh coconut water and a warm introduction, followed by a lovely boat ride to our cabana. The cabana had everything we needed and we had such a great time together. The BBQ was fantastic! And the boat ride back at dusk… breathtaking, especially with the birds we saw along the way. I wish you a wonderful future with many happy guests. Warm regards,"
+        "tag": "Day retreat by the lake",
+        "text": "On November 14 we visited your resort with a group of six. It was beautiful. We were welcomed with coconut water and an introduction, followed by a pleasant boat ride to our cabana. The cabana had everything we needed, and we had a great time. The BBQ was fantastic! And the return trip at dusk was breathtaking with the birds we saw on the way. Wishing you a wonderful future with many guests. Warm regards,"
       },
       "2": {
         "name": "Edme Smith",
         "tag": "Solo escape",
-        "text": "What a magical place! Whenever we go out, especially so close to Paramaribo, there’s always the risk of loud music and overly enthusiastic crowds. Not at Sendang Redjo: it feels as if you’re completely alone in the world, and you return recharged instead of overstimulated. A true hidden gem of serene beauty! The cabana had everything we needed, the food was delicious, the service was excellent, and we all enjoyed swimming, kayaking and real quality time. Thank you again — we will definitely be back!"
+        "text": "What a magical place! Usually when going out near Paramaribo, there’s always a chance of loud music and noise. Not at Sendang Redjo: it feels like you're alone in the world, and you return refreshed instead of overstimulated. A true hidden gem of serene beauty! The cabana had everything we needed, the food was delicious, the service was excellent, and everyone enjoyed swimming, kayaking and real quality time. Thank you again — Sendang Redjo is definitely a place we will return to!"
       },
       "3": {
         "name": "Sara Pawironadi",
         "tag": "Family day with children",
-        "text": "We had a fantastic experience at Sendang Redjo — truly something unique. Surrounded by nature, we saw a rainbow across the sky and birds gliding peacefully overhead. The entire retreat felt deeply serene, romantic and full of adventure. It’s the kind of place that touches your soul and makes you feel one with nature. We absolutely recommend it to anyone seeking peace, serenity and a private escape in the heart of nature."
+        "text": "We had an amazing experience at Sendang Redjo — truly unique. Surrounded by nature, we saw a rainbow above us and birds gliding peacefully through the sky. The whole resort felt deeply serene, romantic and full of adventure. It’s the kind of place that touches your soul and makes you feel one with nature. Highly recommended for anyone seeking peace, serenity and a private escape in nature."
       }
     },
-    "cta": "Let yourself be swept away by even more guest experiences.",
+    "cta": "Let these experiences inspire you even more.",
     "button": "Discover more"
   },
   "cta": {
     "kicker": "Reservations",
     "title": "Ready for your day at the lake?",
-    "subtitle": "Whether you’re here to escape, or simply breathe — your cabana is waiting for you. We welcome you with open arms, a set table, and a peaceful lake.",
-    "primary": "Reserve your cabana",
-    "secondary": "Ask your question",
+    "subtitle": "Whether you come to escape or simply to breathe—your cabana is waiting for you. We welcome you with open arms, a prepared table and a calm lake.",
+    "primary": "Book your cabana",
+    "secondary": "Contact us",
     "highlightKicker": "Closer than you think",
-    "highlightText": "Just 20 minutes from Paramaribo, you step into a world of silence, water and Javanese hospitality. A hidden luxury for those who choose peace with intention."
+    "highlightText": "Just 20 minutes from Paramaribo, you step into a world of silence, water and Javanese hospitality. A hidden luxury for those who consciously choose peace."
   },
   "footer": {
     "locationTitle": "Location",
     "locationText": "H.I. Bechanweg, Tamanredjo, Suriname",
     "contactTitle": "Contact",
-    "email": "Email",
+    "email": "E-mail",
     "phone": "WhatsApp",
-    "whatsappOnly": "This number is available exclusively via WhatsApp.",
-    "builtBy": "Website designed & developed by "
+    "whatsappOnly": "This number can only be reached via WhatsApp.",
+    "builtBy": "Website designed & built by "
   },
   "cabanasPage": {
-    "hero": "Cabanas",
-    "title1": "Your retreat by the water",
-    "text1": "Experience the perfect balance of peace, comfort and nature in our exclusive cabanas. Designed to blend into the environment — with complete privacy, lake views, and the luxury of having nothing to worry about.",
+    "hero": "cabanas",
+    "title1": "Your sanctuary by the water",
+    "text1": "Experience the perfect balance between peace, comfort and nature in our exclusive cabanas. Designed to blend seamlessly with the environment — offering full privacy, lake views and the luxury of doing absolutely nothing.",
     "title2": "Everything for a complete day",
-    "text2": "Our cabanas are your private space by the water: a stylish day retreat where you can relax, swim, enjoy and spend quality time together. Each cabana sits directly at the lake and includes everything you need for a carefree day.",
+    "text2": "Our cabanas are your private space by the water: a stylish day retreat where you can relax, swim, enjoy and spend time together. Each cabana lies directly at the lake and is equipped with everything you need for a carefree day.",
     "features": {
-      "lounge": "Luxury outdoor lounge area",
-      "kitchen": "Kitchen with bar and barstools",
+      "lounge": "Luxury outdoor lounge",
+      "kitchen": "Kitchen with bar and stools",
       "poolbeds": "Poolbeds",
       "hammock": "Hammock",
-      "shower": "Modern shower with hot water and toilet",
+      "shower": "Modern hot-water shower & toilet",
       "kayak": "Kayak",
       "fishing": "Fishing rods",
-      "floaties": "Various floaties"
+      "floaties": "Floaties"
     },
-    "title3": "Lounge & Seating Area",
-    "text3": "The atmosphere is warm, spacious and fully in harmony with nature — your place to truly unwind. Each cabana includes:",
+    "title3": "Lounge & seating area",
+    "text3": "The atmosphere is warm, spacious and in full harmony with nature — your place to truly unwind. Each cabana includes:",
     "text3Subs": {
       "sub1": "A comfortable outdoor lounge set with soft cushions",
-      "sub2": "Views over the water",
-      "sub3": "A sturdy wooden bar with barstools",
-      "sub4": "Space to eat, relax or simply enjoy the silence"
+      "sub2": "Lake view",
+      "sub3": "A solid wooden bar with stools",
+      "sub4": "Space to dine, relax or simply enjoy the silence"
     },
     "headTitle4": "Experience our luxury cabanas by the water",
-    "title4": "Food, drinks & amenities",
-    "text4": "At Sendang Redjo, every meal is an experience: Authentic Javanese cuisine, slowly prepared over woodfire. Included in your day stay:",
+    "title4": "Dining & facilities",
+    "text4": "At Sendang Redjo, each meal is part of the experience: authentic Javanese, slow-cooked over woodfire. Included in your day retreat:",
     "text4Subs": {
       "point1": "Welcome drink",
       "point2": "Water, tea, coffee",
-      "point3": "Soft drinks and juice in the refrigerator",
-      "point4": "Javanese barbecue lunch with a marinated whole chicken and assorted satays you prepare yourself in your cabana"
+      "point3": "Soft drinks and juice in the fridge",
+      "point4": "Javanese BBQ lunch with a marinated whole chicken and various satays you grill yourself in your cabana"
     },
     "title5": "Water activities & relaxation",
-    "text5a": "Step straight from your cabana into the lake — the water is truly at your feet. Kayaks, fishing rods and floaties are ready for you, whether you prefer activity or peaceful drifting. On the deck, you’ll find comfortable poolbeds, perfect for sunbathing, relaxing or drifting off with nothing but nature around you.",
+    "text5a": "Step straight into the lake from your cabana — the water is literally at your feet. Kayaks, fishing rods and floaties are ready, letting you choose between an active moment or peaceful drifting. On the deck you’ll find comfortable poolbeds, ideal for sunbathing or dreaming away to the sounds of nature.",
     "title6": "Peace, privacy & comfort",
-    "text6": "Each cabana is designed as your private retreat: quiet, spacious and fully surrounded by nature. Here, you set the pace — no one else. You have access to:",
+    "text6": "Each cabana is designed as your private sanctuary: calm, spacious and surrounded entirely by nature. Here, the rhythm is yours — and yours alone. You have access to:",
     "text6Subs": {
       "sub1": "Your own hammock",
       "sub2": "A luxury bathroom with shower and toilet",
       "sub3": "Soft towels",
-      "sub4": "All the space and privacy to enjoy your day in total peace"
+      "sub4": "All the space and privacy you need to experience the day in complete tranquility"
     }
+  },
+  "diningPage": {
+    "hero": "Dining",
+    "title1": "Taste Javanese tradition",
+    "text1": "Fresh, flavorful and prepared with care… a culinary experience that finds peace in the silence of nature.",
+    "title2": "Dining at Sendang Redjo",
+    "text2": "Dining at Sendang Redjo isn’t a separate activity — it's part of the experience. Our kitchen is homely, Javanese-inspired and entirely freshly prepared.",
+    "subtitle2a": "Always included",
+    "subtext2a": "Every reservation is fully catered. You don’t need to order anything extra (you can, of course). Upon arrival you’ll receive:",
+    "features": {
+      "coconut": "Fresh chilled coconut",
+      "snack": "Freshly fried spring rolls",
+      "coffee": "Coffee & tea",
+      "freshDrinks": "Soft drinks, juice, water & ice in your fridge"
+    },
+    "subtitle2b": "Two culinary moments",
+    "features2": {
+      "lunch": "A homemade Javanese lunch",
+      "dinner": "A light dinner / late afternoon BBQ"
+    },
+    "title3": "Homemade Javanese lunch (included)",
+    "text3": "Around midday we deliver a warm, fully prepared lunch to your cabana. Choose from two traditional dishes:",
+    "text3Subs": {
+      "sub1title": "Santen Iwak Pitik",
+      "sub1text": "Chicken (halal) stewed in coconut milk — soft, creamy and rich in Javanese spices.",
+      "sub2title": "Iwak Laut Gorèng",
+      "sub2text": "Marinated seawater fish prepared with authentic herbs for a deep and savory flavor.",
+      "sub3title": "Served with:",
+      "sub3text": "Seghoh Ghoerih — our Javanese rice dish, accompanied by vegetables and side dishes.",
+      "sub4title": "Snacks",
+      "sub4text": "You’ll also receive a portion of homemade chips — perfect while swimming or relaxing."
+    },
+    "title4": "Late Afternoon BBQ (included)",
+    "text4": "Later in the afternoon you’ll receive a carefully prepared BBQ set, ready to grill by the water — a moment many guests look forward to.",
+    "subtitle4a": "Always included",
+    "subtitle4aSubs": {
+      "sub1title": "Sateh Iwak Pitik",
+      "sub1text": "Chicken satay from tender thigh meat (halal), marinated the Javanese way."
+    },
+    "subtitle4b": "Your choice",
+    "subtitle4bSubs": {
+      "sub1title": "Sateh Sapi",
+      "sub1text": "Beef satay (halal), tender and flavorful.",
+      "or": "or",
+      "sub2title": "OR — Marinated seawater fish instead of Sateh Sapi",
+      "sub2text": "Seasoned, wrapped in foil and slowly cooked over the grill."
+    },
+    "text4End": "Grilling, the view and the silence make this BBQ a beautifully serene moment of the day.",
+    "title5": "Catch & Cook — Tukunari Experience",
+    "text5": "For those who love fishing, we offer a unique extra experience:",
+    "text5sub": "Catch a tukunari (Surinamese peacock bass) from the private lake. We clean it, season it and prepare it for you. A pure, rare experience in the heart of Tamanredjo.",
+    "extras": {
+      "sectionTitle": "Additional options on request",
+      "sectionSubtitle": "For guests who want to enrich their dining experience with extra dishes, drinks or personal preferences.",
+      "titleMeals": "Extra dishes",
+      "textMeals": "The day arrangement is generous, but for guests wanting something more, we prepare warm traditional dishes on request.",
+      "examplesTitle": "Examples",
+      "meals": {
+        "meal1Title": "Saoto soup with egg — A Javanese-Surinamese classic: fragrant chicken broth with bean sprouts, fried onions, celery and a boiled egg.",
+        "meal2Title": "Djangan Bening — A light Javanese vegetable soup in clear broth. Served with trie (crispy fried fish) or fried bony fish."
+      },
+      "mealsEnd": "Other Javanese dishes can be offered upon request.",
+      "titleDrinks": "Extra drinks",
+      "textDrinks": "Not included, but available upon request: beer, wine and spirits.",
+      "titleDiets": "Dietary preferences",
+      "textDiets": "Vegetarian, pescatarian or specific preferences? Let us know in advance. We gladly adapt your dining experience so it perfectly matches your wishes."
+    }
+  },
+  "activiteitenPage": {
+    "hero": "Activities",
+    "title1": "Feel one with nature",
+    "text1": "Discover peace, adventure and connection with nature: kayak, fish, float and observe birds in the serene surroundings of Sendang Redjo.",
+    "title2": "Activities at your own pace",
+    "text2": "Choose how you spend your day — active on the water or relaxed in your cabana. Everything revolves around nature, tranquility and your own rhythm.",
+    "features": {
+      "kajak": "Private kayaking",
+      "vissen": "Fishing in silence",
+      "zwemmen": "Swimming & floating",
+      "vogels": "Birdwatching"
+    },
+    "headAct": "Experience nature in your own way",
+    "title3": "Kayaking on the private lake",
+    "text3": "Glide silently across the water, with no other guests around. The lake is yours — perfect for moments of peace, freedom and connection with nature.",
+    "title4": "Fishing in an idyllic setting",
+    "text4": "With a simple rod and all the time in the world, enjoy complete silence. Whether you catch something or not, the scenery and tranquility make every moment meaningful.",
+    "title5": "Swimming & floating",
+    "text5": "Let the warm water carry you and fully unwind. Float, swim or simply drift — a weightless experience you won’t find anywhere else.",
+    "title6": "Javanese hospitality",
+    "text6": "Experience the warm, sincere hospitality that defines Javanese culture. Here, attention, calmness and connection become part of your day."
+  },
+  "about": {
+    "hero": "About us",
+    "title1": "Born from a dream. Carried by nature.",
+    "text1": "Sendang Redjo is not a hotel. It is a sanctuary — a place where simplicity, nature and soul flow together.",
+    "title2": "From plantation to eco retreat",
+    "text2a": "Sendang Redjo lies on historic ground in Tamanredjo (Commewijne), where the former plantation La Paix once stood. In this quiet green valley, a new ecosystem is taking shape: young forests, creeks, palms and lakes form a living landscape that grows richer every day.",
+    "text2b": "Here, you hear dozens of bird species sing, see small monkeys jumping through the branches, otters play in the water and tukunari dart beneath the surface. This is not a backdrop — this is nature as it was meant to be.",
+    "title3": "Cabanas that blend into the landscape",
+    "text3a": "Our wooden cabanas are fully open-designed. You breathe nature, hear it, feel it — the boundary between inside and outside fades.",
+    "text3b": "No walls closing you off. No artificial distractions. Only space to slow down and be fully present.",
+    "title4": "The meaning behind the name",
+    "text4a": "Sendang Redjo — “Source of prosperity”. A name chosen with care. Not as a brand, but as a destination.",
+    "text4b": "Sendang Redjo comes from Old Javanese and carries multiple layers of meaning — spiritual, cultural and geographical.",
+    "text4c": "In ancient Java, a sendang referred to a natural spring: quiet places in nature where people bathed, meditated or sought protection. These springs were sacred, linked to rituals, old kingdoms like Majapahit and legends of penunggu — guardians of the land.",
+    "text4d": "Redjo means prosperity, harmony and balance. It also lovingly refers to Tamanredjo — the Javanese-Surinamese village where this eco retreat was created.",
+    "title5": "Why stay at Sendang Redjo?",
+    "text5a": "Because Sendang Redjo is more than a beautiful place. It is a consciously designed sanctuary where nature, simplicity and hospitality come together.",
+    "text5b": "There is no rush, no program, no mass tourism — only space to recharge, slow down and reconnect with what truly matters."
+  },
+  "contact": {
+    "hero": "Contact",
+    "title1": "Get in touch with us",
+    "subtitle": "Prefer using the form?",
+    "text1": "Fill in your details below and we’ll get back to you as soon as possible.",
+    "formMeta": {
+      "firstName": "First name *",
+      "lastName": "Last name *",
+      "email": "E-mail *",
+      "subject": "Subject (optional)",
+      "message": "Message *"
+    },
+    "formError": {
+      "firstName": "First name is required.",
+      "lastName": "Last name is required.",
+      "email": "Email is required.",
+      "emailError": "Please enter a valid email address.",
+      "messageError": "Message is required."
+    },
+    "submitMessage": "Message sent successfully!",
+    "sendButton": "Send",
+    "enroute": {
+      "title": "Accessibility & directions",
+      "entranceTitle": "Exit from Paramaribo (East-West Highway)",
+      "entranceText": "After the sign ‘Tamanredjo’, immediately take the first left. This is the same turn as shown in the photo. The entrance to Sendang Redjo is only 400 meters further.",
+      "mapTitle": "Directions",
+      "mapText": "Follow the East-West Highway toward Tamanredjo. The map below guides you straight to our location.",
+      "qrCodeTitle": "Navigation help",
+      "qrCodeText": "Scan the QR code or use the location link below to open our Google Maps location directly."
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "subtitle": "Have a question or want to reserve? Send us a WhatsApp message — we respond quickly."
+    }
+  },
+  "reserverenPage": {
+    "hero": "Book",
+    "introTitle": "Your day at Sendang Redjo begins here",
+    "introText": "Sendang Redjo is an exclusive eco retreat where peace, nature and personal attention come first. We host only a limited number of guests per day to ensure your experience remains quiet, personal and uninterrupted. For that reason, reservations are required.",
+    "contactTitle": "Reservations",
+    "contactSubtitle": "Reservations can be made via WhatsApp or email. We respond quickly and are happy to assist.",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "E-mail",
+    "tarievenTitle": "Rates",
+    "tarievenSub": "Day retreat from 09:00 – 21:00",
+    "tarieven": [
+      {
+        "personen": "7 persons",
+        "prijs": "USD 85*"
+      },
+      {
+        "personen": "6 persons",
+        "prijs": "USD 90*"
+      },
+      {
+        "personen": "5 persons",
+        "prijs": "USD 95"
+      },
+      {
+        "personen": "4 persons",
+        "prijs": "USD 110"
+      },
+      {
+        "personen": "3 persons",
+        "prijs": "USD 135"
+      },
+      {
+        "personen": "2 persons",
+        "prijs": "USD 175"
+      },
+      {
+        "personen": "1 person",
+        "prijs": "USD 295"
+      }
+    ],
+    "tariefRemark": "Rates valid from 1 January 2026.",
+    "inclusiefTitle": "What’s included",
+    "inclusief": [
+      "Personal welcome and boat transfer to your private cabana",
+      "Freshly fried spring rolls and a chilled coconut on arrival",
+      "Private cabana with lounge, bar, water terrace, poolbeds and private bathroom",
+      "Fresh towels prepared for you",
+      "Authentic Javanese lunch",
+      "Late-afternoon BBQ (self-grilled by guests)",
+      "Coffee and tea in the cabana",
+      "Soft drinks, water and juice in the fridge",
+      "Free use of kayaks, life vests, floaties and fishing rods",
+      "Access to the lake and creeks of the sanctuary",
+      "Personal guidance upon arrival and departure"
+    ],
+    "nietInbegrepenTitle": "Not included (on request)",
+    "nietInbegrepen": [
+      "Beer, wine and spirits",
+      "Additional Javanese dishes on request",
+      "Catch & Cook with your own caught fish"
+    ],
+    "huisregelsTitle": "House rules & waiver",
+    "huisregelsText": "Before departure to your cabana, we ask all guests to read and sign the document.",
+    "huisregelsButton": "Download House Rules & Waiver",
+    "belangrijkTitle": "Important information",
+    "belangrijk": [
+      "Maximum 7 persons per cabana",
+      "Arrival time must be reserved in advance",
+      "Day retreat: 09:00 – 21:00",
+      "We are not reachable by phone",
+      "Always use the route instructions from your confirmation"
+    ],
+    "ctaText": "Ready to reserve?",
+    "ctaButton": "Reserve via WhatsApp"
   }
 }

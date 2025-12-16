@@ -36,7 +36,7 @@ export default function AboutPage() {
       <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 md:px-9 leading-snugged">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 md:px-9 lg:px-37 leading-snugged">
             {t("about.title1")}
           </motion.h1>
 
@@ -51,6 +51,7 @@ export default function AboutPage() {
         </SectionWrapper>
       </div>
 
+      {/* Van plantage naar eco retreat */}
       <div className="relative bg-white w-full py-14 sm:py-18 md:py-20 lg:py-16">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
@@ -58,11 +59,11 @@ export default function AboutPage() {
             {t("about.title2")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text2a")}
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text2b")}
           </motion.p>
 
@@ -73,18 +74,19 @@ export default function AboutPage() {
         </SectionWrapper>
       </div>
 
+      {/* Cabanas die opgaan in het landschap */}
       <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 lg:px-22 leading-snugged">
             {t("about.title3")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text3a")}
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text3b")}
           </motion.p>
 
@@ -95,6 +97,7 @@ export default function AboutPage() {
         </SectionWrapper>
       </div>
 
+      {/* De betekenis achter de naam */}
       <div className="relative bg-white w-full py-14 sm:py-18 md:py-20 lg:py-16">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
@@ -102,19 +105,19 @@ export default function AboutPage() {
             {t("about.title4")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text4a")}
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text4b")}
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text4c")}
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text4d")}
           </motion.p>
 
@@ -125,18 +128,19 @@ export default function AboutPage() {
         </SectionWrapper>
       </div>
 
+      {/* Waarom verblijven bij Sendang Redjo? */}
       <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 lg:px-42 leading-snugged">
             {t("about.title5")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text5a")}
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
             {t("about.text5b")}
           </motion.p>
 

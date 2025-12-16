@@ -38,11 +38,11 @@ export default function ReserverenPage() {
       <div className="relative w-full mt-14">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 lg:px-38 leading-snugged">
             {t("reserverenPage.introTitle")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-26 leading-snugged">
             {t("reserverenPage.introText")}
           </motion.p>
 

@@ -18,7 +18,9 @@ export default function LanguageSwitcher({ isScrolled }: LanguageDropdownProps) 
     { code: "en", label: "English" },
     { code: "fr", label: "Français" },
     { code: "es", label: "Español" },
-    { code: "pt", label: "Português" }
+    { code: "pt", label: "Português" },
+    { code: "de", label: "Deutsch" },
+
   ];
 
   const currentLang = i18n.language.slice(0, 2);
@@ -29,29 +31,29 @@ export default function LanguageSwitcher({ isScrolled }: LanguageDropdownProps) 
   };
 
   useEffect(() => {
-  function handleClickOutside(event: MouseEvent | TouchEvent) {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-      setOpen(false);
+    function handleClickOutside(event: MouseEvent | TouchEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
     }
-  }
 
-  if (open) {
-    document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("touchstart", handleClickOutside);
-  }
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("touchstart", handleClickOutside);
+    }
 
-  return () => {
-    document.removeEventListener("mousedown", handleClickOutside);
-    document.removeEventListener("touchstart", handleClickOutside);
-  };
-}, [open]);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [open]);
 
   return (
     <div ref={dropdownRef} className="relative mb-4 lg:mb-0">
       {/* BUTTON */}
       <button
         onClick={() => setOpen(!open)}
-        className={`flex items-center gap-1 lg:w-12 h-8 md:h-9 rounded-md uppercase tracking-widest transition-all cursor-pointer text-xs
+        className={`nav-link flex items-center gap-1 lg:w-12 h-8 md:h-9 rounded-md uppercase tracking-widest transition-all cursor-pointer text-xs
                     ${isScrolled ? "text-black" : "text-white"}
                 `}
       >
@@ -76,18 +78,14 @@ export default function LanguageSwitcher({ isScrolled }: LanguageDropdownProps) 
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -5 }}
             transition={{ duration: 0.2 }}
-            className={`absolute right-0 mt-2 w-40 rounded-md shadow-xl z-50 py-2
-                            ${isScrolled ? "bg-white text-black" : "bg-black/20 text-white"}
-                        `}
-          >
+            className={`absolute right-0 mt-2 w-40 shadow-xl z-50 py-2
+            ${isScrolled ? "bg-white text-black" : "bg-black/20 text-white"}`}>
             {languages.map((lang) => (
               <li key={lang.code}>
                 <button
                   onClick={() => handleChange(lang.code)}
-                  className={`w-full text-left px-4 py-2 hover:bg-black/20 hover:text-red-400 transition-all cursor-pointer uppercase text-xs font-bold
-                                        ${currentLang === lang.code ? "font-bold text-red-400" : ""}
-                                    `}
-                >
+                  className={`w-full text-left px-4 py-2 hover:bg-black/20 hover:text-red-400 transition-all cursor-pointer text-xs
+                  ${currentLang === lang.code ? "font-bold text-red-400" : ""}`}>
                   {lang.label}
                 </button>
               </li>

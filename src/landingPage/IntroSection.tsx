@@ -119,7 +119,7 @@ export default function IntroSection() {
             className="relative w-full items-center lg:items-start overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-12 py-14 md:py-14 lg:py-16">
+                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-12 lg:px-28 py-14 md:py-14 lg:py-16">
                 <motion.h1 variants={fadeInUp}
                     className="heading-primary">{t("intro.title")}</motion.h1>
                 <motion.p variants={fadeInUp}

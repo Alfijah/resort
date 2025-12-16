@@ -123,7 +123,7 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 pb-10 md:pb-6 xl:pb-8 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center px-6 lg:px-27 pb-10 md:pb-6 xl:pb-8 leading-snugged">
             {t("diningPage.text2")} {/* pb hierboven is aangepast */}
           </motion.p>
 
@@ -138,12 +138,12 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 pb-2 md:pb-6 xl:pb-8 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center px-6 lg:px-27 pb-2 md:pb-6 xl:pb-8 leading-snugged">
             {t("diningPage.subtext2a")}
           </motion.p>
 
           <div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-4 mb-12 max-w-6xl mx-auto"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-8 mt-4 mb-12 max-w-6xl mx-auto"
           >
             {[
               // { key: "coconut", icon: <cocunut size={26} /> },
@@ -221,7 +221,7 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 px-6 leading-snugged">
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 px-6 lg:px-24 leading-snugged">
             {t("diningPage.title3")}
           </motion.h1>
 
@@ -325,7 +325,7 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 mb-10 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center px-6 lg:px-28 mb-10 leading-snugged">
             {t("diningPage.text4")}
           </motion.p>
 

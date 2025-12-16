@@ -66,12 +66,14 @@ export default function ReserveCtaSection() {
                             </p>
 
                             <motion.div variants={fadeInUp} className="flex flex-col w-full gap-4">
-                                <button
+                                <a
+                                    href="#reserveren"
+
                                     onClick={scrollToBooking}
-                                    className="bg-sky-900 w-full hover:bg-red-400 transition-colors px-7 py-3 explore-button uppercase text-white cursor-pointer"
+                                    className="bg-sky-900 w-full hover:bg-red-400 transition-colors px-7 py-3 explore-button uppercase text-white cursor-pointer text-center location-heading"
                                 >
                                     {t("cta.primary")}
-                                </button>
+                                </a>
 
                                 <a
                                     href="#contact"

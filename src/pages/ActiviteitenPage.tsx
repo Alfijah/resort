@@ -67,7 +67,7 @@ export default function ActiviteitenPage() {
             {t("activiteitenPage.title1")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-26 leading-snugged">
             {t("activiteitenPage.text1")}
           </motion.p>
 
