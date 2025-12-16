@@ -7,10 +7,10 @@ export default function ReserverenContactBar() {
     return (
         <div className="z-50 fixed bottom-0 left-0 w-full bg-white text-white py-6 px-6 grid grid-cols-2 flex justify-around items-center lg:hidden backdrop-blur-md uppercase">
             <button className="absolute bg-sky-900 w-[50%] h-full uppercase tracking-widest text-xs cursor-pointer hover:bg-red-400">
-                <Link to="reserveren">{t("nav.book")}</Link>
+                <Link to="/reserveren">{t("nav.book")}</Link>
             </button>
             <button className="absolute bg-white w-[50%] right-0 h-full py-2 uppercase tracking-widest text-xs text-black cursor-pointer hover:bg-white hover:text-orange-600 transition">
-                <Link to="contact">{t("hero.email")}</Link>
+                <Link to="/contact">{t("hero.email")}</Link>
             </button>
         </div>
     )

@@ -363,5 +363,48 @@
         ],
         "ctaText": "Prêt à réserver ?",
         "ctaButton": "Réserver via WhatsApp"
+    },
+    "imagine": {
+        "title": "Imagine Your Day",
+        "p1": "Imagine…",
+        "p2": "Vous quittez Paramaribo. La ville disparaît derrière vous, l’air devient plus calme, le vert plus profond. En moins de vingt minutes, vous avez l’impression d’entrer dans un autre monde — un endroit où votre respiration s’apaise naturellement.",
+        "p3": "C’est ainsi que commence votre journée à Sendang Redjo.",
+        "section1Title": "Arrivée dans le silence",
+        "section1Text": "À la cabane d’accueil, vous êtes reçu avec une noix de coco glacée. Pas de foule, pas de précipitation — seulement le doux murmure de l’eau. Une courte introduction personnelle vous explique l’essentiel. Vous le sentez immédiatement : ici, rien n’est obligatoire, mais tout est permis.",
+        "section2Title": "La traversée",
+        "section2Text": "Vous montez à bord d’une petite embarcation en bois. L’eau ondule, les oiseaux longent les rives, les palmiers bougent doucement dans le vent. En traversant lentement le lac, vous sentez le monde extérieur s’éloigner. Cette traversée n’est pas un transport — c’est une transition. Du mouvement au calme. Du « devoir » au « pouvoir ».",
+        "section3Title": "Votre cabana privée",
+        "section3Text": "Au bout du ponton vous attend votre cabana : chaleureuse, paisible, entièrement entourée de nature. Dès que vous entrez, vous ressentez la simplicité et le luxe discret.",
+        "section3List": [
+            "un espace ouvert avec vue sur l’eau",
+            "une brise douce qui traverse la cabana",
+            "des lits de repos sur la terrasse",
+            "un hamac à l’ombre",
+            "des boissons fraîches et des snacks déjà prêts pour vous"
+        ],
+        "section3End": "C’est comme rentrer chez vous dans un lieu que vous ne connaissiez pas encore.",
+        "section4Title": "La matinée — votre rythme, votre façon",
+        "section4List": [
+            "pagayer doucement à travers les criques",
+            "flotter sans poids sur le lac",
+            "faire une baignade rafraîchissante",
+            "pêcher dans le silence",
+            "ou se reposer dans le hamac en écoutant le vent"
+        ],
+        "section4End": "Ce n’est pas ce que vous faites qui compte — mais ce que cela fait de ne rien avoir à faire.",
+        "section5Title": "Déjeuner en toute tranquillité",
+        "section5Text": "Vers midi, votre déjeuner vous est livré : chaud, fait maison, javanais. Les parfums de noix de coco, d’épices et de plats fraîchement préparés remplissent la cabana. Ce n’est pas un buffet. C’est de l’attention, de la simplicité et de la saveur.",
+        "section6Title": "Pour ceux qui veulent quelque chose de plus — Catch & Cook",
+        "section6Text": "Peut-être attrapez-vous un tukunari. Peut-être nous laissez-vous le préparer pour vous. Peut-être que cela devient l’un de ces petits moments qui marquent plus qu’on ne l’imagine.",
+        "section7Title": "L’après-midi — le luxe dans la simplicité",
+        "section7Text": "Le temps semble s’écouler plus lentement. Vous alternez entre eau, soleil, ombre, repos et rires. La journée s’adapte à vous — et non l’inverse. Plus tard, vous recevez votre kit BBQ : mariné, parfumé, prêt à griller à votre rythme. Un rituel simple, intime et apaisant.",
+        "section8Title": "Quand le soleil descend",
+        "section8Text": "Le ciel se teinte d’orange chaud. Les oiseaux retournent vers les îlots. L’eau devient lisse comme un miroir. Que vous flottiez, pagayiez ou soyez assis sur la terrasse — ce moment reste gravé. Beaucoup de visiteurs le décrivent comme magique. Peut-être vous aussi.",
+        "section9Title": "Le retour en douceur",
+        "section9Text": "Pendant la traversée du retour, vous le remarquez : vous ne vous sentez plus comme à votre arrivée. Plus léger. Plus ouvert. Profondément détendu. Une journée à Sendang Redjo offre plus que du repos — elle vous réinitialise d’une manière impossible à prévoir, seulement à vivre.",
+        "section10Title": "Même pour une demi-journée",
+        "section10Text": "Même une visite en fin d’après-midi donne l’impression d’être parti des heures. Ici, la nature a sa propre manière d’étirer le temps.",
+        "ctaTitle": "Envie de vivre cela vous-même ?",
+        "ctaText": "Pour les groupes à partir de 5 personnes, une journée à Sendang Redjo commence à partir de 95 USD par personne. Tous les détails se trouvent sur la page Tarifs."
     }
 }

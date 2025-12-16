@@ -364,5 +364,48 @@
         ],
         "ctaText": "Bereit zu reservieren?",
         "ctaButton": "Über WhatsApp reservieren"
+    },
+    "imagine": {
+        "title": "Imagine Your Day",
+        "p1": "Stell es dir vor…",
+        "p2": "Du verlässt Paramaribo. Die Stadt verblasst, die Luft wird ruhiger, das Grün tiefer. Keine zwanzig Minuten später fühlt es sich an, als wärst du in einer anderen Welt — einem Ort, an dem dein Atem ganz von selbst tiefer wird.",
+        "p3": "So beginnt dein Tag in Sendang Redjo.",
+        "section1Title": "Ankunft in der Stille",
+        "section1Text": "In der Empfangscabana wirst du mit einer eiskalten Kokosnuss begrüßt. Keine Hektik, kein Lärm — nur das sanfte Rauschen des Wassers. Eine kurze persönliche Einführung erklärt dir alles Wichtige. Du spürst sofort: Hier musst du nichts, aber darfst alles.",
+        "section2Title": "Die Überfahrt",
+        "section2Text": "Du steigst in ein kleines Holzboot. Das Wasser kräuselt sich, Vögel gleiten niedrig über das Ufer, Palmen bewegen sich sanft im Wind. Während du ruhig über den See fährst, fühlt es sich an, als würde die Außenwelt von dir abfallen. Diese Überfahrt ist kein Transport — sie ist ein Übergang. Vom Müssen zum Dürfen. Von der Unruhe zur Ruhe.",
+        "section3Title": "Deine private Cabana",
+        "section3Text": "Am Ende des Stegs wartet deine Cabana: warm, friedlich und vollständig von Natur umgeben. Beim Eintreten spürst du sofort die Mischung aus Einfachheit und stillem Luxus.",
+        "section3List": [
+            "ein offener Raum mit Blick aufs Wasser",
+            "eine sanfte Brise, die durch die Cabana zieht",
+            "Poolliegen auf dem Deck",
+            "eine Hängematte im Schatten",
+            "gekühlte Getränke und Snacks, die schon bereitstehen"
+        ],
+        "section3End": "Es fühlt sich an wie Heimkommen — an einen Ort, den du noch nicht kanntest.",
+        "section4Title": "Der Morgen — dein Rhythmus, dein Weg",
+        "section4List": [
+            "sanft durch die Wasserarme paddeln",
+            "schwerelos auf dem See treiben",
+            "eine erfrischende Abkühlung nehmen",
+            "in Ruhe angeln",
+            "oder in der Hängematte liegen und dem Wind lauschen"
+        ],
+        "section4End": "Nicht wichtig ist, was du tust — sondern wie es sich anfühlt, nichts tun zu müssen.",
+        "section5Title": "Mittagessen in völliger Ruhe",
+        "section5Text": "Gegen Mittag wird dein Essen geliefert: warm, hausgemacht, javanisch. Düfte von Kokos, Gewürzen und frisch zubereiteten Speisen füllen die Cabana. Das ist kein Buffet. Das ist Aufmerksamkeit, Einfachheit und Geschmack.",
+        "section6Title": "Für alle, die etwas mehr möchten — Catch & Cook",
+        "section6Text": "Vielleicht fängst du einen Tukunari. Vielleicht lässt du ihn von uns zubereiten. Vielleicht wird es einer dieser kleinen Momente, die unerwartet lange nachwirken.",
+        "section7Title": "Der Nachmittag — Luxus in Einfachheit",
+        "section7Text": "Die Zeit scheint langsamer zu fließen. Du wechselst zwischen Wasser, Sonne, Schatten, Ausruhen und Lachen. Der Tag passt sich dir an — nicht umgekehrt. Später erhältst du dein BBQ-Paket: mariniert, duftend, bereit zum entspannten Grillen. Ein einfaches Ritual, das überraschend intim und beruhigend wirkt.",
+        "section8Title": "Wenn die Sonne sinkt",
+        "section8Text": "Der Himmel färbt sich warm orange. Vögel kehren zu den Inseln zurück. Das Wasser wird glatt wie ein Spiegel. Egal ob du treibst, paddelst oder auf der Terrasse sitzt — dieser Moment bleibt. Viele Gäste nennen ihn magisch. Vielleicht wirst du das auch tun.",
+        "section9Title": "Die sanfte Rückkehr",
+        "section9Text": "Während der Rückfahrt bemerkst du es: Du fühlst dich anders als bei deiner Ankunft. Leichter. Offener. Tief entspannt. Ein Tag in Sendang Redjo schenkt nicht nur Ruhe — er setzt dich neu, auf eine Weise, die man nicht planen kann, sondern nur erleben.",
+        "section10Title": "Auch für einen halben Tag",
+        "section10Text": "Selbst ein Besuch am späten Nachmittag fühlt sich an, als wärst du stundenlang fort gewesen. Die Natur hier hat ihre eigene Art, die Zeit zu dehnen.",
+        "ctaTitle": "Möchtest du dies selbst erleben?",
+        "ctaText": "Für Gruppen ab 5 Personen beginnt ein Tag in Sendang Redjo ab 95 USD pro Person. Alle Details findest du auf der Tarifseite."
     }
 }

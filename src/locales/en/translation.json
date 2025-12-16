@@ -364,5 +364,48 @@
     ],
     "ctaText": "Ready to reserve?",
     "ctaButton": "Reserve via WhatsApp"
+  },
+  "imagine": {
+    "title": "Imagine Your Day",
+    "p1": "Imagine…",
+    "p2": "You drive away from Paramaribo. The city fades behind you, the air grows quieter, the greenery deeper. In less than twenty minutes it feels as if you’ve entered another world — a place where your breath naturally drops deeper.",
+    "p3": "This is the beginning of your day at Sendang Redjo.",
+    "section1Title": "Arrival in silence",
+    "section1Text": "At the reception cabana you’re welcomed with an ice-cold coconut. No crowds, no rush — only the soft sound of water. A short, personal introduction tells you everything you need to know. You feel it immediately: here you don’t have to do anything, but you may do everything.",
+    "section2Title": "The crossing",
+    "section2Text": "You step into a wooden boat. The water ripples, birds glide low along the shore, palms move gently in the wind. As you slowly cross the lake, it feels as if the outside world drifts away from you. This crossing isn’t transportation — it’s a transition. From busyness to calm. From ‘must’ to ‘may’.",
+    "section3Title": "Your private cabana",
+    "section3Text": "At the end of the jetty your cabana awaits: warm, peaceful, fully surrounded by nature. The moment you enter, you feel the simplicity and quiet luxury.",
+    "section3List": [
+      "an open space with a view of the water",
+      "a gentle breeze flowing through the cabana",
+      "poolbeds on the deck",
+      "a hammock in the shade",
+      "chilled drinks and snacks already waiting for you"
+    ],
+    "section3End": "It feels like coming home to a place you didn’t know yet.",
+    "section4Title": "The morning — your rhythm, your way",
+    "section4List": [
+      "paddle softly through the creeks",
+      "float weightlessly on the lake",
+      "take a refreshing swim",
+      "fish in silence",
+      "or lie in the hammock and listen to the wind"
+    ],
+    "section4End": "It doesn’t matter what you do — only how it feels to not have to do anything.",
+    "section5Title": "Lunch in complete tranquility",
+    "section5Text": "Around noon your lunch is delivered: warm, homemade, Javanese. The scents of coconut, spices and freshly prepared dishes fill the cabana. This is not a buffet. This is care, simplicity and flavor.",
+    "section6Title": "For those who want something extra — Catch & Cook",
+    "section6Text": "Maybe you catch a tukunari. Maybe you let us prepare it for you. Maybe it becomes one of those small moments that unexpectedly leaves a deep impression.",
+    "section7Title": "The afternoon — luxury in simplicity",
+    "section7Text": "Time seems to flow more slowly. You alternate between water, sun, shade, resting, laughing. The day adapts to you — not the other way around. Later you receive your BBQ package: marinated, fragrant, ready to grill at your own pace. A simple ritual that feels unexpectedly intimate and soothing.",
+    "section8Title": "When the sun lowers",
+    "section8Text": "The sky turns warm orange. Birds return to the islands. The water becomes still like a mirror. Whether you’re floating, paddling, or sitting on the deck — this is the moment that stays with you. Many guests call it magical. Perhaps you will too.",
+    "section9Title": "The gentle return",
+    "section9Text": "On the return boat ride you notice it: you feel different from when you arrived. Lighter. More open. Deeply relaxed. A day at Sendang Redjo does more than offer rest — it resets you in a way you cannot plan, only experience.",
+    "section10Title": "Also for a half-day",
+    "section10Text": "Even a late afternoon visit feels as if you’ve been away for hours. Nature here has its own way of softening time.",
+    "ctaTitle": "Would you like to experience this yourself?",
+    "ctaText": "For groups of 5 or more, a day at Sendang Redjo starts from USD 95 per person. You can find all details on the Rates page."
   }
 }

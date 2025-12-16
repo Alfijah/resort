@@ -363,5 +363,48 @@
     ],
     "ctaText": "¿Listo para reservar?",
     "ctaButton": "Reservar por WhatsApp"
+  },
+  "imagine": {
+    "title": "Imagine Your Day",
+    "p1": "Imagina…",
+    "p2": "Sales de Paramaribo. La ciudad queda atrás, el aire se vuelve más tranquilo, el verde más profundo. En menos de veinte minutos parece que has entrado en otro mundo — un lugar donde tu respiración se vuelve naturalmente más profunda.",
+    "p3": "Así comienza tu día en Sendang Redjo.",
+    "section1Title": "Llegada en silencio",
+    "section1Text": "En la cabana de recepción te reciben con un coco helado. Sin ruido, sin prisa — solo el suave murmullo del agua. Una breve introducción personal te cuenta todo lo necesario. Lo sientes de inmediato: aquí no tienes que hacer nada, pero puedes hacerlo todo.",
+    "section2Title": "La travesía",
+    "section2Text": "Subes a una pequeña embarcación de madera. El agua se ondula, las aves vuelan bajo por la orilla, las palmeras se mueven suavemente. Mientras avanzas lentamente por el lago, sientes cómo el mundo exterior se aleja. Esta travesía no es transporte — es transición. Del ruido al silencio. Del deber al poder.",
+    "section3Title": "Tu cabana privada",
+    "section3Text": "Al final del muelle te espera tu cabana: cálida, tranquila y completamente rodeada de naturaleza. Al entrar, percibes la sencillez y el lujo silencioso.",
+    "section3List": [
+      "un espacio abierto con vista al agua",
+      "una brisa suave que atraviesa la cabana",
+      "camastros en la terraza",
+      "una hamaca en la sombra",
+      "bebidas frías y aperitivos esperándote"
+    ],
+    "section3End": "Se siente como llegar a casa a un lugar que aún no conocías.",
+    "section4Title": "La mañana — tu ritmo, tu manera",
+    "section4List": [
+      "rema suavemente por los canales",
+      "flota sin peso en el lago",
+      "date un baño refrescante",
+      "pesca en silencio",
+      "o descansa en la hamaca escuchando el viento"
+    ],
+    "section4End": "No importa lo que hagas — sino la sensación de no tener que hacer nada.",
+    "section5Title": "Almuerzo en total tranquilidad",
+    "section5Text": "Al mediodía recibes tu almuerzo: caliente, casero y javanés. Los aromas de coco, especias y comida recién preparada llenan la cabana. Esto no es un buffet. Es atención, sencillez y sabor.",
+    "section6Title": "Para quienes quieren algo extra — Catch & Cook",
+    "section6Text": "Quizá atrapes un tukunari. Quizá lo prepares con nosotros. Quizá se convierta en uno de esos pequeños momentos que sorprendentemente dejan huella.",
+    "section7Title": "La tarde — lujo en sencillez",
+    "section7Text": "El tiempo parece fluir más lento. Alternas entre agua, sol, sombra, descanso y risas. El día se adapta a ti — no al revés. Más tarde recibes tu paquete de BBQ: marinado, fragante y listo para asar a tu ritmo. Un ritual simple que se siente íntimo y relajante.",
+    "section8Title": "Cuando el sol baja",
+    "section8Text": "El cielo se tiñe de naranja cálido. Las aves regresan a las islas. El agua se vuelve un espejo. Ya sea flotando, remando o sentado en la terraza — este momento permanece. Muchos huéspedes lo llaman mágico. Tal vez tú también.",
+    "section9Title": "El regreso suave",
+    "section9Text": "Durante el viaje de vuelta lo notas: te sientes distinto a cuando llegaste. Más ligero. Más abierto. Profundamente relajado. Un día en Sendang Redjo hace más que brindar descanso — te reinicia de una manera que no se puede planificar, solo vivir.",
+    "section10Title": "También para medio día",
+    "section10Text": "Incluso una visita por la tarde se siente como haber estado fuera durante horas. La naturaleza aquí tiene su propia forma de suavizar el tiempo.",
+    "ctaTitle": "¿Quieres vivir esto tú mismo?",
+    "ctaText": "Para grupos de 5 personas o más, un día en Sendang Redjo comienza desde USD 95 por persona. Encuentra todos los detalles en la página de Tarifas."
   }
 }

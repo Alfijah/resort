@@ -91,12 +91,12 @@ export default function Navbar() {
 
                             {/* Existing menu links — exact jouw code */}
                             <Link to="" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.home")}</Link>
-                            <Link to="cabanas" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.cabanas")}</Link>
-                            <Link to="dining" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.dining")}</Link>
-                            <Link to="activiteiten" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.activities")}</Link>
-                            <Link to="about" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.about")}</Link>
-                            <Link className="nav-link menu" to="contact" onClick={() => setIsMenuOpen(false)}>{t("nav.contact")}</Link>
-                            <Link className="nav-link menu" to="reserveren" onClick={() => setIsMenuOpen(false)}>{t("nav.book")}</Link>
+                            <Link to="/cabanas" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.cabanas")}</Link>
+                            <Link to="/dining" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.dining")}</Link>
+                            <Link to="/activiteiten" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.activities")}</Link>
+                            <Link to="/about" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.about")}</Link>
+                            <Link className="nav-link menu" to="/contact" onClick={() => setIsMenuOpen(false)}>{t("nav.contact")}</Link>
+                            <Link className="nav-link menu" to="/reserveren" onClick={() => setIsMenuOpen(false)}>{t("nav.book")}</Link>
 
                             {/* SOCIAL ICONS ONDERAAN */}
                             <div className="mt-auto flex items-center gap-6 pl-1 pb-10 pt-4">
@@ -138,9 +138,9 @@ export default function Navbar() {
                 {/* Left links */}
                 <ul className="flex justify-start gap-10 px-10 xl:px-20">
                     <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
-                    <li><Link to="cabanas" className="nav-link">{t("nav.cabanas")}</Link></li>
-                    <li><Link to="dining" className="nav-link">{t("nav.dining")}</Link></li>
-                    <li><Link to="activiteiten" className="nav-link">{t("nav.activities")}</Link></li>
+                    <li><Link to="/cabanas" className="nav-link">{t("nav.cabanas")}</Link></li>
+                    <li><Link to="/dining" className="nav-link">{t("nav.dining")}</Link></li>
+                    <li><Link to="/activiteiten" className="nav-link">{t("nav.activities")}</Link></li>
                 </ul>
 
                 {/* Logo */}
@@ -155,11 +155,11 @@ export default function Navbar() {
                 {/* Right links */}
                 <div className="flex justify-end gap-8 px-[20%] items-center">
                     <ul className="flex items-center gap-10">
-                        <li><Link className="nav-link " to="about">{t("nav.about")}</Link></li>
-                        <li><Link className="nav-link" to="contact">{t("nav.contact")}</Link></li>
+                        <li><Link className="nav-link " to="/about">{t("nav.about")}</Link></li>
+                        <li><Link className="nav-link" to="/contact">{t("nav.contact")}</Link></li>
                     </ul>
                     <button className="bg-sky-900 px-6 py-3 uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
-                        <Link className="nav-link " to="reserveren">{t("nav.book")}</Link>
+                        <Link className="nav-link " to="/reserveren">{t("nav.book")}</Link>
                     </button>
                     <LanguageSwitcher isScrolled={isScrolled} />
                 </div>

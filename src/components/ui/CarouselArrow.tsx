@@ -17,7 +17,7 @@ export default function CarouselArrow({
             onClick={onClick}
             className={`absolute top-1/2 -translate-y-1/2 z-30
         bg-black/25 hover:bg-white/90 hover:text-black text-white 
-        p-2 shadow-md border border-white/40 transition-colors
+        p-2 shadow-md border border-white/70 transition-colors
         ${direction === "left" ? "left-5" : "right-5"}
         ${className}`}
         >

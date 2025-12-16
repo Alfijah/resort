@@ -363,5 +363,48 @@
         ],
         "ctaText": "Pronto para reservar?",
         "ctaButton": "Reservar via WhatsApp"
+    },
+    "imagine": {
+        "title": "Imagine Your Day",
+        "p1": "Imagine…",
+        "p2": "Você deixa Paramaribo para trás. A cidade se desfaz ao longe, o ar fica mais calmo, o verde mais profundo. Em menos de vinte minutos, parece que você entrou em outro mundo — um lugar onde a respiração naturalmente desacelera.",
+        "p3": "Assim começa o seu dia em Sendang Redjo.",
+        "section1Title": "Chegada em silêncio",
+        "section1Text": "Na cabana de recepção, você é recebido com um coco gelado. Sem agitação, sem pressa — apenas o suave som da água. Uma breve apresentação pessoal explica o essencial. Você sente imediatamente: aqui nada é obrigatório, mas tudo é permitido.",
+        "section2Title": "A travessia",
+        "section2Text": "Você entra em um pequeno barco de madeira. A água ondula, pássaros acompanham a margem, palmeiras se movem levemente. Conforme você cruza o lago, sente o mundo exterior se afastando. Esta travessia não é transporte — é transição. Do movimento ao silêncio. Do ‘dever’ ao ‘poder’.",
+        "section3Title": "Sua cabana privada",
+        "section3Text": "No final do píer, sua cabana espera por você: acolhedora, tranquila e completamente rodeada pela natureza. Ao entrar, você sente a simplicidade e o luxo suave.",
+        "section3List": [
+            "um espaço aberto com vista para a água",
+            "uma brisa suave que percorre a cabana",
+            "espreguiçadeiras no deck",
+            "uma rede à sombra",
+            "bebidas geladas e petiscos já preparados"
+        ],
+        "section3End": "É como voltar para casa — em um lugar que você ainda não conhecia.",
+        "section4Title": "A manhã — seu ritmo, do seu jeito",
+        "section4List": [
+            "remar suavemente pelos canais",
+            "flutuar sem peso pelo lago",
+            "dar um mergulho refrescante",
+            "pescar em silêncio",
+            "ou descansar na rede ouvindo o vento"
+        ],
+        "section4End": "Não importa o que você faz — mas como é libertador não precisar fazer nada.",
+        "section5Title": "Almoço em total tranquilidade",
+        "section5Text": "Ao meio-dia, seu almoço chega: quente, caseiro, javanês. Os aromas de coco, especiarias e pratos preparados na hora preenchem a cabana. Não é buffet. É cuidado, simplicidade e sabor.",
+        "section6Title": "Para quem deseja algo a mais — Catch & Cook",
+        "section6Text": "Talvez você pegue um tukunari. Talvez peça para nós prepararmos. Talvez se transforme em um daqueles pequenos momentos que surpreendentemente marcam a memória.",
+        "section7Title": "A tarde — luxo na simplicidade",
+        "section7Text": "O tempo parece correr mais devagar. Você alterna entre água, sol, sombra, descanso e risadas. O dia se adapta a você — não o contrário. Mais tarde, chega o kit de churrasco: marinado, perfumado, pronto para grelhar no seu ritmo. Um ritual simples, íntimo e acolhedor.",
+        "section8Title": "Quando o sol se põe",
+        "section8Text": "O céu ganha tons de laranja quente. Os pássaros retornam às ilhas. A água fica lisa como um espelho. Flutuando, remando ou sentado no deck — esse é o momento que permanece. Muitos hóspedes o descrevem como mágico. Talvez você também.",
+        "section9Title": "O retorno suave",
+        "section9Text": "Na travessia de volta, você percebe: não se sente como quando chegou. Mais leve. Mais aberto. Profundamente relaxado. Um dia em Sendang Redjo oferece mais que descanso — ele reinicia você de uma forma que não se planeja, apenas se vive.",
+        "section10Title": "Também para meio período",
+        "section10Text": "Mesmo uma visita no final da tarde parece horas longe. A natureza aqui tem seu próprio jeito de estender o tempo.",
+        "ctaTitle": "Quer viver isso você mesmo?",
+        "ctaText": "Para grupos a partir de 5 pessoas, um dia em Sendang Redjo começa em USD 95 por pessoa. Todos os detalhes estão na página de Tarifas."
     }
 }
