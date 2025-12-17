@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="relative w-full py-14 px-8"
+      className="relative w-full py-14 px-6 sm:px-8"
       style={{ backgroundColor: "#b39b75ff" }}
     >
       {/* TOP GRID */}

@@ -12,7 +12,7 @@ export default function HeroSection() {
     const { t } = useTranslation();
 
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden md:px-8">
             <video
                 src={heroBg}
                 autoPlay

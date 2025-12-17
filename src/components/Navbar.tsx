@@ -134,9 +134,9 @@ export default function Navbar() {
             </AnimatePresence>
 
             {/* DESKTOP NAVBAR (≥1260px) */}
-            <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs uppercase tracking-widest">
+            <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-2xl mx-auto lg:px-16 text-xs uppercase tracking-widest">
                 {/* Left links */}
-                <ul className="flex justify-start gap-10 px-10 xl:px-20">
+                <ul className="flex justify-start gap-10 xl:px-20">
                     <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
                     <li><Link to="/cabanas" className="nav-link">{t("nav.cabanas")}</Link></li>
                     <li><Link to="/dining" className="nav-link">{t("nav.dining")}</Link></li>
@@ -153,12 +153,12 @@ export default function Navbar() {
                 </div>
 
                 {/* Right links */}
-                <div className="flex justify-end gap-8 px-[20%] items-center">
+                <div className="flex justify-end gap-8 items-center">
                     <ul className="flex items-center gap-10">
                         <li><Link className="nav-link " to="/about">{t("nav.about")}</Link></li>
                         <li><Link className="nav-link" to="/contact">{t("nav.contact")}</Link></li>
                     </ul>
-                    <button className="bg-sky-900 px-6 py-3 uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
+                    <button className="customGreen px-6 py-3 uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
                         <Link className="nav-link " to="/reserveren">{t("nav.book")}</Link>
                     </button>
                     <LanguageSwitcher isScrolled={isScrolled} />

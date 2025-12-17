@@ -4,7 +4,7 @@
   .nav-link {
     position: relative;
     padding-bottom: 2px;
-    font-family: 'Reforma 1918 Blanca', sans-serif;
+    font-family: 'Arnhem', sans-serif;
     font-size: 0.75rem;
   }
 
@@ -13,8 +13,9 @@
   }
 
   @font-face {
-    font-family: "Reforma 1918 Blanca";
-    src: url("./assets/fonts/reforma.ttf") format("truetype");
+    /* font-family: "Reforma 1918 Blanca"; */
+    font-family: "Arnhem";
+    src: url("./assets/fonts/ArnhemBlond.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
@@ -47,13 +48,19 @@ body {
 body,
 .react-datepicker__header,
 .react-datepicker__current-month {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+  font-family: 'Arnhem', sans-serif;
   font-size: 1rem; 
   line-height: 1.5rem;
 }
 
 .customBlue {
   background-color: #1A4069;
+}
+
+.customGreen {
+  /* background-color: #67765e; */
+  background-color: #60373D;
 }
 
 .bgCustom {
@@ -75,7 +82,7 @@ h1,
 .explore-button,
 h2 {
   /* font-family: 'Cormorant Garamond', sans-serif; */
-  font-family: 'Reforma 1918 Blanca', sans-serif;
+  font-family: 'Arnhem', sans-serif;
   letter-spacing: 4.5px;
   line-height: 1.3;
 }
@@ -99,7 +106,7 @@ h1,
 
 button,
 .location-heading {
-  font-family: 'Reforma 1918 Blanca', sans-serif;
+  font-family: 'Arnhem', sans-serif;
   /* font-weight: bold; */
   text-transform: Normal;
   letter-spacing: 2px;

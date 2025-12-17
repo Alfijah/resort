@@ -9,7 +9,7 @@ export default function InviteSection() {
 
     return (
         <div
-            className="invite-section relative w-full h-[660px] lg:px-30 sm:h-[580px] md:h-[600px] mt-20 sm:mt-20 md:mt-22 sm:pb-8 lg:pb-0 flex items-center justify-center overflow-hidden"
+            className="invite-section relative w-full lg:px-30 py-14 md:py-16 mt-20 sm:mt-20 lg:mt-22 sm:pb-8 lg:pb-0 flex items-center justify-center overflow-hidden"
             style={{
                 backgroundImage: `url(${invite})`,
                 backgroundSize: "cover",
@@ -21,7 +21,7 @@ export default function InviteSection() {
             </div>
 
             <SectionWrapper
-                className="relative z-20 flex flex-col text-start md:text-center w-full md:w-[90%] lg:max-w-4xl px-6 sm:px-12">
+                className="relative z-20 flex flex-col text-start md:text-center w-full lg:w-[90%] lg:max-w-4xl px-6 sm:px-8">
                 <motion.h1 variants={fadeInUp} className="heading-primary">
                     {t("invite.title")}
                 </motion.h1>

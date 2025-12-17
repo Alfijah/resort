@@ -44,7 +44,7 @@ export default function ContactForm() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="w-full max-w-2xl body-text mx-auto bg-white p-6 md:p-10 mt-8 shadow-lg space-y-6"
+            className="w-full max-w-2xl body-text mx-auto bg-white p-6 md:p-10 mt-8 shadow-sm space-y-6"
         >
             {/* NAAM VELDEN */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -109,7 +109,7 @@ export default function ContactForm() {
             {/* SUBMIT KNOP */}
             <button
                 type="submit"
-                className="bg-sky-900 w-full hover:bg-red-400 transition-colors px-7 py-3 explore-button uppercase text-white cursor-pointer"
+                className="customGreen w-full hover:bg-red-400 transition-colors px-7 py-3 explore-button uppercase text-white cursor-pointer"
             >
                 {t("contact.sendButton")}
             </button>

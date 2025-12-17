@@ -15,7 +15,7 @@ export default function ReserveCtaSection() {
     };
 
     return (
-        <section className="relative w-full h-[80vh] sm:h-[75vh] md:h-[58vh] lg:h-[62vh] flex items-center justify-center">
+        <section className="relative w-full py-14 sm:py-16 lg:h-[62vh] flex items-center justify-center">
 
             {/* Background image */}
             <div
@@ -70,14 +70,14 @@ export default function ReserveCtaSection() {
                                     href="#reserveren"
 
                                     onClick={scrollToBooking}
-                                    className="bg-sky-900 w-full hover:bg-red-400 transition-colors px-7 py-3 explore-button uppercase text-white cursor-pointer text-center location-heading"
+                                    className="customGreen w-full hover:bg-red-400 transition-colors py-3 explore-button uppercase text-white cursor-pointer text-center location-heading"
                                 >
                                     {t("cta.primary")}
                                 </a>
 
                                 <a
                                     href="#contact"
-                                    className="border w-full border-white hover:bg-white text-white hover:text-red-400 transition-colors text-center px-7 py-3 explore-button location-heading uppercase"
+                                    className="border w-full border-white hover:bg-white text-white hover:text-red-400 transition-colors text-center py-3 explore-button location-heading uppercase"
                                 >
                                     {t("cta.secondary")}
                                 </a>
