@@ -134,7 +134,7 @@ export default function Navbar() {
             </AnimatePresence>
 
             {/* DESKTOP NAVBAR (≥1260px) */}
-            <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs xl:text-xs uppercase tracking-widest">
+            <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-2xl mx-auto px-8 text-xs uppercase tracking-widest">
                 {/* Left links */}
                 <ul className="flex justify-start gap-10 px-10 xl:px-20">
                     <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
@@ -148,7 +148,7 @@ export default function Navbar() {
                     <Link to=""><img
                         src={isScrolled ? logoDark : logoWhite}
                         alt="sendang resort logo"
-                        className="h-12 w-auto"
+                        className="h-14 w-auto"
                     /></Link>
                 </div>
 

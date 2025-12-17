@@ -5,7 +5,7 @@
     position: relative;
     padding-bottom: 2px;
     font-family: 'Reforma 1918 Blanca', sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
 
   .nav-link.menu {
@@ -195,7 +195,7 @@ p {
 /* md: vanaf 768px */
 @media (min-width: 768px) {
   .body-text {
-    font-size: 0.82rem; /* text-sm */
+    font-size: 1rem; /* text-base */
   }
 
   .heading-primary {
