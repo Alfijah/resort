@@ -185,7 +185,7 @@ export default function CabanasPage() {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.3 }}
-                                    className="w-full h-75 object-cover"
+                                    className="w-full h-75 lg:h-90 object-cover"
                                 />
 
                                 {/* TEXT */}

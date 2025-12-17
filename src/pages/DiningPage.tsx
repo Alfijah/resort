@@ -247,7 +247,7 @@ export default function DiningPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 object-cover"
+                  className="w-full h-75 lg:h-90 object-cover"
                 />
 
                 {/* TEXT */}
@@ -343,7 +343,7 @@ export default function DiningPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 object-cover"
+                  className="w-full h-75 lg:h-90 object-cover"
                 />
 
                 {/* TEXT */}
@@ -454,7 +454,7 @@ export default function DiningPage() {
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={extraImg} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+            viewport={{ once: true, amount: 0.3 }} src={extraImg} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-10 object-cover object-center mt-8 mb-4" />
 
           <div className="grid grid-cols-1 gap-3 sm:px-10">
             {extras.map((item, i) => (

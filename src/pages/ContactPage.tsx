@@ -56,11 +56,11 @@ export default function ContactPage() {
             {t("contact.title1")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 md:px-14 lg:px-28 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 md:px-14 lg:px-44 leading-snugged">
             {t("contact.whatsapp.subtitle")}
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="w-full px-10 md:px-54">
+          <motion.div variants={fadeInUp} className="w-full px-10 md:px-54 xl:px-92">
             <button className="explore-button w-full h-10 border mt-2 md:mt-6 transition-colors cursor-pointer">
               <a
                 href="https://wa.me/5978592337"

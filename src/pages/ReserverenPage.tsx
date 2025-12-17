@@ -55,7 +55,7 @@ export default function ReserverenPage() {
 
       <div className="relative w-full px-2 md:px-4 lg:px-20 sm:py-2">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start w-full sm:px-12 md:px-10 lg:px-14">
+          className="relative z-20 flex flex-col h-full justify-start w-full sm:px-12 md:px-10 lg:px-14 xl:px-26">
           <motion.h2
             variants={fadeInUp}
             initial="hidden"
@@ -82,7 +82,7 @@ export default function ReserverenPage() {
 
       <div className="relative w-full px-2 md:px-4 lg:px-20">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-left w-full sm:px-12 md:px-10 lg:px-14">
+          className="relative z-20 flex flex-col h-full justify-start items-left w-full sm:px-12 md:px-10 lg:px-14 xl:px-26">
           <motion.h2
             variants={fadeInUp}
             initial="hidden"
@@ -106,7 +106,7 @@ export default function ReserverenPage() {
       </div>
 
       {/* INCLUSIEF */}
-      <SectionWrapper className="max-w-screen-lg mx-auto mt-6 px-8 sm:px-20 lg:px-14 py-10">
+      <SectionWrapper className="max-w-screen-lg mt-6 px-8 sm:px-20 lg:px-40 xl:px-52 py-10">
         <motion.h2
           variants={fadeInUp}
           initial="hidden"
@@ -131,7 +131,7 @@ export default function ReserverenPage() {
       </SectionWrapper>
 
       {/* NIET INBEGREPEN */}
-      <SectionWrapper className="max-w-screen-lg mx-auto -mt-6 px-8 sm:px-20 lg:px-14 py-10">
+      <SectionWrapper className="max-w-screen-lg -mt-6 px-8 sm:px-20 lg:px-40 xl:px-52 py-10">
         <motion.h2
           variants={fadeInUp}
           initial="hidden"
@@ -156,7 +156,7 @@ export default function ReserverenPage() {
       </SectionWrapper>
 
       {/* HUISREGELS */}
-      <div className="relative w-full px-2 md:px-4 lg:px-18 sm:py-0">
+      <div className="relative w-full px-2 md:px-4 lg:px-20 xl:px-34 sm:py-0">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-left w-full sm:px-12 md:px-10 lg:px-14">
           <motion.h2
@@ -181,7 +181,7 @@ export default function ReserverenPage() {
       </div>
 
       {/* BELANGRIJKE INFO */}
-      <SectionWrapper className="max-w-screen-lg mx-auto mt-2 px-8 sm:px-20 lg:px-14 py-10 md:py-6">
+      <SectionWrapper className="max-w-screen-lg mt-2 px-8 sm:px-20 lg:px-40 xl:px-52 py-10 md:py-6">
         <motion.h2
           variants={fadeInUp}
           initial="hidden"
@@ -206,7 +206,7 @@ export default function ReserverenPage() {
       </SectionWrapper>
 
       {/* CTA */}
-      <div className="relative w-full px-2 md:px-4 lg:px-18 mb-12 md:py-4">
+      <div className="relative w-full px-2 md:px-4 lg:px-20 xl:px-32 mb-12 md:py-4">
         <SectionWrapper
           className="relative z-20 flex flex-col h-full justify-start items-left w-full sm:px-12 md:px-10 lg:px-14">
           <motion.h2
