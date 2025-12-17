@@ -49,7 +49,7 @@ export default function Navbar() {
                     <img
                         src={isScrolled ? logoDark : logoWhite}
                         alt="Taman Logo"
-                        className="h-16 transition-all duration-300" /></Link>
+                        className="h-14 w-auto transition-all duration-300" /></Link>
 
                 <LanguageSwitcher isScrolled={isScrolled} />
 
@@ -148,7 +148,7 @@ export default function Navbar() {
                     <Link to=""><img
                         src={isScrolled ? logoDark : logoWhite}
                         alt="sendang resort logo"
-                        className="h-16 w-auto"
+                        className="h-12 w-auto"
                     /></Link>
                 </div>
 

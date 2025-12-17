@@ -21,7 +21,7 @@ export default function Footer() {
           <Link to=""><img
             src={logoWhite}
             alt="Sendang Redjo logo"
-            className="h-16 w-auto mb-4 -ml-4"
+            className="h-14 w-24 mb-4 -ml-4"
           /></Link>
 
           <p className="location-heading uppercase text-white">
