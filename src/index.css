@@ -48,6 +48,8 @@ body,
 .react-datepicker__header,
 .react-datepicker__current-month {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem; 
+  line-height: 1.5rem;
 }
 
 .customBlue {
