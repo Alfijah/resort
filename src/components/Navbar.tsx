@@ -136,7 +136,7 @@ export default function Navbar() {
             {/* DESKTOP NAVBAR (≥1260px) */}
             <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-2xl mx-auto lg:px-16 text-xs uppercase tracking-widest">
                 {/* Left links */}
-                <ul className="flex justify-start gap-10 xl:px-20">
+                <ul className="flex justify-end gap-8 xl:px-20">
                     <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
                     <li><Link to="/cabanas" className="nav-link">{t("nav.cabanas")}</Link></li>
                     <li><Link to="/dining" className="nav-link">{t("nav.dining")}</Link></li>

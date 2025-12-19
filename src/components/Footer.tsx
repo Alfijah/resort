@@ -10,11 +10,11 @@ export default function Footer() {
 
   return (
     <footer
-      className="relative w-full py-14 px-6 sm:px-8"
+      className="relative w-full py-14 px-6 sm:px-8 lg:px-12"
       style={{ backgroundColor: "#b39b75ff" }}
     >
       {/* TOP GRID */}
-      <div className="ctaSection max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
+      <div className="ctaSection max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-white">
 
         {/* LEFT COLUMN — Logo + Location */}
         <div className="flex flex-col items-start lg:pl-8">

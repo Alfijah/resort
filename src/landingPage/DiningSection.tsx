@@ -11,7 +11,7 @@ export default function DiningSection() {
 
     return (
         <SectionWrapper
-            className="relative w-full max-w-screen-2xl mx-auto flex flex-col-reverse lg:flex-row items-center lg:items-center xl:gap-10 sm:px-8 lg:px-20 pt-2 lg:mt-4 overscroll-x-none">
+            className="relative w-full max-w-screen-2xl mx-auto flex flex-col-reverse lg:flex-row items-center lg:items-center xl:gap-10 sm:px-8 lg:px-8 xl:px-14 pt-2 lg:mt-4 overscroll-x-none">
 
             <motion.div variants={container}
                 className="w-full lg:w-1/2 mx-auto">

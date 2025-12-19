@@ -15,7 +15,7 @@ export default function ReserveCtaSection() {
     };
 
     return (
-        <section className="relative w-full py-14 sm:py-16 lg:h-[62vh] flex items-center justify-center">
+        <section className="relative w-full py-14 sm:py-16 flex items-center justify-center">
 
             {/* Background image */}
             <div
@@ -29,7 +29,7 @@ export default function ReserveCtaSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-amber-900/20 to-black/80"></div>
 
 
-            <SectionWrapper className="ctaSection relative z-25 max-w-screen-lg mx-auto px-6 sm:px-8 flex flex-col md:flex-row items-center justify-center gap-0 sm:gap-8">
+            <SectionWrapper className="ctaSection relative z-25 max-w-screen-lg mx-auto px-6 sm:px-8 flex flex-col md:flex-row items-center justify-center gap-0 sm:gap-8 lg:gap-14">
                 {/* Tekstblok */}
                 <div className="w-full md:w-1/2 text-white">
 

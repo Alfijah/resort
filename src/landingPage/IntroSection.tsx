@@ -103,10 +103,10 @@ export default function IntroSection() {
         const width = window.innerWidth;
 
         if (width >= 1280) {
-            return 0.48; // xl
+            return 0.44; // xl
         }
         if (width >= 1024) {
-            return 0.60; // xl
+            return 0.54; // lg
         }
         if (width >= 768) {
             return 0.48; // md
@@ -116,10 +116,10 @@ export default function IntroSection() {
 
     return (
         <SectionWrapper
-            className="relative w-full items-center lg:items-start sm:px-8 lg:px-0 overscroll-x-none">
+            className="relative w-full items-center lg:items-start sm:px-8 lg:px-8 xl:px-14 overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-0 lg:px-28 py-14 md:py-14 lg:py-16">
+                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-0 lg:px-22 py-14 md:py-14 lg:py-16">
                 <motion.h1 variants={fadeInUp}
                     className="heading-primary">{t("intro.title")}</motion.h1>
                 <motion.p variants={fadeInUp}
@@ -134,7 +134,7 @@ export default function IntroSection() {
 
                     {!isMobile && (
                         <motion.div variants={fadeInUp}
-                            className="w-full max-w-screen-2xl mx-auto lg:px-16">
+                            className="w-full max-w-screen-2xl mx-auto lg:px-14">
                             <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
                                 {/* Pijlen */}
                                 <CarouselArrow direction="left" onClick={prev} />
