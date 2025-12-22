@@ -32,9 +32,9 @@ export default function ImaginePage() {
             />
 
             {/* TOP GRADIENT OVERLAY (OPTIONEEL) */}
-            <div className="absolute z-12 top-0 left-0 w-full h-55 bg-gradient-to-b from-black to-transparent pointer-events-none" />
-            <div className="absolute z-12 top-0 left-0 w-full h-55 bg-gradient-to-b from-black to-transparent pointer-events-none" />
-            <div className="absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-b from-teal-950 to-black/25 pointer-events-none" />
+            <div className="absolute z-12 top-0 left-0 w-full h-40 bg-gradient-to-b from-blue/900 to-transparent pointer-events-none" />
+            <div className="absolute z-12 top-0 left-0 w-full h-40 bg-gradient-to-b from-blue/900 to-transparent pointer-events-none" />
+            <div className="absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-b from-blue-900/60 to-black/25 pointer-events-none" />
 
             <div className="absolute top-0 left-0 w-full h-40 
                 bg-gradient-to-b from-black via-black/60 to-transparent 

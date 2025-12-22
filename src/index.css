@@ -59,12 +59,14 @@ body,
 }
 
 .customGreen {
-  background-color: #67765e;
-  /* background-color: #60373D; */
+  /* background-color: #67765e; */
+  background-color: #60373D;
 }
 
 .textGreen {
-  color: #67765e;
+  /* color: #67765e; */
+  color: #60373D;
+
   /* background-color: #60373D; */
 }
 

@@ -200,7 +200,7 @@ export default function DiningPage() {
 
                 {/* ICON WRAPPER */}
                 <div
-                  className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-900/10 text-sky-900 shadow-[0_0_15px_rgba(26,64,105,0.15)] mb-1">
+                  className="w-16 h-16 flex items-center justify-center rounded-full bg-sky-900/10 textGreen shadow-[0_0_15px_rgba(26,64,105,0.15)] mb-1">
                   {item.icon}
                 </div>
 
