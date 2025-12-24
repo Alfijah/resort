@@ -116,10 +116,10 @@ export default function IntroSection() {
 
     return (
         <SectionWrapper
-            className="relative w-full items-center lg:items-start sm:px-8 lg:px-8 xl:px-14 overscroll-x-none">
+            className="relative w-full flex flex-col gap-12 items-center lg:items-start sm:px-8 lg:px-8 xl:px-14 py-14 sm:py-16 overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full md:w-[95%] lg:max-w-5xl mx-auto px-6 sm:px-0 lg:px-22 py-14 md:py-14 lg:py-16">
+                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full lg:max-w-5xl mx-auto px-6 sm:px-0 lg:px-22 lg:py-16">
                 <motion.h1 variants={fadeInUp}
                     className="heading-primary">{t("intro.title")}</motion.h1>
                 <motion.p variants={fadeInUp}

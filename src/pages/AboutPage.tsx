@@ -33,121 +33,130 @@ export default function AboutPage() {
       </div>
 
       {/* First section */}
-      <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
+      <div className="relative w-full py-14 sm:py-16 md:py-20 lg:py-16">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 md:px-9 lg:px-37 leading-snugged">
+          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-8 md:px-10 lg:px-14">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 sm:px-0 md:px-9 lg:px-37 leading-snugged">
             {t("about.title1")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 sm:px-0 leading-snugged">
             {t("about.text1")}
           </motion.p>
 
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={img1} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+            viewport={{ once: true, amount: 0.3 }} src={img1} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-0 md:px-8 lg:px-20 object-cover object-center mt-8" />
         </SectionWrapper>
       </div>
 
       {/* Van plantage naar eco retreat */}
-      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20 lg:py-16">
+      <div className="relative bg-white w-full py-14 sm:py-16 md:py-20 lg:py-16 px-6 sm:px-8 lg:px-26">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
-            {t("about.title2")}
-          </motion.h1>
+          className="relative z-20 flex flex-col lg:flex-row gap-12 h-full justify-between items-center text-center lg:text-left w-full md:px-10 lg:px-0">
+          <div className="lg:w-1/2">
+            <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.title2")}
+            </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text2a")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text2a")}
+            </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text2b")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text2b")}
+            </motion.p>
+          </div>
 
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={img2} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+            viewport={{ once: true, amount: 0.3 }} src={img2} className="w-full lg:w-1/2 max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[460px] md:px-8 lg:px-0 object-cover object-center" />
         </SectionWrapper>
       </div>
 
       {/* Cabanas die opgaan in het landschap */}
-      <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
+      <div className="relative w-full py-14 sm:py-16 md:py-20 lg:py-16 px-6 sm:px-8 lg:px-26">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 lg:px-22 leading-snugged">
-            {t("about.title3")}
-          </motion.h1>
+          className="relative z-20 flex flex-col lg:flex-row-reverse gap-12 h-full justify-between items-center text-center lg:text-left w-full md:px-10 lg:px-0">
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text3a")}
-          </motion.p>
+          <div className="lg:w-1/2">
+            <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.title3")}
+            </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text3b")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text3a")}
+            </motion.p>
+
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text3b")}
+            </motion.p>
+          </div>
 
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={img3} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+            viewport={{ once: true, amount: 0.3 }} src={img3} className="w-full lg:w-1/2 max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[460px] md:px-8 lg:px-0 object-cover object-center" />
         </SectionWrapper>
       </div>
 
       {/* De betekenis achter de naam */}
-      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20 lg:py-16">
+      <div className="relative bg-white w-full py-14 sm:py-16 md:py-20 lg:py-16 px-6 sm:px-8 lg:px-26">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
-            {t("about.title4")}
-          </motion.h1>
+          className="relative z-20 flex flex-col lg:flex-row gap-12 h-full justify-between items-center text-center lg:text-left w-full md:px-10 lg:px-0">
+          <div className="lg:w-1/2">
+            <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.title4")}
+            </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text4a")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text4a")}
+            </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text4b")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text4b")}
+            </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text4c")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text4c")}
+            </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text4d")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text4d")}
+            </motion.p>
+          </div>
 
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={img4} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+            viewport={{ once: true, amount: 0.3 }} src={img4} className="w-full lg:w-1/2 max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[460px] md:px-8 lg:px-0 object-cover object-center" />
         </SectionWrapper>
       </div>
 
       {/* Waarom verblijven bij Sendang Redjo? */}
-      <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
+      <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16 px-6 sm:px-8 lg:px-26">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 lg:px-42 leading-snugged">
-            {t("about.title5")}
-          </motion.h1>
+          className="relative z-20 flex flex-col lg:flex-row-reverse gap-12 h-full justify-between items-center text-center lg:text-left w-full md:px-10 lg:px-0">
+          <div className="lg:w-1/2">
+            <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.title5")}
+            </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text5a")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text5a")}
+            </motion.p>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-27 leading-snugged">
-            {t("about.text5b")}
-          </motion.p>
+            <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text pb-2 md:pb-6 xl:pb-8 lg:px-0 leading-snugged">
+              {t("about.text5b")}
+            </motion.p>
+          </div>
 
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={img5} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+            viewport={{ once: true, amount: 0.3 }} src={img5} className="w-full lg:w-1/2 max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[460px] md:px-8 lg:px-0 object-cover object-center" />
         </SectionWrapper>
       </div>
       <ReserverenContactBar />

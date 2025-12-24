@@ -60,31 +60,32 @@ export default function ActiviteitenPage() {
       </div>
 
       {/* First section */}
-      <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
+      <div className="relative w-full py-14 sm:py-16 sm:px-8">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full lg:px-14">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 sm:px-0 leading-snugged">
             {t("activiteitenPage.title1")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 lg:px-26 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 sm:px-0 lg:px-26 leading-snugged">
             {t("activiteitenPage.text1")}
           </motion.p>
 
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={img1} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+            viewport={{ once: true, amount: 0.3 }} src={img1} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-0 lg:px-20 object-cover object-center mt-8" />
         </SectionWrapper>
       </div>
 
-      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20">
+      {/* Activiteiten op jouw ritme */}
+      <div className="relative bg-white w-full py-14 sm:py-16 px-6 sm:px-8">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-14">
+          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full">
           <motion.h1 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+            viewport={{ once: true, amount: 0.3 }} className="heading-primary pb-2 md:pb-6 xl:pb-8 leading-snugged">
             {t("activiteitenPage.title2")}
           </motion.h1>
 
@@ -92,12 +93,12 @@ export default function ActiviteitenPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 pb-2 md:pb-6 xl:pb-8 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 leading-snugged">
             {t("activiteitenPage.text2")}
           </motion.p>
 
           <div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 mt-8 mb-8 max-w-6xl mx-auto">
+            className="grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-12 mt-8 mb-8 max-w-6xl mx-auto">
             {[
               { key: "kajak", icon: <TbKayak size={28} /> },
               { key: "vissen", icon: <GiBoatFishing size={28} /> },
@@ -130,24 +131,25 @@ export default function ActiviteitenPage() {
         </SectionWrapper>
       </div>
 
-      <div className="relative w-full py-14 sm:py-18 md:py-20">
-        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+      {/* Beleef de natuur */}
+      <div className="relative w-full py-14 sm:py-16">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 sm:px-8 lg:px-0 xl:px-2">
 
           <motion.h1 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 leading-snugged">
             {t("activiteitenPage.headAct")}
           </motion.h1>
 
           {/* GRID STRUCTUUR */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
             {items.map((item, i) => (
               <div
                 key={i}
-                className="overflow-hidden flex flex-col md:px-10 lg:px-0">
+                className="overflow-hidden flex flex-col">
                 {/* IMAGE */}
                 <motion.img
                   src={item.img}
@@ -156,7 +158,7 @@ export default function ActiviteitenPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 object-cover" />
+                  className="w-full h-75 md:h-110 object-cover" />
 
                 {/* TEXT */}
                 <div className="p-2 mt-4 flex flex-col flex-grow">

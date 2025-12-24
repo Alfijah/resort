@@ -49,18 +49,18 @@ export default function ContactPage() {
       </div>
 
       {/* First section */}
-      <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
+      <div className="relative w-full py-14 sm:py-16 md:py-20 lg:py-16 px-6 sm:px-16">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full md:px-10 lg:px-14">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 leading-snugged">
             {t("contact.title1")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 md:px-14 lg:px-44 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 md:px-14 lg:px-44 leading-snugged">
             {t("contact.whatsapp.subtitle")}
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="w-full px-10 md:px-54 xl:px-92">
+          <motion.div variants={fadeInUp} className="w-full md:px-54 xl:px-92">
             <button className="explore-button w-full h-10 border mt-2 md:mt-6 transition-colors cursor-pointer">
               <a
                 href="https://wa.me/5978592337"
@@ -80,29 +80,30 @@ export default function ContactPage() {
             {t("contact.subtitle")}
           </motion.h2>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center md:pb-6 xl:pb-8 leading-snugged">
             {t("contact.text1")}
           </motion.p>
 
-          <motion.div className="w-full px-8">
+          <motion.div className="w-full">
             <ContactForm />
           </motion.div>
         </SectionWrapper>
       </div>
 
-      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20">
-        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+      {/* Bereikbaarheid en route */}
+      <div className="relative bg-white w-full py-14 sm:py-16 md:py-20 px-6 sm:px-8">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center lg:px-0 xl:px-2">
 
           <motion.h1 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 px-6 leading-snugged">
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-6 leading-snugged">
             {t("contact.enroute.title")}
           </motion.h1>
 
           {/* GRID STRUCTUUR */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 lg:gap-10 sm:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 lg:gap-10">
 
             {items.map((item, i) => (
               <div
@@ -117,11 +118,11 @@ export default function ContactPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 sm:h-95 object-cover"
+                  className="w-full h-75 sm:h-125 object-cover"
                 />
 
                 {/* TEXT */}
-                <div className="p-2 mt-4 flex flex-col flex-grow">
+                <div className="mt-4 flex flex-col flex-grow">
                   <motion.h2
                     variants={fadeInUp}
                     initial="hidden"

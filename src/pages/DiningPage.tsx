@@ -91,31 +91,32 @@ export default function DiningPage() {
       </div>
 
       {/* First section */}
-      <div className="relative w-full py-14 sm:py-18 md:py-20 lg:py-16">
+      <div className="relative w-full py-14 sm:py-16 lg:py-16 sm:px-12">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-10 lg:px-14">
-          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full lg:px-14">
+          <motion.h1 variants={fadeInUp} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 sm:px-0 leading-snugged">
             {t("diningPage.title1")}
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+          <motion.p variants={fadeInUp} className="max-w-5xl mx-auto body-text text-center pb-2 md:pb-6 xl:pb-8 px-6 sm:px-0 leading-snugged">
             {t("diningPage.text1")}
           </motion.p>
 
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={img1} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-20 object-cover object-center mt-8" />
+            viewport={{ once: true, amount: 0.3 }} src={img1} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-0 lg:px-20 object-cover object-center mt-8" />
         </SectionWrapper>
       </div>
 
-      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20">
+      {/* Dining bij Sendang Redjo */}
+      <div className="relative bg-white w-full py-14 sm:py-16 px-6 sm:px-8">
         <SectionWrapper
-          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full sm:px-12 md:px-14">
+          className="relative z-20 flex flex-col h-full justify-start items-center text-center w-full">
           <motion.h1 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} className="heading-primary pb-2 md:pb-6 xl:pb-8 px-6 leading-snugged">
+            viewport={{ once: true, amount: 0.3 }} className="heading-primary pb-2 md:pb-6 xl:pb-8 leading-snugged">
             {t("diningPage.title2")}
           </motion.h1>
 
@@ -123,14 +124,14 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 lg:px-27 pb-10 md:pb-6 xl:pb-8 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center lg:px-27 pb-10 md:pb-6 xl:pb-8 leading-snugged">
             {t("diningPage.text2")} {/* pb hierboven is aangepast */}
           </motion.p>
 
           <motion.h2 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 mt-4 md:pb-6 xl:pb-8 px-6 leading-snugged">
+            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 mt-4 md:pb-6 xl:pb-8 leading-snugged">
             {t("diningPage.subtitle2a")}
           </motion.h2>
 
@@ -138,12 +139,12 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 lg:px-27 pb-2 md:pb-6 xl:pb-8 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center lg:px-27 pb-2 md:pb-6 xl:pb-8 leading-snugged">
             {t("diningPage.subtext2a")}
           </motion.p>
 
           <div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-8 mt-4 mb-12 max-w-6xl mx-auto"
+            className="grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-8 mt-4 mb-12 max-w-6xl mx-auto"
           >
             {[
               // { key: "coconut", icon: <cocunut size={26} /> },
@@ -178,7 +179,7 @@ export default function DiningPage() {
           <motion.h2 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 mt-4 md:pb-6 xl:pb-8 px-6 leading-snugged">
+            viewport={{ once: true, amount: 0.3 }} className="heading-secondary pb-2 mt-4 md:pb-6 xl:pb-8 leading-snugged">
             {t("diningPage.subtitle2b")}
           </motion.h2>
 
@@ -214,14 +215,15 @@ export default function DiningPage() {
         </SectionWrapper>
       </div>
 
-      <div className="relative w-full py-14 sm:py-18 md:py-20">
-        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+      {/* Homemade Javanese lunch */}
+      <div className="relative w-full py-14 sm:py-16 px-6 sm:px-8">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center lg:px-0 xl:px-2">
 
           <motion.h1 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 px-6 lg:px-24 leading-snugged">
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 lg:px-24 leading-snugged">
             {t("diningPage.title3")}
           </motion.h1>
 
@@ -229,15 +231,15 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 mb-10 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center mb-10 leading-snugged">
             {t("diningPage.text3")}
           </motion.p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {items.map((item, i) => (
               <div
                 key={i}
-                className="overflow-hidden flex flex-col md:px-10 lg:px-0"
+                className="overflow-hidden flex flex-col"
               >
                 {/* IMAGE */}
                 <motion.img
@@ -247,7 +249,7 @@ export default function DiningPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 lg:h-90 object-cover"
+                  className="w-full h-75 md:h-110 lg:h-90 object-cover"
                 />
 
                 {/* TEXT */}
@@ -279,7 +281,7 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-secondary text-left mt-6 ml-2 sm:px-8 md:px-16 lg:px-10">
+            className="heading-secondary text-left mt-6 ml-2 lg:px-10">
             {t("diningPage.text3Subs.sub3title")}
           </motion.h2>
 
@@ -287,7 +289,7 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text px-2 mb-8 sm:px-10 md:px-18 lg:px-12 xl:-ml-0 leading-snugged">
+            className="max-w-5xl mx-auto body-text px-2 mb-8 lg:px-12 xl:-ml-0 leading-snugged">
             {t("diningPage.text3Subs.sub3text")}
           </motion.p>
 
@@ -296,7 +298,7 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-secondary text-left mt-10 ml-2 sm:px-8 md:px-16 lg:px-10">
+            className="heading-secondary text-left mt-10 ml-2 lg:px-10">
             {t("diningPage.text3Subs.sub4title")}
           </motion.h2>
 
@@ -304,20 +306,21 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text px-2 mb-6 md:mb-2 sm:px-10 md:px-18 lg:px-12 xl:-ml-0 leading-snugged">
+            className="max-w-5xl mx-auto body-text px-2 mb-6 md:mb-2 lg:px-12 xl:-ml-0 leading-snugged">
             {t("diningPage.text3Subs.sub4text")}
           </motion.p>
         </SectionWrapper>
       </div>
 
-      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20">
-        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+      {/* Late afternoon */}
+      <div className="relative bg-white w-full py-14 sm:py-16">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 sm:px-8 lg:px-0 xl:px-2">
 
           <motion.h1 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 px-6 leading-snugged">
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 leading-snugged">
             {t("diningPage.title4")}
           </motion.h1>
 
@@ -325,15 +328,15 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 lg:px-28 mb-10 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center lg:px-28 mb-10 leading-snugged">
             {t("diningPage.text4")}
           </motion.p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {dinnerItems.map((item, i) => (
               <div
                 key={i}
-                className="overflow-hidden flex flex-col md:px-10 lg:px-0"
+                className="overflow-hidden flex flex-col"
               >
                 {/* IMAGE */}
                 <motion.img
@@ -343,7 +346,7 @@ export default function DiningPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 lg:h-90 object-cover"
+                  className="w-full h-75 md:h-110 lg:h-90 object-cover"
                 />
 
                 {/* TEXT */}
@@ -375,7 +378,7 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-secondary text-left mt-6 ml-2 sm:px-8 md:px-16 lg:px-10">
+            className="heading-secondary text-left mt-6 lg:px-10">
             {t("diningPage.subtitle4bSubs.sub2title")}
           </motion.h2>
 
@@ -383,25 +386,26 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text px-2 mb-6 md:mb-2 sm:px-10 md:px-18 lg:px-12 xl:-ml-0 leading-snugged">
+            className="max-w-5xl mx-auto body-text mb-6 md:mb-2 lg:px-12 xl:-ml-0 leading-snugged">
             {t("diningPage.subtitle4bSubs.sub2text")}
           </motion.p>
         </SectionWrapper>
       </div>
 
-      <div className="relative w-full py-14 sm:py-18 md:py-20">
-        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+      {/* Catch & Cook */}
+      <div className="relative w-full py-14 sm:py-16 px-6 sm:px-8">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center lg:px-0 xl:px-2">
           <motion.h1 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-4 px-6 leading-snugged">
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 mb-4 leading-snugged">
             {t("diningPage.title5")}
           </motion.h1>
 
-          <div className="gap-10 sm:px-10">
+          <div className="gap-10">
             <div
-              className="overflow-hidden flex flex-col md:px-10 lg:px-0">
+              className="overflow-hidden flex flex-col">
               <BeforeAfterSlider
                 before={catchFish}
                 after={cookFish}
@@ -432,14 +436,15 @@ export default function DiningPage() {
         </SectionWrapper>
       </div>
 
-      <div className="relative bg-white w-full py-14 sm:py-18 md:py-20">
-        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 lg:px-0 xl:px-2">
+      {/* Additional options */}
+      <div className="relative bg-white w-full py-14 sm:py-16">
+        <SectionWrapper className="w-full max-w-screen-lg xl:max-w-screen-xl mx-auto text-center px-6 sm:px-8 lg:px-0 xl:px-2">
 
           <motion.h1 variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-primary pb-2 md:pb-6 lg:pb-10 px-6 leading-snugged">
+            className="heading-primary pb-2 md:pb-6 lg:pb-10 leading-snugged">
             {t("diningPage.extras.sectionTitle")}
           </motion.h1>
 
@@ -447,20 +452,20 @@ export default function DiningPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="max-w-5xl mx-auto body-text text-center px-6 mb-10 leading-snugged">
+            className="max-w-5xl mx-auto body-text text-center mb-10 leading-snugged">
             {t("diningPage.extras.sectionSubtitle")}
           </motion.p>
 
           <motion.img variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }} src={extraImg} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] sm:px-10 md:px-8 lg:px-10 object-cover object-center mt-8 mb-4" />
+            viewport={{ once: true, amount: 0.3 }} src={extraImg} className="w-full max-w-screen-xl mx-auto h-[320px] sm:h-[420px] md:h-[540px] lg:h-[580px] xl:h-[680px] lg:px-10 object-cover object-center mt-8 mb-4" />
 
-          <div className="grid grid-cols-1 gap-3 sm:px-10">
+          <div className="grid grid-cols-1 gap-3">
             {extras.map((item, i) => (
               <div
                 key={i}
-                className="overflow-hidden flex flex-col md:px-10 lg:px-0">
+                className="overflow-hidden flex flex-col">
                 {/* TEXT */}
                 <div className="p-2 mt-4 flex flex-col flex-grow">
                   <motion.h2

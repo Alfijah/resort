@@ -11,10 +11,10 @@ export default function ActiviteitenSection() {
 
     return (
         <SectionWrapper
-            className="relative w-full max-w-screen-2xl mx-auto sm:px-8 lg:px-8 xl:px-14 flex flex-col lg:flex-row items-start lg:items-center overscroll-x-none mt-2 sm:mt-4 lg:mt-12">
+            className="relative bg-white w-full max-w-screen-2xl mx-auto sm:px-8 lg:px-8 xl:px-14 py-14 sm:py-16 flex flex-col gap-12 lg:flex-row items-start lg:items-center overscroll-x-none lg:mt-12">
 
             <motion.div variants={container}
-                className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto px-6 sm:px-0 py-12 md:py-16 lg:py-20">
+                className="flex flex-col items-start justify-center w-full lg:w-1/3 mx-auto px-6 sm:px-0 lg:py-20">
                 <motion.h1 variants={fadeInUp}
                     className="heading-primary">{t("activiteiten.title")}</motion.h1>
                 <motion.p variants={fadeInUp}
