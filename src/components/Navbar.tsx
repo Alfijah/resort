@@ -134,7 +134,7 @@ export default function Navbar() {
             </AnimatePresence>
 
             {/* DESKTOP NAVBAR (≥1260px) */}
-            <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-2xl mx-auto lg:px-16 text-xs uppercase tracking-widest">
+            <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-xl mx-auto text-xs uppercase tracking-widest">
                 {/* Left links */}
                 <ul className="flex justify-end gap-8 xl:px-20">
                     <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>

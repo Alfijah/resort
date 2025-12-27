@@ -53,8 +53,7 @@ export default function Carousel({
     ? (containerWidth - gap * (slidesPerView - 1)) / slidesPerView
     : 0;
 
-  const effectiveSlideWidth =
-    slidesPerView === 1 ? window.innerWidth : slideWidth;
+  const effectiveSlideWidth = slideWidth;
 
   const step = effectiveSlideWidth + gap;
 

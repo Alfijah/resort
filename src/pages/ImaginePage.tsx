@@ -42,10 +42,10 @@ export default function ImaginePage() {
 
 
             {/* TEXT SCROLLING LAYER */}
-            <SectionWrapper className="relative z-11 h-full overflow-y-scroll overscroll-none px-8 sm:px-12 md:px-20 lg:px-40 pt-40 pb-48 
+            <SectionWrapper className="relative z-11 h-full overflow-y-scroll overscroll-none px-8 sm:px-12 md:px-20 lg:px-0 pt-40 pb-48 
                             text-white backdrop-blur-[1px] scrollbar-none">
 
-                <div className="max-w-3xl mx-auto space-y-6 leading-relaxed">
+                <div className="max-w-screen-lg mx-auto space-y-6 leading-relaxed">
                     <motion.h1 variants={fadeInUp} className="hero text-center text-3xl md:text-5xl pb-2 md:pb-6 xl:pb-8 text-white font-extrabold leading-snugged text-shadow-lg/30">
                         {t("imagine.title")}
                     </motion.h1>

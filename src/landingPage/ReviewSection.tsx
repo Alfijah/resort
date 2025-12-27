@@ -27,7 +27,7 @@ export default function ReviewsSection() {
 
     return (
         <SectionWrapper amount={0.15} 
-        className="relative w-full max-w-screen-2xl mx-auto text-grey px-6 sm:px-8 lg:px-22 xl:xl:px-28 py-16 sm:py-16">
+        className="relative w-full max-w-screen-xl mx-auto text-grey px-6 sm:px-8 lg:px-0 py-16 sm:py-16">
             <div>
                 <motion.p
                     variants={fadeInUp}

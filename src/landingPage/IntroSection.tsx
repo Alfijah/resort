@@ -106,7 +106,7 @@ export default function IntroSection() {
             return 0.44; // xl
         }
         if (width >= 1024) {
-            return 0.54; // lg
+            return 0.60; // lg
         }
         if (width >= 768) {
             return 0.48; // md
@@ -116,10 +116,10 @@ export default function IntroSection() {
 
     return (
         <SectionWrapper
-            className="relative w-full flex flex-col gap-12 items-center lg:items-start sm:px-8 lg:px-8 xl:px-14 py-14 sm:py-16 overscroll-x-none">
+            className="relative w-full max-w-screen-2xl mx-auto flex flex-col gap-12 items-center lg:items-start sm:px-8 lg:px-16 py-14 sm:py-16 overscroll-x-none">
 
             <motion.div variants={container}
-                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full lg:max-w-5xl mx-auto px-6 sm:px-0 lg:px-22 lg:py-16">
+                className="flex flex-col text-start md:items-center md:justify-center md:text-center w-full mx-auto px-6 sm:px-0 lg:px-10 xl:px-50">
                 <motion.h1 variants={fadeInUp}
                     className="heading-primary">{t("intro.title")}</motion.h1>
                 <motion.p variants={fadeInUp}
@@ -129,13 +129,13 @@ export default function IntroSection() {
             </motion.div>
 
             <motion.div variants={fadeInUp}
-                className="w-full max-w-screen-2xl mx-auto">
-                <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[320px] sm:h-[348px] md:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
+                className="w-full mx-auto">
+                <div ref={containerRefDesktop} className="relative w-full overflow-hidden h-[320px] sm:h-[348px] md:h-[480px] flex items-center justify-center mx-auto">
 
                     {!isMobile && (
                         <motion.div variants={fadeInUp}
-                            className="w-full max-w-screen-2xl mx-auto lg:px-14">
-                            <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[480px] flex items-center justify-center max-w-screen-2xl mx-auto">
+                            className="w-full max-w-screen-xl mx-auto">
+                            <div className="relative w-full overflow-hidden h-[240px] sm:h-[348px] md:h-[480px] flex items-center justify-center">
                                 {/* Pijlen */}
                                 <CarouselArrow direction="left" onClick={prev} />
 
