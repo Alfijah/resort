@@ -20,7 +20,6 @@ export default function LandingPage() {
       <ReviewsSection />
       <ReserveCtaSection />
       <ReserverenContactBar />
-
     </>
   );
 }

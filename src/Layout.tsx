@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Outlet, useLocation } from "react-router-dom";
+import WhatsAppIcon from "./components/tools/WhatsAppIcon";
 
 export default function Layout() {
   const location = useLocation();
@@ -15,6 +16,7 @@ export default function Layout() {
       <Navbar />
       <main className="flex-grow">
         <Outlet />
+        <WhatsAppIcon />
       </main>
       {!shouldHideFooter && <Footer />}
     </div>

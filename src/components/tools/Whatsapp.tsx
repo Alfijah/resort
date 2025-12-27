@@ -1,25 +1,38 @@
 import { useTranslation } from "react-i18next";
+import { FaWhatsapp } from "react-icons/fa";
 
 type WhatsAppProps = {
-  label?: string; // optioneel → als je geen label geeft, gebruik default
+  variant?: "text" | "icon" | "both";
+  className?: string;
+  iconClassName?: string;
 };
 
-export default function WhatsApp({ label }: WhatsAppProps) {
+export default function WhatsApp({
+  variant = "text",
+  className = "",
+  iconClassName = "",
+}: WhatsAppProps) {
   const { t } = useTranslation();
 
-  const displayLabel = label ?? t("footer.phone");
+  return (
+    <a
+      href="https://wa.me/5978592337"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex items-center gap-2 ${className}`}
+      aria-label="Contact via WhatsApp"
+    >
+      {(variant === "icon" || variant === "both") && (
+        <FaWhatsapp
+          className={`text-sky-900 text-5xl ${iconClassName}`}
+        />
+      )}
 
-    return(
-        <p className="body-text mt-2">
-            <span className="">{displayLabel}:</span>{" "}
-            <a
-              href="https://wa.me/5978592337"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=""
-            >
-              <u>+597 8592337</u>
-            </a>
-          </p>
-    )
+      {(variant === "text" || variant === "both") && (
+        <span className="body-text">
+          {t("footer.phone")}: <u>+597 8592337</u>
+        </span>
+      )}
+    </a>
+  );
 }
