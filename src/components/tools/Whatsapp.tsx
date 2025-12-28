@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { FaWhatsapp } from "react-icons/fa";
+import { PiWhatsappLogoThin } from "react-icons/pi";
 
 type WhatsAppProps = {
   variant?: "text" | "icon" | "both";
@@ -23,8 +23,8 @@ export default function WhatsApp({
       aria-label="Contact via WhatsApp"
     >
       {(variant === "icon" || variant === "both") && (
-        <FaWhatsapp
-          className={`text-sky-900 text-5xl ${iconClassName}`}
+        <PiWhatsappLogoThin
+          className={`text-sky-900 text-4xl ${iconClassName}`}
         />
       )}
 
