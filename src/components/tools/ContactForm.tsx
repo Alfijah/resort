@@ -45,6 +45,8 @@ export default function ContactForm() {
         <form
             onSubmit={handleSubmit}
             className="w-full body-text mx-auto bg-white p-6 md:p-10 mt-8 shadow-sm space-y-6"
+            method="post"
+             data-netlify="true"
         >
             {/* NAAM VELDEN */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
