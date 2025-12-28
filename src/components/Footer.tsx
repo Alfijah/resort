@@ -87,9 +87,9 @@ export default function Footer() {
       <div className="w-full h-px bg-white/50 my-4"></div>
 
       {/* BOTTOM CREDITS */}
-      <div className="text-center text-white text-xs lg:-mb-10 tracking-wide leading-relaxed">
+      <div className="text-center text-white text-sm lg:-mb-10 tracking-wide leading-relaxed">
         &copy; {new Date().getFullYear()} Sendang Redjo — {t("footer.builtBy")} 
-        <span><a href="https://nl.linkedin.com/in/alfijah-sarban" className="hover:text-underline">alfijah.sarban.</a></span>
+        <span><a href="https://nl.linkedin.com/in/alfijah-sarban" className="hover:text-underline"><u>Alfijah-Sarban.</u></a></span>
       </div>
     </footer>
   );

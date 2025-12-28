@@ -6,7 +6,7 @@ export default function WhatsAppIcon() {
           <WhatsApp
             variant="icon"
             iconClassName="text-white text-2xl"
-            className="customGreen p-1 shadow-lg hover:bg-red-400 transition"
+            className="customGreen p-1 shadow-2xl hover:bg-red-400 transition"
           />
         </div>
     )

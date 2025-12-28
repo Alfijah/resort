@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import SectionWrapper from "../animations/SectionWrapper";
 import { fadeInUp } from "../animations/Varianten";
 import { useTranslation } from "react-i18next";
+import ReserverenContactBar from "../components/tools/ReserverenContactBar";
 import WhatsApp from "../components/tools/Whatsapp";
 import TarievenTable from "../components/tools/TarievenTabel";
 import img from "../assets/reserverenPage/hero.jpeg"
@@ -53,63 +54,63 @@ export default function ReserverenPage() {
         </SectionWrapper>
       </div>
 
-        {/* Subtitle Reserveren */}
-        <div className="relative bg-white w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
-          <SectionWrapper
-            className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start w-full">
-            <motion.h2
-              variants={fadeInUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              className="heading-secondary text-left">
-              {t("reserverenPage.contactTitle")}
-            </motion.h2>
+      {/* Subtitle Reserveren */}
+      <div className="relative bg-white w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+        <SectionWrapper
+          className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start w-full">
+          <motion.h2
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-secondary text-left">
+            {t("reserverenPage.contactTitle")}
+          </motion.h2>
 
-            <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-              {t("reserverenPage.contactSubtitle")}
-            </motion.p>
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            {t("reserverenPage.contactSubtitle")}
+          </motion.p>
 
-            <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-              <WhatsApp />
-            </motion.p>
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            <WhatsApp />
+          </motion.p>
 
-            <motion.p variants={fadeInUp} className="body-text text-left md:text-center leading-snugged">
-              {t("reserverenPage.emailLabel")}: info@tukunari-experience.com
-            </motion.p>
+          <motion.p variants={fadeInUp} className="body-text text-left md:text-center leading-snugged">
+            {t("reserverenPage.emailLabel")}: info@tukunari-experience.com
+          </motion.p>
 
-          </SectionWrapper>
-        </div>
+        </SectionWrapper>
+      </div>
 
-        {/* Subtitle Tarieven */}
-        <div className="relative w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
-          <SectionWrapper
-            className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
-            <motion.h2
-              variants={fadeInUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              className="heading-secondary text-left">
-              {t("reserverenPage.tarievenTitle")}
-            </motion.h2>
+      {/* Subtitle Tarieven */}
+      <div className="relative w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+        <SectionWrapper
+          className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
+          <motion.h2
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-secondary text-left">
+            {t("reserverenPage.tarievenTitle")}
+          </motion.h2>
 
-            <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-              {t("reserverenPage.tarievenSub")}
-            </motion.p>
-            <div className="">
-              <TarievenTable />
-            </div>
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            {t("reserverenPage.tarievenSub")}
+          </motion.p>
+          <div className="">
+            <TarievenTable />
+          </div>
 
-            <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-              *{t("reserverenPage.tariefRemark")}
-            </motion.p>
-          </SectionWrapper>
-        </div>
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            *{t("reserverenPage.tariefRemark")}
+          </motion.p>
+        </SectionWrapper>
+      </div>
 
-        {/* INCLUSIEF */}
-        <SectionWrapper className="w-full bg-white py-14 sm:py-16 px-6 sm:px-8 lg:px-0">
-          <div className="max-w-screen-lg mx-auto">
+      {/* INCLUSIEF */}
+      <SectionWrapper className="w-full bg-white py-14 sm:py-16 px-6 sm:px-8 lg:px-0">
+        <div className="max-w-screen-lg mx-auto">
           <motion.h2
             variants={fadeInUp}
             initial="hidden"
@@ -131,106 +132,108 @@ export default function ReserverenPage() {
               </motion.li>
             ))}
           </ul>
-          </div>
-        </SectionWrapper>
+        </div>
+      </SectionWrapper>
 
-        {/* NIET INBEGREPEN */}
-        <SectionWrapper className="w-full max-w-screen-lg mx-auto px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+      {/* NIET INBEGREPEN */}
+      <SectionWrapper className="w-full max-w-screen-lg mx-auto px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+        <motion.h2
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="heading-secondary text-left">
+          {t("reserverenPage.nietInbegrepenTitle")}
+        </motion.h2>
+
+        <ul className="body-text space-y-2">
+          {excludedList.map((item: string, i: number) => (
+            <motion.li key={i} variants={fadeInUp} className="flex items-start gap-2">
+              <img
+                src={icon}
+                alt=""
+                className="w-4 h-4 object-contain mt-1"
+              />
+              {item}
+            </motion.li>
+          ))}
+        </ul>
+      </SectionWrapper>
+
+      {/* HUISREGELS */}
+      <div className="relative bg-white w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+        <SectionWrapper
+          className="max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
           <motion.h2
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className="heading-secondary text-left">
-            {t("reserverenPage.nietInbegrepenTitle")}
+            {t("reserverenPage.huisregelsTitle")}
           </motion.h2>
 
-          <ul className="body-text space-y-2">
-            {excludedList.map((item: string, i: number) => (
-              <motion.li key={i} variants={fadeInUp} className="flex items-start gap-2">
-                <img
-                  src={icon}
-                  alt=""
-                  className="w-4 h-4 object-contain mt-1"
-                />
-                {item}
-              </motion.li>
-            ))}
-          </ul>
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            {t("reserverenPage.huisregelsText")}
+          </motion.p>
+
+          <motion.a variants={fadeInUp}
+            href="src\assets\reserverenPage\Huisregels-Vrijwaring.pdf"
+            target="_blank" className="body-text text-left leading-snugged">
+            <u>{t("reserverenPage.huisregelsButton")}</u>
+          </motion.a>
         </SectionWrapper>
+      </div>
 
-        {/* HUISREGELS */}
-        <div className="relative bg-white w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
-          <SectionWrapper
-            className="max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
-            <motion.h2
-              variants={fadeInUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              className="heading-secondary text-left">
-              {t("reserverenPage.huisregelsTitle")}
-            </motion.h2>
+      {/* BELANGRIJKE INFO */}
+      <SectionWrapper className="w-full max-w-screen-lg mx-auto px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+        <motion.h2
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="heading-secondary text-left pb-4">
+          {t("reserverenPage.belangrijkTitle")}
+        </motion.h2>
 
-            <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-              {t("reserverenPage.huisregelsText")}
-            </motion.p>
+        <ul className="body-text space-y-2">
+          {importantList.map((item: string, i: number) => (
+            <motion.li key={i} variants={fadeInUp} className="flex items-start gap-2">
+              <img
+                src={icon}
+                alt=""
+                className="w-4 h-4 object-contain mt-1"
+              />
+              {item}
+            </motion.li>
+          ))}
+        </ul>
+      </SectionWrapper>
 
-            <motion.a variants={fadeInUp}
-              href="src\assets\reserverenPage\Huisregels-Vrijwaring.pdf"
-              target="_blank" className="body-text text-left leading-snugged">
-              <u>{t("reserverenPage.huisregelsButton")}</u>
-            </motion.a>
-          </SectionWrapper>
-        </div>
-
-        {/* BELANGRIJKE INFO */}
-        <SectionWrapper className="w-full max-w-screen-lg mx-auto px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+      {/* CTA */}
+      <div className="relative bg-white w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+        <SectionWrapper
+          className="max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
           <motion.h2
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="heading-secondary text-left pb-4">
-            {t("reserverenPage.belangrijkTitle")}
+            className="heading-secondary text-left">
+            {t("reserverenPage.ctaText")}
           </motion.h2>
 
-          <ul className="body-text space-y-2">
-            {importantList.map((item: string, i: number) => (
-              <motion.li key={i} variants={fadeInUp} className="flex items-start gap-2">
-                <img
-                  src={icon}
-                  alt=""
-                  className="w-4 h-4 object-contain mt-1"
-                />
-                {item}
-              </motion.li>
-            ))}
-          </ul>
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            <WhatsApp />
+          </motion.p>
+
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            {t("reserverenPage.emailLabel")}: info@tukunari-experience.com
+          </motion.p>
         </SectionWrapper>
-
-        {/* CTA */}
-        <div className="relative bg-white w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
-          <SectionWrapper
-            className="max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
-            <motion.h2
-              variants={fadeInUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              className="heading-secondary text-left">
-              {t("reserverenPage.ctaText")}
-            </motion.h2>
-
-            <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-              <WhatsApp />
-            </motion.p>
-
-            <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-              {t("reserverenPage.emailLabel")}: info@tukunari-experience.com
-            </motion.p>
-          </SectionWrapper>
-        </div>
       </div>
+      <ReserverenContactBar />
+
+    </div>
   );
 }

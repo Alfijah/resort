@@ -84,8 +84,8 @@ export default function LanguageSwitcher({ isScrolled }: LanguageDropdownProps) 
               <li key={lang.code}>
                 <button
                   onClick={() => handleChange(lang.code)}
-                  className={`w-full text-left px-4 py-2 hover:bg-black/20 hover:text-red-400 transition-all cursor-pointer text-xs
-                  ${currentLang === lang.code ? "font-bold textGreen underline" : ""}`}>
+                  className={`w-full text-left px-4 py-2 hover:bg-black/20 hover:text-red-400 transition-all cursor-pointer text-sm
+                  ${currentLang === lang.code ? "font-bold white underline" : ""}`}>
                   {lang.label}
                 </button>
               </li>

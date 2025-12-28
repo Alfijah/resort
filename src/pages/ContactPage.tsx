@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
+import ReserverenContactBar from "../components/tools/ReserverenContactBar";
 import img from "../assets/contactPage/img1.jpg"
 import img1 from "../assets/contactPage/entrance.jpg"
 import img2 from "../assets/contactPage/map.jpg"
@@ -91,7 +92,7 @@ export default function ContactPage() {
       </div>
 
       {/* Bereikbaarheid en route */}
-      <div className="relative bg-white w-full py-14 sm:py-16 px-6 sm:px-8 lg:px-28">
+      <div className="relative bg-white w-full py-14 sm:py-16 px-6 sm:px-8 lg:px-0">
         <SectionWrapper className="w-full max-w-screen-xl mx-auto text-center">
 
           <motion.h1 variants={fadeInUp}
@@ -103,7 +104,7 @@ export default function ContactPage() {
           </motion.h1>
 
           {/* GRID STRUCTUUR */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
             {items.map((item, i) => (
               <div
@@ -118,7 +119,7 @@ export default function ContactPage() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="w-full h-75 sm:h-125 lg:h-80 object-cover"
+                  className="w-full h-75 sm:h-145 md:h-60 lg:h-80 object-cover"
                 />
 
                 {/* TEXT */}
@@ -147,6 +148,8 @@ export default function ContactPage() {
           </div>
         </SectionWrapper>
       </div>
+      <ReserverenContactBar />
+
     </>
   );
 }
