@@ -88,7 +88,7 @@ export default function ReviewsSection() {
                         alt="Imagine icon"
                         className="w-8 h-8 object-contain font-bold group-hover:opacity-100 transition" />
 
-                    <span className="body-text icon text-sm md:text-base leading-relaxed group-hover:underline group-hover:text-white transition">
+                    <span className="body-text icon text-sm md:text-base leading-relaxed group-hover:underline underline group-hover:text-white transition">
                         {t("reviews.button")}
                     </span>
                 </motion.a>

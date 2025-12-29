@@ -298,8 +298,12 @@
         "contactSubtitle": "Reserveren kan uitsluitend via WhatsApp of e-mail. Wij reageren snel en helpen je graag verder.",
         "whatsappLabel": "WhatsApp",
         "emailLabel": "E-mail",
-        "tarievenTitle": "Tarieven",
+        "tarievenTitle": "Tarieven per persoon",
         "tarievenSub": "Dagverblijf van 09:00 – 21:00 uur",
+        "tarievenTable": {
+            "persons": "Aantal personen",
+            "price": "Prijs per persoon"
+        },
         "tarieven": [
             {
                 "personen": "7 personen",

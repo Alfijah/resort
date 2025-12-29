@@ -44,7 +44,7 @@ export default function HeroSection() {
                         className="w-8 h-8 object-contain font-bold group-hover:opacity-100 transition"
                     />
 
-                    <span className="icon text-sm md:text-base text-white leading-relaxed text-shadow-lg group-hover:underline group-hover:text-white transition">
+                    <span className="icon text-sm md:text-base text-white leading-relaxed text-shadow-lg group-hover:underline underline group-hover:text-white transition">
                         <Link to="/imagine">{t("imagine.title")}</Link>
                     </span>
                 </motion.div>

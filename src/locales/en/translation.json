@@ -298,8 +298,12 @@
     "contactSubtitle": "Reservations can be made via WhatsApp or email. We respond quickly and are happy to assist.",
     "whatsappLabel": "WhatsApp",
     "emailLabel": "E-mail",
-    "tarievenTitle": "Rates",
+    "tarievenTitle": "Rates per person",
     "tarievenSub": "Day retreat from 09:00 – 21:00",
+    "tarievenTable": {
+            "persons": "Number of guests",
+            "price": "Price per person"
+        },
     "tarieven": [
       {
         "personen": "7 persons",

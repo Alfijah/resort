@@ -297,8 +297,12 @@
     "contactSubtitle": "Las reservas se realizan exclusivamente por WhatsApp o correo electrónico. Respondemos rápido y estamos encantados de ayudarte.",
     "whatsappLabel": "WhatsApp",
     "emailLabel": "Correo electrónico",
-    "tarievenTitle": "Tarifas",
+    "tarievenTitle": "Tarifas por persona",
     "tarievenSub": "Estadía diaria de 09:00 a 21:00",
+    "tarievenTable": {
+            "persons": "Número de personas",
+            "price": "Precio por persona"
+        },
     "tarieven": [
       {
         "personen": "7 personas",
