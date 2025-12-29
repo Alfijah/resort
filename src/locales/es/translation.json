@@ -88,8 +88,8 @@
     "kicker": "Reservas",
     "title": "¿Listo para tu día junto al lago?",
     "subtitle": "Ya sea para desconectar o simplemente respirar, tu cabaña te está esperando. Te recibimos con los brazos abiertos, una mesa servida y un lago en completa calma.",
-    "primary": "Reserva tu cabaña",
-    "secondary": "Haz tu pregunta",
+    "primary": "Ver tarifas",
+    "secondary": "Consultar disponibilidad",
     "highlightKicker": "Más cerca de lo que imaginas",
     "highlightText": "A solo 20 minutos de Paramaribo, entras en un mundo de silencio, agua y hospitalidad javanesa. Un lujo escondido para quienes eligen la tranquilidad de forma consciente."
   },
@@ -286,7 +286,9 @@
     },
     "whatsapp": {
       "title": "WhatsApp",
-      "subtitle": "¿Tienes una pregunta, quieres reservar o necesitas más información? Envíanos un mensaje por WhatsApp — respondemos rápido."
+      "subtitle": "Las preguntas frecuentes sobre precios y arreglos se pueden encontrar en nuestra ",
+      "subtitlePricing": "página de reservas.",
+      "subtitle2": "¿Tienes alguna pregunta específica, deseas hacer una reserva o consultar la disponibilidad? Contáctanos directamente por WhatsApp."
     }
   },
   "reserverenPage": {
@@ -300,9 +302,9 @@
     "tarievenTitle": "Tarifas por persona",
     "tarievenSub": "Estadía diaria de 09:00 a 21:00",
     "tarievenTable": {
-            "persons": "Número de personas",
-            "price": "Precio por persona"
-        },
+      "persons": "Número de personas",
+      "price": "Precio por persona"
+    },
     "tarieven": [
       {
         "personen": "7 personas",

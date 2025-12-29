@@ -88,8 +88,8 @@
         "kicker": "Reservas",
         "title": "Pronto para o seu dia à beira do lago?",
         "subtitle": "Seja para descansar ou simplesmente respirar — sua cabana está à sua espera. Recebemos você de braços abertos, com a mesa posta e um lago em perfeita tranquilidade.",
-        "primary": "Reserve sua cabana",
-        "secondary": "Faça sua pergunta",
+        "primary": "Ver tarifas",
+        "secondary": "Consultar disponibilidade",
         "highlightKicker": "Mais perto do que você imagina",
         "highlightText": "A apenas 20 minutos de Paramaribo, você entra em um mundo de silêncio, água e hospitalidade javanesa. Um luxo escondido para quem escolhe a paz de forma consciente."
     },
@@ -286,7 +286,9 @@
         },
         "whatsapp": {
             "title": "WhatsApp",
-            "subtitle": "Tem uma pergunta, quer reservar ou deseja mais informações? Envie-nos uma mensagem direto pelo WhatsApp — respondemos rapidamente."
+            "subtitle": "As perguntas frequentes sobre preços e pacotes podem ser consultadas na nossa ",
+            "subtitlePricing": "página de reservas.",
+            "subtitle2": "Tem alguma pergunta específica, deseja fazer uma reserva ou verificar a disponibilidade? Entre em contacto connosco via WhatsApp."
         }
     },
     "reserverenPage": {

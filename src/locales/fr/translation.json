@@ -286,7 +286,9 @@
         },
         "whatsapp": {
             "title": "WhatsApp",
-            "subtitle": "Une question, une réservation ou besoin d’informations ? Envoyez-nous un message via WhatsApp — nous répondons rapidement."
+            "subtitle": "Les questions fréquentes concernant les tarifs et les formules sont disponibles sur notre ",
+            "subtitlePricing": "page de réservation.",
+            "subtitle2": "Vous avez une question spécifique, vous souhaitez réserver ou vérifier les disponibilités ? Contactez-nous directement via WhatsApp."
         }
     },
     "reserverenPage": {

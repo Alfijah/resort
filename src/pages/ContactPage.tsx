@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { fadeInUp } from "../animations/Varianten";
 import ReserverenContactBar from "../components/tools/ReserverenContactBar";
 import img from "../assets/contactPage/img1.jpg"
@@ -58,7 +59,16 @@ export default function ContactPage() {
           </motion.h1>
 
           <motion.p variants={fadeInUp} className="body-text text-center leading-snugged">
-            {t("contact.whatsapp.subtitle")}
+            {t("contact.whatsapp.subtitle")} 
+            <Link
+              to="/reserveren#tarieven"
+              className="underline underline-offset-4">
+              <u>{t("contact.whatsapp.subtitlePricing")}</u>
+            </Link>
+          </motion.p>
+
+          <motion.p variants={fadeInUp} className="body-text text-center leading-snugged">
+            {t("contact.whatsapp.subtitle2")}
           </motion.p>
 
           <motion.div variants={fadeInUp} className="w-full">

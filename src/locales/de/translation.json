@@ -89,8 +89,8 @@
         "kicker": "Reservierungen",
         "title": "Bereit für deinen Tag am See?",
         "subtitle": "Ob du entfliehen oder einfach tief durchatmen möchtest – deine Cabana wartet auf dich. Wir empfangen dich mit offenen Armen, einem gedeckten Tisch und einem stillen See.",
-        "primary": "Cabana reservieren",
-        "secondary": "Kontakt aufnehmen",
+        "primary": "Preise ansehen",
+        "secondary": "Verfügbarkeit anfragen",
         "highlightKicker": "Näher als du denkst",
         "highlightText": "Nur 20 Minuten von Paramaribo entfernt trittst du ein in eine Welt aus Stille, Wasser und javanischer Gastfreundschaft. Ein verborgener Luxus – für alle, die bewusst Ruhe wählen."
     },
@@ -287,7 +287,9 @@
         },
         "whatsapp": {
             "title": "WhatsApp",
-            "subtitle": "Hast du eine Frage oder möchtest reservieren? Schicke uns eine WhatsApp-Nachricht – wir antworten schnell."
+            "subtitle": "Häufig gestellte Fragen zu Preisen und Arrangements finden Sie auf unserer ",
+            "subtitlePricing": "Reservierungsseite.",
+            "subtitle2": "Haben Sie eine konkrete Frage, möchten Sie reservieren oder die Verfügbarkeit prüfen? Kontaktieren Sie uns gerne per WhatsApp."
         }
     },
     "reserverenPage": {

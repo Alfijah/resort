@@ -83,7 +83,7 @@ export default function ReserverenPage() {
       </div>
 
       {/* Subtitle Tarieven */}
-      <div className="relative w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+      <section id="tarieven" className="scroll-mt-28 relative w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
         <SectionWrapper
           className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
           <motion.h2
@@ -106,7 +106,7 @@ export default function ReserverenPage() {
             *{t("reserverenPage.tariefRemark")}
           </motion.p>
         </SectionWrapper>
-      </div>
+      </section>
 
       {/* INCLUSIEF */}
       <SectionWrapper className="w-full bg-white py-14 sm:py-16 px-6 sm:px-8 lg:px-0">

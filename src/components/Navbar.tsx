@@ -94,6 +94,7 @@ export default function Navbar() {
                             <Link to="/cabanas" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.cabanas")}</Link>
                             <Link to="/dining" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.dining")}</Link>
                             <Link to="/activiteiten" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.activities")}</Link>
+                            <Link to="/reserveren#tarieven" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.tarifs")}</Link>
                             <Link to="/about" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.about")}</Link>
                             <Link className="nav-link menu" to="/contact" onClick={() => setIsMenuOpen(false)}>{t("nav.contact")}</Link>
                             <Link className="nav-link menu" to="/reserveren" onClick={() => setIsMenuOpen(false)}>{t("nav.book")}</Link>
@@ -134,15 +135,7 @@ export default function Navbar() {
             </AnimatePresence>
 
             {/* DESKTOP NAVBAR (≥1260px) */}
-            <div className="hidden lg:grid grid-cols-3 items-center max-w-screen-xl mx-auto text-xs uppercase tracking-widest">
-                {/* Left links */}
-                <ul className="flex justify-start gap-8">
-                    <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
-                    <li><Link to="/cabanas" className="nav-link">{t("nav.cabanas")}</Link></li>
-                    <li><Link to="/dining" className="nav-link">{t("nav.dining")}</Link></li>
-                    <li><Link to="/activiteiten" className="nav-link">{t("nav.activities")}</Link></li>
-                </ul>
-
+            <div className="hidden lg:flex items-center justify-between max-w-screen-xl mx-auto text-xs uppercase tracking-widest">
                 {/* Logo */}
                 <div className="flex justify-center">
                     <Link to=""><img
@@ -152,8 +145,13 @@ export default function Navbar() {
                     /></Link>
                 </div>
 
-                {/* Right links */}
-                <div className="flex justify-end gap-8 items-center">
+                {/* Left links */}
+                <ul className="flex justify-end items-center gap-8">
+                    <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
+                    <li><Link to="/cabanas" className="nav-link">{t("nav.cabanas")}</Link></li>
+                    <li><Link to="/dining" className="nav-link">{t("nav.dining")}</Link></li>
+                    <li><Link to="/activiteiten" className="nav-link">{t("nav.activities")}</Link></li>
+                    <li><Link to="/reserveren#tarieven" className="nav-link">{t("nav.tarifs")}</Link></li>
                     <ul className="flex items-center gap-10">
                         <li><Link className="nav-link " to="/about">{t("nav.about")}</Link></li>
                         <li><Link className="nav-link" to="/contact">{t("nav.contact")}</Link></li>
@@ -162,7 +160,12 @@ export default function Navbar() {
                         <Link className="nav-link " to="/reserveren">{t("nav.book")}</Link>
                     </button>
                     <LanguageSwitcher isScrolled={isScrolled} />
-                </div>
+                </ul>
+
+                {/* Right links */}
+                {/* <div className="flex justify-end gap-8 items-center">
+
+                </div> */}
             </div>
         </nav>
     );

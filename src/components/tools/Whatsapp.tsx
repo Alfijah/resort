@@ -24,7 +24,7 @@ export default function WhatsApp({
     >
       {(variant === "icon" || variant === "both") && (
         <PiWhatsappLogoThin
-          className={`text-sky-900 text-4xl ${iconClassName}`}
+          className={`text-sky-900 text-4xl lg:text-5xl ${iconClassName}`}
         />
       )}
 

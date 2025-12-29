@@ -89,8 +89,8 @@
         "kicker": "Reserveren",
         "title": "Klaar voor jouw dag aan het meer?",
         "subtitle": "Of je nu komt om te ontsnappen of gewoon te ademen—je cabana staat voor je klaar. We ontvangen je met open armen, een gedekte tafel en een rustig meer.",
-        "primary": "Reserveer je cabana",
-        "secondary": "Neem contact op",
+        "primary": "Bekijk tarieven",
+        "secondary": "Vraag beschikbaarheid",
         "highlightKicker": "Dichterbij dan je denkt",
         "highlightText": "Op slechts 20 minuten van Paramaribo stap je in een wereld van stilte, water en Javaanse gastvrijheid. Een verborgen luxe, voor wie bewust kiest voor rust."
     },
@@ -287,7 +287,9 @@
         },
         "whatsapp": {
             "title": "WhatsApp",
-            "subtitle": "Heb je een vraag, wil je reserveren of meer informatie ontvangen? Stuur ons direct een bericht via WhatsApp — we reageren snel."
+            "subtitle": "Veelgestelde vragen over prijzen en arrangementen vind je op onze ",
+            "subtitlePricing": "reserverenpagina.",
+            "subtitle2": "Heb je een specifieke vraag, wil je reserveren of beschikbaarheid checken? Neem contact met ons op via WhatsApp."
         }
     },
     "reserverenPage": {

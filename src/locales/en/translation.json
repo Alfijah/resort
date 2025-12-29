@@ -89,8 +89,8 @@
     "kicker": "Reservations",
     "title": "Ready for your day at the lake?",
     "subtitle": "Whether you come to escape or simply to breathe—your cabana is waiting for you. We welcome you with open arms, a prepared table and a calm lake.",
-    "primary": "Book your cabana",
-    "secondary": "Contact us",
+    "primary": "View rates",
+    "secondary": "Ask for availability",
     "highlightKicker": "Closer than you think",
     "highlightText": "Just 20 minutes from Paramaribo, you step into a world of silence, water and Javanese hospitality. A hidden luxury for those who consciously choose peace."
   },
@@ -287,7 +287,9 @@
     },
     "whatsapp": {
       "title": "WhatsApp",
-      "subtitle": "Have a question or want to reserve? Send us a WhatsApp message — we respond quickly."
+      "subtitle": "Frequently asked questions about prices and arrangements can be found on our ",
+      "subtitlePricing": "reservation page.",
+      "subtitle2": "Have a specific question, want to make a reservation or check availability? Contact us via WhatsApp."
     }
   },
   "reserverenPage": {
@@ -301,9 +303,9 @@
     "tarievenTitle": "Rates per person",
     "tarievenSub": "Day retreat from 09:00 – 21:00",
     "tarievenTable": {
-            "persons": "Number of guests",
-            "price": "Price per person"
-        },
+      "persons": "Number of guests",
+      "price": "Price per person"
+    },
     "tarieven": [
       {
         "personen": "7 persons",

@@ -13,10 +13,10 @@ export default function TarievenTable() {
     <table className="w-full border-collapse text-left body-text">
       <thead>
         <tr className="border-b border-gray-400">
-          <th className="py-3 font-medium">
+          <th className="py-3 font-bold">
             {t("reserverenPage.tarievenTable.persons")}
           </th>
-          <th className="py-3 font-medium">
+          <th className="py-3 font-bold">
             {t("reserverenPage.tarievenTable.price")}
           </th>
         </tr>
