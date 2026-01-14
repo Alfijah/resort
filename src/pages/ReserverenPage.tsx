@@ -8,6 +8,7 @@ import TarievenTable from "../components/tools/TarievenTabel";
 import img from "../assets/reserverenPage/hero.jpeg"
 import img1 from "../assets/reserverenPage/image00051.jpeg"
 import icon from "../assets/icons/arrowBlackRight.png"
+import CabanaCalculator from "../components/tools/CabanaCalculator";
 
 export default function ReserverenPage() {
   const { t } = useTranslation();
@@ -64,20 +65,24 @@ export default function ReserverenPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className="heading-secondary text-left">
-            {t("reserverenPage.contactTitle")}
+              Bereken je cabanas
+            {/* {t("reserverenPage.contactTitle")} */}
           </motion.h2>
 
           <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            {t("reserverenPage.contactSubtitle")}
+            Vul het aantal gasten in. We tonen direct hoeveel cabanas we adviseren én hoe we de groep verdelen voor rust en privacy.
+            {/* {t("reserverenPage.contactSubtitle")} */}
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+          {/* <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
             <WhatsApp />
           </motion.p>
 
           <motion.p variants={fadeInUp} className="body-text text-left md:text-center leading-snugged">
             {t("reserverenPage.emailLabel")}: info@tukunari-experience.com
-          </motion.p>
+          </motion.p> */}
+
+          <CabanaCalculator />
 
         </SectionWrapper>
       </div>
@@ -102,9 +107,9 @@ export default function ReserverenPage() {
             <TarievenTable />
           </div>
 
-          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+          {/* <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
             *{t("reserverenPage.tariefRemark")}
-          </motion.p>
+          </motion.p> */}
         </SectionWrapper>
       </section>
 

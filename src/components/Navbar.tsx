@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./tools/LanguageSwitcher";
@@ -90,14 +90,14 @@ export default function Navbar() {
                             </button>
 
                             {/* Existing menu links — exact jouw code */}
-                            <Link to="" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.home")}</Link>
-                            <Link to="/cabanas" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.cabanas")}</Link>
-                            <Link to="/dining" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.dining")}</Link>
-                            <Link to="/activiteiten" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.activities")}</Link>
-                            <Link to="/reserveren#tarieven" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.tarifs")}</Link>
-                            <Link to="/about" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.about")}</Link>
-                            <Link className="nav-link menu" to="/contact" onClick={() => setIsMenuOpen(false)}>{t("nav.contact")}</Link>
-                            <Link className="nav-link menu" to="/reserveren" onClick={() => setIsMenuOpen(false)}>{t("nav.book")}</Link>
+                            <NavLink to="" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.home")}</NavLink>
+                            <NavLink to="/cabanas" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.cabanas")}</NavLink>
+                            <NavLink to="/dining" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.dining")}</NavLink>
+                            <NavLink to="/activiteiten" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.activities")}</NavLink>
+                            <NavLink to="/reserveren#tarieven" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.tarifs")}</NavLink>
+                            <NavLink to="/about" className="nav-link menu" onClick={() => setIsMenuOpen(false)}>{t("nav.about")}</NavLink>
+                            <NavLink className="nav-link menu" to="/contact" onClick={() => setIsMenuOpen(false)}>{t("nav.contact")}</NavLink>
+                            <NavLink className="nav-link menu" to="/reserveren" onClick={() => setIsMenuOpen(false)}>{t("nav.book")}</NavLink>
 
                             {/* SOCIAL ICONS ONDERAAN */}
                             <div className="mt-auto flex items-center gap-6 pl-1 pb-10 pt-4">
@@ -138,23 +138,23 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center justify-between max-w-screen-xl mx-auto text-xs uppercase tracking-widest">
                 {/* Logo */}
                 <div className="flex justify-center">
-                    <Link to=""><img
+                    <NavLink to=""><img
                         src={isScrolled ? logoDark : logoWhite}
                         alt="sendang resort logo"
                         className="h-14 w-auto"
-                    /></Link>
+                    /></NavLink>
                 </div>
 
                 {/* Left links */}
                 <ul className="flex justify-end items-center gap-8">
-                    <li><Link to="" className="nav-link">{t("nav.home")}</Link></li>
-                    <li><Link to="/cabanas" className="nav-link">{t("nav.cabanas")}</Link></li>
-                    <li><Link to="/dining" className="nav-link">{t("nav.dining")}</Link></li>
-                    <li><Link to="/activiteiten" className="nav-link">{t("nav.activities")}</Link></li>
-                    <li><Link to="/reserveren#tarieven" className="nav-link">{t("nav.tarifs")}</Link></li>
+                    <li><NavLink to="" className="nav-link">{t("nav.home")}</NavLink></li>
+                    <li><NavLink to="/cabanas" className="nav-link">{t("nav.cabanas")}</NavLink></li>
+                    <li><NavLink to="/dining" className="nav-link">{t("nav.dining")}</NavLink></li>
+                    <li><NavLink to="/activiteiten" className="nav-link">{t("nav.activities")}</NavLink></li>
+                    <li><NavLink to="/reserveren#tarieven" className="nav-link">{t("nav.tarifs")}</NavLink></li>
                     <ul className="flex items-center gap-10">
-                        <li><Link className="nav-link " to="/about">{t("nav.about")}</Link></li>
-                        <li><Link className="nav-link" to="/contact">{t("nav.contact")}</Link></li>
+                        <li><NavLink className="nav-link " to="/about">{t("nav.about")}</NavLink></li>
+                        <li><NavLink className="nav-link" to="/contact">{t("nav.contact")}</NavLink></li>
                     </ul>
                     <button className="customGreen px-6 py-3 uppercase tracking-widest hover:bg-red-400 text-white transition-all cursor-pointer">
                         <Link className="nav-link " to="/reserveren">{t("nav.book")}</Link>

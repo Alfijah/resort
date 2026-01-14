@@ -308,15 +308,7 @@
         },
         "tarieven": [
             {
-                "personen": "7 personen",
-                "prijs": "USD 85*"
-            },
-            {
-                "personen": "6 personen",
-                "prijs": "USD 90*"
-            },
-            {
-                "personen": "5 personen",
+                "personen": "5 + personen",
                 "prijs": "USD 95"
             },
             {
