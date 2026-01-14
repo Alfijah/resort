@@ -300,7 +300,7 @@
         "whatsappLabel": "WhatsApp",
         "emailLabel": "E-mail",
         "tarievenTitle": "Tarifs par personne",
-        "tarievenSub": "Séjour journalier de 09:00 à 21:00",
+        "tarievenSub": "Séjour journalier de 09:30 à 21:00",
         "tarievenTable": {
             "persons": "Nombre de personnes",
             "price": "Prix par personne"

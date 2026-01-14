@@ -65,7 +65,7 @@ export default function ReserverenPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className="heading-secondary text-left">
-              Bereken je cabanas
+            Bereken je cabanas
             {/* {t("reserverenPage.contactTitle")} */}
           </motion.h2>
 
@@ -102,6 +102,10 @@ export default function ReserverenPage() {
 
           <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
             {t("reserverenPage.tarievenSub")}
+          </motion.p>
+
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            {t("reserverenPage.tarievenCondition")}
           </motion.p>
           <div className="">
             <TarievenTable />

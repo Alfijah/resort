@@ -301,7 +301,7 @@
         "whatsappLabel": "WhatsApp",
         "emailLabel": "E-Mail",
         "tarievenTitle": "Preise pro person",
-        "tarievenSub": "Tagesaufenthalt von 09:00 – 21:00 Uhr",
+        "tarievenSub": "Tagesaufenthalt von 09:30 – 21:00 Uhr",
         "tarievenTable": {
             "persons": "Anzahl der Personen",
             "price": "Preis pro Person"

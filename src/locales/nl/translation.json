@@ -301,30 +301,31 @@
         "whatsappLabel": "WhatsApp",
         "emailLabel": "E-mail",
         "tarievenTitle": "Tarieven per persoon",
-        "tarievenSub": "Dagverblijf van 09:00 – 21:00 uur",
+        "tarievenSub": "Dagverblijf van 09:30 – 21:00 uur",
+        "tarievenCondition": "Kinderen tot en met 5 jaar worden niet meegerekend in de prijs.",
         "tarievenTable": {
             "persons": "Aantal personen",
             "price": "Prijs per persoon"
         },
         "tarieven": [
             {
-                "personen": "5 + personen",
+                "personen": "5 + (meest gekozen)",
                 "prijs": "USD 95"
             },
             {
-                "personen": "4 personen",
+                "personen": "4",
                 "prijs": "USD 110"
             },
             {
-                "personen": "3 personen",
+                "personen": "3",
                 "prijs": "USD 135"
             },
             {
-                "personen": "2 personen",
+                "personen": "2",
                 "prijs": "USD 175"
             },
             {
-                "personen": "1 persoon",
+                "personen": "1",
                 "prijs": "USD 295"
             }
         ],
