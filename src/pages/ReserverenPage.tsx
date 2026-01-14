@@ -70,7 +70,7 @@ export default function ReserverenPage() {
           </motion.h2>
 
           <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            Vul het aantal gasten in. We tonen direct hoeveel cabanas we adviseren én hoe we de groep verdelen voor rust en privacy.
+            Vul het aantal personen in. We tonen direct hoeveel cabanas we adviseren én hoe we de groep verdelen voor rust en privacy.
             {/* {t("reserverenPage.contactSubtitle")} */}
           </motion.p>
 

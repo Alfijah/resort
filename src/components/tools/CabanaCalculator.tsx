@@ -78,7 +78,7 @@ export default function CabanaCalculator() {
             {/* Input */}
             <div className="flex flex-col mt-4 sm:flex-row gap-4">
                 <label className="flex items-center body-text text-left gap-2">
-                    Aantal gasten
+                    Aantal personen
                     <button
                         type="button"
                         onClick={() => setGuests((g) => Math.max(1, g - 1))}
@@ -130,7 +130,7 @@ export default function CabanaCalculator() {
 
                         <div className="sm:text-right">
                             <p className="tracking-widest text-gray-500">
-                                Verdeling
+                                Verdeling personen per cabana
                             </p>
                             <p className="font-semibold text-gray-900">
                                 {splitText}
