@@ -1,199 +1,270 @@
 import { useMemo, useState } from "react";
 
 type Result = {
-    cabanas: number;
-    split: number[]; // personen per cabana
-    note: string;
+  cabanas: number;
+  split: number[];
+  note: string;
+
+  // ✅ AANGEPAST: prijs nu op basis van totale groepsgrootte (6+)
+  pricePerPersonUsd: number | null;
+  totalAdults: number;
+  totalUsd: number | null;
 };
 
-function calcCabanaPlan(guests: number): Result | null {
-    if (!Number.isFinite(guests) || guests <= 0) return null;
+function getGroupPricePerPersonUsd(groupSize: number): number | null {
+  // ✅ AANGEPAST: 6 en 7 personen geschrapt
+  // Prijs per persoon op basis van groepsgrootte (6+)
+  // 5+ => 95 p.p. (blijft zo, ook bij grotere groepen)
+  if (groupSize >= 5) return 95;
 
-    // Regels volgens jouw input:
-    // 1-7 => 1 cabana
-    // 8-14 => 2 cabanas, verdelen over 2
-    // 15+ => 3 cabanas (of afhuur) - we tonen verdeling over 3 als advies
-    if (guests <= 7) {
-        return {
-            cabanas: 1,
-            split: [guests],
-            note: "Tot en met 7 personen reserveren we 1 cabana.",
-        };
-    }
+  const map: Record<number, number> = {
+    4: 110,
+    3: 135,
+    2: 175,
+    1: 295,
+  };
 
-    if (guests <= 14) {
-        const a = Math.ceil(guests / 2);
-        const b = guests - a;
-        return {
-            cabanas: 2,
-            split: [a, b].sort((x, y) => y - x),
-            note: "We reserveren 2 cabanas (dichtbij elkaar) voor rust en ruimte.",
-        };
-    }
+  return map[groupSize] ?? null;
+}
 
-    // 15+ -> 3 cabanas (of afhuur)
-    // Verdeling zo gelijk mogelijk:
-    const base = Math.floor(guests / 3);
-    const rest = guests % 3;
-    const split = [base, base, base].map((v, i) => v + (i < rest ? 1 : 0));
+function calcCabanaPlan(adults6plus: number): Result | null {
+  if (!Number.isFinite(adults6plus) || adults6plus <= 0) return null;
+
+  // Cabana verdeling blijft gelijk aan jouw regels
+  if (adults6plus <= 7) {
+    const pricePerPersonUsd = getGroupPricePerPersonUsd(adults6plus);
+    const totalUsd =
+      pricePerPersonUsd == null ? null : adults6plus * pricePerPersonUsd;
 
     return {
-        cabanas: 3,
-        split: split.sort((x, y) => y - x),
-        note: "Vanaf 15 personen reserveren we 3 cabanas (of in overleg exclusieve afhuur) om de rust te bewaken.",
+      cabanas: 1,
+      split: [adults6plus],
+      note: "Tot en met 7 personen reserveren we 1 cabana.",
+      pricePerPersonUsd,
+      totalAdults: adults6plus,
+      totalUsd,
     };
+  }
+
+  if (adults6plus <= 14) {
+    const a = Math.ceil(adults6plus / 2);
+    const b = adults6plus - a;
+
+    const pricePerPersonUsd = getGroupPricePerPersonUsd(adults6plus);
+    const totalUsd =
+      pricePerPersonUsd == null ? null : adults6plus * pricePerPersonUsd;
+
+    return {
+      cabanas: 2,
+      split: [a, b].sort((x, y) => y - x),
+      note: "We reserveren 2 cabanas (dichtbij elkaar) voor rust en ruimte.",
+      pricePerPersonUsd,
+      totalAdults: adults6plus,
+      totalUsd,
+    };
+  }
+
+  // 15+ -> 3 cabanas (of afhuur)
+  const base = Math.floor(adults6plus / 3);
+  const rest = adults6plus % 3;
+  const split = [base, base, base].map((v, i) => v + (i < rest ? 1 : 0));
+
+  const pricePerPersonUsd = getGroupPricePerPersonUsd(adults6plus);
+  const totalUsd =
+    pricePerPersonUsd == null ? null : adults6plus * pricePerPersonUsd;
+
+  return {
+    cabanas: 3,
+    split: split.sort((x, y) => y - x),
+    note: "Vanaf 15 personen reserveren we 3 cabanas (of in overleg exclusieve afhuur) om de rust te bewaken.",
+    pricePerPersonUsd,
+    totalAdults: adults6plus,
+    totalUsd,
+  };
+}
+
+function formatUsd(n: number) {
+  return `USD ${Math.round(n)}`;
 }
 
 export default function CabanaCalculator() {
-    const [guests, setGuests] = useState<number>(5);
+  const [adults6plus, setAdults6plus] = useState<number>(5);
+  const [kids0to5, setKids0to5] = useState<number>(0);
 
-    const result = useMemo(() => calcCabanaPlan(guests), [guests]);
+  const result = useMemo(() => calcCabanaPlan(adults6plus), [adults6plus]);
 
-    const splitText =
-        result?.split.length
-            ? result.split.join(" + ") + ` (${guests} totaal)`
-            : "";
+  const splitText =
+    result?.split.length
+      ? result.split.join(" + ")
+      : "";
 
-    // const whatsappNumber = "5978592337";
-    // const waMessage = result
-    //     ? `Hoi! We zijn met ${guests} personen. Volgens de website zijn dat ${result.cabanas} cabana(s), verdeling: ${result.split.join(
-    //         " + "
-    //     )}. Kunnen jullie de beschikbaarheid checken?`
-    //     : "Hoi! Kunnen jullie de beschikbaarheid checken?";
+  return (
+    <section className="w-full">
+      {/* Inputs */}
+      <div className="flex flex-col mt-4 gap-4">
+        <label className="flex flex-wrap items-center body-text text-left gap-2">
+          Aantal personen (6 jaar en ouder)
+          <button
+            type="button"
+            onClick={() => setAdults6plus((g) => Math.max(1, g - 1))}
+            className="ml-2 h-10 w-10 border border-gray-300 text-lg hover:bg-gray-100"
+          >
+            −
+          </button>
 
-    // const waLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    //     waMessage
-    // )}`;
+          <input
+            type="number"
+            min={1}
+            max={20}
+            value={adults6plus}
+            onChange={(e) => setAdults6plus(Number(e.target.value))}
+            className="w-24 border border-gray-300 px-4 py-2 body-text focus:outline-none focus:ring-2 focus:ring-sky-900"
+          />
 
-    return (
-        <section className="w-full">
-            {/* <div className="text-center">
-        <h2 className="heading-primary text-left">Bereken je cabanas</h2>
-        <p className="body-text mt-2">
-          Vul het aantal gasten in. We tonen direct hoeveel cabanas we adviseren
-          én hoe we de groep verdelen voor rust en privacy.
-        </p>
-      </div> */}
+          <button
+            type="button"
+            onClick={() => setAdults6plus((g) => Math.min(20, g + 1))}
+            className="h-10 w-10 border border-gray-300 text-lg hover:bg-gray-100"
+          >
+            +
+          </button>
+        </label>
 
-            {/* Input */}
-            <div className="flex flex-col mt-4 sm:flex-row gap-4">
-                <label className="flex items-center body-text text-left gap-2">
-                    Aantal personen
-                    <button
-                        type="button"
-                        onClick={() => setGuests((g) => Math.max(1, g - 1))}
-                        className="ml-4 h-10 w-10 border border-gray-300 text-lg hover:bg-gray-100"
-                    >
-                        −
-                    </button>
+        <label className="flex flex-wrap items-center body-text text-left gap-2">
+          Kinderen (t/m 5 jaar)
+          <button
+            type="button"
+            onClick={() => setKids0to5((k) => Math.max(0, k - 1))}
+            className="ml-2 h-10 w-10 border border-gray-300 text-lg hover:bg-gray-100"
+          >
+            −
+          </button>
 
-                    <input
-                        type="number"
-                        min={1}
-                        max={20}
-                        value={guests}
-                        onChange={(e) => setGuests(Number(e.target.value))}
-                        className="w-20 border border-gray-300 px-4 py-2 text-base focus:outline-none focus:ring-2 focus:ring-sky-900"
-                    />
+          <input
+            type="number"
+            min={0}
+            max={20}
+            value={kids0to5}
+            onChange={(e) => setKids0to5(Number(e.target.value))}
+            className="w-24 border border-gray-300 px-4 py-2 body-text focus:outline-none focus:ring-2 focus:ring-sky-900"
+          />
 
-                    <button
-                        type="button"
-                        onClick={() => setGuests((g) => Math.min(20, g + 1))}
-                        className="h-10 w-10 border border-gray-300 text-lg hover:bg-gray-100"
-                    >
-                        +
-                    </button>
-                </label>
+          <button
+            type="button"
+            onClick={() => setKids0to5((k) => Math.min(20, k + 1))}
+            className="h-10 w-10 border border-gray-300 text-lg hover:bg-gray-100"
+          >
+            +
+          </button>
+        </label>
 
-                {/* <a
-          href={waLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 sm:mt-8 inline-flex items-center justify-center rounded-md bg-sky-900 px-5 py-3 text-xs uppercase tracking-widest text-white hover:bg-red-400 transition"
-        >
-          Vraag beschikbaarheid
-        </a> */}
+        <p className="body-text text-gray-600">Let wel: Kinderen tot en met 5 jaar tellen niet mee in het aantal personen en verblijven kosteloos.</p>
+      </div>
+
+      {/* Result */}
+      {result && (
+        <div className="mt-8 border border-gray-200 p-6 body-text text-left">
+          <div className="flex flex-col sm:justify-between gap-4">
+            <div>
+              <p className="tracking-widest text-gray-900">Advies</p>
+              <p className="font-semibold textGreen">
+                {result.cabanas} cabana{result.cabanas > 1 ? "s" : ""}
+              </p>
+              <p className="mt-1 text-gray-600">
+                Totaal personen: <span className="font-semibold">{result.totalAdults}</span>
+                <br></br>{kids0to5 > 0 && (
+                  <>
+                    {" "}
+                    Kinderen: <span className="font-semibold">{kids0to5}</span>
+                  </>
+                )}
+              </p>
             </div>
 
-            {/* Result */}
-            {result && (
-                <div className="mt-8 border border-gray-200 bg-white/70 p-6 body-text text-left">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                        <div>
-                            <p className="tracking-widest text-gray-500">
-                                Advies
-                            </p>
-                            <p className="font-semibold textGreen">
-                                {result.cabanas} cabana{result.cabanas > 1 ? "s" : ""}
-                            </p>
-                        </div>
+            <div className="sm:text-right">
+              <p className="tracking-widest text-gray-500">
+                Verdeling per cabana
+              </p>
+              <p className="font-semibold text-gray-900">{splitText}</p>
+            </div>
+          </div>
 
-                        <div className="sm:text-right">
-                            <p className="tracking-widest text-gray-500">
-                                Verdeling personen per cabana
-                            </p>
-                            <p className="font-semibold text-gray-900">
-                                {splitText}
-                            </p>
-                        </div>
-                    </div>
+          <p className="mt-4">{result.note}</p>
 
-                    <p className="mt-4">{result.note}</p>
-                </div>
+          {/* ✅ AANGEPAST: Indicatie tarief nu alleen op groepsgrootte */}
+          <div className="mt-6 border-t border-gray-200 pt-4">
+            <p className="tracking-widest text-gray-500">Indicatie tarief</p>
+
+            {result.pricePerPersonUsd == null ? (
+              <p className="mt-2 font-semibold text-gray-900">Tarief: op aanvraag</p>
+            ) : (
+              <>
+                <p className="mt-2 text-gray-900">
+                  Tarief per persoon:{" "}
+                  <span className="font-semibold">{formatUsd(result.pricePerPersonUsd)}</span>
+                </p>
+                <p className="text-gray-900">
+                  Totaal:{" "}
+                  <span className="font-semibold">
+                    {formatUsd(result.totalUsd as number)}
+                  </span>
+                </p>
+                <p className="mt-2 text-gray-600">
+                  Het tarief is gebaseerd op de totale groepsgrootte en blijft gelijk, ook als de groep over meerdere cabana’s wordt verdeeld.
+                </p>
+              </>
             )}
 
-            {/* Cards (optioneel maar UX-top) */}
-            <div className="body-text mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-                <CabanaRuleCard
-                    active={!!result && guests <= 7}
-                    title="1 cabana"
-                    subtitle="1 t/m 7 personen"
-                />
-                <CabanaRuleCard
-                    active={!!result && guests >= 8 && guests <= 14}
-                    title="2 cabanas"
-                    subtitle="8 t/m 14 personen"
-                />
-                <CabanaRuleCard
-                    active={!!result && guests >= 15}
-                    title="3 cabanas"
-                    subtitle="15+ personen"
-                />
-            </div>
+          </div>
+        </div>
+      )}
 
-            <p className="mt-6 body-text text-gray-500">
-                *Groepen worden verdeeld om de stilte, ruimte en beleving van het resort
-                te behouden.
-            </p>
-        </section>
-    );
+      {/* Cards */}
+      <div className="body-text mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <CabanaRuleCard
+          active={!!result && adults6plus <= 7}
+          title="1 cabana"
+          subtitle="1 t/m 7 personen"
+        />
+        <CabanaRuleCard
+          active={!!result && adults6plus >= 8 && adults6plus <= 14}
+          title="2 cabanas"
+          subtitle="8 t/m 14 personen"
+        />
+        <CabanaRuleCard
+          active={!!result && adults6plus >= 15}
+          title="3 cabanas"
+          subtitle="15+ personen"
+        />
+      </div>
+
+      <p className="mt-6 body-text text-gray-500">
+        *Groepen worden verdeeld om de stilte, ruimte en beleving van het resort te behouden.
+      </p>
+    </section>
+  );
 }
 
 function CabanaRuleCard({
-    title,
-    subtitle,
-    active,
+  title,
+  subtitle,
+  active,
 }: {
-    title: string;
-    subtitle: string;
-    active?: boolean;
+  title: string;
+  subtitle: string;
+  active?: boolean;
 }) {
-    return (
-        <div
-            className={`border p-5 body-text text-left transition ${active
-                ? "border-textGreen bg-sky-900/5"
-                : "border-gray-200 bg-white"
-                }`}
-        >
-            <p className="body-text tracking-widest text-gray-500">
-                {subtitle}
-            </p>
-            <p className="mt-2 body-text font-semibold text-gray-900">{title}</p>
-            {active && (
-                <p className="mt-2 body-text textGreen font-semibold">
-                    ✓ Geselecteerd
-                </p>
-            )}
-        </div>
-    );
+  return (
+    <div
+      className={`border p-5 body-text text-left transition ${
+        active ? "border-textGreen bg-sky-900/5" : "border-gray-200 bg-white"
+      }`}
+    >
+      <p className="body-text tracking-widest text-gray-500">{subtitle}</p>
+      <p className="mt-2 body-text font-semibold text-gray-900">{title}</p>
+      {active && (
+        <p className="mt-2 body-text textGreen font-semibold">✓ Geselecteerd</p>
+      )}
+    </div>
+  );
 }

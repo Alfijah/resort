@@ -302,14 +302,14 @@
         "emailLabel": "E-mail",
         "tarievenTitle": "Tarieven per persoon",
         "tarievenSub": "Dagverblijf van 09:30 – 21:00 uur",
-        "tarievenCondition": "Kinderen tot en met 5 jaar worden niet meegerekend in de prijs.",
+        "tarievenCondition": "Kinderen tot en met 5 jaar tellen niet mee in het aantal personen en verblijven kosteloos.",
         "tarievenTable": {
             "persons": "Aantal personen",
             "price": "Prijs per persoon"
         },
         "tarieven": [
             {
-                "personen": "5 + (meest gekozen)",
+                "personen": "5 (meest gekozen)",
                 "prijs": "USD 95"
             },
             {

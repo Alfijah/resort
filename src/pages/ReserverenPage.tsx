@@ -55,8 +55,39 @@ export default function ReserverenPage() {
         </SectionWrapper>
       </div>
 
+      {/* Subtitle Tarieven */}
+      <section id="tarieven" className="scroll-mt-28 relative w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+        <SectionWrapper
+          className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
+          <motion.h2
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-secondary text-left">
+            {t("reserverenPage.tarievenTitle")}
+          </motion.h2>
+
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            {t("reserverenPage.tarievenSub")}
+          </motion.p>
+
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            {t("reserverenPage.tarievenCondition")}
+          </motion.p>
+
+          <div className="">
+            <TarievenTable />
+          </div>
+
+          {/* <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            *{t("reserverenPage.tariefRemark")}
+          </motion.p> */}
+        </SectionWrapper>
+      </section>
+
       {/* Subtitle Reserveren */}
-      <div className="relative bg-white w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
+      <div className="relative w-full bg-white px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
         <SectionWrapper
           className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start w-full">
           <motion.h2
@@ -86,36 +117,6 @@ export default function ReserverenPage() {
 
         </SectionWrapper>
       </div>
-
-      {/* Subtitle Tarieven */}
-      <section id="tarieven" className="scroll-mt-28 relative w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
-        <SectionWrapper
-          className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
-          <motion.h2
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            className="heading-secondary text-left">
-            {t("reserverenPage.tarievenTitle")}
-          </motion.h2>
-
-          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            {t("reserverenPage.tarievenSub")}
-          </motion.p>
-
-          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            {t("reserverenPage.tarievenCondition")}
-          </motion.p>
-          <div className="">
-            <TarievenTable />
-          </div>
-
-          {/* <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            *{t("reserverenPage.tariefRemark")}
-          </motion.p> */}
-        </SectionWrapper>
-      </section>
 
       {/* INCLUSIEF */}
       <SectionWrapper className="w-full bg-white py-14 sm:py-16 px-6 sm:px-8 lg:px-0">
