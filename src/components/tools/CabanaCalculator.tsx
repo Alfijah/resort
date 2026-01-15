@@ -127,6 +127,25 @@ export default function CabanaCalculator() {
                 </label>
             </div>
 
+            {/* Cards */}
+            <div className="body-text mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <CabanaRuleCard
+                    active={!!result && adults6plus <= 7}
+                    title="1 cabana"
+                    subtitle="1 t/m 7 personen"
+                />
+                <CabanaRuleCard
+                    active={!!result && adults6plus >= 8 && adults6plus <= 14}
+                    title="2 cabanas"
+                    subtitle="8 t/m 14 personen"
+                />
+                <CabanaRuleCard
+                    active={!!result && adults6plus >= 15}
+                    title="3 cabanas"
+                    subtitle="15+ personen"
+                />
+            </div>
+
             {/* Result */}
             {result && (
                 <div className="mt-8 border border-gray-200 p-6 body-text text-left">
@@ -136,7 +155,7 @@ export default function CabanaCalculator() {
                             <p className="font-semibold">
                                 {result.cabanas} cabana{result.cabanas > 1 ? "s" : ""} voor {result.totalAdults} personen
                             </p>
-                            <p className="body-text">Kinderen tot en met 5 jaar verblijven bij hun ouder(s)/verzorger(s).</p>
+                            {/* <p className="body-text">Kinderen tot en met 5 jaar </p> */}
 
                         </div>
 
@@ -185,25 +204,6 @@ export default function CabanaCalculator() {
                     </div>
                 </div>
             )}
-
-            {/* Cards */}
-            <div className="body-text mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-                <CabanaRuleCard
-                    active={!!result && adults6plus <= 7}
-                    title="1 cabana"
-                    subtitle="1 t/m 7 personen"
-                />
-                <CabanaRuleCard
-                    active={!!result && adults6plus >= 8 && adults6plus <= 14}
-                    title="2 cabanas"
-                    subtitle="8 t/m 14 personen"
-                />
-                <CabanaRuleCard
-                    active={!!result && adults6plus >= 15}
-                    title="3 cabanas"
-                    subtitle="15+ personen"
-                />
-            </div>
 
             <p className="mt-6 body-text text-gray-500">
                 *Groepen worden verdeeld om de stilte, ruimte en beleving van het resort te behouden.
