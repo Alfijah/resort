@@ -157,7 +157,7 @@ export default function CabanaCalculator() {
                     <p className="mt-6 tracking-widest text-gray-500">Belangrijk:</p>
                     <p className="mt-1">{result.note}</p>
 
-                    {/* ✅ AANGEPAST: Indicatie tarief nu alleen op groepsgrootte */}
+                    {/* Indicatie tarief nu alleen op groepsgrootte */}
                     <div className="mt-6 border-t border-gray-200 pt-4">
                         <p className="tracking-widest text-gray-500">Indicatie tarief</p>
 
@@ -229,7 +229,7 @@ function CabanaRuleCard({
             <p className="body-text tracking-widest text-gray-500">{subtitle}</p>
             <p className="mt-2 body-text font-semibold text-gray-900">{title}</p>
             {active && (
-                <p className="mt-2 body-text textGreen font-semibold">✓ Geselecteerd</p>
+                <p className="mt-2 body-text textGreen font-semibold">✓ Geadviseerd</p>
             )}
         </div>
     );
