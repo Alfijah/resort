@@ -58,7 +58,7 @@ export default function ReserverenPage() {
       {/* Subtitle Tarieven */}
       <section id="tarieven" className="scroll-mt-28 relative w-full px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
         <SectionWrapper
-          className="relative max-w-screen-lg mx-auto z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
+          className="relative max-w-screen-lg mx-auto -mt-7 z-20 flex flex-col gap-2 h-full justify-start items-left w-full">
           <motion.h2
             variants={fadeInUp}
             initial="hidden"
@@ -104,6 +104,8 @@ export default function ReserverenPage() {
             Vul het aantal personen in. We tonen direct hoeveel cabanas we adviseren én hoe we de groep verdelen voor rust en privacy.
             {/* {t("reserverenPage.contactSubtitle")} */}
           </motion.p>
+        <p className="body-text text-gray-600"><b>Let wel: Kinderen tot en met 5 jaar tellen niet mee in het aantal personen.</b></p>
+
 
           {/* <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
             <WhatsApp />
@@ -119,7 +121,7 @@ export default function ReserverenPage() {
       </div>
 
       {/* INCLUSIEF */}
-      <SectionWrapper className="w-full bg-white py-14 sm:py-16 px-6 sm:px-8 lg:px-0">
+      <SectionWrapper className="w-full py-14 sm:py-16 px-6 sm:px-8 lg:px-0">
         <div className="max-w-screen-lg mx-auto">
           <motion.h2
             variants={fadeInUp}
@@ -142,32 +144,30 @@ export default function ReserverenPage() {
               </motion.li>
             ))}
           </ul>
+
+          {/* NIET INBEGREPEN */}
+          <motion.h2
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="heading-secondary text-left mt-14">
+            {t("reserverenPage.nietInbegrepenTitle")}
+          </motion.h2>
+
+          <ul className="body-text space-y-2">
+            {excludedList.map((item: string, i: number) => (
+              <motion.li key={i} variants={fadeInUp} className="flex items-start gap-2">
+                <img
+                  src={icon}
+                  alt=""
+                  className="w-4 h-4 object-contain mt-1"
+                />
+                {item}
+              </motion.li>
+            ))}
+          </ul>
         </div>
-      </SectionWrapper>
-
-      {/* NIET INBEGREPEN */}
-      <SectionWrapper className="w-full max-w-screen-lg mx-auto px-6 sm:px-8 lg:px-0 py-14 sm:py-16">
-        <motion.h2
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="heading-secondary text-left">
-          {t("reserverenPage.nietInbegrepenTitle")}
-        </motion.h2>
-
-        <ul className="body-text space-y-2">
-          {excludedList.map((item: string, i: number) => (
-            <motion.li key={i} variants={fadeInUp} className="flex items-start gap-2">
-              <img
-                src={icon}
-                alt=""
-                className="w-4 h-4 object-contain mt-1"
-              />
-              {item}
-            </motion.li>
-          ))}
-        </ul>
       </SectionWrapper>
 
       {/* HUISREGELS */}

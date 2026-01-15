@@ -302,14 +302,14 @@
         "emailLabel": "E-mail",
         "tarievenTitle": "Tarieven per persoon",
         "tarievenSub": "Dagverblijf van 09:30 – 21:00 uur",
-        "tarievenCondition": "Kinderen tot en met 5 jaar tellen niet mee in het aantal personen en verblijven kosteloos.",
+        "tarievenCondition": "Kinderen tot en met 5 jaar worden niet meegerekend in de prijs.",
         "tarievenTable": {
             "persons": "Aantal personen",
             "price": "Prijs per persoon"
         },
         "tarieven": [
             {
-                "personen": "5 (meest gekozen)",
+                "personen": "5 +",
                 "prijs": "USD 95"
             },
             {
@@ -357,7 +357,7 @@
         "belangrijk": [
             "Maximaal 7 personen per cabana",
             "Aankomsttijd altijd vooraf reserveren",
-            "Dagverblijf: 09:00 – 21:00 uur",
+            "Dagverblijf: 09:30 – 21:00 uur",
             "We zijn niet telefonisch bereikbaar",
             "Gebruik altijd de route-instructies uit je bevestiging"
         ],
