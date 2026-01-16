@@ -8,7 +8,6 @@ import img from "../assets/contactPage/img1.jpg"
 import img1 from "../assets/contactPage/entrance.jpg"
 import img2 from "../assets/contactPage/map.jpg"
 import img3 from "../assets/contactPage/qrCode.jpg"
-import ContactForm from "../components/tools/ContactForm";
 
 export default function ContactPage() {
   const { t } = useTranslation();
@@ -80,23 +79,6 @@ export default function ContactPage() {
                 className="">
                 WhatsApp </a>
             </button>
-          </motion.div>
-
-          <motion.h2
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            className="heading-secondary text-left mt-12">
-            {t("contact.subtitle")}
-          </motion.h2>
-
-          <motion.p variants={fadeInUp} className="body-text text-center leading-snugged">
-            {t("contact.text1")}
-          </motion.p>
-
-          <motion.div className="w-full">
-            <ContactForm />
           </motion.div>
         </SectionWrapper>
       </div>
