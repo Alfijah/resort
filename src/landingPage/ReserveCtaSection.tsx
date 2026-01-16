@@ -8,13 +8,6 @@ import bgImage from "../assets/cta/img.jpeg";
 export default function ReserveCtaSection() {
     const { t } = useTranslation();
 
-    const scrollToBooking = () => {
-        const el = document.getElementById("booking-bar");
-        if (el) {
-            el.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-    };
-
     return (
         <section className="relative w-full py-14 sm:py-16 flex items-center justify-center">
 
