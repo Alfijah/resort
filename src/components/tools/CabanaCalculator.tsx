@@ -57,7 +57,7 @@ function calcCabanaPlan(adults6plus: number): Result | null {
         return {
             cabanas: 2,
             split: [a, b].sort((x, y) => y - x),
-            note: "We reserveren 2 cabanas dichtbij elkaar. Zo blijf je als groep verbonden, terwijl elke cabana zijn eigen rust en ruimte behoudt.",
+            note: "Voor deze groep reserveren we twee cabanas dicht bij elkaar. Beide cabanas staan exclusief tot jullie beschikking, zodat jullie zelf bepalen hoe jullie de ruimte gebruiken — met behoud van rust en privacy.",
             pricePerPersonUsd,
             totalAdults: adults6plus,
             totalUsd,
@@ -76,7 +76,7 @@ function calcCabanaPlan(adults6plus: number): Result | null {
     return {
         cabanas: 3,
         split: split.sort((x, y) => y - x),
-        note: "Vanaf 15 personen reserveren we 3 cabanas (of in overleg exclusieve afhuur) om de rust te bewaken.",
+        note: "Vanaf 15 personen reserveren we 3 cabanas. Deze cabanas staan exclusief tot jullie beschikking, zodat jullie zelf bepalen hoe jullie de ruimte gebruiken — met behoud van rust en privacy.",
         pricePerPersonUsd,
         totalAdults: adults6plus,
         totalUsd,
@@ -112,8 +112,9 @@ export default function CabanaCalculator() {
                             min={1}
                             max={20}
                             value={adults6plus}
-                            onChange={(e) => setAdults6plus(Number(e.target.value))}
-                            className="w-16 px-4 py-2 body-text focus:outline-none focus:ring-2 focus:ring-sky-900"
+                            readOnly
+                            inputMode="none"
+                            className="w-16 px-4 py-2 body-text pointer-events-none select-none"
                         />
 
                         <button
@@ -148,28 +149,13 @@ export default function CabanaCalculator() {
 
             {/* Result */}
             {result && (
-                <div className="mt-8 border border-gray-200 p-6 body-text text-left">
+                <div className="mt-8 border border-gray-300 p-6 body-text text-left">
                     <div className="flex flex-col sm:justify-between gap-4">
                         <div>
                             <p className="tracking-widest">Advies:</p>
                             <p className="font-semibold">
                                 {result.cabanas} cabana{result.cabanas > 1 ? "s" : ""} voor {result.totalAdults} personen
                             </p>
-                            {/* <p className="body-text">Kinderen tot en met 5 jaar </p> */}
-
-                        </div>
-
-                        <div className="sm:text-right">
-                            <p className="mt-2 tracking-widest text-gray-500">
-                                Verdeling per cabana
-                            </p>
-                            <div className="mt-1 space-y-1">
-                                {result.split.map((count, index) => (
-                                    <p key={index} className="font-semibold">
-                                        Cabana {index + 1}: {count} personen
-                                    </p>
-                                ))}
-                            </div>
                         </div>
                     </div>
 
@@ -177,7 +163,7 @@ export default function CabanaCalculator() {
                     <p className="mt-1">{result.note}</p>
 
                     {/* Indicatie tarief nu alleen op groepsgrootte */}
-                    <div className="mt-6 border-t border-gray-200 pt-4">
+                    <div className="mt-6 border-t border-gray-300 pt-4">
                         <p className="tracking-widest text-gray-500">Indicatie tarief</p>
 
                         {result.pricePerPersonUsd == null ? (
@@ -196,7 +182,7 @@ export default function CabanaCalculator() {
                                 </p>
                                 <p className="mt-6 tracking-widest text-gray-500">Belangrijk:</p>
                                 <p className="mt-1 text-gray-600">
-                                    Het tarief is gebaseerd op de totale groepsgrootte en blijft gelijk, ook als de groep over meerdere cabana’s wordt verdeeld.
+                                    Het tarief is gebaseerd op de totale groepsgrootte en blijft gelijk, ook bij toewijzing van meerdere cabanas.
                                 </p>
                             </>
                         )}
@@ -204,10 +190,6 @@ export default function CabanaCalculator() {
                     </div>
                 </div>
             )}
-
-            <p className="mt-6 body-text text-gray-500">
-                *Groepen worden verdeeld om de stilte, ruimte en beleving van het resort te behouden.
-            </p>
         </section>
     );
 }
@@ -223,13 +205,13 @@ function CabanaRuleCard({
 }) {
     return (
         <div
-            className={`border p-5 body-text text-left transition ${active ? "border-textGreen bg-sky-900/5" : "border-gray-200 bg-white"
+            className={`border p-5 body-text text-left transition ${active ? "border-textGreen bg-sky-900/5" : "border-gray-300 bg-white"
                 }`}
         >
             <p className="body-text tracking-widest text-gray-500">{subtitle}</p>
             <p className="mt-2 body-text font-semibold text-gray-900">{title}</p>
             {active && (
-                <p className="mt-2 body-text textGreen font-semibold">✓ Geadviseerd</p>
+                <p className="mt-2 body-text textGreen font-semibold">✓ Ons advies</p>
             )}
         </div>
     );

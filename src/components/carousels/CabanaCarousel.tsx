@@ -4,7 +4,7 @@ import cab2 from "../../assets/cabanasPage/lounge.jpg";
 import cab3 from "../../assets/cabanaSection/lounge2.jpg";
 import cab4 from "../../assets/cabanaSection/cab4.jpg";
 import cab5 from "../../assets/cabanaSection/cab5.jpg";
-import cab6 from "../../assets/cabanaSection/cab6.jpg";
+import cab6 from "../../assets/cabanaSection/cab6.jpeg";
 
 const images = [cab1, cab2, cab3, cab4, cab5, cab6];
 

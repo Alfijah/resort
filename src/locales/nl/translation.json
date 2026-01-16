@@ -302,6 +302,7 @@
         "emailLabel": "E-mail",
         "tarievenTitle": "Tarieven per persoon",
         "tarievenSub": "Dagverblijf van 09:30 – 21:00 uur",
+        "tijdCondition": "Aankomst- en vertrektijden zijn flexibel en worden in overleg afgestemd.",
         "tarievenCondition": "Kinderen tot en met 5 jaar worden niet meegerekend in de prijs.",
         "tarievenTable": {
             "persons": "Aantal personen",
@@ -339,7 +340,8 @@
             "Authentieke Javaanse lunch",
             "Late-afternoon BBQ (door gasten zelf te bereiden)",
             "Koffie en thee in de cabana",
-            "Frisdrank, water en sap in de koelkast",
+            "Frisdrank(Soft) waaronder Cola en Fernandes in de koelkast",
+            "Water en Surinaamse sappen (markoesa/zuurzak) in de koelkast",
             "Vrij gebruik van kajaks, zwemvesten, floaties en hengels",
             "Toegang tot het meer en de kreken van de sanctuary",
             "Persoonlijke begeleiding bij aankomst en vertrek"
@@ -347,7 +349,7 @@
         "nietInbegrepenTitle": "Niet inbegrepen (op aanvraag)",
         "nietInbegrepen": [
             "Bier, wijn en sterke dranken",
-            "Extra Javaanse gerechten op aanvraag",
+            "Extra Javaanse gerechten van het avondmenu waaronder soep of ander gerecht",
             "Catch & Cook van eigen gevangen vis"
         ],
         "huisregelsTitle": "Huisregels & vrijwaring",
@@ -355,11 +357,12 @@
         "huisregelsButton": "Download Huisregels & Vrijwaring",
         "belangrijkTitle": "Belangrijke informatie",
         "belangrijk": [
-            "Maximaal 7 personen per cabana",
-            "Aankomsttijd altijd vooraf reserveren",
-            "Dagverblijf: 09:30 – 21:00 uur",
-            "We zijn niet telefonisch bereikbaar",
-            "Gebruik altijd de route-instructies uit je bevestiging"
+            "Voor gezelschappen tot en met 7 personen reserveren wij één privé-cabana",
+            "Voor gezelschappen tussen 8 en 14 personen reserveren wij twee privé-cabanas dichtbij elkaar",
+            "Voor gezelschappen vanaf 15 personen reserveren wij standaard drie privé-cabanas. Grotere gezelschappen zijn mogelijk; de exacte indeling stemmen we altijd in overleg af om de rust en kwaliteit van het verblijf te behouden.",
+            "Het dagverblijf biedt een flexibele aankomst- en vertrektijd tussen 09:30 en uiterlijk 21:00 uur.",
+            "Aankomst vindt plaats op basis van voorafgaande reservering, waarbij wij de groep persoonlijk verwelkomen.",
+            "We zijn niet telefonisch bereikbaar"
         ],
         "ctaText": "Klaar om te reserveren?",
         "ctaButton": "Reserveer via WhatsApp"

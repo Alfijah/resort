@@ -73,6 +73,10 @@ export default function ReserverenPage() {
           </motion.p>
 
           <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
+            {t("reserverenPage.tijdCondition")}
+          </motion.p>
+
+          <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
             {t("reserverenPage.tarievenCondition")}
           </motion.p>
 
@@ -101,7 +105,7 @@ export default function ReserverenPage() {
           </motion.h2>
 
           <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            Vul het aantal personen in. We tonen direct hoeveel cabanas we adviseren én hoe we de groep verdelen voor rust en privacy.
+            Vul het aantal personen in. We tonen direct hoeveel cabanas we adviseren met oog voor rust en privacy.
             {/* {t("reserverenPage.contactSubtitle")} */}
           </motion.p>
         <p className="body-text text-gray-600"><b>Let wel: Kinderen tot en met 5 jaar tellen niet mee in het aantal personen en verblijven kosteloos bij hun ouder(s)/verzorger(s).</b></p>

@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import SectionWrapper from "../animations/SectionWrapper";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../animations/Varianten";
+import { NavLink } from "react-router-dom";
 import bgImage from "../assets/cta/img.jpeg";
 
 export default function ReserveCtaSection() {
@@ -66,14 +67,9 @@ export default function ReserveCtaSection() {
                             </p>
 
                             <motion.div variants={fadeInUp} className="flex flex-col w-full gap-4">
-                                <a
-                                    href="#reserveren"
-
-                                    onClick={scrollToBooking}
-                                    className="customGreen w-full hover:bg-red-400 transition-colors py-3 explore-button uppercase text-white cursor-pointer text-center location-heading"
-                                >
-                                    {t("cta.primary")}
-                                </a>
+                                <NavLink to="/reserveren#tarieven"
+                                    className="customGreen w-full hover:bg-red-400 transition-colors py-3 explore-button uppercase text-white cursor-pointer text-center location-heading">
+                                    {t("cta.primary")}</NavLink>
 
                                 <a
                                     href="#contact"

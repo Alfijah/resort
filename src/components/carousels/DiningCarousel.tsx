@@ -1,5 +1,5 @@
 import Carousel from "../carousels/Carousel";
-import img1 from "../../assets/diningSection/dine1.jpg"
+import img1 from "../../assets/diningSection/fish.jpeg"
 import img2 from "../../assets/diningSection/dine2.jpg"
 import img3 from "../../assets/diningSection/dine3.jpg"
 import img4 from "../../assets/diningSection/dine4.jpg"
