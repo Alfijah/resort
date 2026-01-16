@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { fadeInUp } from "../../animations/Varianten";
 
 export default function TarievenTable() {
   const { t } = useTranslation();
@@ -10,6 +12,7 @@ export default function TarievenTable() {
   const tarieven = t("reserverenPage.tarieven", { returnObjects: true }) as Tarief[];
 
   return (
+    <motion.div variants={fadeInUp}>
     <table className="w-full border-collapse text-left body-text">
       <thead>
         <tr className="border-b border-gray-400">
@@ -30,5 +33,6 @@ export default function TarievenTable() {
         ))}
       </tbody>
     </table>
+    </motion.div>
   );
 }

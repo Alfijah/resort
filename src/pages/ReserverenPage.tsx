@@ -80,13 +80,7 @@ export default function ReserverenPage() {
             {t("reserverenPage.tarievenCondition")}
           </motion.p>
 
-          <div className="">
-            <TarievenTable />
-          </div>
-
-          {/* <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            *{t("reserverenPage.tariefRemark")}
-          </motion.p> */}
+          <TarievenTable />
         </SectionWrapper>
       </section>
 
@@ -108,16 +102,7 @@ export default function ReserverenPage() {
             Vul het aantal personen in. We tonen direct hoeveel cabanas we adviseren met oog voor rust en privacy.
             {/* {t("reserverenPage.contactSubtitle")} */}
           </motion.p>
-        <p className="body-text text-gray-600"><b>Let wel: Kinderen tot en met 5 jaar tellen niet mee in het aantal personen en verblijven kosteloos bij hun ouder(s)/verzorger(s).</b></p>
-
-
-          {/* <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            <WhatsApp />
-          </motion.p>
-
-          <motion.p variants={fadeInUp} className="body-text text-left md:text-center leading-snugged">
-            {t("reserverenPage.emailLabel")}: info@tukunari-experience.com
-          </motion.p> */}
+          <motion.p variants={fadeInUp} className="body-text text-gray-600"><b>Let wel: Kinderen tot en met 5 jaar tellen niet mee in het aantal personen en verblijven kosteloos bij hun ouder(s)/verzorger(s).</b></motion.p>
 
           <CabanaCalculator />
 
