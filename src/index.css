@@ -15,7 +15,7 @@
   @font-face {
     /* font-family: "Reforma 1918 Blanca"; */
     font-family: "Arnhem";
-    src: url("./assets/fonts/ArnhemBlond.otf") format("truetype");
+    src: url("./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
