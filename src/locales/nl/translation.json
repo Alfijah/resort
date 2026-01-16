@@ -365,7 +365,38 @@
             "We zijn niet telefonisch bereikbaar"
         ],
         "ctaText": "Klaar om te reserveren?",
-        "ctaButton": "Reserveer via WhatsApp"
+        "ctaButton": "Reserveer via WhatsApp",
+        "calculator": {
+            "title": "Bereken je cabana’s",
+            "intro": "Vul het aantal personen in. We tonen direct hoeveel cabana’s we adviseren met oog voor rust en privacy.",
+            "kidsNote": "Let wel: kinderen tot en met 5 jaar tellen niet mee in het aantal personen en verblijven kosteloos bij hun ouder(s)/verzorger(s).",
+            "labelAdults": "Aantal personen",
+            "labelAdultsHint": "(6 jaar en ouder)",
+            "cards": {
+                "card1Title": "1 cabana",
+                "card1Subtitle": "1 t/m 7 personen",
+                "card2Title": "2 cabanas",
+                "card2Subtitle": "8 t/m 14 personen",
+                "card3Title": "3 cabanas",
+                "card3Subtitle": "15+ personen",
+                "activeLabel": "✓ Ons advies"
+            },
+            "result": {
+                "adviceLabel": "Advies:",
+                "adviceLine": "{{cabanas}} cabana{{plural}} voor {{people}} personen",
+                "importantLabel": "Belangrijk:",
+                "priceBlockTitle": "Indicatie tarief",
+                "priceOnRequest": "Tarief: op aanvraag",
+                "pricePerPerson": "Tarief per persoon:",
+                "total": "Totaal:",
+                "priceImportantText": "Het tarief is gebaseerd op de totale groepsgrootte en blijft gelijk, ook bij toewijzing van meerdere cabanas."
+            },
+            "notes": {
+                "oneCabana": "Tot en met 7 personen reserveren we 1 cabana.",
+                "twoCabanas": "Voor deze groep reserveren we twee cabanas dicht bij elkaar. Beide cabanas staan exclusief tot jullie beschikking, zodat jullie zelf bepalen hoe jullie de ruimte gebruiken — met behoud van rust en privacy.",
+                "threeCabanas": "Vanaf 15 personen reserveren we 3 cabanas. Deze cabanas staan exclusief tot jullie beschikking, zodat jullie zelf bepalen hoe jullie de ruimte gebruiken — met behoud van rust en privacy."
+            }
+        }
     },
     "imagine": {
         "title": "Imagine Your Day",

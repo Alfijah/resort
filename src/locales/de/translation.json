@@ -302,37 +302,31 @@
         "emailLabel": "E-Mail",
         "tarievenTitle": "Preise pro person",
         "tarievenSub": "Tagesaufenthalt von 09:30 – 21:00 Uhr",
+        "tijdCondition": "An- und Abreisezeiten sind flexibel und werden in Absprache festgelegt.",
+        "tarievenCondition": "Kinder bis einschließlich 5 Jahre sind nicht im Preis enthalten.",
         "tarievenTable": {
             "persons": "Anzahl der Personen",
             "price": "Preis pro Person"
         },
         "tarieven": [
             {
-                "personen": "7 Personen",
-                "prijs": "USD 85*"
-            },
-            {
-                "personen": "6 Personen",
-                "prijs": "USD 90*"
-            },
-            {
-                "personen": "5 Personen",
+                "personen": "5 +",
                 "prijs": "USD 95"
             },
             {
-                "personen": "4 Personen",
+                "personen": "4",
                 "prijs": "USD 110"
             },
             {
-                "personen": "3 Personen",
+                "personen": "3",
                 "prijs": "USD 135"
             },
             {
-                "personen": "2 Personen",
+                "personen": "2",
                 "prijs": "USD 175"
             },
             {
-                "personen": "1 Person",
+                "personen": "1",
                 "prijs": "USD 295"
             }
         ],
@@ -346,7 +340,8 @@
             "Authentisches javanisches Mittagessen",
             "Late-Afternoon-BBQ (selbst zu grillen)",
             "Kaffee und Tee in der Cabana",
-            "Softdrinks, Wasser und Saft im Kühlschrank",
+            "Erfrischende Softdrinks, darunter Cola und Fernandes, gekühlt im Kühlschrank",
+            "Frisches Wasser und traditionelle surinamische Säfte (Passionsfrucht/Sauersack), gekühlt im Kühlschrank",
             "Freie Nutzung von Kajaks, Schwimmwesten, Floaties und Angelruten",
             "Zugang zum See und den Creeks des Sanctuary",
             "Persönliche Begleitung bei Ankunft und Abreise"
@@ -362,14 +357,46 @@
         "huisregelsButton": "Hausregeln & Haftungsausschluss herunterladen",
         "belangrijkTitle": "Wichtige Informationen",
         "belangrijk": [
-            "Maximal 7 Personen pro Cabana",
-            "Ankunftszeit immer im Voraus reservieren",
-            "Tagesaufenthalt: 09:30 – 21:00 Uhr",
-            "Nicht telefonisch erreichbar",
-            "Bitte immer die Wegbeschreibung in der Bestätigung verwenden"
+            "Für Gruppen bis zu 7 Personen reservieren wir eine private Cabana.",
+            "Für Gruppen von 8 bis 14 Personen reservieren wir zwei private Cabanas in unmittelbarer Nähe zueinander.",
+            "Für Gruppen ab 15 Personen reservieren wir standardmäßig drei private Cabanas. Größere Gruppen sind willkommen; die genaue Aufteilung wird stets in Absprache festgelegt, um Ruhe und Qualität des Aufenthalts zu gewährleisten.",
+            "Der Tagesaufenthalt bietet flexible An- und Abreisezeiten zwischen 09:30 und spätestens 21:00 Uhr.",
+            "Die Ankunft erfolgt ausschließlich nach vorheriger Reservierung, wobei wir jede Gruppe persönlich willkommen heißen.",
+            "Wir sind telefonisch nicht erreichbar."
         ],
         "ctaText": "Bereit zu reservieren?",
-        "ctaButton": "Über WhatsApp reservieren"
+        "ctaButton": "Über WhatsApp reservieren",
+        "calculator": {
+            "title": "Berechnen Sie Ihre Cabanas",
+            "intro": "Geben Sie die Anzahl der Gäste ein. Wir zeigen Ihnen direkt, wie viele Cabanas wir empfehlen – mit Fokus auf Ruhe, Komfort und Privatsphäre.",
+            "kidsNote": "Hinweis: Kinder bis einschließlich 5 Jahre werden nicht zur Personenzahl gezählt und übernachten kostenfrei bei ihren Eltern oder Erziehungsberechtigten.",
+            "labelAdults": "Anzahl der Gäste",
+            "labelAdultsHint": "(ab 6 Jahren)",
+            "cards": {
+                "card1Title": "1 Cabana",
+                "card1Subtitle": "1 bis 7 Personen",
+                "card2Title": "2 Cabanas",
+                "card2Subtitle": "8 bis 14 Personen",
+                "card3Title": "3 Cabanas",
+                "card3Subtitle": "15+ Personen",
+                "activeLabel": "✓ Unsere Empfehlung"
+            },
+            "result": {
+                "adviceLabel": "Empfehlung:",
+                "adviceLine": "{{cabanas}} Cabana{{plural}} für {{people}} Personen",
+                "importantLabel": "Wichtig:",
+                "priceBlockTitle": "Preisübersicht",
+                "priceOnRequest": "Preis: auf Anfrage",
+                "pricePerPerson": "Preis pro Person:",
+                "total": "Gesamt:",
+                "priceImportantText": "Der Preis basiert auf der gesamten Gruppengröße und bleibt gleich, auch wenn mehrere Cabanas reserviert werden."
+            },
+            "notes": {
+                "oneCabana": "Bis zu 7 Personen reservieren wir 1 Cabana.",
+                "twoCabanas": "Für diese Gruppe reservieren wir zwei Cabanas in unmittelbarer Nähe zueinander. Beide Cabanas stehen exklusiv zur Verfügung, sodass Sie selbst entscheiden, wie Sie den Raum nutzen – bei gleichzeitiger Wahrung von Ruhe und Privatsphäre.",
+                "threeCabanas": "Ab 15 Personen reservieren wir 3 Cabanas. Diese stehen exklusiv zur Verfügung, sodass Sie selbst entscheiden, wie Sie den Raum nutzen – bei gleichzeitiger Wahrung von Ruhe und Privatsphäre."
+            }
+        }
     },
     "imagine": {
         "title": "Imagine Your Day",

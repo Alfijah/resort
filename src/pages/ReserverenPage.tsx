@@ -94,15 +94,13 @@ export default function ReserverenPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             className="heading-secondary text-left">
-            Bereken je cabanas
-            {/* {t("reserverenPage.contactTitle")} */}
+            {t("reserverenPage.calculator.title")}
           </motion.h2>
 
           <motion.p variants={fadeInUp} className="body-text text-left leading-snugged">
-            Vul het aantal personen in. We tonen direct hoeveel cabanas we adviseren met oog voor rust en privacy.
-            {/* {t("reserverenPage.contactSubtitle")} */}
+            {t("reserverenPage.calculator.intro")}
           </motion.p>
-          <motion.p variants={fadeInUp} className="body-text text-gray-600"><b>Let wel: Kinderen tot en met 5 jaar tellen niet mee in het aantal personen en verblijven kosteloos bij hun ouder(s)/verzorger(s).</b></motion.p>
+          <motion.p variants={fadeInUp} className="body-text text-gray-600"><b>{t("reserverenPage.calculator.kidsNote")}</b></motion.p>
 
           <CabanaCalculator />
 
